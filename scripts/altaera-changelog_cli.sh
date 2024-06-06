@@ -3,6 +3,7 @@
 dialog --backtitle "AltaeraAI" \
 --title "AltaeraAI - Changelog [CLI]" \
 --msgbox '
+    * v5.1.1 - shifted the projects main GitHub repository into an organisational one (ThinkThroughLabs). This upgrade does not bring any functionalities, its sole purpose is to redirect local AltaeraAI update mechanisms to a new address
     * v5.1 - updated to koboldcpp-1.67
     * added "aef", "aeforce" and "altaeraforce" arguments to the "bash.bashrc" file, which allow the user to launch AltaeraAI without the automatic update checking mechanism, in case there is a start-up problem, i.e., poor network connectivity
     * v5.0 - updated to koboldcpp-1.66.1
