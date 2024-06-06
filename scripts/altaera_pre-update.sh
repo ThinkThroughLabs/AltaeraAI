@@ -12,7 +12,7 @@
                 } &> /dev/null 2>&1;
                 
          if [ $(bash 'AltaeraAI/altaera-version_package.sh'
-          ) = "v5.0.tar.gz" ]; then
+          ) = "v5.1.tar.gz" ]; then
           cd "AltaeraAI"
           rm -rf 'AltaeraAI/altaera-version_package.sh'
           rm -rf 'altaera-update_content.sh'
