@@ -1,6 +1,6 @@
 # AltaeraAI
 
-![altaeragithublogo](https://github.com/ThinkThroughLabs/AltaeraAI/assets/121747280/3f44e8f6-f330-44eb-8353-7f4c458890dd)
+![altaeragithublogo](https://github.com/ThinkThroughLabs/AltaeraAI/assets/121747280/7cea65dc-6592-453c-9b16-0522040cf078)
 
 README parts:
 
@@ -69,7 +69,7 @@ You can read more at: [altaera.ai](https://altaera.ai)
 - Open Termux, type in '`ae`' – you will be welcomed with the MENU screen.
 
 <p align="center">
-<img src="https://github.com/ThinkThroughLabs/AltaeraAI/assets/121747280/f6efe9f6-c82d-4fdf-9397-c630efef1dfb" width="324" height="390" />
+<img src="https://github.com/ThinkThroughLabs/AltaeraAI/assets/121747280/1ee1aa63-338d-4227-9235-676ce1933009" width="324" height="390" />
 </p>
 
 The “Start AltaeraAI” button will ask you to choose from currently installed models, and then forward you to a browser with deployed UI.
