@@ -75,9 +75,9 @@ chmod a+x 'altaera-model_remove_in.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_backup.sh
 chmod a+x 'altaera-model_backup.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-on.sh
-chmod a+x 'dialog_theme_on.sh'
+chmod a+x 'dialog_theme-on.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-off.sh
-chmod a+x 'dialog_theme_off.sh'
+chmod a+x 'dialog_theme-off.sh'
 wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/v5.1/altaera-v5.1.tar.gz
 tar -xf 'altaera-v5.1.tar.gz'
 rm -rf 'altaera-v5.1.tar.gz'

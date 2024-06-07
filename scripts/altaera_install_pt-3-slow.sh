@@ -78,9 +78,9 @@ chmod a+x 'altaera-model_remove_in.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_backup.sh
 chmod a+x 'altaera-model_backup.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-on.sh
-chmod a+x 'dialog_theme_on.sh'
+chmod a+x 'dialog_theme-on.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-off.sh
-chmod a+x 'dialog_theme_off.sh'
+chmod a+x 'dialog_theme-off.sh'
 git clone https://github.com/LostRuins/koboldcpp
 mv 'koboldcpp' 'kcpp-ae'
       wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/v3.1/altaera-v3.1.tar.gz
