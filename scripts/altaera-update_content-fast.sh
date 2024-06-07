@@ -363,6 +363,12 @@ chmod a+x 'altaera.sh'
 rm -rf 'benchmark.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/benchmark.sh
 chmod a+x 'benchmark.sh'
+rm -rf 'altaera-model_empty.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_empty.sh
+chmod a+x 'altaera-model_empty.sh'
+rm -rf 'altaera-model_list_empty.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_list_empty.sh
+chmod a+x 'altaera-model_list_empty.sh'
 rm -rf 'altaera-model_list.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_list.sh
 chmod a+x 'altaera-model_list.sh'
