@@ -383,7 +383,7 @@ chmod a+x 'altaera-model_remove_in.sh'
 rm -rf 'altaera-model_backup.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_backup.sh
 chmod a+x 'altaera-model_backup.sh'
-rm -rf 'dialog_theme_on.sh'
+rm -rf 'dialog_theme-on.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-on.sh
 chmod a+x 'dialog_theme-on.sh'
 rm -rf 'dialog_theme-off.sh'
