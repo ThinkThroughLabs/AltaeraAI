@@ -305,7 +305,105 @@ echo "Updating AltaeraAI shell files ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Updating AltaeraAI PRoot Distro environment (Artix Linux)..." | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+echo "Updating AltaeraAI shell files (PRoot Distro)...
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+{
+cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
+rm -rf 'upgrade.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/upgrade.sh
+chmod a+x 'upgrade.sh'
+rm -rf 'ngrok-authtoken.sh'
+rm -rf 'altaera.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
+chmod a+x 'altaera.sh'
+rm -rf 'benchmark.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/benchmark.sh
+chmod a+x 'benchmark.sh'
+rm -rf 'altaera-model_empty.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_empty.sh
+chmod a+x 'altaera-model_empty.sh'
+rm -rf 'altaera-model_list_empty.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_list_empty.sh
+chmod a+x 'altaera-model_list_empty.sh'
+rm -rf 'altaera-model_list.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_list.sh
+chmod a+x 'altaera-model_list.sh'
+rm -rf 'altaera-model_remove_in.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_remove_in.sh
+chmod a+x 'altaera-model_remove_in.sh'
+rm -rf 'altaera-model_backup.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_backup.sh
+chmod a+x 'altaera-model_backup.sh'
+rm -rf 'dialog_theme_on.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-on.sh
+chmod a+x 'dialog_theme_on.sh'
+rm -rf 'dialog_theme-off.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-off.sh
+chmod a+x 'dialog_theme_off.sh'
+cd '/data/data/com.termux/files/home'
+} &> /dev/null 2>&1;
+
+            clear
+            echo "
+
+        ██████████
+       ██ █
+      ██  █
+     ██   █
+     █    ████████
+    ██    █
+   ████████
+  ██      █
+  █       ████████
+
+  AltaeraAI - v5.1.1
+
+    by ThinkThroughLabs
+
+
+  "
+
+  echo "Did you know...
+
+  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+  	function random_message() {
+    # Array of random messages
+    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
+
+    # Generate a random index
+    index=$(( RANDOM % ${#messages[@]} ))
+
+    # Get the random message
+    message=${messages[$index]}
+
+    # Print the random message
+    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+}
+
+# Call the function
+random_message
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Initializing update ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Updating AltaeraAI shell files ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Updating AltaeraAI shell files (PRoot Distro) ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Updating AltaeraAI PRoot Distro environment (Artix Linux)...
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 {
 proot-distro login altaera -- ./upgrade.sh &
