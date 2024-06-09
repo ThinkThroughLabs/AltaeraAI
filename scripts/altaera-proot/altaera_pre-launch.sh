@@ -1,5 +1,5 @@
 if [ -d "$kcpp-ae" ]; then
           bash 'altaera.sh'
           else
-echo "niexd"
+bash 'altaera_corrupted-files.sh'
 fi
