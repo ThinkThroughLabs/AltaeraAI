@@ -62,6 +62,14 @@ sed -i '/^screen_color = (CYAN,BLUE,ON)/d' ~/.dialogrc
 echo "screen_color = (CYAN,BLACK,ON)" >> ~/.dialogrc
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
 chmod a+x 'altaera.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_pre-launch.sh
+chmod a+x 'altaera_pre-launch.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix.sh
+chmod a+x 'altaera-fix.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fixed_successfully.sh
+chmod a+x 'altaera-fixed_successfully.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_corrupted-files.sh
+chmod a+x 'altaera_corrupted-files.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/benchmark.sh
 chmod a+x 'benchmark.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_empty.sh

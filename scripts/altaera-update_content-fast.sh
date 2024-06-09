@@ -360,6 +360,18 @@ rm -rf 'klite.embd'
 rm -rf 'altaera.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
 chmod a+x 'altaera.sh'
+rm -rf 'altaera_pre-launch.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_pre-launch.sh
+chmod a+x 'altaera_pre-launch.sh'
+rm -rf 'altaera-fix.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix.sh
+chmod a+x 'altaera-fix.sh'
+rm -rf 'altaera-fixed_successfully.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fixed_successfully.sh
+chmod a+x 'altaera-fixed_successfully.sh'
+rm -rf 'altaera_corrupted-files.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_corrupted-files.sh
+chmod a+x 'altaera_corrupted-files.sh'
 rm -rf 'benchmark.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/benchmark.sh
 chmod a+x 'benchmark.sh'
