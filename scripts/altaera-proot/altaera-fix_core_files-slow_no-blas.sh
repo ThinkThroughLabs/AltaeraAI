@@ -29,3 +29,4 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
       cd 'kcpp-ae_cm'
       rm -rf 'klite.embd'
       wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/klite/klite.embd
+} &> /dev/null 2>&1;
