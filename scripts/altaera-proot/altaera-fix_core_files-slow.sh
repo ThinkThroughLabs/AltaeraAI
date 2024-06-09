@@ -6,9 +6,9 @@ echo "Fixing AltaeraAI core files...
 mv '/data/data/com.termux/files/home/AltaeraAI-temp' '/data/data/com.termux/files/home/AltaeraAI-tmp'
 
 
-mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-temporary'
-mv '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/models' '/data/data/com.termux/files/home/AltaeraAI-tmp'
-cp '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-temporary'
+mkdir 'altaera-temporary'
+mv 'kcpp-ae/models' '/data/data/com.termux/files/home/AltaeraAI-tmp'
+cp 'kcpp-ae/prompts/chat-with-bob.txt' 'altaera-temporary'
 cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
 rm -rf 'upgrade.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/upgrade.sh
