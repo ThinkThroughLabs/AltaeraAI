@@ -39,7 +39,7 @@ clear
 case $CHOICE in
         1)
             clear
-            proot-distro login altaera -- ./altaera.sh
+            proot-distro login altaera -- ./altaera_pre-launch.sh
             ;;
         2)
             clear
