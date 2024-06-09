@@ -3,7 +3,7 @@
 if [ $(cd 'kcpp-ae'
           ) = "bash: cd: kcpp-ae: No such file or directory" ]; then
           echo "No kcpp-ae directory found"
-          else:
+          else
 
 files=() #blank the variable so its empty for next use
 # Loop folder, add files to array
