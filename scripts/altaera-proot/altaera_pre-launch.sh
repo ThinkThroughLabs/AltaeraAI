@@ -4,3 +4,5 @@ if [ -d /root/kcpp-ae ]
  else
      bash 'altaera_corrupted-files.sh'
  fi
+
+clear
