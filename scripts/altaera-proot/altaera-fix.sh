@@ -72,11 +72,11 @@ echo "________________________________________________________________
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
-            rm -rf 'altaera-fix_core_files'
+            rm -rf 'altaera-fix_core_files.sh'
             wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix_core_files-fast.sh -O 'altaera-fix_core_files.sh'
-            chmod a+x 'altaera-fix_core_files'
+            chmod a+x 'altaera-fix_core_files.sh'
             } &> /dev/null 2>&1;
-            bash 'altaera-fix_core_files'
+            bash 'altaera-fix_core_files.sh'
             clear
             bash 'altaera-fixed_successfully.sh'
             ;;
@@ -129,11 +129,11 @@ echo "________________________________________________________________
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
-            rm -rf 'altaera-fix_core_files-slow.sh'
-            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix_core_files-slow.sh -O 'altaera-update_content.sh'
-            chmod a+x 'altaera-fix_core_files-slow.sh'
+            rm -rf 'altaera-fix_core_files.sh'
+            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix_core_files-slow.sh -O 'altaera-fix_core_files.sh'
+            chmod a+x 'altaera-fix_core_files.sh'
             } &> /dev/null 2>&1;
-            bash 'altaera-fix_core_files-slow.sh'
+            bash 'altaera-fix_core_files.sh'
             clear
             bash 'altaera-fixed_successfully.sh'
             ;;
@@ -186,11 +186,11 @@ echo "________________________________________________________________
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
-            rm -rf 'altaera-fix_core_files-slow.sh'
-            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix_core_files-slow.sh -O 'altaera-update_content.sh'
-            chmod a+x 'altaera-fix_core_files-slow.sh'
+            rm -rf 'altaera-fix_core_files.sh'
+            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix_core_files-slow.sh -O 'altaera-fix_core_files.sh'
+            chmod a+x 'altaera-fix_core_files.sh'
             } &> /dev/null 2>&1;
-            bash 'altaera-fix_core_files-slow.sh'
+            bash 'altaera-fix_core_files.sh'
             clear
             bash 'altaera-fixed_successfully.sh'
             ;;
