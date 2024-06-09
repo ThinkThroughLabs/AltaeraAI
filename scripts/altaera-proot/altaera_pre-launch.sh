@@ -1,4 +1,4 @@
-f [ -d /root/kcpp-ae ]
+if [ -d /root/kcpp-ae ]
  then
      bash 'altaera.sh'
  else
