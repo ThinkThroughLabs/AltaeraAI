@@ -1,7 +1,6 @@
 #!/bin/bash
 
-if [ $(cd 'kcpp-ae'
-          ) = "bash: cd: kcpp-ae: No such file or directory" ]; then
+if [ -d "$DIRECTORY" ]; then
           echo "No kcpp-ae directory found"
           else
 
@@ -43,9 +42,9 @@ python3 koboldcpp.py $file 1551 \
 --blasbatchsize 2048 \
 --contextsize 2048
 fi
-fi
 
 else
 clear
 exit
+fi
 fi
