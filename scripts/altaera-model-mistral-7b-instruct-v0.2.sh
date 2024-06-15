@@ -7,18 +7,19 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired Mistral-7B-Instruct-GGUF model size/strategy:"
 
-OPTIONS=(1 "mistral-7b-instruct-v0.2.Q2_K.gguf \ 3.08 GB"
-         2 "mistral-7b-instruct-v0.2.Q3_K_L.gguf \ 3.82 GB"
-         3 "mistral-7b-instruct-v0.2.Q3_K_M.gguf \ 3.52 GB"
-         4 "mistral-7b-instruct-v0.2.Q3_K_S.gguf \ 3.16 GB"
-         5 "mistral-7b-instruct-v0.2.Q4_0.gguf \ 4.11 GB"
-         6 "mistral-7b-instruct-v0.2.Q4_K_M.gguf \ 4.37 GB"
-         7 "mistral-7b-instruct-v0.2.Q4_K_S.gguf \ 4.14 GB"
-         8 "mistral-7b-instruct-v0.2.Q5_0.gguf \ 5 GB"
-         9 "mistral-7b-instruct-v0.2.Q5_K_M.gguf \ 5.13 GB"
-         10 "mistral-7b-instruct-v0.2.Q5_K_S.gguf \ 5 GB"
-         11 "mistral-7b-instruct-v0.2.Q6_K.gguf \ 5.94 GB"
-         12 "mistral-7b-instruct-v0.2.Q8_0.gguf \ 7.7 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "mistral-7b-instruct-v0.2.Q2_K.gguf \ 3.08 GB"
+         3 "mistral-7b-instruct-v0.2.Q3_K_L.gguf \ 3.82 GB"
+         4 "mistral-7b-instruct-v0.2.Q3_K_M.gguf \ 3.52 GB"
+         5 "mistral-7b-instruct-v0.2.Q3_K_S.gguf \ 3.16 GB"
+         6 "mistral-7b-instruct-v0.2.Q4_0.gguf \ 4.11 GB"
+         7 "mistral-7b-instruct-v0.2.Q4_K_M.gguf \ 4.37 GB"
+         8 "mistral-7b-instruct-v0.2.Q4_K_S.gguf \ 4.14 GB"
+         9 "mistral-7b-instruct-v0.2.Q5_0.gguf \ 5 GB"
+         10 "mistral-7b-instruct-v0.2.Q5_K_M.gguf \ 5.13 GB"
+         11 "mistral-7b-instruct-v0.2.Q5_K_S.gguf \ 5 GB"
+         12 "mistral-7b-instruct-v0.2.Q6_K.gguf \ 5.94 GB"
+         13 "mistral-7b-instruct-v0.2.Q8_0.gguf \ 7.7 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -33,6 +34,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'mistral-7b-instruct-v0.2.Q2_K.gguf \ 3.08 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -49,7 +53,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'mistral-7b-instruct-v0.2.Q3_K_L.gguf \ 3.82 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -66,7 +70,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'mistral-7b-instruct-v0.2.Q3_K_M.gguf \ 3.52 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -83,7 +87,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'mistral-7b-instruct-v0.2.Q3_K_S.gguf \ 3.16 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -100,7 +104,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'mistral-7b-instruct-v0.2.Q4_0.gguf \ 4.11 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -117,7 +121,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "You chose 'mistral-7b-instruct-v0.2.Q4_K_M.gguf \ 4.37 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -134,7 +138,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        7)
+        8)
             echo "You chose 'mistral-7b-instruct-v0.2.Q4_K_S.gguf \ 4.14 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -151,7 +155,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        8)
+        9)
             echo "You chose 'mistral-7b-instruct-v0.2.Q5_0.gguf \ 5 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -168,7 +172,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        9)
+        10)
             echo "You chose 'mistral-7b-instruct-v0.2.Q5_K_M.gguf \ 5.13 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -186,7 +190,7 @@ case $CHOICE in
             clear
             ;;
 
-        10)
+        11)
             echo "You chose 'mistral-7b-instruct-v0.2.Q5_K_S.gguf \ 5 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -204,7 +208,7 @@ case $CHOICE in
             clear
             ;;
 
-        11)
+        12)
             echo "You chose 'mistral-7b-instruct-v0.2.Q6_K.gguf \ 5.94 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -222,7 +226,7 @@ case $CHOICE in
             clear
             ;;
 
-        12)
+        13)
             echo "You chose 'mistral-7b-instruct-v0.2.Q8_0.gguf \ 7.7 GB'
                         
             To abort download, press 'Ctrl+C'
