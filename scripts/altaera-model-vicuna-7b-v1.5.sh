@@ -34,7 +34,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             echo "You chose 'vicuna-7b-v1.5.Q2_K.gguf \ 2.83 GB'
