@@ -7,31 +7,32 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired TinyDolphin-2.8-1.1b-imatrix-GGUF model size/strategy:"
 
-OPTIONS=(1 "tinydolphin-2.8-1.1b.IQ1_S.imx.gguf \ 270 MB"
-         2 "tinydolphin-2.8-1.1b.IQ2_M.imx.gguf \ 400 MB"
-         3 "tinydolphin-2.8-1.1b.IQ2_S.imx.gguf \ 374 MB"
-         4 "tinydolphin-2.8-1.1b.IQ2_XS.imx.gguf \ 352 MB"
-         5 "tinydolphin-2.8-1.1b.IQ2_XXS.imx.gguf \ 323 MB"
-         6 "tinydolphin-2.8-1.1b.IQ3_M.imx.gguf \ 516 MB"
-         7 "tinydolphin-2.8-1.1b.IQ3_S.imx.gguf \ 501 MB"
-         8 "tinydolphin-2.8-1.1b.IQ3_XS.imx.gguf \ 476 MB"
-         9 "tinydolphin-2.8-1.1b.IQ3_XXS.imx.gguf \ 445 MB"
-         10 "tinydolphin-2.8-1.1b.IQ4_NL.imx.gguf \ 638 MB"
-         11 "tinydolphin-2.8-1.1b.IQ4_XS.imx.gguf \ 606 MB"
-         12 "tinydolphin-2.8-1.1b.Q2_K.imx.gguf \ 432 MB"
-         13 "tinydolphin-2.8-1.1b.Q2_K_S.imx.gguf \ 402 MB"
-         14 "tinydolphin-2.8-1.1b.Q3_K_L.imx.gguf \ 592 MB"
-         15 "tinydolphin-2.8-1.1b.Q3_K_M.imx.gguf \ 548 MB"
-         16 "tinydolphin-2.8-1.1b.Q3_K_S.imx.gguf \ 499 MB"
-         17 "tinydolphin-2.8-1.1b.Q4_0.imx.gguf \ 638 MB"
-         18 "tinydolphin-2.8-1.1b.Q4_K_M.imx.gguf \ 668 MB"
-         19 "tinydolphin-2.8-1.1b.Q4_K_S.imx.gguf \ 640 MB"
-         20 "tinydolphin-2.8-1.1b.Q5_0.imx.gguf \ 767 MB"
-         21 "tinydolphin-2.8-1.1b.Q5_1.imx.gguf \ 831 MB"
-         22 "tinydolphin-2.8-1.1b.Q5_K_M.imx.gguf \ 782 MB"
-         23 "tinydolphin-2.8-1.1b.Q5_K_S.imx.gguf \ 766 MB"
-         24 "tinydolphin-2.8-1.1b.Q6_K.imx.gguf \ 903 MB"
-         25 "tinydolphin-2.8-1.1b.Q8_0.imx.gguf \ 1.17 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "tinydolphin-2.8-1.1b.IQ1_S.imx.gguf \ 270 MB"
+         3 "tinydolphin-2.8-1.1b.IQ2_M.imx.gguf \ 400 MB"
+         4 "tinydolphin-2.8-1.1b.IQ2_S.imx.gguf \ 374 MB"
+         5 "tinydolphin-2.8-1.1b.IQ2_XS.imx.gguf \ 352 MB"
+         6 "tinydolphin-2.8-1.1b.IQ2_XXS.imx.gguf \ 323 MB"
+         7 "tinydolphin-2.8-1.1b.IQ3_M.imx.gguf \ 516 MB"
+         8 "tinydolphin-2.8-1.1b.IQ3_S.imx.gguf \ 501 MB"
+         9 "tinydolphin-2.8-1.1b.IQ3_XS.imx.gguf \ 476 MB"
+         10 "tinydolphin-2.8-1.1b.IQ3_XXS.imx.gguf \ 445 MB"
+         11 "tinydolphin-2.8-1.1b.IQ4_NL.imx.gguf \ 638 MB"
+         12 "tinydolphin-2.8-1.1b.IQ4_XS.imx.gguf \ 606 MB"
+         13 "tinydolphin-2.8-1.1b.Q2_K.imx.gguf \ 432 MB"
+         14 "tinydolphin-2.8-1.1b.Q2_K_S.imx.gguf \ 402 MB"
+         15 "tinydolphin-2.8-1.1b.Q3_K_L.imx.gguf \ 592 MB"
+         16 "tinydolphin-2.8-1.1b.Q3_K_M.imx.gguf \ 548 MB"
+         17 "tinydolphin-2.8-1.1b.Q3_K_S.imx.gguf \ 499 MB"
+         18 "tinydolphin-2.8-1.1b.Q4_0.imx.gguf \ 638 MB"
+         19 "tinydolphin-2.8-1.1b.Q4_K_M.imx.gguf \ 668 MB"
+         20 "tinydolphin-2.8-1.1b.Q4_K_S.imx.gguf \ 640 MB"
+         21 "tinydolphin-2.8-1.1b.Q5_0.imx.gguf \ 767 MB"
+         22 "tinydolphin-2.8-1.1b.Q5_1.imx.gguf \ 831 MB"
+         23 "tinydolphin-2.8-1.1b.Q5_K_M.imx.gguf \ 782 MB"
+         24 "tinydolphin-2.8-1.1b.Q5_K_S.imx.gguf \ 766 MB"
+         25 "tinydolphin-2.8-1.1b.Q6_K.imx.gguf \ 903 MB"
+         26 "tinydolphin-2.8-1.1b.Q8_0.imx.gguf \ 1.17 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -46,6 +47,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'tinydolphin-2.8-1.1b.IQ1_S.imx.gguf \ 270 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -62,7 +66,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'tinydolphin-2.8-1.1b.IQ2_M.imx.gguf \ 400 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -79,7 +83,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'tinydolphin-2.8-1.1b.IQ2_S.imx.gguf \ 374 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -96,7 +100,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'tinydolphin-2.8-1.1b.IQ2_XS.imx.gguf \ 352 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -113,7 +117,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'tinydolphin-2.8-1.1b.IQ2_XXS.imx.gguf \ 323 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -130,7 +134,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "You chose 'tinydolphin-2.8-1.1b.IQ3_M.imx.gguf \ 516 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -147,7 +151,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        7)
+        8)
             echo "You chose 'tinydolphin-2.8-1.1b.IQ3_S.imx.gguf \ 501 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -164,7 +168,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        8)
+        9)
             echo "You chose 'tinydolphin-2.8-1.1b.IQ3_XS.imx.gguf \ 476 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -181,7 +185,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        9)
+        10)
             echo "You chose 'tinydolphin-2.8-1.1b.IQ3_XXS.imx.gguf \ 445 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -199,7 +203,7 @@ case $CHOICE in
             clear
             ;;
 
-        10)
+        11)
             echo "You chose 'tinydolphin-2.8-1.1b.IQ4_NL.imx.gguf \ 638 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -217,7 +221,7 @@ case $CHOICE in
             clear
             ;;
 
-        11)
+        12)
             echo "You chose 'tinydolphin-2.8-1.1b.IQ4_XS.imx.gguf \ 606 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -235,7 +239,7 @@ case $CHOICE in
             clear
             ;;
 
-        12)
+        13)
             echo "You chose 'tinydolphin-2.8-1.1b.Q2_K.imx.gguf \ 432 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -252,7 +256,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        13)
+        14)
             echo "You chose 'tinydolphin-2.8-1.1b.Q2_K_S.imx.gguf \ 402 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -269,7 +273,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        14)
+        15)
             echo "You chose 'tinydolphin-2.8-1.1b.Q3_K_L.imx.gguf \ 592 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -286,7 +290,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        15)
+        16)
             echo "You chose 'tinydolphin-2.8-1.1b.Q3_K_M.imx.gguf \ 548 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -303,7 +307,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        16)
+        17)
             echo "You chose 'tinydolphin-2.8-1.1b.Q3_K_S.imx.gguf \ 499 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -320,7 +324,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        17)
+        18)
             echo "You chose 'tinydolphin-2.8-1.1b.Q4_0.imx.gguf \ 638 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -337,7 +341,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        18)
+        19)
             echo "You chose 'tinydolphin-2.8-1.1b.Q4_K_M.imx.gguf \ 668 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -354,7 +358,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        19)
+        20)
             echo "You chose 'tinydolphin-2.8-1.1b.Q4_K_S.imx.gguf \ 640 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -371,7 +375,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        20)
+        21)
             echo "You chose 'tinydolphin-2.8-1.1b.Q5_0.imx.gguf \ 767 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -388,7 +392,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        21)
+        22)
             echo "You chose 'tinydolphin-2.8-1.1b.Q5_1.imx.gguf \ 831 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -406,7 +410,7 @@ case $CHOICE in
             clear
             ;;
 
-        22)
+        23)
             echo "You chose 'tinydolphin-2.8-1.1b.Q5_K_M.imx.gguf \ 782 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -424,7 +428,7 @@ case $CHOICE in
             clear
             ;;
 
-        23)
+        24)
             echo "You chose 'tinydolphin-2.8-1.1b.Q5_K_S.imx.gguf \ 766 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -442,7 +446,7 @@ case $CHOICE in
             clear
             ;;
 
-        24)
+        25)
             echo "You chose 'tinydolphin-2.8-1.1b.Q6_K.imx.gguf \ 903 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -459,7 +463,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        25)
+        26)
             echo "You chose 'tinydolphin-2.8-1.1b.Q8_0.imx.gguf \ 1.17 GB'
                         
             To abort download, press 'Ctrl+C'
