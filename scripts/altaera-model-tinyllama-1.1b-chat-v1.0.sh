@@ -7,18 +7,19 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired TinyLlama-1.1B-Chat-v1.0-GGUF model size/strategy:"
 
-OPTIONS=(1 "tinyllama-1.1b-chat-v1.0.Q2_K.gguf \ 483 MB"
-         2 "tinyllama-1.1b-chat-v1.0.Q3_K_L.gguf \ 593 MB"
-         3 "tinyllama-1.1b-chat-v1.0.Q3_K_M.gguf \ 551 MB"
-         4 "tinyllama-1.1b-chat-v1.0.Q3_K_S.gguf \ 500 MB"
-         5 "tinyllama-1.1b-chat-v1.0.Q4_0.gguf \ 638 MB"
-         6 "tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf \ 669 MB"
-         7 "tinyllama-1.1b-chat-v1.0.Q4_K_S.gguf \ 644 MB"
-         8 "tinyllama-1.1b-chat-v1.0.Q5_0.gguf \ 767 MB"
-         9 "tinyllama-1.1b-chat-v1.0.Q5_K_M.gguf \ 783 MB"
-         10 "tinyllama-1.1b-chat-v1.0.Q5_K_S.gguf \ 767 MB"
-         11 "tinyllama-1.1b-chat-v1.0.Q6_K.gguf \ 904 MB"
-         12 "tinyllama-1.1b-chat-v1.0.Q8_0.gguf \ 1.17 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "tinyllama-1.1b-chat-v1.0.Q2_K.gguf \ 483 MB"
+         3 "tinyllama-1.1b-chat-v1.0.Q3_K_L.gguf \ 593 MB"
+         4 "tinyllama-1.1b-chat-v1.0.Q3_K_M.gguf \ 551 MB"
+         5 "tinyllama-1.1b-chat-v1.0.Q3_K_S.gguf \ 500 MB"
+         6 "tinyllama-1.1b-chat-v1.0.Q4_0.gguf \ 638 MB"
+         7 "tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf \ 669 MB"
+         8 "tinyllama-1.1b-chat-v1.0.Q4_K_S.gguf \ 644 MB"
+         9 "tinyllama-1.1b-chat-v1.0.Q5_0.gguf \ 767 MB"
+         10 "tinyllama-1.1b-chat-v1.0.Q5_K_M.gguf \ 783 MB"
+         11 "tinyllama-1.1b-chat-v1.0.Q5_K_S.gguf \ 767 MB"
+         12 "tinyllama-1.1b-chat-v1.0.Q6_K.gguf \ 904 MB"
+         13 "tinyllama-1.1b-chat-v1.0.Q8_0.gguf \ 1.17 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -33,6 +34,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q2_K.gguf \ 483 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -49,7 +53,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q3_K_L.gguf \ 593 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -66,7 +70,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q3_K_M.gguf \ 551 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -83,7 +87,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q3_K_S.gguf \ 500 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -100,7 +104,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q4_0.gguf \ 638 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -117,7 +121,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf \ 669 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -134,7 +138,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        7)
+        8)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q4_K_S.gguf \ 644 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -151,7 +155,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        8)
+        9)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q5_0.gguf \ 767 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -168,7 +172,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        9)
+        10)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q5_K_M.gguf \ 783 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -186,7 +190,7 @@ case $CHOICE in
             clear
             ;;
 
-        10)
+        11)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q5_K_S.gguf \ 767 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -204,7 +208,7 @@ case $CHOICE in
             clear
             ;;
 
-        11)
+        12)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q6_K.gguf \ 904 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -222,7 +226,7 @@ case $CHOICE in
             clear
             ;;
 
-        12)
+        13)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q8_0.gguf \ 1.17 GB'
                         
             To abort download, press 'Ctrl+C'
