@@ -7,13 +7,14 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired RWKV-4-World-Claude-for-Mobile model size:"
 
-OPTIONS=(1 "f16-RWKV-for-mobile-4-world-1.5B \ 3.16GB"
-         2 "f32-RWKV-for-mobile-4-world-1.5B \ 6.31GB"
-         3 "q4_0-RWKV-for-mobile-4-world-1.5B \ 1.28GB"
-         4 "q4_1-RWKV-for-mobile-4-world-1.5B \ 1.36GB"
-         5 "q5_0-RWKV-for-mobile-4-world-1.5B \ 1.44GB"
-         6 "q5_1-RWKV-for-mobile-4-world-1.5B \ 1.52GB"
-         7 "q8_0-RWKV-for-mobile-4-world-1.5B \ 1.93GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "f16-RWKV-for-mobile-4-world-1.5B \ 3.16GB"
+         3 "f32-RWKV-for-mobile-4-world-1.5B \ 6.31GB"
+         4 "q4_0-RWKV-for-mobile-4-world-1.5B \ 1.28GB"
+         5 "q4_1-RWKV-for-mobile-4-world-1.5B \ 1.36GB"
+         6 "q5_0-RWKV-for-mobile-4-world-1.5B \ 1.44GB"
+         7 "q5_1-RWKV-for-mobile-4-world-1.5B \ 1.52GB"
+         8 "q8_0-RWKV-for-mobile-4-world-1.5B \ 1.93GB")
 
 
 CHOICE=$(dialog --clear \
@@ -28,6 +29,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'f16-RWKV-for-mobile-4-world-1.5B \ 3.16GB'
                         
             To abort download, press 'Ctrl+C'
@@ -44,7 +48,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'f32-RWKV-for-mobile-4-world-1.5B \ 6.31GB'
                         
             To abort download, press 'Ctrl+C'
@@ -61,7 +65,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'q4_0-RWKV-for-mobile-4-world-1.5B \ 1.28GB'
                         
             To abort download, press 'Ctrl+C'
@@ -78,7 +82,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'q4_1-RWKV-for-mobile-4-world-1.5B \ 1.36GB'
                         
             To abort download, press 'Ctrl+C'
@@ -95,7 +99,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'q5_0-RWKV-for-mobile-4-world-1.5B \ 1.44GB'
                         
             To abort download, press 'Ctrl+C'
@@ -112,7 +116,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "You chose 'q5_1-RWKV-for-mobile-4-world-1.5B \ 1.52GB'
                         
             To abort download, press 'Ctrl+C'
@@ -129,7 +133,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        7)
+        8)
             echo "You chose 'q8_0-RWKV-for-mobile-4-world-1.5B \ 1.93GB'
                         
             To abort download, press 'Ctrl+C'
