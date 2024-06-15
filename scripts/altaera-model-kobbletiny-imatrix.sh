@@ -7,19 +7,20 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired KobbleTinyV2-1.1B_iMatrix_GGUF model size/strategy:"
 
-OPTIONS=(1 "KobbleTiny-1.1B_Q3km.gguf \ 548 MB"
-         2 "KobbleTiny-1.1B_Q4km.gguf \ 668 MB"
-         3 "KobbleTiny-1.1B_Q4ks.gguf \ 640 MB"
-         4 "KobbleTiny-1.1B_Q5km.gguf \ 782 MB"
-         5 "KobbleTiny-1.1B_Q5ks.gguf \ 766 MB"
-         6 "KobbleTiny-1.1B_Q6k.gguf \ 903 MB"
-         7 "KobbleTiny-1.1B_Q8.gguf \ 1.17 GB"
-         8 "KobbleTiny-1.1B_iQ2m.gguf \ 400 MB"
-         9 "KobbleTiny-1.1B_iQ2xxs.gguf \ 323 MB"
-         10 "KobbleTiny-1.1B_iQ3m.gguf \ 516 MB"
-         11 "KobbleTiny-1.1B_iQ3xxs.gguf \ 445 MB"
-         12 "KobbleTiny-1.1B_iQ4nl.gguf \ 638 MB"
-         13 "KobbleTiny-1.1B_iQ4xs.gguf \ 606 MB")
+OPTIONS=(1 "[...] Go Back"
+         2 "KobbleTiny-1.1B_Q3km.gguf \ 548 MB"
+         3 "KobbleTiny-1.1B_Q4km.gguf \ 668 MB"
+         4 "KobbleTiny-1.1B_Q4ks.gguf \ 640 MB"
+         5 "KobbleTiny-1.1B_Q5km.gguf \ 782 MB"
+         6 "KobbleTiny-1.1B_Q5ks.gguf \ 766 MB"
+         7 "KobbleTiny-1.1B_Q6k.gguf \ 903 MB"
+         8 "KobbleTiny-1.1B_Q8.gguf \ 1.17 GB"
+         9 "KobbleTiny-1.1B_iQ2m.gguf \ 400 MB"
+         10 "KobbleTiny-1.1B_iQ2xxs.gguf \ 323 MB"
+         11 "KobbleTiny-1.1B_iQ3m.gguf \ 516 MB"
+         12 "KobbleTiny-1.1B_iQ3xxs.gguf \ 445 MB"
+         13 "KobbleTiny-1.1B_iQ4nl.gguf \ 638 MB"
+         14 "KobbleTiny-1.1B_iQ4xs.gguf \ 606 MB")
 
 
 CHOICE=$(dialog --clear \
@@ -34,6 +35,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'KobbleTiny-1.1B_Q3km.gguf \ 548 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -50,7 +54,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'KobbleTiny-1.1B_Q4km.gguf \ 668 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -67,7 +71,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'KobbleTiny-1.1B_Q4ks.gguf \ 640 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -84,7 +88,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'KobbleTiny-1.1B_Q5km.gguf \ 782 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -101,7 +105,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'KobbleTiny-1.1B_Q5ks.gguf \ 766 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -118,7 +122,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "You chose 'KobbleTiny-1.1B_Q6k.gguf \ 903 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -135,7 +139,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        7)
+        8)
             echo "You chose 'KobbleTiny-1.1B_Q8.gguf \ 1.17 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -152,7 +156,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        8)
+        9)
             echo "You chose 'KobbleTiny-1.1B_iQ2m.gguf \ 400 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -169,7 +173,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        9)
+        10)
             echo "You chose 'KobbleTiny-1.1B_iQ2xxs.gguf \ 323 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -186,7 +190,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        10)
+        11)
             echo "You chose 'KobbleTiny-1.1B_iQ3m.gguf \ 516 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -203,7 +207,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        11)
+        12)
             echo "You chose 'KobbleTiny-1.1B_iQ3xxs.gguf \ 445 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -220,7 +224,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        12)
+        13)
             echo "You chose 'KobbleTiny-1.1B_iQ4nl.gguf \ 638 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -237,7 +241,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        13)
+        14)
             echo "You chose 'KobbleTiny-1.1B_iQ4xs.gguf \ 606 MB'
                         
             To abort download, press 'Ctrl+C'
