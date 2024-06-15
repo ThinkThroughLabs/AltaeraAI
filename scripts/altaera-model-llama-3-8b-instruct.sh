@@ -35,7 +35,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             echo "You chose 'Meta-Llama-3-8B-Instruct.Q2_K.gguf \ 3.18 GB'
