@@ -49,7 +49,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             echo "You chose 'Phi-SoSerious-Mini-V1-IQ1_M.gguf \ 917 MB'
