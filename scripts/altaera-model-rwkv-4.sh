@@ -7,35 +7,36 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired RWKV-4-World model size:"
 
-OPTIONS=(1 "F16-RWKV-4-World-0.1B-Untuned \ 0.39GB / min. 1.5GB RAM"
-         2 "F32-RWKV-4-World-0.1B-Untuned \ 0.78GB / min. 3GB RAM"
-         3 "F16-RWKV-4-World-0.4B-Untuned \ 0.92GB / min. 4GB RAM"
-         4 "F32-RWKV-4-World-0.4B-Untuned \ 1.85GB / min. 6GB RAM"
-         5 "Q4_0-RWKV-4-World-1.5B-Untuned \ 1.19GB / min. 4GB RAM"
-         6 "Q4_0-RWKV-4-World-1.5B-CHNtuned \ 1.69GB / min. 6GB RAM"
-         7 "Q4_1-RWKV-4-World-1.5B-Untuned \ 1.26GB / min. 4GB RAM"
-         8 "Q4_1-RWKV-4-World-1.5B-CHNtuned \ 1.76GB / min. 6GB RAM"
-         9 "Q5_0-RWKV-4-World-1.5B-Untuned \ 1.34GB / min. 4/6GB RAM"
-         10 "Q5_0-RWKV-4-World-1.5B-CHNtuned \ 1.84GB / min. 6GB RAM"
-         11 "Q5_1-RWKV-4-World-1.5B-Untuned \ 1.42GB / min. 6GB RAM"
-         12 "Q5_1-RWKV-4-World-1.5B-CHNtuned \ 1.92GB / min. 6GB RAM"
-         13 "Q8_0-RWKV-4-World-1.5B-Untuned \ 1.8GB / min. 6GB RAM"
-         14 "Q8_0-RWKV-4-World-1.5B-CHNtuned \ 2.3GB / min. 8GB RAM"
-         15 "Q4_0-RWKV-4-World-3B-Untuned \ 2.06GB / min. 8GB RAM"
-         16 "Q4_0-RWKV-4-World-3B-CHNtuned \ 2.06GB / min. 8GB RAM"
-         17 "Q4_1-RWKV-4-World-3B-Untuned \ 2.22GB / min. 8GB RAM"
-         18 "Q4_1-RWKV-4-World-3B-CHNtuned \ 2.22GB / min. 8GB RAM"
-         19 "Q5_0-RWKV-4-World-3B-Untuned \ 2.37GB / min. 8GB RAM"
-         20 "Q5_0-RWKV-4-World-3B-CHNtuned \ 2.37GB / min. 8GB RAM"
-         21 "Q5_1-RWKV-4-World-3B-Untuned \ 2.53GB / min. 8/12GB RAM"
-         22 "Q5_1-RWKV-4-World-3B-CHNtuned \ 2.53GB / min. 8/12GB RAM"
-         23 "Q8_0-RWKV-4-World-3B-Untuned \ 3.33GB / min. 12GB RAM"
-         24 "Q8_0-RWKV-4-World-3B-CHNtuned \ 3.33GB / min. 12GB RAM"
-         25 "Q4_0-RWKV-4-World-7B-Untuned \ 4.66GB / min. 12GB RAM"
-         26 "Q4_1-RWKV-4-World-7B-Untuned \ 5.07GB / min. 12GB RAM"
-         27 "Q5_0-RWKV-4-World-7B-Untuned \ 5.47GB / min. 12GB RAM"
-         28 "Q5_1-RWKV-4-World-7B-Untuned \ 5.88GB / min. 12/16GB RAM"
-         29 "Q8_0-RWKV-4-World-7B-Untuned \ 7.91GB / min. 16GB RAM")
+OPTIONS=(1 "[...] Go Back"
+         2 "F16-RWKV-4-World-0.1B-Untuned \ 0.39GB / min. 1.5GB RAM"
+         3 "F32-RWKV-4-World-0.1B-Untuned \ 0.78GB / min. 3GB RAM"
+         4 "F16-RWKV-4-World-0.4B-Untuned \ 0.92GB / min. 4GB RAM"
+         5 "F32-RWKV-4-World-0.4B-Untuned \ 1.85GB / min. 6GB RAM"
+         6 "Q4_0-RWKV-4-World-1.5B-Untuned \ 1.19GB / min. 4GB RAM"
+         7 "Q4_0-RWKV-4-World-1.5B-CHNtuned \ 1.69GB / min. 6GB RAM"
+         8 "Q4_1-RWKV-4-World-1.5B-Untuned \ 1.26GB / min. 4GB RAM"
+         9 "Q4_1-RWKV-4-World-1.5B-CHNtuned \ 1.76GB / min. 6GB RAM"
+         10 "Q5_0-RWKV-4-World-1.5B-Untuned \ 1.34GB / min. 4/6GB RAM"
+         11 "Q5_0-RWKV-4-World-1.5B-CHNtuned \ 1.84GB / min. 6GB RAM"
+         12 "Q5_1-RWKV-4-World-1.5B-Untuned \ 1.42GB / min. 6GB RAM"
+         13 "Q5_1-RWKV-4-World-1.5B-CHNtuned \ 1.92GB / min. 6GB RAM"
+         14 "Q8_0-RWKV-4-World-1.5B-Untuned \ 1.8GB / min. 6GB RAM"
+         15 "Q8_0-RWKV-4-World-1.5B-CHNtuned \ 2.3GB / min. 8GB RAM"
+         16 "Q4_0-RWKV-4-World-3B-Untuned \ 2.06GB / min. 8GB RAM"
+         17 "Q4_0-RWKV-4-World-3B-CHNtuned \ 2.06GB / min. 8GB RAM"
+         18 "Q4_1-RWKV-4-World-3B-Untuned \ 2.22GB / min. 8GB RAM"
+         19 "Q4_1-RWKV-4-World-3B-CHNtuned \ 2.22GB / min. 8GB RAM"
+         20 "Q5_0-RWKV-4-World-3B-Untuned \ 2.37GB / min. 8GB RAM"
+         21 "Q5_0-RWKV-4-World-3B-CHNtuned \ 2.37GB / min. 8GB RAM"
+         22 "Q5_1-RWKV-4-World-3B-Untuned \ 2.53GB / min. 8/12GB RAM"
+         23 "Q5_1-RWKV-4-World-3B-CHNtuned \ 2.53GB / min. 8/12GB RAM"
+         24 "Q8_0-RWKV-4-World-3B-Untuned \ 3.33GB / min. 12GB RAM"
+         25 "Q8_0-RWKV-4-World-3B-CHNtuned \ 3.33GB / min. 12GB RAM"
+         26 "Q4_0-RWKV-4-World-7B-Untuned \ 4.66GB / min. 12GB RAM"
+         27 "Q4_1-RWKV-4-World-7B-Untuned \ 5.07GB / min. 12GB RAM"
+         28 "Q5_0-RWKV-4-World-7B-Untuned \ 5.47GB / min. 12GB RAM"
+         29 "Q5_1-RWKV-4-World-7B-Untuned \ 5.88GB / min. 12/16GB RAM"
+         30 "Q8_0-RWKV-4-World-7B-Untuned \ 7.91GB / min. 16GB RAM")
 
 
 CHOICE=$(dialog --clear \
@@ -50,6 +51,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'F16-RWKV-4-World-0.1B-Untuned \ 0.39GB / min. 1.5GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -66,7 +70,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'F32-RWKV-4-World-0.1B-Untuned \ 0.78GB / min. 3GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -83,7 +87,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'F16-RWKV-4-World-0.4B-Untuned \ 0.92GB / min. 4GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -100,7 +104,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'F32-RWKV-4-World-0.4B-Untuned \ 1.85GB / min. 6GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -117,7 +121,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'Q4_0-RWKV-4-World-1.5B-Untuned \ 1.19GB / min. 4GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -134,7 +138,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "你选择了 'Q4_0-RWKV-4-World-1.5B-CHNtuned \ 1.69GB / min. 6GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -151,7 +155,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        7)
+        8)
             echo "You chose 'Q4_1-RWKV-4-World-1.5B-Untuned \ 1.26GB / min. 4GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -168,7 +172,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        8)
+        9)
             echo "你选择了 'Q4_1-RWKV-4-World-1.5B-CHNtuned \ 1.76GB / min. 6GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -185,7 +189,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        9)
+        10)
             echo "You chose 'Q5_0-RWKV-4-World-1.5B-Untuned \ 1.34GB / min. 4/6GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -202,7 +206,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        10)
+        11)
             echo "你选择了 'Q5_0-RWKV-4-World-1.5B-CHNtuned \ 1.84GB / min. 6GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -219,7 +223,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        11)
+        12)
             echo "You chose 'Q5_1-RWKV-4-World-1.5B-Untuned \ 1.42GB / min. 6GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -236,7 +240,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        12)
+        13)
             echo "你选择了 'Q5_1-RWKV-4-World-1.5B-CHNtuned \ 1.92GB / min. 6GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -253,7 +257,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        13)
+        14)
             echo "You chose 'Q8_0-RWKV-4-World-1.5B-Untuned \ 1.8GB / min. 6GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -270,7 +274,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        14)
+        15)
             echo "你选择了 'Q8_0-RWKV-4-World-1.5B-CHNtuned \ 2.3GB / min. 8GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -287,7 +291,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        15)
+        16)
             echo "You chose 'Q4_0-RWKV-4-World-3B-Untuned \ 2.06GB / min. 8GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -304,7 +308,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        16)
+        17)
             echo "你选择了 'Q4_0-RWKV-4-World-3B-CHNtuned'
                         
             To abort download, press 'Ctrl+C'
@@ -321,7 +325,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        17)
+        18)
             echo "You chose 'Q4_1-RWKV-4-World-3B-Untuned \ 2.22GB / min. 8GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -338,7 +342,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        18)
+        19)
             echo "你选择了 'Q4_1-RWKV-4-World-3B-CHNtuned \ 2.22GB / min. 8GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -355,7 +359,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        19)
+        20)
             echo "You chose 'Q5_0-RWKV-4-World-3B-Untuned'
                         
             To abort download, press 'Ctrl+C'
@@ -372,7 +376,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        20)
+        21)
             echo "你选择了 'Q5_0-RWKV-4-World-3B-CHNtuned'
                         
             To abort download, press 'Ctrl+C'
@@ -389,7 +393,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        21)
+        22)
             echo "You chose 'Q5_1-RWKV-4-World-3B-Untuned \ 2.53GB / min. 8/12GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -406,7 +410,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        22)
+        23)
             echo "你选择了 'Q5_1-RWKV-4-World-3B-Untuned \ 2.53GB / min. 8/12GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -423,7 +427,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        23)
+        24)
             echo "You chose 'Q8_0-RWKV-4-World-3B-Untuned \ 3.33GB / min. 12GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -440,7 +444,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        24)
+        25)
             echo "你选择了 'Q8_0-RWKV-4-World-3B-CHNtuned \ 3.33GB / min. 12GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -457,7 +461,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        25)
+        26)
             echo "You chose 'Q4_0-RWKV-4-World-7B-Untuned \ 4.66GB / min. 12GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -474,7 +478,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        26)
+        27)
             echo "You chose 'Q4_1-RWKV-4-World-7B-Untuned \ 5.07GB / min. 12GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -491,7 +495,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        27)
+        28)
             echo "You chose 'Q5_0-RWKV-4-World-7B-Untuned \ 5.47GB / min. 12GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -508,7 +512,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        28)
+        29)
             echo "You chose 'Q5_1-RWKV-4-World-7B-Untuned \ 5.88GB / min. 12/16GB RAM'
                         
             To abort download, press 'Ctrl+C'
@@ -525,7 +529,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        29)
+        30)
             echo "You chose 'Q8_0-RWKV-4-World-7B-Untuned \ 7.91GB / min. 16GB RAM'
                         
             To abort download, press 'Ctrl+C'
