@@ -7,20 +7,21 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired Mamba model size/strategy:"
 
-OPTIONS=(1 "mamba-2.8b-q2_k.gguf \ 1.43 GB"
-         2 "mamba-2.8b-q3_k_l.gguf \ 1.68 GB"
-         3 "mamba-2.8b-q3_k_m.gguf \ 1.68 GB"
-         4 "mamba-2.8b-q3_k_s.gguf \ 1.68 GB"
-         5 "mamba-2.8b-q4_0.gguf \ 2.02 GB"
-         6 "mamba-2.8b-q4_k_m.gguf \ 2.02 GB"
-         7 "mamba-2.8b-q4_k_s.gguf \ 2.02 GB"
-         8 "mamba-2.8b-q5_0.gguf \ 2.33 GB"
-         9 "mamba-2.8b-q5_k_m.gguf \ 2.33 GB"
-         10 "mamba-2.8b-q5_k_s.gguf \ 2.33 GB"
-         11 "mamba-2.8b-q6_k.gguf \ 2.66 GB"
-         12 "mamba-2.8b-q8_0.gguf \ 3.3 GB"
-         13 "mamba-2.8b-f16.gguf \ 5.78 GB"
-         14 "mamba-2.8b-f32.gguf \ 11.1 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "mamba-2.8b-q2_k.gguf \ 1.43 GB"
+         3 "mamba-2.8b-q3_k_l.gguf \ 1.68 GB"
+         4 "mamba-2.8b-q3_k_m.gguf \ 1.68 GB"
+         5 "mamba-2.8b-q3_k_s.gguf \ 1.68 GB"
+         6 "mamba-2.8b-q4_0.gguf \ 2.02 GB"
+         7 "mamba-2.8b-q4_k_m.gguf \ 2.02 GB"
+         8 "mamba-2.8b-q4_k_s.gguf \ 2.02 GB"
+         9 "mamba-2.8b-q5_0.gguf \ 2.33 GB"
+         10 "mamba-2.8b-q5_k_m.gguf \ 2.33 GB"
+         11 "mamba-2.8b-q5_k_s.gguf \ 2.33 GB"
+         12 "mamba-2.8b-q6_k.gguf \ 2.66 GB"
+         13 "mamba-2.8b-q8_0.gguf \ 3.3 GB"
+         14 "mamba-2.8b-f16.gguf \ 5.78 GB"
+         15 "mamba-2.8b-f32.gguf \ 11.1 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -35,6 +36,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'mamba-2.8b-q2_k.gguf \ 1.43 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -51,7 +55,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'mamba-2.8b-q3_k_l.gguf \ 1.68 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -68,7 +72,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'mamba-2.8b-q3_k_m.gguf \ 1.68 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -85,7 +89,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'mamba-2.8b-q3_k_s.gguf \ 1.68 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -102,7 +106,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'mamba-2.8b-q4_0.gguf \ 2.02 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -119,7 +123,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "You chose 'mamba-2.8b-q4_k_m.gguf \ 2.02 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -136,7 +140,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        7)
+        8)
             echo "You chose 'mamba-2.8b-q4_k_s.gguf \ 2.02 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -153,7 +157,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        8)
+        9)
             echo "You chose 'mamba-2.8b-q5_0.gguf \ 2.33 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -170,7 +174,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        9)
+        10)
             echo "You chose 'mamba-2.8b-q5_k_m.gguf \ 2.33 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -188,7 +192,7 @@ case $CHOICE in
             clear
             ;;
 
-        10)
+        11)
             echo "You chose 'mamba-2.8b-q5_k_s.gguf \ 2.33 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -206,7 +210,7 @@ case $CHOICE in
             clear
             ;;
 
-        11)
+        12)
             echo "You chose 'mamba-2.8b-q6_k.gguf \ 2.66 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -224,7 +228,7 @@ case $CHOICE in
             clear
             ;;
 
-        12)
+        13)
             echo "You chose 'mamba-2.8b-q8_0.gguf \ 3.3 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -242,7 +246,7 @@ case $CHOICE in
             clear
             ;;
             
-        13)
+        14)
             echo "You chose 'mamba-2.8b-f16.gguf \ 5.78 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -259,7 +263,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        14)
+        15)
             echo "You chose 'mamba-2.8b-f32.gguf \ 11.1 GB'
                         
             To abort download, press 'Ctrl+C'
