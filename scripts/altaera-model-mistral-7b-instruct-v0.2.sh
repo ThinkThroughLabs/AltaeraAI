@@ -34,7 +34,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             echo "You chose 'mistral-7b-instruct-v0.2.Q2_K.gguf \ 3.08 GB'
