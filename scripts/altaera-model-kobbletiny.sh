@@ -26,7 +26,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             echo "You chose 'KobbleTiny-Q4_K.gguf \ 668 MB'
