@@ -7,23 +7,24 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired TinyDolphin-2.8.2-1.1B-laser-GGUF model size/strategy:"
 
-OPTIONS=(1 "tinydolphin-2.8.2-1.1b-laser.F16.gguf \ 2.2 GB"
-         2 "tinydolphin-2.8.2-1.1b-laser.IQ3_XXS.gguf \ 484 MB"
-         3 "tinydolphin-2.8.2-1.1b-laser.Q2_K.gguf \ 432 MB"
-         4 "tinydolphin-2.8.2-1.1b-laser.Q3_K_L.gguf \ 592 MB"
-         5 "tinydolphin-2.8.2-1.1b-laser.Q3_K_M.gguf \ 548 MB"
-         6 "tinydolphin-2.8.2-1.1b-laser.Q3_K_S.gguf \ 499 MB"
-         7 "tinydolphin-2.8.2-1.1b-laser.Q3_K_XS.gguf \ 473 MB"
-         8 "tinydolphin-2.8.2-1.1b-laser.Q4_0.gguf \ 637 MB"
-         9 "tinydolphin-2.8.2-1.1b-laser.Q4_1.gguf \ 701 MB"
-         10 "tinydolphin-2.8.2-1.1b-laser.Q4_K_M.gguf \ 668 MB"
-         11 "tinydolphin-2.8.2-1.1b-laser.Q4_K_S.gguf \ 640 MB"
-         12 "tinydolphin-2.8.2-1.1b-laser.Q5_0.gguf \ 766 MB"
-         13 "tinydolphin-2.8.2-1.1b-laser.Q5_1.gguf \ 831 MB"
-         14 "tinydolphin-2.8.2-1.1b-laser.Q5_K_M.gguf \ 782 MB"
-         15 "tinydolphin-2.8.2-1.1b-laser.Q5_K_S.gguf \ 766 MB"
-         16 "tinydolphin-2.8.2-1.1b-laser.Q6_K.gguf \ 903 MB"
-         17 "tinydolphin-2.8.2-1.1b-laser.Q8_0.gguf \ 1.17 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "tinydolphin-2.8.2-1.1b-laser.F16.gguf \ 2.2 GB"
+         3 "tinydolphin-2.8.2-1.1b-laser.IQ3_XXS.gguf \ 484 MB"
+         4 "tinydolphin-2.8.2-1.1b-laser.Q2_K.gguf \ 432 MB"
+         5 "tinydolphin-2.8.2-1.1b-laser.Q3_K_L.gguf \ 592 MB"
+         6 "tinydolphin-2.8.2-1.1b-laser.Q3_K_M.gguf \ 548 MB"
+         7 "tinydolphin-2.8.2-1.1b-laser.Q3_K_S.gguf \ 499 MB"
+         8 "tinydolphin-2.8.2-1.1b-laser.Q3_K_XS.gguf \ 473 MB"
+         9 "tinydolphin-2.8.2-1.1b-laser.Q4_0.gguf \ 637 MB"
+         10 "tinydolphin-2.8.2-1.1b-laser.Q4_1.gguf \ 701 MB"
+         11 "tinydolphin-2.8.2-1.1b-laser.Q4_K_M.gguf \ 668 MB"
+         12 "tinydolphin-2.8.2-1.1b-laser.Q4_K_S.gguf \ 640 MB"
+         13 "tinydolphin-2.8.2-1.1b-laser.Q5_0.gguf \ 766 MB"
+         14 "tinydolphin-2.8.2-1.1b-laser.Q5_1.gguf \ 831 MB"
+         15 "tinydolphin-2.8.2-1.1b-laser.Q5_K_M.gguf \ 782 MB"
+         16 "tinydolphin-2.8.2-1.1b-laser.Q5_K_S.gguf \ 766 MB"
+         17 "tinydolphin-2.8.2-1.1b-laser.Q6_K.gguf \ 903 MB"
+         18 "tinydolphin-2.8.2-1.1b-laser.Q8_0.gguf \ 1.17 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -38,6 +39,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.F16.gguf \ 2.2 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -54,7 +58,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.IQ3_XXS.gguf \ 484 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -71,7 +75,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q2_K.gguf \ 432 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -88,7 +92,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q3_K_L.gguf \ 592 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -105,7 +109,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q3_K_M.gguf \ 548 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -122,7 +126,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q3_K_S.gguf \ 499 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -139,7 +143,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        7)
+        8)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q3_K_XS.gguf \ 473 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -156,7 +160,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        8)
+        9)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q4_0.gguf \ 637 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -173,7 +177,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        9)
+        10)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q4_1.gguf \ 701 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -191,7 +195,7 @@ case $CHOICE in
             clear
             ;;
 
-        10)
+        11)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q4_K_M.gguf \ 668 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -209,7 +213,7 @@ case $CHOICE in
             clear
             ;;
 
-        11)
+        12)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q4_K_S.gguf \ 640 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -227,7 +231,7 @@ case $CHOICE in
             clear
             ;;
 
-        12)
+        13)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q5_0.gguf \ 766 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -244,7 +248,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        13)
+        14)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q5_1.gguf \ 831 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -261,7 +265,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        14)
+        15)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q5_K_M.gguf \ 782 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -279,7 +283,7 @@ case $CHOICE in
             clear
             ;;
 
-        15)
+        16)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q5_K_S.gguf \ 766 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -297,7 +301,7 @@ case $CHOICE in
             clear
             ;;
 
-        16)
+        17)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q6_K.gguf \ 903 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -315,7 +319,7 @@ case $CHOICE in
             clear
             ;;
 
-        17)
+        18)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q8_0.gguf \ 1.17 GB'
                         
             To abort download, press 'Ctrl+C'
