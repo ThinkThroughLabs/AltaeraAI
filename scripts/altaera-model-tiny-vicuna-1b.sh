@@ -7,12 +7,13 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired Tiny-Vicuna-1B-GGUF model size/strategy:"
 
-OPTIONS=(1 "tiny-vicuna-1b.q2_k.gguf \ 482 MB"
-         2 "tiny-vicuna-1b.q3_k_m.gguf \ 550 MB"
-         3 "tiny-vicuna-1b.q4_k_m.gguf \ 668 MB"
-         4 "tiny-vicuna-1b.q5_k_m.gguf \ 782 MB"
-         5 "tiny-vicuna-1b.q6_k.gguf \ 903 MB"
-         6 "tiny-vicuna-1b.q8_0.gguf \ 1.17 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "tiny-vicuna-1b.q2_k.gguf \ 482 MB"
+         3 "tiny-vicuna-1b.q3_k_m.gguf \ 550 MB"
+         4 "tiny-vicuna-1b.q4_k_m.gguf \ 668 MB"
+         5 "tiny-vicuna-1b.q5_k_m.gguf \ 782 MB"
+         6 "tiny-vicuna-1b.q6_k.gguf \ 903 MB"
+         7 "tiny-vicuna-1b.q8_0.gguf \ 1.17 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -27,6 +28,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'tiny-vicuna-1b.q2_k.gguf \ 482 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -43,7 +47,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'tiny-vicuna-1b.q3_k_m.gguf \ 550 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -60,7 +64,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'tiny-vicuna-1b.q4_k_m.gguf \ 668 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -77,7 +81,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'tiny-vicuna-1b.q5_k_m.gguf \ 782 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -94,7 +98,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'tiny-vicuna-1b.q6_k.gguf \ 903 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -111,7 +115,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "You chose 'tiny-vicuna-1b.q8_0.gguf \ 1.17 GB'
                         
             To abort download, press 'Ctrl+C'
