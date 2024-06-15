@@ -7,8 +7,9 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired Phi-SoSerious-Mini-V1-GGUF model size/strategy:"
 
-OPTIONS=(1 "PhiSoSerious-Q4_K_M.gguf \ 2.39 GB"
-         2 "PhiSoSerious-f16.gguf \ 7.64 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "PhiSoSerious-Q4_K_M.gguf \ 2.39 GB"
+         3 "PhiSoSerious-f16.gguf \ 7.64 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -23,6 +24,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'KPhiSoSerious-Q4_K_M.gguf \ 2.39 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -39,7 +43,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'PhiSoSerious-f16.gguf \ 7.64 GB'
                         
             To abort download, press 'Ctrl+C'
