@@ -7,10 +7,11 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired KobbleTinyV2-1.1B-GGUF model size/strategy:"
 
-OPTIONS=(1 "KobbleTiny-Q4_K.gguf \ 668 MB"
-         2 "KobbleTiny-Q6_K.gguf \ 903 MB"
-         3 "KobbleTiny-Q8_0.gguf \ 1.17 GB"
-         4 "KobbleTiny-f16.gguf \ 2.2 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "KobbleTiny-Q4_K.gguf \ 668 MB"
+         3 "KobbleTiny-Q6_K.gguf \ 903 MB"
+         4 "KobbleTiny-Q8_0.gguf \ 1.17 GB"
+         5 "KobbleTiny-f16.gguf \ 2.2 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -25,6 +26,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'KobbleTiny-Q4_K.gguf \ 668 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -41,7 +45,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'KobbleTiny-Q6_K.gguf \ 903 MB'
                         
             To abort download, press 'Ctrl+C'
@@ -58,7 +62,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'KobbleTiny-Q8_0.gguf \ 1.17 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -75,7 +79,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'KobbleTiny-f16.gguf \ 2.2 GB'
                         
             To abort download, press 'Ctrl+C'
