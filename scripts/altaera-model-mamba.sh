@@ -36,7 +36,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             echo "You chose 'mamba-2.8b-q2_k.gguf \ 1.43 GB'
