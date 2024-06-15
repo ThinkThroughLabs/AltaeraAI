@@ -32,7 +32,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             echo "You chose 'Yi-1.5-6B-Chat.Q2_K.gguf \ 2.34 GB'
