@@ -7,18 +7,19 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired Phi-2-DPO model size/strategy:"
 
-OPTIONS=(1 "phi-2-dpo.Q2_K.gguf \ 1.17 GB"
-         2 "phi-2-dpo.Q3_K_L.gguf \ 1.6 GB"
-         3 "phi-2-dpo.Q3_K_M.gguf \ 1.48 GB"
-         4 "phi-2-dpo.Q3_K_S.gguf \ 1.25 GB"
-         5 "phi-2-dpo.Q4_0.gguf \ 1.6 GB"
-         6 "phi-2-dpo.Q4_K_M.gguf \ 1.79 GB"
-         7 "phi-2-dpo.Q4_K_S.gguf \ 1.61 GB"
-         8 "phi-2-dpo.Q5_0.gguf \ 1.93 GB"
-         9 "phi-2-dpo.Q5_K_M.gguf \ 2.07 GB"
-         10 "phi-2-dpo.Q5_K_S.gguf \ 1.93 GB"
-         11 "phi-2-dpo.Q6_K.gguf \ 2.28 GB"
-         12 "phi-2-dpo.Q8_0.gguf \ 2.95 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "phi-2-dpo.Q2_K.gguf \ 1.17 GB"
+         3 "phi-2-dpo.Q3_K_L.gguf \ 1.6 GB"
+         4 "phi-2-dpo.Q3_K_M.gguf \ 1.48 GB"
+         5 "phi-2-dpo.Q3_K_S.gguf \ 1.25 GB"
+         6 "phi-2-dpo.Q4_0.gguf \ 1.6 GB"
+         7 "phi-2-dpo.Q4_K_M.gguf \ 1.79 GB"
+         8 "phi-2-dpo.Q4_K_S.gguf \ 1.61 GB"
+         9 "phi-2-dpo.Q5_0.gguf \ 1.93 GB"
+         10 "phi-2-dpo.Q5_K_M.gguf \ 2.07 GB"
+         11 "phi-2-dpo.Q5_K_S.gguf \ 1.93 GB"
+         12 "phi-2-dpo.Q6_K.gguf \ 2.28 GB"
+         13 "phi-2-dpo.Q8_0.gguf \ 2.95 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -33,6 +34,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'phi-2-dpo.Q2_K.gguf \ 1.17 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -49,7 +53,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'phi-2-dpo.Q3_K_L.gguf \ 1.6 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -66,7 +70,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'phi-2-dpo.Q3_K_M.gguf \ 1.48 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -83,7 +87,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'phi-2-dpo.Q3_K_S.gguf \ 1.25 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -100,7 +104,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'mistral-7b-instruct-v0.2.Q4_0.gguf \ 4.11 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -117,7 +121,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "You chose 'phi-2-dpo.Q4_K_M.gguf \ 1.79 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -134,7 +138,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        7)
+        8)
             echo "You chose 'phi-2-dpo.Q4_K_S.gguf \ 1.61 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -151,7 +155,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        8)
+        9)
             echo "You chose 'phi-2-dpo.Q5_0.gguf \ 1.93 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -168,7 +172,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        9)
+        10)
             echo "You chose 'phi-2-dpo.Q5_K_M.gguf \ 2.07 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -186,7 +190,7 @@ case $CHOICE in
             clear
             ;;
 
-        10)
+        11)
             echo "You chose 'phi-2-dpo.Q5_K_S.gguf \ 1.93 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -204,7 +208,7 @@ case $CHOICE in
             clear
             ;;
 
-        11)
+        12)
             echo "You chose 'phi-2-dpo.Q6_K.gguf \ 2.28 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -222,7 +226,7 @@ case $CHOICE in
             clear
             ;;
 
-        12)
+        13)
             echo "You chose 'phi-2-dpo.Q8_0.gguf \ 2.95 GB'
                         
             To abort download, press 'Ctrl+C'
