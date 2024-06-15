@@ -7,23 +7,24 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired Phi-3-mini-4k-instruct-GGUF model size/strategy:"
 
-OPTIONS=(1 "phi-3-mini-4k-instruct.Q2_K.gguf \ 1.45 GB"
-         2 "phi-3-mini-4k-instruct.Q3_K_L.gguf \ 2.05 GB"
-         3 "phi-3-mini-4k-instruct.Q3_K_M.gguf \ 1.88 GB"
-         4 "phi-3-mini-4k-instruct.Q3_K_S.gguf \ 1.68 GB"
-         5 "phi-3-mini-4k-instruct.Q4_0.gguf \ 2.18 GB"
-         6 "phi-3-mini-4k-instruct.Q4_1.gguf \ 2.41 GB"
-         7 "phi-3-mini-4k-instruct.Q4_K.gguf \ 2.32 GB"
-         8 "phi-3-mini-4k-instruct.Q4_K_M.gguf \ 2.32 GB"
-         9 "phi-3-mini-4k-instruct.Q4_K_S.gguf \ 2.19 GB"
-         10 "phi-3-mini-4k-instruct.Q5_0.gguf \ 2.64 GB"
-         11 "phi-3-mini-4k-instruct.Q5_1.gguf \ 2.87 GB"
-         12 "phi-3-mini-4k-instruct.Q5_K.gguf \ 2.72 GB"
-         13 "phi-3-mini-4k-instruct.Q5_K_M.gguf \ 2.72 GB"
-         14 "phi-3-mini-4k-instruct.Q5_K_S.gguf \ 2.64 GB"
-         15 "phi-3-mini-4k-instruct.Q6_K.gguf \ 3.14 GB"
-         16 "phi-3-mini-4k-instruct.Q8_0.gguf \ 4.06 GB"
-         17 "phi-3-mini-4k-instruct.fp16.gguf \ 7.64 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "phi-3-mini-4k-instruct.Q2_K.gguf \ 1.45 GB"
+         3 "phi-3-mini-4k-instruct.Q3_K_L.gguf \ 2.05 GB"
+         4 "phi-3-mini-4k-instruct.Q3_K_M.gguf \ 1.88 GB"
+         5 "phi-3-mini-4k-instruct.Q3_K_S.gguf \ 1.68 GB"
+         6 "phi-3-mini-4k-instruct.Q4_0.gguf \ 2.18 GB"
+         7 "phi-3-mini-4k-instruct.Q4_1.gguf \ 2.41 GB"
+         8 "phi-3-mini-4k-instruct.Q4_K.gguf \ 2.32 GB"
+         9 "phi-3-mini-4k-instruct.Q4_K_M.gguf \ 2.32 GB"
+         10 "phi-3-mini-4k-instruct.Q4_K_S.gguf \ 2.19 GB"
+         11 "phi-3-mini-4k-instruct.Q5_0.gguf \ 2.64 GB"
+         12 "phi-3-mini-4k-instruct.Q5_1.gguf \ 2.87 GB"
+         13 "phi-3-mini-4k-instruct.Q5_K.gguf \ 2.72 GB"
+         14 "phi-3-mini-4k-instruct.Q5_K_M.gguf \ 2.72 GB"
+         15 "phi-3-mini-4k-instruct.Q5_K_S.gguf \ 2.64 GB"
+         16 "phi-3-mini-4k-instruct.Q6_K.gguf \ 3.14 GB"
+         17 "phi-3-mini-4k-instruct.Q8_0.gguf \ 4.06 GB"
+         18 "phi-3-mini-4k-instruct.fp16.gguf \ 7.64 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -38,6 +39,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'phi-3-mini-4k-instruct.Q2_K.gguf \ 1.45 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -54,7 +58,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "You chose 'phi-3-mini-4k-instruct.Q3_K_L.gguf \ 2.05 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -71,7 +75,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "You chose 'phi-3-mini-4k-instruct.Q3_K_M.gguf \ 1.88 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -88,7 +92,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "You chose 'phi-3-mini-4k-instruct.Q3_K_S.gguf \ 1.68 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -105,7 +109,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'phi-3-mini-4k-instruct.Q4_0.gguf \ 2.18 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -122,7 +126,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "You chose 'phi-3-mini-4k-instruct.Q4_1.gguf \ 2.41 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -139,7 +143,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        7)
+        8)
             echo "You chose 'phi-3-mini-4k-instruct.Q4_K.gguf \ 2.32 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -156,7 +160,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        8)
+        9)
             echo "You chose 'phi-3-mini-4k-instruct.Q4_K_M.gguf \ 2.32 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -173,7 +177,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        9)
+        10)
             echo "You chose 'phi-3-mini-4k-instruct.Q4_K_S.gguf \ 2.19 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -191,7 +195,7 @@ case $CHOICE in
             clear
             ;;
 
-        10)
+        11)
             echo "You chose 'phi-3-mini-4k-instruct.Q5_0.gguf \ 2.64 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -209,7 +213,7 @@ case $CHOICE in
             clear
             ;;
 
-        11)
+        12)
             echo "You chose 'phi-3-mini-4k-instruct.Q5_1.gguf \ 2.87 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -227,7 +231,7 @@ case $CHOICE in
             clear
             ;;
 
-        12)
+        13)
             echo "You chose 'phi-3-mini-4k-instruct.Q5_K.gguf \ 2.72 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -244,7 +248,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        13)
+        14)
             echo "You chose 'phi-3-mini-4k-instruct.Q5_K_M.gguf \ 2.72 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -261,7 +265,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        14)
+        15)
             echo "You chose 'phi-3-mini-4k-instruct.Q5_K_S.gguf \ 2.64 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -278,7 +282,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        15)
+        16)
             echo "You chose 'phi-3-mini-4k-instruct.Q6_K.gguf \ 3.14 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -295,7 +299,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        16)
+        17)
             echo "You chose 'phi-3-mini-4k-instruct.Q8_0.gguf \ 4.06 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -312,7 +316,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        17)
+        18)
             echo "You chose 'phi-3-mini-4k-instruct.fp16.gguf \ 7.64 GB'
                         
             To abort download, press 'Ctrl+C'
