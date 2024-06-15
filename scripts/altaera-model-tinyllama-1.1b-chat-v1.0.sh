@@ -34,7 +34,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             echo "You chose 'tinyllama-1.1b-chat-v1.0.Q2_K.gguf \ 483 MB'
