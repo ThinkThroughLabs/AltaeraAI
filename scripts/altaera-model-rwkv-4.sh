@@ -51,7 +51,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             echo "You chose 'F16-RWKV-4-World-0.1B-Untuned \ 0.39GB / min. 1.5GB RAM'
