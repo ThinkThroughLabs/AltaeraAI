@@ -39,7 +39,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.F16.gguf \ 2.2 GB'
