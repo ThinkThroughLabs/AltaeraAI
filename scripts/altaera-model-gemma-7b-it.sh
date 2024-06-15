@@ -7,17 +7,18 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired Gemma-7B-it GGUF model size/strategy:"
 
-OPTIONS=(1 "Gemma Terms of Use [URL] - [Must Read Before]"
-         2 "gemma-7b-it.Q2_K.gguf \ 3.48 GB"
-         3 "gemma-7b-it.Q3_K_L.gguf \ 4.71 GB"
-         4 "gemma-7b-it.Q3_K_M.gguf \ 4.37 GB"
-         5 "gemma-7b-it.Q3_K_S.gguf \ 3.98 GB"
-         6 "gemma-7b-it.Q4_K_M.gguf \ 5.33 GB"
-         7 "gemma-7b-it.Q4_K_S.gguf \ 5.05 GB"
-         8 "gemma-7b-it.Q5_K_M.gguf \ 6.14 GB"
-         9 "gemma-7b-it.Q5_K_S.gguf \ 5.98 GB"
-         10 "gemma-7b-it.Q6_K.gguf \ 7.01 GB"
-         11 "gemma-7b-it.Q8_0.gguf \ 9.08 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "Gemma Terms of Use [URL] - [Must Read Before]"
+         3 "gemma-7b-it.Q2_K.gguf \ 3.48 GB"
+         4 "gemma-7b-it.Q3_K_L.gguf \ 4.71 GB"
+         5 "gemma-7b-it.Q3_K_M.gguf \ 4.37 GB"
+         6 "gemma-7b-it.Q3_K_S.gguf \ 3.98 GB"
+         7 "gemma-7b-it.Q4_K_M.gguf \ 5.33 GB"
+         8 "gemma-7b-it.Q4_K_S.gguf \ 5.05 GB"
+         9 "gemma-7b-it.Q5_K_M.gguf \ 6.14 GB"
+         10 "gemma-7b-it.Q5_K_S.gguf \ 5.98 GB"
+         11 "gemma-7b-it.Q6_K.gguf \ 7.01 GB"
+         12 "gemma-7b-it.Q8_0.gguf \ 9.08 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -32,9 +33,12 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             termux-open-url 'https://ai.google.dev/gemma/terms'
             ;;
-        2)
+        3)
             dialog --title "Gemma-7B-it GGUF" \
         --backtitle "AltaeraAI - Notice" \
         --yesno "Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
@@ -71,7 +75,7 @@ case $response in
           ./data/data/com.termux/files/home/AltaeraAI/altaera-model.sh;;
         esac
             ;;
-        3)
+        4)
             dialog --title "Gemma-7B-it GGUF" \
         --backtitle "AltaeraAI - Notice" \
         --yesno "Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
@@ -108,7 +112,7 @@ case $response in
           ./data/data/com.termux/files/home/AltaeraAI/altaera-model.sh;;
         esac
             ;;
-        4)
+        5)
             dialog --title "Gemma-7B-it GGUF" \
         --backtitle "AltaeraAI - Notice" \
         --yesno "Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
@@ -145,7 +149,7 @@ case $response in
           ./data/data/com.termux/files/home/AltaeraAI/altaera-model.sh;;
         esac
             ;;
-        5)
+        6)
             dialog --title "Gemma-7B-it GGUF" \
         --backtitle "AltaeraAI - Notice" \
         --yesno "Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
@@ -182,7 +186,7 @@ case $response in
           ./data/data/com.termux/files/home/AltaeraAI/altaera-model.sh;;
         esac
             ;;
-        6)
+        7)
             dialog --title "Gemma-7B-it GGUF" \
         --backtitle "AltaeraAI - Notice" \
         --yesno "Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
@@ -219,7 +223,7 @@ case $response in
           ./data/data/com.termux/files/home/AltaeraAI/altaera-model.sh;;
         esac
             ;;
-        7)
+        8)
             dialog --title "Gemma-7B-it GGUF" \
         --backtitle "AltaeraAI - Notice" \
         --yesno "Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
@@ -256,7 +260,7 @@ case $response in
           ./data/data/com.termux/files/home/AltaeraAI/altaera-model.sh;;
         esac
             ;;
-        8)
+        9)
             dialog --title "Gemma-7B-it GGUF" \
         --backtitle "AltaeraAI - Notice" \
         --yesno "Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
@@ -293,7 +297,7 @@ case $response in
           ./data/data/com.termux/files/home/AltaeraAI/altaera-model.sh;;
         esac
             ;;
-        9)
+        10)
             dialog --title "Gemma-7B-it GGUF" \
         --backtitle "AltaeraAI - Notice" \
         --yesno "Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
@@ -330,7 +334,7 @@ case $response in
           ./data/data/com.termux/files/home/AltaeraAI/altaera-model.sh;;
         esac
             ;;
-        10)
+        11)
             dialog --title "Gemma-7B-it GGUF" \
         --backtitle "AltaeraAI - Notice" \
         --yesno "Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
@@ -367,7 +371,7 @@ case $response in
           ./data/data/com.termux/files/home/AltaeraAI/altaera-model.sh;;
         esac
             ;;
-        11)
+        12)
             dialog --title "Gemma-7B-it GGUF" \
         --backtitle "AltaeraAI - Notice" \
         --yesno "Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
