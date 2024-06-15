@@ -29,7 +29,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             echo "You chose 'f16-RWKV-for-mobile-4-world-1.5B \ 3.16GB'
