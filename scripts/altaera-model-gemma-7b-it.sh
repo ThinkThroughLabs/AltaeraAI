@@ -33,7 +33,7 @@ clear
 case $CHOICE in
 
         1)
-            exit
+            ./AltaeraAI/altaera-model.sh
 	    ;;
         2)
             termux-open-url 'https://ai.google.dev/gemma/terms'
