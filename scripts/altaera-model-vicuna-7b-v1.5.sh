@@ -7,18 +7,19 @@ BACKTITLE="AltaeraAI - v5.1.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2
 TITLE="AI Model Selection"
 MENU="Choose your desired Vicuna-7B-v1.5 model size/strategy:"
 
-OPTIONS=(1 "vicuna-7b-v1.5.Q2_K.gguf \ 2.83 GB"
-         2 "vicuna-7b-v1.5.Q3_K_L.gguf \ 3.6 GB"
-         3 "vicuna-7b-v1.5.Q3_K_M.gguf \ 3.3 GB"
-         4 "vicuna-7b-v1.5.Q3_K_S.gguf \ 2.95 GB"
-         5 "vicuna-7b-v1.5.Q4_0.gguf \ 3.83 GB"
-         6 "vicuna-7b-v1.5.Q4_K_M.gguf \ 4.08 GB"
-         7 "vicuna-7b-v1.5.Q4_K_S.gguf \ 3.86 GB"
-         8 "vicuna-7b-v1.5.Q5_0.gguf \ 4.65 GB"
-         9 "vicuna-7b-v1.5.Q5_K_M.gguf \ 4.78 GB"
-         10 "vicuna-7b-v1.5.Q5_K_S.gguf \ 4.65 GB"
-         11 "vicuna-7b-v1.5.Q6_K.gguf \ 5.53 GB"
-         12 "vicuna-7b-v1.5.Q8_0.gguf \ 7.16 GB")
+OPTIONS=(1 "[...] Go Back"
+         2 "vicuna-7b-v1.5.Q2_K.gguf \ 2.83 GB"
+         3 "vicuna-7b-v1.5.Q3_K_L.gguf \ 3.6 GB"
+         4 "vicuna-7b-v1.5.Q3_K_M.gguf \ 3.3 GB"
+         5 "vicuna-7b-v1.5.Q3_K_S.gguf \ 2.95 GB"
+         6 "vicuna-7b-v1.5.Q4_0.gguf \ 3.83 GB"
+         7 "vicuna-7b-v1.5.Q4_K_M.gguf \ 4.08 GB"
+         8 "vicuna-7b-v1.5.Q4_K_S.gguf \ 3.86 GB"
+         9 "vicuna-7b-v1.5.Q5_0.gguf \ 4.65 GB"
+         10 "vicuna-7b-v1.5.Q5_K_M.gguf \ 4.78 GB"
+         11 "vicuna-7b-v1.5.Q5_K_S.gguf \ 4.65 GB"
+         12 "vicuna-7b-v1.5.Q6_K.gguf \ 5.53 GB"
+         13 "vicuna-7b-v1.5.Q8_0.gguf \ 7.16 GB")
 
 
 CHOICE=$(dialog --clear \
@@ -33,6 +34,9 @@ clear
 case $CHOICE in
 
         1)
+            exit
+	    ;;
+        2)
             echo "You chose 'vicuna-7b-v1.5.Q2_K.gguf \ 2.83 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -49,7 +53,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        2)
+        3)
             echo "vicuna-7b-v1.5.Q3_K_L.gguf \ 3.6 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -66,7 +70,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        3)
+        4)
             echo "vicuna-7b-v1.5.Q3_K_M.gguf \ 3.3 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -83,7 +87,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        4)
+        5)
             echo "vicuna-7b-v1.5.Q3_K_S.gguf \ 2.95 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -100,7 +104,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        5)
+        6)
             echo "You chose 'vicuna-7b-v1.5.Q4_0.gguf \ 3.83 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -117,7 +121,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        6)
+        7)
             echo "You chose 'vicuna-7b-v1.5.Q4_K_M.gguf \ 4.08 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -134,7 +138,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        7)
+        8)
             echo "You chose 'vicuna-7b-v1.5.Q4_K_S.gguf \ 3.86 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -151,7 +155,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        8)
+        9)
             echo "You chose 'vicuna-7b-v1.5.Q5_0.gguf \ 4.65 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -168,7 +172,7 @@ case $CHOICE in
             cd /root
             clear
             ;;
-        9)
+        10)
             echo "You chose 'vicuna-7b-v1.5.Q5_K_M.gguf \ 4.78 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -186,7 +190,7 @@ case $CHOICE in
             clear
             ;;
 
-        10)
+        11)
             echo "You chose 'vicuna-7b-v1.5.Q5_K_S.gguf \ 4.65 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -204,7 +208,7 @@ case $CHOICE in
             clear
             ;;
 
-        11)
+        12)
             echo "You chose 'vicuna-7b-v1.5.Q6_K.gguf \ 5.53 GB'
                         
             To abort download, press 'Ctrl+C'
@@ -222,7 +226,7 @@ case $CHOICE in
             clear
             ;;
 
-        12)
+        13)
             echo "You chose 'vicuna-7b-v1.5.Q8_0.gguf \ 7.16 GB'
                         
             To abort download, press 'Ctrl+C'
