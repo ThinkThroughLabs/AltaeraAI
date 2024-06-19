@@ -188,6 +188,15 @@ chmod a+x 'altaera-koboldcpp_settings_blasbatchsize.sh'
 rm -rf 'altaera-koboldcpp_settings_flashattention.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-koboldcpp_settings_flashattention.sh
 chmod a+x 'altaera-koboldcpp_settings_flashattention.sh'
+rm -rf 'altaera-horde_settings_hordeworkername.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-horde_settings_hordeworkername.sh
+chmod a+x 'altaera-horde_settings_hordeworkername.sh'
+rm -rf 'altaera-horde_settings_hordemodelname.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-horde_settings_hordemodelname.sh
+chmod a+x 'altaera-horde_settings_hordemodelname.sh'
+rm -rf 'altaera-horde_settings_hordekey.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-horde_settings_hordekey.sh
+chmod a+x 'altaera-horde_settings_hordekey.sh'
 rm -rf 'altaera-manage_models.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_models.sh
 chmod a+x 'altaera-manage_models.sh'
