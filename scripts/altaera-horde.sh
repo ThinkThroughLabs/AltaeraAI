@@ -3,9 +3,9 @@
 HEIGHT=20
 WIDTH=60
 CHOICE_HEIGHT=24
-BACKTITLE="AltaeraAI - AI Models Downloading"
-TITLE="AI Model Selection"
-MENU="Choose a model to download:"
+BACKTITLE="AltaeraAI - Horde"
+TITLE="AI Horde Panel"
+MENU="Choose your option:"
 
 OPTIONS=(1 "[...] Go Back"
          2 "Use Horde as an end-user (KoboldLite) [URL]"
