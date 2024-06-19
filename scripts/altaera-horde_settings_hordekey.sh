@@ -7,5 +7,5 @@ result=$(dialog --title "Input Required" --inputbox "Enter your Horde Key:" 10 3
 exec 3>&-  # Close the temporary stream
 
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
-            sed -i '/--hordekey/c\--hordekey $result \\' horde.sh
+            sed -i '/--hordekey/c\--hordekey '$result' \\' horde.sh
             cd '/data/data/com.termux/files/home'
