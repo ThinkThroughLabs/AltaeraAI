@@ -24,7 +24,7 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            exit
+            './AltaeraAI/altaera-horde.sh'
             ;;
         2)
             clear
