@@ -11,7 +11,7 @@ BACKTITLE="AltaeraAI - v5.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2/1
 TITLE="Willkommen!"
 MENU="Was würden Sie gerne tun?"
 
-OPTIONS=(1 "AltaeraAI starten [KoboldCpp v1.67]"
+OPTIONS=(1 "AltaeraAI starten [KoboldCpp v1.68]"
          2 "Verfügbarkeit von Updates prüfen [...]"
          3 "Aktualisierung der Kräfte [...]"
          4 "AI-Modelle verwalten 🤖 [...]"
