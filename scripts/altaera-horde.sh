@@ -10,7 +10,7 @@ MENU="Choose a model to download:"
 OPTIONS=(1 "[...] Go Back"
          2 "Use Horde as an end-user (KoboldLite) [URL]"
          3 "Start Horde Session"
-         4 "Horde Settings [...]")
+         4 "Horde Settings (configure first!) [...]")
 
 
 CHOICE=$(dialog --clear \
