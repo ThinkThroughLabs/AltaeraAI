@@ -7,5 +7,5 @@ result=$(dialog --title "Input Required" --inputbox "Enter your Horde Worker Nam
 exec 3>&-  # Close the temporary stream
 
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
-            sed -i '/--hordeworkername/c\--hordeworkername $result' altaera.sh
+            sed -i '/--hordeworkername/c\--hordeworkername $result' horde.sh
             cd '/data/data/com.termux/files/home'
