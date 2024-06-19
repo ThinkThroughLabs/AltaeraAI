@@ -67,6 +67,7 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-uninstall.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-customer_support.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera.sh
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-horde.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaeralogin.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-lang.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model.sh
@@ -96,6 +97,7 @@ chmod a+x 'altaera-reinstall.sh'
 chmod a+x 'altaera-uninstall.sh'
 chmod a+x 'altaera-customer_support.sh'
 chmod a+x 'altaera.sh'
+chmod a+x 'altaera-horde.sh'
 chmod a+x 'altaeralogin.sh'
 chmod a+x 'altaera-lang.sh'
 chmod a+x 'altaera-model.sh'

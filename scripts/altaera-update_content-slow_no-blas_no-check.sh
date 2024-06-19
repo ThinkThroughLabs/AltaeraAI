@@ -63,6 +63,9 @@ chmod a+x 'altaera-update.sh'
 rm -rf 'altaera.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera.sh
 chmod a+x 'altaera.sh'
+rm -rf 'altaera-horde.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-horde.sh
+chmod a+x 'altaera-horde.sh'
 rm -rf 'altaeralogin.sh'
 rm -rf 'altaera_auto-check.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_auto-check_empty.sh -O 'altaera_auto-check.sh'
