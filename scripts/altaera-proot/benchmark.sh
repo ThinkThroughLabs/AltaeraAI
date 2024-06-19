@@ -10,6 +10,7 @@ done < <(find "/root/models" -maxdepth 1 -type f \( -iname \*.bin -o -iname \*.g
 if [ ${#files[@]} -eq 0 ]; then
     clear
     bash '/root/altaera-model_empty.sh'
+    clear
     exit
 else
     file=$(dialog --stdout --title "Select an AI Model to benchmark:" --menu "Choose a file:" 0 0 0 "${files[@]}")
