@@ -15,8 +15,8 @@ rm -rf 'upgrade.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/upgrade.sh
 chmod a+x 'upgrade.sh'
 rm -rf 'ngrok-authtoken.sh'
-wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/v5.1/altaera-v5.1.tar.gz
-tar -xf 'altaera-v5.1.tar.gz'
+wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/v5.2/altaera-v5.2.tar.gz
+tar -xf 'altaera-v5.2.tar.gz'
 cd 'kcpp-ae'
 rm -rf 'models'
 rm -rf 'klite.embd'
@@ -27,5 +27,5 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
       wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/klite/klite.embd
 
       cd '~'
-      rm -rf 'altaera-v5.1.tar.gz'
+      rm -rf 'altaera-v5.2.tar.gz'
 } &> /dev/null 2>&1;

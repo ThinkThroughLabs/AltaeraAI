@@ -7,7 +7,7 @@ dialog --backtitle "AltaeraAI" \
 
 Recent changes:
 
-    * v5.1.2 - fixed the issue regarding pre-packaged KoboldCpp not being downloaded after switching to an organisational repository
+    * v5.2 - fixed the issue regarding pre-packaged KoboldCpp not being downloaded after switching to an organisational repository
     * added a pre-launch check (when starting KoboldCpp) to see if the KoboldCpp directory exists in PRoot Distro; if not, the user will be asked whether to download or compile it
     * v5.1.1 - shifted the projects main GitHub repository into an organisational one (ThinkThroughLabs). This upgrade does not bring any functionalities, its sole purpose is to redirect local AltaeraAI update mechanisms to a new address
     * v5.1 - updated to koboldcpp-1.67
