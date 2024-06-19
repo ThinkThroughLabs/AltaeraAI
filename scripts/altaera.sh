@@ -15,18 +15,19 @@ OPTIONS=(1 "Start AltaeraAI [KoboldCpp v1.67]"
          2 "Check for updates [...]"
          3 "Force update [...]"
          4 "Changelog [...]"
-         5 "Benchmark AI Models [KoboldCpp]"
-         6 "Manage AI Models 🤖 [...]"
-         7 "Change language 🌐"
-         8 "Change KoboldCpp Settings [...]"
-         9 "Change AltaeraAI Settings [...]"
-         10 "ngrok Secure Tunnelling [...]"
-         11 "Reinstall (fix) AltaeraAI [...]"
-         12 "Uninstall AltaeraAI"
-         13 "Customer Support [...]"
-         14 "Visit altaera.ai [URL]"
-         15 "Donate 💸 [URL]"
-         16 "Exit")
+         5 "Horde [KoboldCpp]"
+         6 "Benchmark AI Models [KoboldCpp]"
+         7 "Manage AI Models 🤖 [...]"
+         8 "Change language 🌐"
+         9 "Change KoboldCpp Settings [...]"
+         10 "Change AltaeraAI Settings [...]"
+         11 "ngrok Secure Tunnelling [...]"
+         12 "Reinstall (fix) AltaeraAI [...]"
+         13 "Uninstall AltaeraAI"
+         14 "Customer Support [...]"
+         15 "Visit altaera.ai [URL]"
+         16 "Donate 💸 [URL]"
+         17 "Exit")
          
 
 CHOICE=$(dialog --clear \
@@ -60,54 +61,59 @@ case $CHOICE in
             ;;
         5)
             clear
-            proot-distro login altaera -- ./benchmark.sh
+            './AltaeraAI/altaera-horde.sh'
+            './AltaeraAI/altaera.sh'
             ;;
         6)
+            clear
+            proot-distro login altaera -- ./benchmark.sh
+            ;;
+        7)
             clear
             './AltaeraAI/altaera-manage_models.sh'
             './AltaeraAI/altaera.sh'
             ;;
-        7)
+        8)
             clear
             './AltaeraAI/altaera-lang.sh'
             './AltaeraAI/altaera.sh'
             ;;
-        8)
+        9)
             clear
             './AltaeraAI/altaera-koboldcpp_settings.sh'
             './AltaeraAI/altaera.sh'
             ;;
-        9)
+        10)
             clear
             './AltaeraAI/altaera-settings.sh'
             './AltaeraAI/altaera.sh'
             ;;
-        10)
+        11)
             clear
             './AltaeraAI/altaera-ngrok.sh'
             './AltaeraAI/altaera.sh'
             ;;
-        11)
+        12)
             clear
             './AltaeraAI/altaera-reinstall.sh'
             ;;
-        12)
+        13)
             clear
             './AltaeraAI/altaera-uninstall.sh'
             ;;
-        13)
+        14)
             clear
             './AltaeraAI/altaera-customer_support.sh'
             ;;
-        14)
+        15)
             clear
             termux-open-url 'https://altaera.ai/'
             ;;
-        15)
+        16)
             clear
             termux-open-url 'https://altaera.ai/donate/'
             ;;
-        16)
+        17)
             clear
             exit
 esac
