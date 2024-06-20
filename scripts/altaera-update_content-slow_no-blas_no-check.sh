@@ -538,6 +538,6 @@ echo "Updating AltaeraAI core files ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ✔" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ✔"
 
 sleep .5
