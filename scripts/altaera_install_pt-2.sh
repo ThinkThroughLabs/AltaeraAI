@@ -71,8 +71,10 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-horde.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaeralogin.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-lang.sh
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-custom_ai_model.sh
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-custom_ai_model_url.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model.sh
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-huggingface.sh
+
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-rwkv-4-world-claude-for-mobile.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-rwkv-4.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-llama-2-7b-chat.sh
@@ -102,8 +104,10 @@ chmod a+x 'altaera.sh'
 chmod a+x 'altaera-horde.sh'
 chmod a+x 'altaeralogin.sh'
 chmod a+x 'altaera-lang.sh'
+chmod a+x 'altaera-custom_ai_model.sh'
+chmod a+x 'altaera-custom_ai_model_url.sh'
 chmod a+x 'altaera-model.sh'
-chmod a+x 'altaera-huggingface.sh'
+
 chmod a+x 'altaera-model-rwkv-4-world-claude-for-mobile.sh'
 chmod a+x 'altaera-model-rwkv-4.sh'
 chmod a+x 'altaera-model-llama-2-7b-chat.sh'

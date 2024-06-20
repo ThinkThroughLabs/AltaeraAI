@@ -24,13 +24,17 @@ chmod a+x 'lang.sh'
 rm -rf 'altaera-lang.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-lang.sh
 chmod a+x 'altaera-lang.sh'
+rm -rf 'altaera-custom_ai_model.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-custom_ai_model.sh
+chmod a+x 'altaera-custom_ai_model.sh'
+rm -rf 'altaera-custom_ai_model_url.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-custom_ai_model_url.sh
+chmod a+x 'altaera-custom_ai_model_url.sh'
 rm -rf 'altaera-model.sh'
 rm -rf '/data/data/com.termux/files/home/altaera-model.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model.sh
 chmod a+x 'altaera-model.sh'
-rm -rf 'altaera-huggingface.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-huggingface.sh
-chmod a+x 'altaera-huggingface.sh'
+
 rm -rf 'altaera-model-rwkv-4-world-claude-for-mobile.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-rwkv-4-world-claude-for-mobile.sh
 chmod a+x 'altaera-model-rwkv-4-world-claude-for-mobile.sh'
