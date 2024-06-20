@@ -15,8 +15,8 @@ case $response in
           ;;
         1) 
         exit
-        ./data/data/com.termux/files/home/AltaeraAI/altaera_no-check.sh;;
+        ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
         255)
         exit
-        ./data/data/com.termux/files/home/AltaeraAI/altaera_no-check.sh;;
+        ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
 esac
