@@ -247,6 +247,7 @@ rm -rf 'altaera-model_restore.sh'
 rm -rf 'altaera-model_backed-up.sh'
 rm -rf 'altaera-model_restored-cleanup.sh'
 rm -rf 'altaera-model_backup-cleaned-up.sh'
+rm -rf 'altaera-hugginface.sh'
 
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model_backup-restore.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model_restore.sh
