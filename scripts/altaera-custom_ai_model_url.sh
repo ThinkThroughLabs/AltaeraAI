@@ -1,0 +1,11 @@
+cat altaera-custom_ai_model_url.sh
+!/bin/bash
+
+# Redirecting dialog box output to a temporary stream
+exec 3>&1  # Save the place that stdout (1) points to
+result=$(dialog --title "Input Required" --inputbox "Enter custom URL for a HuggingFace model (GGUF):" 10 30 2>&1 >/dev/tty)
+exec 3>&-  # Close the temporary stream
+
+            cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
+            wget $result
+            cd '/data/data/com.termux/files/home'
