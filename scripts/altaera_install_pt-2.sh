@@ -57,6 +57,7 @@ cd ..
 cd 'AltaeraAI'
 
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_auto-check.sh
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_auto-check_corrupted-files.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-check_for_updates.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-up_to_date.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_available.sh
@@ -87,6 +88,7 @@ chmod a+x 'altaera_no-check'
 chmod a+x 'altaera-auto-update_available.sh'
 
 chmod a+x 'altaera_auto-check.sh'
+chmod a+x 'altaera_auto-check_corrupted-files.sh'
 chmod a+x 'altaera-check_for_updates.sh'
 chmod a+x 'altaera-up_to_date.sh'
 chmod a+x 'altaera-update_available.sh'
