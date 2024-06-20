@@ -24,10 +24,11 @@ else
 rm -rf 'AltaeraAI/altaera-version_upstream.sh'
 fi
 
+if [ -f /AltaeraAI/altaera.sh ] || [ -f /AltaeraAI/altaeralogin.sh ] || [ -f /AltaeraAI/altaera-update.sh ] || [ -f /AltaeraAI/altaera-uninstall.sh ] || [ -f /AltaeraAI/altaera-reinstall.sh ] || [ -f /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera.sh ] || [ -f /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/benchmark.sh ] || [ -f /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/horde.sh ]
+ then
+     bash 'altaera.sh'
+ else
+     bash 'altaera_auto-check_corrupted-files.sh'
+ fi
 
-###         if [ $(bash 'AltaeraAI/altaera-version_upst>
-   ###       ) = "v5.0" ]; then
-      ###    rm -rf 'AltaeraAI/altaera-version_upstream>
-
-
-        
+clear
