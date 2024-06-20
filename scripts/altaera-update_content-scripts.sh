@@ -333,9 +333,6 @@ rm -rf 'upgrade.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/upgrade.sh
 chmod a+x 'upgrade.sh'
 rm -rf 'ngrok-authtoken.sh'
-rm -rf 'altaera.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
-chmod a+x 'altaera.sh'
 rm -rf 'altaera_pre-launch.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_pre-launch.sh
 chmod a+x 'altaera_pre-launch.sh'
