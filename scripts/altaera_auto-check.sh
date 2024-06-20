@@ -38,7 +38,12 @@ sleep .5
         
 if [ -f /AltaeraAI/altaera.sh ] || [ -f /AltaeraAI/altaeralogin.sh ] || [ -f /AltaeraAI/altaera-update.sh ] || [ -f /AltaeraAI/altaera-uninstall.sh ] || [ -f /AltaeraAI/altaera-reinstall.sh ] || [ -f /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera.sh ] || [ -f /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/benchmark.sh ] || [ -f /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/horde.sh ]
  then
-     :
+     clear
+             echo "Running essential file integrity checks ✔
+
+        ";
+
+sleep .5
  else
      bash 'AltaeraAI/altaera_auto-check_corrupted-files.sh'
  fi
