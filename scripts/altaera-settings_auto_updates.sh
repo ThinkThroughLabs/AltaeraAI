@@ -5,7 +5,7 @@ WIDTH=60
 CHOICE_HEIGHT=7
 BACKTITLE="AltaeraAI - Settings"
 TITLE="Automatic Update & File Integrity checks"
-MENU="Would you like to turn ON, or turn OFF automatic update & integrity checks?"
+MENU="Would you like to turn ON, or turn OFF automatic update & file integrity checks?"
 
 OPTIONS=(1 "[...] Go Back"
          2 "Turn ON"
