@@ -2,6 +2,8 @@
 
 <p align="center">
 [![Github All Releases](https://img.shields.io/github/downloads/ThinkThroughLabs/AltaeraAI/total.svg)]()
+</p>
+<p align="center">
 [![Github All Releases](https://img.shields.io/github/downloads/latestissue/AltaeraAI/total.svg)]()
 </p>
 
