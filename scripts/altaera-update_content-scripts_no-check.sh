@@ -499,6 +499,6 @@ echo "Updating AltaeraAI shell files (PRoot Distro) ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ✔
+echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ✔"
 
 sleep .5
