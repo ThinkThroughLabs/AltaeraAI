@@ -504,4 +504,4 @@ echo "Updating AltaeraAI shell files (PRoot Distro) ✔
 
 echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ✔
 
-sleep 1
+sleep .5
