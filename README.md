@@ -1,11 +1,7 @@
 # AltaeraAI
 
-<p align="center">
 [![Github All Releases](https://img.shields.io/github/downloads/ThinkThroughLabs/AltaeraAI/total.svg)]()
-</p>
-<p align="center">
 [![Github All Releases](https://img.shields.io/github/downloads/latestissue/AltaeraAI/total.svg)]()
-</p>
 
 ![altaeragithublogo](https://github.com/ThinkThroughLabs/AltaeraAI/assets/121747280/7cea65dc-6592-453c-9b16-0522040cf078)
 
