@@ -8,7 +8,7 @@ TITLE="AltaeraAI - Settings"
 MENU="What would you like to change?"
 
 OPTIONS=(1 "[...] Go Back"
-         2 "Automatic Update Checks [...]"
+         2 "Automatic Update & File Integrity checks [...]"
 	 3 "Dialog Theme (MENU) [...]")
          
 
