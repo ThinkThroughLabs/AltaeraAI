@@ -8,28 +8,27 @@ TITLE="AI Model Selection"
 MENU="Choose a model to download:"
 
 OPTIONS=(1 "[...] Go Back"
-         2 "HuggingFace Models [...]"
-         3 "Auto-Detection (RWKV-4-World-Claude-for-Mobile) - [Default]"
-	 4 "RWKV-4-World-Claude-for-Mobile [...]"
-         5 "RWKV-4-World [...]"
-	 6 "KobbleTinyV2-1.1B [...]"
-	 7 "KobbleTinyV2-1.1B_iMatrix [...]"
-	 8 "Tiny-Vicuna-1B [...]"
-  	 9 "TinyDolphin-2.8-1.1b-imatrix [...]"
-  	 10 "TinyDolphin-2.8.2-1.1B-laser [...]"
-	 11 "TinyLlama-1.1B-Chat-v1.0 [...]"
-	 12 "Llama-3-8B-Instruct [...]"
-	 13 "Llama-2-7B-Chat [...]"
-	 14 "Mistral-7B-Instruct [...]"
-	 15 "Vicuna-7B-v1.5 [...]"
-	 16 "Mamba [...]"
-	 17 "Phi-3-mini-4k-instruct [...]"
-	 18 "Phi-SoSerious-Mini-V1 [...]"
-	 19 "Phi-SoSerious-Mini-V1-imatrix [...]"
-  	 20 "Phi-2-DPO-GGUF [...]"
-  	 21 "Yi-1.5-6B-Chat [...]"
-  	 22 "Gemma-2B-it [...]"
-  	 23 "Gemma-7B-it [...]")
+         2 "Auto-Detection (RWKV-4-World-Claude-for-Mobile) - [Default]"
+	 3 "RWKV-4-World-Claude-for-Mobile [...]"
+         4 "RWKV-4-World [...]"
+	 5 "KobbleTinyV2-1.1B [...]"
+	 6 "KobbleTinyV2-1.1B_iMatrix [...]"
+	 7 "Tiny-Vicuna-1B [...]"
+  	 8 "TinyDolphin-2.8-1.1b-imatrix [...]"
+  	 9 "TinyDolphin-2.8.2-1.1B-laser [...]"
+	 10 "TinyLlama-1.1B-Chat-v1.0 [...]"
+	 11 "Llama-3-8B-Instruct [...]"
+	 12 "Llama-2-7B-Chat [...]"
+	 13 "Mistral-7B-Instruct [...]"
+	 14 "Vicuna-7B-v1.5 [...]"
+	 15 "Mamba [...]"
+	 16 "Phi-3-mini-4k-instruct [...]"
+	 17 "Phi-SoSerious-Mini-V1 [...]"
+	 18 "Phi-SoSerious-Mini-V1-imatrix [...]"
+  	 19 "Phi-2-DPO-GGUF [...]"
+  	 20 "Yi-1.5-6B-Chat [...]"
+  	 21 "Gemma-2B-it [...]"
+  	 22 "Gemma-7B-it [...]")
 
 
 CHOICE=$(dialog --clear \
@@ -44,9 +43,6 @@ clear
 case $CHOICE in
         1)
             exit
-	    ;;
-        2)
-            bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 	    ;;
         2)
             echo "You chose 'Auto-detection - [Default]'"
