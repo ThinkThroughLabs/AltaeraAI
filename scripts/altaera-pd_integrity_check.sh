@@ -2,12 +2,15 @@ if [ -d /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/al
 then
 :
 else
-dialog --title "AltaeraAI - PRoot Distro installation failure" --msgbox 'There were problems installing the PRoot Distro environment. This can happen, for instance, when some of the mirror servers are down, therefore unable to retrieve some necessary files. In the next step, you will be asked whether to retry PRoot Distro environment installation, or to cancel.' 40 80
+dialog --title "AltaeraAI - PRoot Distro installation failure" --msgbox 'There were problems installing the PRoot Distro environment. This can happen, for instance, when some of the mirror servers are down, therefore unable to retrieve some necessary files. In the next step, you will be asked whether to retry PRoot Distro environment installation, or to cancel.' 10 80
+
+echo "Please, be patient...";
 
 {
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-pd_in_failure_reinstall.sh
 chmod a+x 'altaera-pd_in_failure_reinstall.sh'
 } &> /dev/null 2>&1;
+clear
 bash 'altaera-pd_in_failure_reinstall.sh'
 rm -rf 'altaera-pd_in_failure_reinstall.sh'
 fi
