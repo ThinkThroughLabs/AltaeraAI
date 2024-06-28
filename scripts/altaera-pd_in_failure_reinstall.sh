@@ -11,12 +11,12 @@ case $response in
         clear
         ;;
         1)
-        exit
         clear
+        exit
         ;;
         255)
-        exit
         clear
+        exit
         ;;
 esac
 
