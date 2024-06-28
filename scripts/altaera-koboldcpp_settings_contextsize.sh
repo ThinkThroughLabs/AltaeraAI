@@ -42,7 +42,7 @@ case $CHOICE in
 
             # Redirecting dialog box output to a temporary stream
             exec 3>&1  # Save the place that stdout (1) points to
-            result=$(dialog --title "Input Required" --inputbox "Enter custom URL for a HuggingFace model (GGUF):" 10 30 2>&1 >/dev/tty)
+            result=$(dialog --title "Input Required" --inputbox "Enter a Context Size value:" 10 30 2>&1 >/dev/tty)
             exec 3>&-  # Close the temporary stream
 
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
