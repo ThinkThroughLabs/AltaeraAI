@@ -26,6 +26,8 @@ case $CHOICE in
             exit
 	    ;;
         2)
+            echo "Turning ON automatic update & file integrity checks..."
+            {
             clear
             rm -rf './AltaeraAI/altaera_auto-check.sh'
             cd './AltaeraAI'
@@ -34,8 +36,14 @@ case $CHOICE in
      	    chmod a+x 'altaera-update.sh'
             wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_auto-check.sh
             chmod a+x 'altaera_auto-check.sh'
+            } &> /dev/null 2>&1;
+	    clear
+            echo "Turning ON automatic update & file integrity checks ✔"
+	    sleep .5
             ;;
         3)
+            echo "Turning OFF automatic update & file integrity checks..."
+            {
             clear
             rm -rf './AltaeraAI/altaera_auto-check.sh'
             cd './AltaeraAI'
@@ -44,5 +52,9 @@ case $CHOICE in
      	    chmod a+x 'altaera-update.sh'
             wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_auto-check_empty.sh -O 'altaera_auto-check.sh'
             chmod a+x 'altaera_auto-check.sh'
+            } &> /dev/null 2>&1;
+	    clear
+            echo "Turning OFF automatic update & file integrity checks ✔"
+	    sleep .5
             ;;
 esac
