@@ -9,9 +9,11 @@ case $response in
 
         0)      
         clear
-        1) exit
+        1)
+        exit
         clear
-        255) exit
+        255)
+        exit
         clear
 esac
 
