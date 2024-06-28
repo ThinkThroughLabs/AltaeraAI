@@ -87,8 +87,14 @@ clear
 
 proot-distro login altaera
 clear
-if [ -d /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera ]
-then
+
+{
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-pd_integrity_check.sh
+chmod a+x 'altaera-pd_integrity_check.sh'
+} &> /dev/null 2>&1;
+bash 'altaera-pd_integrity_check.sh'
+rm -rf 'altaera-pd_integrity_check.sh'
+
 echo "**********INSTALLATION COMPLETED**********
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 echo "________________________________________________________________
@@ -101,14 +107,6 @@ echo "
 - To start, please type in 'ae'."
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-else
-dialog --title "AltaeraAI - PRoot Distro installation failure" --msgbox 'There were problems installing the PRoot Distro environment. This can happen, for instance, when some of the mirror servers are down, therefore unable to retrieve some necessary files. In the next step, you will be asked whether to retry PRoot Distro environment installation, or to cancel.' 40 80
-
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-pd_in_failure_reinstall.sh
-chmod a+x 'altaera-pd_in_failure_reinstall.sh'
-bash 'altaera-pd_in_failure_reinstall.sh'
-rm -rf 'altaera-pd_in_failure_reinstall.sh'
-
 ;;
 
          2)
