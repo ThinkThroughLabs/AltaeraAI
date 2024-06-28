@@ -15,12 +15,6 @@ chmod a+x 'altaera-horde.sh'
 rm -rf 'altaeralogin.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaeralogin.sh
 chmod a+x 'altaeralogin.sh'
-rm -rf 'altaera_auto-check.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_auto-check.sh
-chmod a+x 'altaera_auto-check.sh'
-rm -rf 'altaera_auto-check_corrupted-files.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_auto-check_corrupted-files.sh
-chmod a+x 'altaera_auto-check_corrupted-files.sh'
 rm -rf 'altaera_no-check.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_no-check.sh
 chmod a+x 'altaera_no-check.sh'
