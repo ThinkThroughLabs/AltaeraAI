@@ -51,8 +51,10 @@ then
 sleep .5
 
  else
+     {
      wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_initial-check_corrupted-files.sh
      chmod a+x 'altaera_initial-check_corrupted-files.sh'
+     } &> /dev/null 2>&1;
      bash 'altaera_initial-check_corrupted-files.sh'
      rm -rf 'altaera_initial-check_corrupted-files.sh'
  fi
