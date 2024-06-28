@@ -10,3 +10,4 @@ chmod a+x 'altaera-pd_in_failure_reinstall.sh'
 } &> /dev/null 2>&1;
 bash 'altaera-pd_in_failure_reinstall.sh'
 rm -rf 'altaera-pd_in_failure_reinstall.sh'
+fi
