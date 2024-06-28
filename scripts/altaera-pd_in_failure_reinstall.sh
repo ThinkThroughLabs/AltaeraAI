@@ -9,12 +9,15 @@ case $response in
 
         0)      
         clear
+        ;;
         1)
         exit
         clear
+        ;;
         255)
         exit
         clear
+        ;;
 esac
 
 echo "The PRoot Distro environment failed to install. Retrying in 5 seconds...
