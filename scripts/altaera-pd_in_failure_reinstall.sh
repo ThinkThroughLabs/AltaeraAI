@@ -20,10 +20,12 @@ case $response in
         ;;
 esac
 
-echo "The PRoot Distro environment failed to install. Retrying in 5 seconds...
+echo "The PRoot Distro environment failed to install. Retrying in 6 seconds...
 
 [to cancel, press Ctrl+C]
 "
+echo "6..."
+sleep 1
 echo "5..."
 sleep 1
 echo "4..."
