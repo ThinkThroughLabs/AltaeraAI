@@ -49,6 +49,7 @@ case $CHOICE in
             sed -i '/--contextsize/c\--contextsize '$result'' altaera.sh
             cd '/data/data/com.termux/files/home'
 	    dialog --title "AltaeraAI - KoboldCpp Settings" --msgbox 'Context Size was successfully changed to "'$result'"!' 10 30
+            ;;
         3)
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
             sed -i '/--contextsize/c\--contextsize 2048' altaera.sh
