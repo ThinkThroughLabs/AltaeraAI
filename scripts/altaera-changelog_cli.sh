@@ -3,7 +3,8 @@
 dialog --backtitle "AltaeraAI" \
 --title "AltaeraAI - Changelog [CLI]" \
 --msgbox '
-    * v5.3 - fixed a bug in the file integrity checking mechanism that reported missing files even when they were not (especially after a fresh installation)
+    * v5.3 - updated to koboldcpp-1.69
+    * v5.2.3 - fixed a bug in the file integrity checking mechanism that reported missing files even when they were not (especially after a fresh installation)
     * added an initial solution to when the PRoot Distro environment fails to install, during the installation process
     * v5.2.2 - added the ability to enter a custom value for Context & Blas Batch Size, in addition to the fixed sizes
     * various visual improvements and fixes to the MENU
