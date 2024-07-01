@@ -31,5 +31,5 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
       wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/klite/klite.embd
 
       cd '~'
-      rm -rf 'altaera-v5.2.tar.gz'
+      rm -rf 'altaera-v5.3.tar.gz'
 } &> /dev/null 2>&1;
