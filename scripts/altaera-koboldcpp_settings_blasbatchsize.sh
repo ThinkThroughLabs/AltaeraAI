@@ -42,14 +42,14 @@ case $CHOICE in
             result=$(dialog --title "Input Required" --inputbox "Enter a Blas Batch Size value:" 10 30 2>&1 >/dev/tty)
             exec 3>&-  # Close the temporary stream
 
-            if (($result :)); then
-	    dialog --title "AltaeraAI - KoboldCpp Settings" --msgbox 'Please enter the correct value!' 10 30
-            else
+##	    if (($result :)); then
+##	    dialog --title "AltaeraAI - KoboldCpp Settings" --msgbox 'Please enter the correct value!' 10 30
+## 	    else
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
             sed -i '/--blasbatchsize/c\--blasbatchsize '$result' \\' altaera.sh
             cd '/data/data/com.termux/files/home'
 	    dialog --title "AltaeraAI - KoboldCpp Settings" --msgbox 'Blas Batch Size was successfully changed to "'$result'"!' 10 30
-	    fi
+##	    fi
             ;;
         3)
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
