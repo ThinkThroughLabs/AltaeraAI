@@ -2,7 +2,8 @@
 
 [![Github All Releases](https://img.shields.io/github/downloads/ThinkThroughLabs/AltaeraAI/total.svg)]()
 [![Github All Releases](https://img.shields.io/github/downloads/latestissue/AltaeraAI/total.svg)]()
-Note: the number of downloads shown is only for the pre-packaged KoboldCpp and also includes downloads resulting from updates containing package upgrades.
+
+**Note**: *the number of downloads shown is only for the pre-packaged KoboldCpp and also includes downloads resulting from updates containing package upgrades*.
 
 ![altaeragithublogo](https://github.com/ThinkThroughLabs/AltaeraAI/assets/121747280/7cea65dc-6592-453c-9b16-0522040cf078)
 
