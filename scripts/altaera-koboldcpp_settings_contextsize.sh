@@ -51,7 +51,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/home'
 	    dialog --title "AltaeraAI - KoboldCpp Settings" --msgbox 'Context Size was successfully changed to "'$result'"!' 10 30
             else
-	    :
+	    dialog --title "AltaeraAI - KoboldCpp Settings" --msgbox 'Please enter the correct value!' 10 30
             ;;
         3)
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
