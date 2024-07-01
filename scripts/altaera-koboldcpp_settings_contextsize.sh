@@ -45,14 +45,10 @@ case $CHOICE in
             result=$(dialog --title "Input Required" --inputbox "Enter a Context Size value:" 10 30 2>&1 >/dev/tty)
             exec 3>&-  # Close the temporary stream
 
-            if [$result -gt 0 ]; then
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
             sed -i '/--contextsize/c\--contextsize '$result'' altaera.sh
             cd '/data/data/com.termux/files/home'
 	    dialog --title "AltaeraAI - KoboldCpp Settings" --msgbox 'Context Size was successfully changed to "'$result'"!' 10 30
-            else
-	    dialog --title "AltaeraAI - KoboldCpp Settings" --msgbox 'Please enter the correct value!' 10 30
-	    fi
             ;;
         3)
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
