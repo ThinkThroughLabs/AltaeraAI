@@ -7,7 +7,8 @@ dialog --backtitle "AltaeraAI" \
 
 Recent changes:
 
-    * v5.3 - fixed a bug in the file integrity checking mechanism that reported missing files even when they were not (especially after a fresh installation)
+    * v5.3 - updated to koboldcpp-1.69
+    * v5.2.3 - fixed a bug in the file integrity checking mechanism that reported missing files even when they were not (especially after a fresh installation)
     * added an initial solution to when the PRoot Distro environment fails to install, during the installation process
     * v5.2.2 - added the ability to enter a custom value for Context & Blas Batch Size, in addition to the fixed sizes
     * various visual improvements and fixes to the MENU
@@ -16,8 +17,6 @@ Recent changes:
     * v5.2 – updated to koboldcpp-1.68
     * added the “Horde” option to the MENU, which utilises AI Horde to allow for sharing your processing power (an AI Model) for users worldwide
     * minor aesthetic changes and fixes to the MENU
-    * v5.1.2 - fixed the issue regarding pre-packaged KoboldCpp not being downloaded after switching to an organisational repository
-    * added a pre-launch check (when starting KoboldCpp) to see if the KoboldCpp directory exists in PRoot Distro; if not, the user will be asked whether to download or compile it
 ' 25 40
 
 bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
