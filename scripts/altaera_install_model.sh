@@ -27,8 +27,9 @@ OPTIONS=(1 "Do not download AI Model (?) - [...]"
          18 "Phi-SoSerious-Mini-V1-imatrix [...]"
          19 "Phi-2-DPO [...]"
          20 "Yi-1.5-6B-Chat [...]"
+         21 "Gemma-2-9b-it [...]"
          21 "Gemma-2B-it [...]"
-         22 "Gemma-7B-it [...]")
+         23 "Gemma-7B-it [...]")
 
 
 CHOICE=$(dialog --clear \
@@ -222,6 +223,15 @@ case $CHOICE in
             bash altaera_install_pt-1.sh
             ;;
         21)
+        echo "You chose 'Gemma-2-9b-it...'";
+        {
+            rm -rf 'altaera_install_pt-1.sh'
+            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-1-gemma-2-9b-it.sh -O 'altaera_install_pt-1.sh'
+            chmod a+x 'altaera_install_pt-1.sh'
+         } &> /dev/null 2>&1;
+            bash altaera_install_pt-1.sh
+            ;;
+        22)
         echo "You chose 'Gemma-2B-it...'";
         {
             rm -rf 'altaera_install_pt-1.sh'
@@ -230,7 +240,7 @@ case $CHOICE in
          } &> /dev/null 2>&1;
             bash altaera_install_pt-1.sh
             ;;
-        22)
+        23)
         echo "You chose 'Gemma-7B-it...'";
         {
             rm -rf 'altaera_install_pt-1.sh'
