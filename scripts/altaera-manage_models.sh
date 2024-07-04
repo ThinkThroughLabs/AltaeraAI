@@ -26,7 +26,7 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            './AltaeraAI/altaera-manage_models.sh'
+            exit
 	    ;;
         2)
             clear
