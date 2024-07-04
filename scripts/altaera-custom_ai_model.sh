@@ -27,10 +27,12 @@ case $CHOICE in
             ;;
         2)
             termux-open-url 'https://huggingface.co/models?search=GGUF'
+            bash 'AltaeraAI/altaera-custom_ai_model.sh'
             ;;
         3)
             clear
             './AltaeraAI/altaera-custom_ai_model_url.sh'
+            bash 'AltaeraAI/altaera-manage_models.sh''
             exit
             ;;
 esac
