@@ -17,17 +17,14 @@ if [ $RESULT -eq 0 ]; then
 
     cd '/root/kcpp-ae/models'
     rm -rf $file
-
-    echo  "
-
-    
-    You have successfully removed $file
-    "
+    dialog --title "AltaeraAI - Remove Models" --msgbox 'The "'$file'" model was successfully deleted!' 10 30
 clear
 exit
     cd '/data/data/com.termux/files/home/'
     exit
+    './AltaeraAI/altaera-manage_models.sh'
 else
 clear
 exit
+'./AltaeraAI/altaera-manage_models.sh'
 fi
