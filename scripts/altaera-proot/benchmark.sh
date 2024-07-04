@@ -61,10 +61,10 @@ fi
         255) 
         clear
         exit
-        ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
+        './data/data/com.termux/files/home/AltaeraAI/altaera.sh';;
 esac
 else
 clear
 exit
- ./data/data/com.termux/files/home/AltaeraAI/altaera.sh
+'./data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 fi
