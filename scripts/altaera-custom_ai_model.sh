@@ -32,7 +32,7 @@ case $CHOICE in
         3)
             clear
             './AltaeraAI/altaera-custom_ai_model_url.sh'
-            './AltaeraAI/altaera-manage_models.sh'
+            './AltaeraAI/altaera-custom_ai_model.sh'
             exit
             ;;
 esac
