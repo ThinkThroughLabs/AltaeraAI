@@ -27,8 +27,9 @@ OPTIONS=(1 "[...] Go Back"
 	 18 "Phi-SoSerious-Mini-V1-imatrix [...]"
   	 19 "Phi-2-DPO-GGUF [...]"
   	 20 "Yi-1.5-6B-Chat [...]"
-  	 21 "Gemma-2B-it [...]"
-  	 22 "Gemma-7B-it [...]")
+  	 21 "Gemma-2-9b-it [...]"
+  	 22 "Gemma-2B-it [...]"
+  	 23 "Gemma-7B-it [...]")
 
 
 CHOICE=$(dialog --clear \
@@ -153,12 +154,16 @@ fi
     	20)
      		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-yi-1.5-6b-chat.sh'
     		;;
-      
+
     	21)
-     		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-2b-it.sh'
+     		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-2-9b-it.sh'
     		;;
       
     	22)
+     		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-2b-it.sh'
+    		;;
+      
+    	23)
      		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-7b-it.sh'
     		;;
       
