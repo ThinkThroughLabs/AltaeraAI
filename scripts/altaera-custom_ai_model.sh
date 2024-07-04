@@ -23,16 +23,16 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            ./'AltaeraAI/altaera-manage_models.sh'
+            './AltaeraAI/altaera-manage_models.sh'
             ;;
         2)
             termux-open-url 'https://huggingface.co/models?search=GGUF'
-            ./'AltaeraAI/altaera-custom_ai_model.sh'
+            './AltaeraAI/altaera-custom_ai_model.sh'
             ;;
         3)
             clear
             './AltaeraAI/altaera-custom_ai_model_url.sh'
-            ./'AltaeraAI/altaera-manage_models.sh'
+            './AltaeraAI/altaera-manage_models.sh'
             exit
             ;;
 esac
