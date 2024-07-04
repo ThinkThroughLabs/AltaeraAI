@@ -42,4 +42,5 @@ fi
 else
 clear
 exit
+'./data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 fi
