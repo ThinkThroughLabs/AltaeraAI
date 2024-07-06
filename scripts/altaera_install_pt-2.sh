@@ -162,6 +162,12 @@ chmod a+x 'altaera-model-tinyllama-1.1b-chat-v1.0.sh'
 rm -rf 'altaera-model-yi-1.5-6b-chat.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-yi-1.5-6b-chat.sh
 chmod a+x 'altaera-model-yi-1.5-6b-chat.sh'
+rm -rf 'altaera-model-gemma-2-9b-it.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-gemma-2-9b-it.sh
+chmod a+x 'altaera-model-gemma-2-9b-it.sh'
+rm -rf 'altaera-model-gemma-2-9b-it.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-gemma-2-9b-it.sh
+chmod a+x 'altaera-model-gemma-2-9b-it.sh'
 rm -rf 'altaera-model-gemma-2b-it.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-gemma-2b-it.sh
 chmod a+x 'altaera-model-gemma-2b-it.sh'
