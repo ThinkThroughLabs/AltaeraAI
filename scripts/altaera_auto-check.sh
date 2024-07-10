@@ -19,9 +19,20 @@ if [ $(bash 'AltaeraAI/altaera-version_upstream.sh'
 else
           rm -rf 'AltaeraAI/altaera-version_upstream.sh'
           bash 'AltaeraAI/altaera-auto-update_available.sh'
-          fi
+          
+elif [ $(bash 'AltaeraAI/altaera_termux-version.sh'
+          ) = "0.118.1: command not found" ]; then
+          :
+else
+         bash 'altaera-auto-update_available-termux.sh'
 
+          fi
+          
+{
 rm -rf 'AltaeraAI/altaera-version_upstream.sh'
+rm -rf '/sdcard/com.termux_118.1.apk'
+} &> /dev/null 2>&1;
+
 fi
 
 clear
