@@ -19,14 +19,14 @@ if [ $(bash 'AltaeraAI/altaera-version_upstream.sh'
 else
           rm -rf 'AltaeraAI/altaera-version_upstream.sh'
           bash 'AltaeraAI/altaera-auto-update_available.sh'
-          
+fi
+
 if [ $(bash 'AltaeraAI/altaera_termux-version.sh'
           ) = "0.118.1" ]; then
           :
 else
          bash 'AltaeraAI/altaera-auto-update_available-termux.sh'
 
-fi
 fi
 fi
           
