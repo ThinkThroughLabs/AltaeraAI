@@ -1,5 +1,5 @@
 #!/bin/bash
 
-$TERMUX_VERSION
+echo $TERMUX_VERSION
 
 exit
