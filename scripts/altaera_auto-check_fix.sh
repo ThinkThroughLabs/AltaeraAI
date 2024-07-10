@@ -6,6 +6,9 @@ chmod a+x 'altaera_pre-update.sh'
 rm -rf 'altaera-update.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update.sh
 chmod a+x 'altaera-update.sh'
+rm -rf 'altaera_termux-version.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_termux-version.sh
+chmod a+x 'altaera_termux-version.sh'
 rm -rf 'altaera.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera.sh
 chmod a+x 'altaera.sh'
@@ -104,18 +107,27 @@ chmod a+x 'altaera-model-vicuna-7b-v1.5.sh'
 rm -rf 'altaera-check_for_updates.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-check_for_updates.sh
 chmod a+x 'altaera-check_for_updates.sh'
+rm -rf 'altaera_update-termux.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_update-termux.sh
+chmod a+x 'altaera_update-termux.sh'
 rm -rf 'altaera-up_to_date.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-up_to_date.sh
 chmod a+x 'altaera-up_to_date.sh'
 rm -rf 'altaera-update_available.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_available.sh
 chmod a+x 'altaera-update_available.sh'
+rm -rf 'altaera-auto-update_available-termux.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-auto-update_available-termux.sh
+chmod a+x 'altaera-auto-update_available-termux.sh'
 rm -rf 'altaera-auto-update_available.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-auto-update_available.sh
 chmod a+x 'altaera-auto-update_available.sh'
 rm -rf 'altaera-update.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update.sh
 chmod a+x 'altaera-update.sh'
+rm -rf 'altaera_termux-version.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_termux-version.sh
+chmod a+x 'altaera_termux-version.sh'
 rm -rf 'altaera-updated_successfully.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-updated_successfully.sh
 chmod a+x 'altaera-updated_successfully.sh'

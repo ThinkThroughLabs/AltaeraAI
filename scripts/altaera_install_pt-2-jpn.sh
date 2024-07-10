@@ -20,8 +20,10 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-force_update_jpn.sh -O 'altaera-force_update.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-reinstall.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-uninstall.sh
+https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_termux-version.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-customer_support_jpn.sh -O 'altaera-customer_support.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_jpn.sh -O 'altaera.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_update-termux.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-horde.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaeralogin.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-lang.sh
@@ -40,8 +42,10 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_no-check.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-auto-update_available.sh
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-auto-update_available-termux.sh
 chmod a+x 'altaera_no-check'
 chmod a+x 'altaera-auto-update_available.sh'
+chmod a+x 'altaera-auto-update_available-termux.sh'
 
 chmod a+x 'altaera-check_for_updates.sh'
 chmod a+x 'altaera-up_to_date.sh'
@@ -51,8 +55,10 @@ chmod a+x 'altaera-update.sh'
 chmod a+x 'altaera-force_update.sh'
 chmod a+x 'altaera-reinstall.sh'
 chmod a+x 'altaera-uninstall.sh'
+chmod a+x 'altaera_termux-version.sh'
 chmod a+x 'altaera-customer_support.sh'
 chmod a+x 'altaera.sh'
+chmod a+x 'altaera_update-termux.sh'
 chmod a+x 'altaera-horde.sh'
 chmod a+x 'altaeralogin.sh'
 chmod a+x 'altaera-lang.sh'

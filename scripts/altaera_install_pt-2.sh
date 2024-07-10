@@ -66,8 +66,10 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-force_update.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-reinstall.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-uninstall.sh
+https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_termux-version.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-customer_support.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera.sh
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_update-termux.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-horde.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaeralogin.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-lang.sh
@@ -86,8 +88,10 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_no-check.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-auto-update_available.sh
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-auto-update_available-termux.sh
 chmod a+x 'altaera_no-check'
 chmod a+x 'altaera-auto-update_available.sh'
+chmod a+x 'altaera-auto-update_available-termux.sh'
 
 chmod a+x 'altaera_auto-check.sh'
 chmod a+x 'altaera_auto-check_corrupted-files.sh'
@@ -99,8 +103,10 @@ chmod a+x 'altaera-update.sh'
 chmod a+x 'altaera-force_update.sh'
 chmod a+x 'altaera-reinstall.sh'
 chmod a+x 'altaera-uninstall.sh'
+chmod a+x 'altaera_termux-version.sh'
 chmod a+x 'altaera-customer_support.sh'
 chmod a+x 'altaera.sh'
+chmod a+x 'altaera_update-termux.sh'
 chmod a+x 'altaera-horde.sh'
 chmod a+x 'altaeralogin.sh'
 chmod a+x 'altaera-lang.sh'
