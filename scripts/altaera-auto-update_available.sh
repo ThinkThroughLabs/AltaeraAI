@@ -6,7 +6,7 @@ dialog --title "AltaeraAI - Automatic update checking" \
 
 response=$?
 case $response in
-   0)   bash 'AltaeraAI/altaera_pre-update.sh';;
+   0) bash 'AltaeraAI/altaera_pre-update.sh';;
     
    1) bash '/data/data/com.termux/files/home/AltaeraAI/altaera_no-check.sh';;
    
