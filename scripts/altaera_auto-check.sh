@@ -21,7 +21,7 @@ else
           bash 'AltaeraAI/altaera-auto-update_available.sh'
           
 if [ $(bash 'AltaeraAI/altaera_termux-version.sh'
-          ) = "0.118.1: command not found" ]; then
+          ) = "0.118.1" ]; then
           :
 else
          bash 'altaera-auto-update_available-termux.sh'
