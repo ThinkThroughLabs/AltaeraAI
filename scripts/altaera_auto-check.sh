@@ -24,7 +24,7 @@ if [ $(bash 'AltaeraAI/altaera_termux-version.sh'
           ) = "0.118.1" ]; then
           :
 else
-         bash 'altaera-auto-update_available-termux.sh'
+         bash 'AltaeraAI/altaera-auto-update_available-termux.sh'
 
 fi
 fi
