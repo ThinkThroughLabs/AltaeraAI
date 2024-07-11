@@ -7,6 +7,7 @@ dialog --backtitle "AltaeraAI" \
 
 Recent changes:
 
+    * v5.4.1 - added an automatic Termux update check, which will inform the user of an available update and allow the user choose whether Termux was initially downloaded from GitHub or from F-Droid to further proceed (this is necessary for the update to actually work)
     * v5.4 - updated to koboldcpp-1.69.1
     * added Gemma-2-9B-it weights to the list of models
     * v5.3 - updated to koboldcpp-1.69
@@ -14,8 +15,6 @@ Recent changes:
     * added an initial solution to when the PRoot Distro environment fails to install, during the installation process
     * v5.2.2 - added the ability to enter a custom value for Context & Blas Batch Size, in addition to the fixed sizes
     * various visual improvements and fixes to the MENU
-    * v5.2.1 - introduced "File integrity checks", which run simultaneously with the update checking mechanism, to determine potential file deficiences that can impact AltaeraAIs functionality; in case there are missing files, the user will be asked whether to carry out file repair. Said functionality is set by default (as are automatic update checks), but can also be disabled under settings
-    * visual fixes and improvements, changes to the MENU
 ' 25 40
 
 bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
