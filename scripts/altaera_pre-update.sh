@@ -29,7 +29,7 @@
   ██      █
   █       ████████
 
-  AltaeraAI - v5.4
+  AltaeraAI -v5.4.1
 
     by ThinkThroughLabs
 

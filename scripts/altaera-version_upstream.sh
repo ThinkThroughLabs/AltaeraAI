@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "v5.4"
+echo "v5.4.1"
 
 exit
