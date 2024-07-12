@@ -64,7 +64,11 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 clear
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -85,7 +89,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 
 {
@@ -119,7 +127,11 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -140,7 +152,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 echo "
 
@@ -170,7 +186,11 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -191,7 +211,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 echo "
 
@@ -221,7 +245,11 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -242,7 +270,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 echo "
 
@@ -272,7 +304,11 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -293,7 +329,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 echo "
 
@@ -323,7 +363,11 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -344,7 +388,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 echo "
 
@@ -374,7 +422,11 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -395,7 +447,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 echo "
 
@@ -425,7 +481,11 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -446,7 +506,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 echo "
 
@@ -476,7 +540,11 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -497,7 +565,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 echo "
 
@@ -527,7 +599,11 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -548,7 +624,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 echo "
 
@@ -578,7 +658,11 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -599,7 +683,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 echo "
 
@@ -629,7 +717,11 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro install altaera
+else
+:
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -650,7 +742,11 @@ rm -rf '/data/data/com.termux/files/home/install'
 clear
 } &> /dev/null 2>&1;
 
+if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+then
 proot-distro login altaera
+else
+:
 clear
 echo "
 
