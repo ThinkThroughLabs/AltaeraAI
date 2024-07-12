@@ -114,6 +114,7 @@ echo "Extracting pre-packaged PRoot-Distro ...
 
 tar xvf 'altaera.tar.gz'
 rm 'altaera.tar.gz'
+rm '$PREFIX/etc/proot-distro/altaera.sh'
 
 clear
 
