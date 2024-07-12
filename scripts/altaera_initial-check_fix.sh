@@ -230,5 +230,38 @@ chmod a+x 'benchmark.sh'
 rm -rf 'horde.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/horde.sh
 chmod a+x 'horde.sh'
+rm -rf 'altaera-fix.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix.sh
+chmod a+x 'altaera-fix.sh'
+rm -rf 'altaera-fixed_successfully.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fixed_successfully.sh
+chmod a+x 'altaera-fixed_successfully.sh'
+rm -rf 'altaera-model_backup.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_backup.sh
+chmod a+x 'altaera-model_backup.sh'
+rm -rf 'altaera-model_empty.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_empty.sh
+chmod a+x 'altaera-model_empty.sh'
+rm -rf 'altaera-model_list.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_list.sh
+chmod a+x 'altaera-model_list.sh'
+rm -rf 'altaera-model_list_empty.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_list_empty.sh
+chmod a+x 'altaera-model_list_empty.sh'
+rm -rf 'altaera-model_remove_in.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_remove_in.sh
+chmod a+x 'altaera-model_remove_in.sh'
+rm -rf 'altaera_corrupted-files.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_corrupted-files.sh
+chmod a+x 'altaera_corrupted-files.sh'
+rm -rf 'altaera_pre-launch.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_pre-launch.sh
+chmod a+x 'altaera_pre-launch.sh'
+rm -rf 'dialog_theme-off.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-off.sh
+chmod a+x 'dialog_theme-off.sh'
+rm -rf 'dialog_theme-on.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-on.sh
+chmod a+x 'dialog_theme-on.sh'
 
 cd ~
