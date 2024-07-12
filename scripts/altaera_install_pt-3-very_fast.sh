@@ -177,7 +177,7 @@ echo "Installing core files...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs'
+cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera'
 {
 rm -rf "/etc/bash.bashrc"
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/bash.bashrc
