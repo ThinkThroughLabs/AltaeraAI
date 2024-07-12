@@ -52,8 +52,11 @@ echo "Downloading pre-packaged PRoot-Distro...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
+{
+mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro'
 mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs'
 cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs'
+} &> /dev/null 2>&1;
 wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distro/aepd.tar.gz -q --show-progress
 
 clear
