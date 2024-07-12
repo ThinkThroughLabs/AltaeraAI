@@ -53,7 +53,7 @@ echo "Downloading pre-packaged PRoot-Distro...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs'
-wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distro/altaera.tar.gz -q --show-progress
+wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distro/aepd.tar.gz -q --show-progress
 
 clear
 
@@ -113,8 +113,8 @@ echo "Extracting pre-packaged PRoot-Distro ...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 {
-tar xvf 'altaera.tar.gz'
-rm 'altaera.tar.gz'
+tar xvf 'aepd.tar.gz'
+rm 'aepd.tar.gz'
 rm '$PREFIX/etc/proot-distro/altaera.sh'
 } &> /dev/null 2>&1;
 
