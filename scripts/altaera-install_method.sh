@@ -34,16 +34,19 @@ case $CHOICE in
         
         2)
         cd $PREFIX/etc/proot-distro
+        rm 'altaera.sh'
         wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-fast.sh -O 'altaera.sh' -q --show-progress
         ;;
         
         3)
         cd $PREFIX/etc/proot-distro
+        rm 'altaera.sh'
         wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-slow.sh -O 'altaera.sh' -q --show-progress
         ;;
         
         4)
         cd $PREFIX/etc/proot-distro
+        rm 'altaera.sh'
         wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-slow_no-blas.sh -O 'altaera.sh' -q --show-progress
         ;;
         
