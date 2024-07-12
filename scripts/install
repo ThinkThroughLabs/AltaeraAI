@@ -69,6 +69,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -94,6 +95,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 
 {
@@ -132,6 +134,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -157,6 +160,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 echo "
 
@@ -191,6 +195,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -216,6 +221,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 echo "
 
@@ -250,6 +256,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -275,6 +282,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 echo "
 
@@ -309,6 +317,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -334,6 +343,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 echo "
 
@@ -368,6 +378,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -393,6 +404,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 echo "
 
@@ -427,6 +439,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -452,6 +465,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 echo "
 
@@ -486,6 +500,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -511,6 +526,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 echo "
 
@@ -545,6 +561,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -570,6 +587,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 echo "
 
@@ -604,6 +622,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -629,6 +648,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 echo "
 
@@ -663,6 +683,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -688,6 +709,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 echo "
 
@@ -722,6 +744,7 @@ then
 proot-distro install altaera
 else
 :
+fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
@@ -747,6 +770,7 @@ then
 proot-distro login altaera
 else
 :
+fi
 clear
 echo "
 
