@@ -7,9 +7,10 @@ BACKTITLE="AltaeraAI Installation - Method"
 TITLE="Please choose your method of installing AltaeraAI"
 MENU="Which installation method do you prefer?:"
 
-OPTIONS=(1 "Install pre-packaged KoboldCpp (Faster) - [Default]"
-         2 "Build KoboldCpp from scratch (Slower)"
-         3 "Build KoboldCpp [No-Blas] (Slower)")
+OPTIONS=(1 "Install pre-packaged PRoot-Distro and KoboldCpp (Very Fast) [Default]"
+         2 "Install pre-packaged KoboldCpp (Fast) - [Default]"
+         3 "Build KoboldCpp from scratch (Slow)"
+         4 "Build KoboldCpp [No-Blas] (Slow)")
          
          
 CHOICE=$(dialog --clear \
@@ -24,16 +25,22 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-        cd $PREFIX/etc/proot-distro
-        wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-fast.sh -O 'altaera.sh' -q --show-progress
+        wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-3-very_fast.sh
+        chmod a+x 'altaera_install_pt-3-very_fast.sh'
+        bash 'altaera_install_pt-3-very_fast.sh'
         ;;
         
         2)
         cd $PREFIX/etc/proot-distro
-        wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-slow.sh -O 'altaera.sh' -q --show-progress
+        wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-fast.sh -O 'altaera.sh' -q --show-progress
         ;;
         
         3)
+        cd $PREFIX/etc/proot-distro
+        wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-slow.sh -O 'altaera.sh' -q --show-progress
+        ;;
+        
+        4)
         cd $PREFIX/etc/proot-distro
         wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-slow_no-blas.sh -O 'altaera.sh' -q --show-progress
         ;;
