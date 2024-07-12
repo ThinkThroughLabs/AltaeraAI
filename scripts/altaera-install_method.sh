@@ -25,8 +25,10 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-        wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-3-very_fast.sh
-        chmod a+x 'altaera_install_pt-3-very_fast.sh'
+        {
+        wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-3-very_fast.sh -O 'altaera_install_pt-3.sh'
+        chmod a+x 'altaera_install_pt-3.sh'
+        } &> /dev/null 2>&1;
         bash 'altaera_install_pt-3-very_fast.sh'
         ;;
         
