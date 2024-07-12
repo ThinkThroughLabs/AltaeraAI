@@ -18,6 +18,7 @@ rm -rf 'AltaeraAI-tmp'
 rm -rf 'AltaeraAI'
 mkdir 'AltaeraAI-tmp'
 mkdir 'AltaeraAI-tmp/models'
+mkdir 'AltaeraAI/root'
 mkdir 'AltaeraAI'
 
 HEIGHT=20
