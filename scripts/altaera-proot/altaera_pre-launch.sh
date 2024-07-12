@@ -1,8 +1,8 @@
-if [ -d /root/kcpp-ae ]
+if [ -d /AltaeraAI/root/kcpp-ae ]
  then
-     bash 'altaera.sh'
+     bash '/AltaeraAI/root/altaera.sh'
  else
-     bash 'altaera_corrupted-files.sh'
+     bash '/AltaeraAI/root/altaera_corrupted-files.sh'
  fi
 
 clear
