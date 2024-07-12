@@ -7,8 +7,8 @@ BACKTITLE="AltaeraAI Installation - Method"
 TITLE="Please choose your method of installing AltaeraAI"
 MENU="Which installation method do you prefer?:"
 
-OPTIONS=(1 "Install pre-packaged PRoot-Distro and KoboldCpp (Very Fast) [Default]"
-         2 "Install pre-packaged KoboldCpp (Fast) - [Default]"
+OPTIONS=(1 "Install pre-packaged PD and KCPP (Very Fast) - [Default]"
+         2 "Install pre-packaged KoboldCpp (Fast)"
          3 "Build KoboldCpp from scratch (Slow)"
          4 "Build KoboldCpp [No-Blas] (Slow)")
          
