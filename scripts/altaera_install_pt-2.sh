@@ -291,3 +291,36 @@ rm -rf 'initial.sh'
 
 cd ..
 } &> /dev/null 2>&1;
+
+HEIGHT=20
+WIDTH=60
+CHOICE_HEIGHT=6
+BACKTITLE="AltaeraAI Installation - Method"
+TITLE="Please choose your method of installing AltaeraAI"
+MENU="Which installation method do you prefer? Note that AltaeraAI Lite will install much faster, but does not support OpenBLAS:"
+
+OPTIONS=(1 "AltaeraAI Lite - No PRoot (Faster) [Default]"
+         2 "AltaeraAI - PRoot-Distro (Slower)")
+         
+         
+CHOICE=$(dialog --clear \
+                --backtitle "$BACKTITLE" \
+                --title "$TITLE" \
+                --menu "$MENU" \
+                $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                "${OPTIONS[@]}" \
+                2>&1 >/dev/tty)
+                
+                
+clear
+case $CHOICE in
+        1)
+        mkdir './AltaeraAI/core'
+        cd './AltaeraAI/core'
+        ;;
+        
+        2)
+        :
+        ;;
+        
+        esac
