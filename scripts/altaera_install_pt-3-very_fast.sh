@@ -112,9 +112,11 @@ echo "Extracting pre-packaged PRoot-Distro ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
+{
 tar xvf 'altaera.tar.gz'
 rm 'altaera.tar.gz'
 rm '$PREFIX/etc/proot-distro/altaera.sh'
+} &> /dev/null 2>&1;
 
 clear
 
