@@ -71,8 +71,6 @@ else
 :
 fi
 
-clear
-
 echo "Moving the AI model and prompt file into proper directory...";
 
 {
