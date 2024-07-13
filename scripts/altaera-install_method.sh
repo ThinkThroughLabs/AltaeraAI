@@ -36,58 +36,7 @@ case $CHOICE in
         cd $PREFIX/etc/proot-distro
         rm 'altaera.sh'
         wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-fast.sh -O 'altaera.sh' -q --show-progress
-            clear
-            echo "
-
-        ██████████
-       ██ █
-      ██  █
-     ██   █
-     █    ████████
-    ██    █
-   ████████
-  ██      █
-  █       ████████
-
-  AltaeraAI - v5.4.2
-
-    by ThinkThroughLabs
-
-
-  "
-
-  echo "Did you know...
-
-  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-  	function random_message() {
-    # Array of random messages
-    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-
-    # Generate a random index
-    index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
-    message=${messages[$index]}
-
-    # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-}
-
-# Call the function
-random_message
-
-echo "________________________________________________________________
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Installing initial files ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Installing PRoot-Distro (this will take a while, please don't exit Termux)...
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
+        
         ;;
         
         3)
@@ -95,114 +44,11 @@ echo "Installing PRoot-Distro (this will take a while, please don't exit Termux)
         rm 'altaera.sh'
         wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-slow.sh -O 'altaera.sh' -q --show-progress
         ;;
-            clear
-            echo "
-
-        ██████████
-       ██ █
-      ██  █
-     ██   █
-     █    ████████
-    ██    █
-   ████████
-  ██      █
-  █       ████████
-
-  AltaeraAI - v5.4.2
-
-    by ThinkThroughLabs
-
-
-  "
-
-  echo "Did you know...
-
-  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-  	function random_message() {
-    # Array of random messages
-    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-
-    # Generate a random index
-    index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
-    message=${messages[$index]}
-
-    # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-}
-
-# Call the function
-random_message
-
-echo "________________________________________________________________
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Installing initial files ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Installing PRoot-Distro (this will take a while, please don't exit Termux)...
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
+        
         4)
         cd $PREFIX/etc/proot-distro
         rm 'altaera.sh'
         wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-slow_no-blas.sh -O 'altaera.sh' -q --show-progress
-            clear
-            echo "
-
-        ██████████
-       ██ █
-      ██  █
-     ██   █
-     █    ████████
-    ██    █
-   ████████
-  ██      █
-  █       ████████
-
-  AltaeraAI - v5.4.2
-
-    by ThinkThroughLabs
-
-
-  "
-
-  echo "Did you know...
-
-  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-  	function random_message() {
-    # Array of random messages
-    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-
-    # Generate a random index
-    index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
-    message=${messages[$index]}
-
-    # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-}
-
-# Call the function
-random_message
-
-echo "________________________________________________________________
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Installing initial files ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Installing PRoot-Distro (this will take a while, please don't exit Termux)...
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
         ;;
         
         esac
