@@ -66,7 +66,9 @@ bash 'altaera-install_method.sh'
 clear
 if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
 then
-proot-distro install altaera
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/pd-in.sh
+chmod a+x 'pd-in.sh'
+bash 'pd-in.sh'
 else
 :
 fi
@@ -87,12 +89,15 @@ rm -rf '/data/data/com.termux/files/home/altaera_install_pt-2.sh'
 rm -rf 'altaera-install_method.sh'
 rm -rf '/data/data/com.termux/files/home/altaera_install_model.sh'
 rm -rf '/data/data/com.termux/files/home/install'
+rm -rf '/data/data/com.termux/files/home/pd-in.sh'
 clear
 } &> /dev/null 2>&1;
 
 if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
 then
-proot-distro login altaera
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/pd-login.sh
+chmod a+x 'pd-login.sh'
+bash 'pd-login.sh'
 else
 :
 fi
@@ -104,6 +109,7 @@ chmod a+x 'altaera-pd_integrity_check.sh'
 } &> /dev/null 2>&1;
 bash 'altaera-pd_integrity_check.sh'
 rm -rf 'altaera-pd_integrity_check.sh'
+rm -rf '/data/data/com.termux/files/home/pd-login.sh'
 
 echo "**********INSTALLATION COMPLETED**********
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
