@@ -94,7 +94,9 @@ echo "
 
       --- Then, open Termux and:
       
-- To start, please type in 'ae'."
+- To start, please type in 'ae'.
+
+            [Please, ignore the 'ERROR' below if it shows up]"
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
