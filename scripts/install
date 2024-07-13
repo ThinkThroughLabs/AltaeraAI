@@ -66,9 +66,7 @@ bash 'altaera-install_method.sh'
 clear
 if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
 then
-{
 proot-distro install altaera
-} &> /dev/null 2>&1;
 else
 :
 fi
