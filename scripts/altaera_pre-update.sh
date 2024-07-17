@@ -12,7 +12,7 @@
                 } &> /dev/null 2>&1;
                 
          if [ $(bash 'AltaeraAI/altaera-version_package.sh'
-          ) = "v5.4.tar.gz" ]; then
+          ) = "v5.5.tar.gz" ]; then
           cd "AltaeraAI"
           rm -rf 'AltaeraAI/altaera-version_package.sh'
           rm -rf 'altaera-update_content.sh'
@@ -29,7 +29,7 @@
   ██      █
   █       ████████
 
-  AltaeraAI - v5.4.2
+  AltaeraAI - v5.5
 
     by ThinkThroughLabs
 

@@ -11,7 +11,7 @@
   ██      █
   █       ████████
 
-  AltaeraAI - v5.4.2
+  AltaeraAI - v5.5
 
     by ThinkThroughLabs
 
@@ -63,7 +63,7 @@ echo "________________________________________________________________
   ██      █
   █       ████████
 
-  AltaeraAI - v5.4.2
+  AltaeraAI - v5.5
 
     by ThinkThroughLabs
 
@@ -118,7 +118,7 @@ echo "________________________________________________________________
   ██      █
   █       ████████
 
-  AltaeraAI - v5.4.2
+  AltaeraAI - v5.5
 
     by ThinkThroughLabs
 
