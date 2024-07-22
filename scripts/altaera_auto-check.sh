@@ -18,10 +18,10 @@ clear
           --msgbox 'AltaeraAI is experiencing malfunctions at this very moment. If you have recently downloaded or updated it, chances are some things will be broken. Please, give us some time to carry out code repairs. Sorry for the inconvenience!' 10 30
 
         fi
-          ;;
-        1) ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
-        255) ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
-esac
+
+{
+rm -rf 'altaera-functional_status.sh'
+} &> /dev/null 2>&1;
 
 if
          [ $(cat < /dev/null > /dev/tcp/8.8.8.8/53; echo $?
