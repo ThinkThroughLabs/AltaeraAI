@@ -19,10 +19,6 @@ clear
 
         fi
 
-{
-rm -rf 'altaera-functional_status.sh'
-} &> /dev/null 2>&1;
-
 if
          [ $(cat < /dev/null > /dev/tcp/8.8.8.8/53; echo $?
           ) = "0" ]; then
