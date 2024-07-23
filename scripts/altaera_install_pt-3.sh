@@ -36,7 +36,7 @@ case $CHOICE in
   ██      █
   █       ████████
 
-  AltaeraAI - v5.5
+  AltaeraAI - v5.5.1
 
     by ThinkThroughLabs
 
@@ -148,7 +148,7 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
   ██      █
   █       ████████
 
-  AltaeraAI - v5.5
+  AltaeraAI - v5.5.1
 
     by ThinkThroughLabs
 
