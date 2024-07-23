@@ -1,7 +1,7 @@
 #!/bin/bash
 
-###Is everything alright?
+###Is anything wrong with the code?
 
-echo "true"
+echo "false"
 
 exit
