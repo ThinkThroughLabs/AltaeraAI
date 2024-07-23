@@ -3,6 +3,7 @@
 dialog --backtitle "AltaeraAI" \
 --title "AltaeraAI - Changelog [CLI]" \
 --msgbox '
+    * v5.5.1 - a “Functional Status” check has been added, which will notify the user of ongoing technical difficulties (determined by the repository owner) that may occur for users who have recently installed or upgraded AltaerAI, due to its rolling-release lifecycle
     * v5.5 - updated to koboldcpp-1.70.1
     * v5.4.2 - a "very fast" installation method has been introduced that drastically shortens the process. It uses a pre-packaged PRoot-Distro environment, instead of installing it from scratch, and restores it in a backup form. It is now a default installation method
     * v5.4.1 - added an automatic Termux update check, which will inform the user of an available update and allow the user to choose whether Termux was initially downloaded from GitHub or from F-Droid to further proceed (this is necessary for the update to actually work). This functionality is set by default (as are automatic update & file integrity checks), but can also be disabled under settings
@@ -13,7 +14,7 @@ dialog --backtitle "AltaeraAI" \
     * added an initial solution to when the PRoot Distro environment fails to install, during the installation process
     * v5.2.2 - added the ability to enter a custom value for Context & Blas Batch Size, in addition to the fixed sizes
     * various visual improvements and fixes to the MENU
-    * v5.2.1 - introduced "File integrity checks", which run simultaneously with the update checking mechanism, to determine potential file deficiences that can impact AltaeraAIs functionality; in case there are missing files, the user will be asked whether to carry out file repair. Said functionality is set by default (as are automatic update checks), but can also be disabled under settings
+    * v5.2.1 - introduced "File Integrity checks", which run simultaneously with the update checking mechanism, to determine potential file deficiences that can impact AltaeraAIs functionality; in case there are missing files, the user will be asked whether to carry out file repair. Said functionality is set by default (as are automatic update checks), but can also be disabled under settings
     * visual fixes and improvements, changes to the MENU
     * v5.2 – updated to koboldcpp-1.68
     * added the “Horde” option to the MENU, which utilises AI Horde to allow for sharing your processing power (an AI Model) for users worldwide
