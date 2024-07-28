@@ -7,6 +7,7 @@ dialog --backtitle "AltaeraAI" \
 
 Recent changes:
 
+    * v5.5.2 - fixed a bug that caused the “Functional Status” check to always inform the user of technical difficulties
     * v5.5.1 - a “Functional Status” check has been added, which will notify the user of ongoing technical difficulties (as determined by the repository owner) that may occur for users who have recently installed or upgraded AltaerAI, due to its rolling-release lifecycle
     * v5.5 - updated to koboldcpp-1.70.1
     * v5.4.2 - a "very fast" installation method has been introduced that drastically shortens the process. It uses a pre-packaged PRoot-Distro environment, instead of installing it from scratch, and restores it in a backup form. It is now a default installation method
