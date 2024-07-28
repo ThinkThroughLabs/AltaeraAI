@@ -7,6 +7,7 @@ dialog --backtitle "AltaeraAI" \
 
 Recent changes:
 
+    * v5.6 - updated to koboldcpp-1.71.1
     * v5.5.2 - fixed a bug that caused the “Functional Status” check to always inform the user of technical difficulties
     * v5.5.1 - a “Functional Status” check has been added, which will notify the user of ongoing technical difficulties (as determined by the repository owner) that may occur for users who have recently installed or upgraded AltaerAI, due to its rolling-release lifecycle
     * v5.5 - updated to koboldcpp-1.70.1
@@ -14,7 +15,6 @@ Recent changes:
     * v5.4.1 - added an automatic Termux update check, which will inform the user of an available update and allow the user to choose whether Termux was initially downloaded from GitHub or from F-Droid to further proceed (this is necessary for the update to actually work). This functionality is set by default (as are automatic update & file integrity checks), but can also be disabled under settings
     * v5.4 - updated to koboldcpp-1.69.1
     * added Gemma-2-9B-it weights to the list of models
-    * v5.3 - updated to koboldcpp-1.69
 ' 25 40
 
 bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
