@@ -1,9 +1,6 @@
 #!/bin/bash
 
-termux-change-repo
-pkg install termux-am
-clear
-##termux-setup-storage
+##termux-change-repo
 echo "Updating Termux apt repositories' mirrors...";
 {
 cd '/data/data/com.termux/files/usr/etc/apt'
@@ -11,6 +8,9 @@ rm 'sources.list'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/termux/sources.list
 cd
 } &> /dev/null 2>&1;
+pkg install termux-am
+clear
+termux-setup-storage
 apt update && apt -o DPkg::Options::="--force-confnew" -y upgrade
 apt-get -o DPkg::Options::="--force-confnew" -y install openssl-1.1 wget
 pkg install wget curl proot-distro -y
