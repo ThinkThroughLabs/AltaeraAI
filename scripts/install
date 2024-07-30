@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ##termux-change-repo
+clear
 echo "Updating Termux apt repositories' mirrors...
 ";
 {
