@@ -1,19 +1,28 @@
 #!/bin/bash
 
 ##termux-change-repo
-echo "Updating Termux apt repositories' mirrors...";
+echo "Updating Termux apt repositories' mirrors...
+";
 {
 cd '/data/data/com.termux/files/usr/etc/apt'
 rm 'sources.list'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/termux/sources.list
 cd
 } &> /dev/null 2>&1;
+echo "Installing Termux Activity Manager...
+";
+{
 pkg install termux-am
+} &> /dev/null 2>&1;
 clear
 termux-setup-storage
+echo "Installing necessary Termux packages...
+";
+{
 apt update && apt -o DPkg::Options::="--force-confnew" -y upgrade
 apt-get -o DPkg::Options::="--force-confnew" -y install openssl-1.1 wget
 pkg install wget curl proot-distro -y
+} &> /dev/null 2>&1;
 
 echo "Removing previous AltaeraAI files [if there are any]...";
 
