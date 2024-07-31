@@ -183,6 +183,21 @@ echo "Installing internal Termux files...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
+cd '/data/data/com.termux/files/home'
+{
+rm -rf "/etc/bash.bashrc"
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/bash.bashrc
+cp 'bash.bashrc' "/etc"
+rm -rf 'bash.bashrc'
+dialog --create-rc ~/.dialogrc
+sed -i '/^screen_color = (CYAN,BLUE,ON)/d' ~/.dialogrc
+echo "screen_color = (CYAN,BLACK,ON)" >> ~/.dialogrc
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-4.sh
+chmod a+x 'altaera_install_pt-4.sh'
+} &> /dev/null 2>&1;
+
+clear
+
 clear
 
             echo "
@@ -244,28 +259,6 @@ echo "Installing internal Termux files ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Creating a temporary file...
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-{
-cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/very_fast-tmp.sh
-} &> /dev/null 2>&1;
-
-sleep .5
-
-cd '/data/data/com.termux/files/home'
-{
-rm -rf "/etc/bash.bashrc"
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/bash.bashrc
-cp 'bash.bashrc' "/etc"
-rm -rf 'bash.bashrc'
-dialog --create-rc ~/.dialogrc
-sed -i '/^screen_color = (CYAN,BLUE,ON)/d' ~/.dialogrc
-echo "screen_color = (CYAN,BLACK,ON)" >> ~/.dialogrc
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-4.sh
-chmod a+x 'altaera_install_pt-4.sh'
-} &> /dev/null 2>&1;
+wait .5
 
 ./altaera_install_pt-4.sh
