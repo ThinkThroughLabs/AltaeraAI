@@ -112,7 +112,9 @@ clear
 
 if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
 then
+{
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/pd-login.sh
+} &> /dev/null 2>&1;
 chmod a+x 'pd-login.sh'
 bash 'pd-login.sh'
 else
