@@ -31,6 +31,10 @@ echo "
 Notice: AltaeraAI periodically undergoes heavy changes that can disrupt the installation process. If this disruption occurs, please try the installation a little later.
 "
 
+echo "[If you wish to stop the installation, press 'Ctrl+D']
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
 echo "
 Beginning installation in:
 "
