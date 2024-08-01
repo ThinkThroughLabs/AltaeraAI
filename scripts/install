@@ -57,30 +57,123 @@ echo "
 sleep 1
 
 clear
+
+            echo "
+ _____                              
+|_   _|                             
+  | | ___ _ __ _ __ ___  _   ___  __
+  | |/ _ \ '__| '_ ` _ \| | | \ \/ /
+  | |  __/ |  | | | | | | |_| |>  < 
+  \_/\___|_|  |_| |_| |_|\__,_/_/\_\
+                                    
+  Installing Termux dependencies...
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
 echo "Updating Termux apt repositories' mirrors...
-";
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
 {
 cd '/data/data/com.termux/files/usr/etc/apt'
 rm 'sources.list'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/termux/sources.list
 cd
 } &> /dev/null 2>&1;
+
+clear
+
+            echo "
+ _____                              
+|_   _|                             
+  | | ___ _ __ _ __ ___  _   ___  __
+  | |/ _ \ '__| '_ ` _ \| | | \ \/ /
+  | |  __/ |  | | | | | | |_| |>  < 
+  \_/\___|_|  |_| |_| |_|\__,_/_/\_\
+                                    
+  Installing Termux dependencies...
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Updating Termux apt repositories' mirrors ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
 echo "Installing Termux Activity Manager...
-";
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
 {
 pkg install termux-am
 } &> /dev/null 2>&1;
 clear
 termux-setup-storage
+
+clear
+
+            echo "
+ _____                              
+|_   _|                             
+  | | ___ _ __ _ __ ___  _   ___  __
+  | |/ _ \ '__| '_ ` _ \| | | \ \/ /
+  | |  __/ |  | | | | | | |_| |>  < 
+  \_/\___|_|  |_| |_| |_|\__,_/_/\_\
+                                    
+  Installing Termux dependencies...
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Updating Termux apt repositories' mirrors ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Installing Termux Activity Manager ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
 echo "Installing necessary Termux packages...
-";
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
 {
 apt update && apt -o DPkg::Options::="--force-confnew" -y upgrade
 apt-get -o DPkg::Options::="--force-confnew" -y install openssl-1.1 wget
 pkg install wget curl proot-distro -y
 } &> /dev/null 2>&1;
 
-echo "Removing previous AltaeraAI files [if there are any]...";
+clear
+
+            echo "
+ _____                              
+|_   _|                             
+  | | ___ _ __ _ __ ___  _   ___  __
+  | |/ _ \ '__| '_ ` _ \| | | \ \/ /
+  | |  __/ |  | | | | | | |_| |>  < 
+  \_/\___|_|  |_| |_| |_|\__,_/_/\_\
+                                    
+  Installing Termux dependencies...
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Updating Termux apt repositories' mirrors ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Installing Termux Activity Manager ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Installing necessary Termux packages ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Removing previous AltaeraAI files [if there are any]...
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 {
 proot-distro remove altaera
@@ -91,6 +184,37 @@ rm -rf 'AltaeraAI'
 mkdir 'AltaeraAI-tmp'
 mkdir 'AltaeraAI-tmp/models'
 mkdir 'AltaeraAI'
+
+clear
+
+            echo "
+ _____                              
+|_   _|                             
+  | | ___ _ __ _ __ ___  _   ___  __
+  | |/ _ \ '__| '_ ` _ \| | | \ \/ /
+  | |  __/ |  | | | | | | |_| |>  < 
+  \_/\___|_|  |_| |_| |_|\__,_/_/\_\
+                                    
+  Installing Termux dependencies...
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Updating Termux apt repositories' mirrors ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Installing Termux Activity Manager ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Installing necessary Termux packages ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Removing previous AltaeraAI files [if there are any ✔
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 HEIGHT=20
 WIDTH=60
