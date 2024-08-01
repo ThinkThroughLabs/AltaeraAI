@@ -228,6 +228,8 @@ echo "Removing previous AltaeraAI files [if there are any] ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
+sleep 0.5
+
 HEIGHT=20
 WIDTH=60
 CHOICE_HEIGHT=6
