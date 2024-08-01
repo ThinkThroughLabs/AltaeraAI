@@ -19,7 +19,10 @@ clear
     by ThinkThroughLabs
 
 
-echo "Welcome
+  "
+
+
+echo "Welcome!
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -72,6 +75,9 @@ clear
                                     
   Installing Termux dependencies...
 
+
+  "
+
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -97,6 +103,9 @@ clear
   \_/\___|_|  |_| |_| |_|\__,_/_/\_\
                                     
   Installing Termux dependencies...
+
+
+  "
 
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
@@ -126,6 +135,9 @@ clear
   \_/\___|_|  |_| |_| |_|\__,_/_/\_\
                                     
   Installing Termux dependencies...
+
+
+  "
 
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
@@ -159,6 +171,9 @@ clear
   \_/\___|_|  |_| |_| |_|\__,_/_/\_\
                                     
   Installing Termux dependencies...
+
+
+  "
 
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
@@ -200,6 +215,9 @@ clear
   \_/\___|_|  |_| |_| |_|\__,_/_/\_\
                                     
   Installing Termux dependencies...
+
+
+  "
 
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
