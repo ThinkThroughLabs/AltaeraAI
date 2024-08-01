@@ -25,10 +25,7 @@ clear
 rm -rf 'models'
 rm -rf 'klite.embd'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/klite/klite.embd
-      cd ..
-      cd 'kcpp-ae_cm'
-      rm -rf 'klite.embd'
-      wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/klite/klite.embd
+
 
       cd '~'
       rm -rf 'altaera-v5.6.tar.gz'

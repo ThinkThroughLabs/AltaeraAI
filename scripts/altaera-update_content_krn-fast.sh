@@ -285,14 +285,8 @@ chmod a+x 'upgrade.sh'
 rm -rf 'ngrok-authtoken.sh'
 wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/v5.6/altaera-v5.6.tar.gz
 tar -xf 'altaera-v5.6.tar.gz'
-cd 'kcpp-ae'
-rm -rf 'models'
-rm -rf 'klite.embd'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/klite/klite.embd
-      cd ..
-      cd 'kcpp-ae_cm'
-      rm -rf 'klite.embd'
-      wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/klite/klite.embd
+
+
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
 cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
 mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts'

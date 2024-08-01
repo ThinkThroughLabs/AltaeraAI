@@ -97,14 +97,8 @@ mv 'koboldcpp' 'kcpp-ae'
       tar -xf 'altaera-v3.1.tar.gz'
       mv 'koboldcpp-altaera' 'kcpp-ae_cm'
       rm -rf 'altaera-v3.1.tar.gz'
-      cd 'kcpp-ae_cm'
-      rm -rf 'klite.embd'
-      wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/klite/klite.embd
-      cd ..
-cd 'kcpp-ae'
-rm -rf 'models'
-rm -rf 'klite.embd'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/klite/klite.embd
+
+
 cd '/root/kcpp-ae'
 make LLAMA_OPENBLAS=1
 cd '/root'
