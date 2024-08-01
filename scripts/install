@@ -2,6 +2,61 @@
 
 ##termux-change-repo
 clear
+            echo "
+
+        ██████████
+       ██ █
+      ██  █
+     ██   █
+     █    ████████
+    ██    █
+   ████████
+  ██      █
+  █       ████████
+
+  AltaeraAI - v5.6
+
+    by ThinkThroughLabs
+
+
+echo "Welcome!
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Before we install...
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "
+Notice: AltaeraAI periodically undergoes heavy changes that can disrupt the installation process. If this disruption occurs, please try the installation a little later.
+"
+
+echo "
+Beginning installation in:
+"
+
+echo "
+5...
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+sleep 1
+echo "
+4...
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+sleep 1
+echo "
+3...
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+sleep 1
+echo "
+2...
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+sleep 1
+echo "
+1...
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+sleep 1
+
+clear
 echo "Updating Termux apt repositories' mirrors...
 ";
 {
