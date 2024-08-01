@@ -158,12 +158,12 @@ bash 'altaera_install_pt-2.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
-if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
-then
-proot-distro install altaera
-else
-:
-fi
+##if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+##then
+##proot-distro install altaera
+##else
+##:
+##fi
 
 echo "Moving the AI model and prompt file into proper directory...";
 
