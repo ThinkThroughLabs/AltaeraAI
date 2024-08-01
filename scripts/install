@@ -224,7 +224,7 @@ echo "Installing necessary Termux packages ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Removing previous AltaeraAI files [if there are any ✔
+echo "Removing previous AltaeraAI files [if there are any] ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
