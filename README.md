@@ -66,7 +66,7 @@ You can read more at: [altaera.ai](https://altaera.ai)
    ```
    curl -o install https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/install && chmod +x install && ./install
    ```
-- Then press ENTER and wait for the installation to finish. Make sure that you are connected to Wi-Fi because the process will download approximately 0.5GB+ of data. Installation will take as little as 2 minutes of time or more, depending on the device and Internet speed.
+- Then press ENTER and wait for the installation to finish. Make sure that you are connected to Wi-Fi, because the process will download approximately 0.5GB+ of data. Installation will take as little as 2 minutes of time or more, depending on the device and Internet speed.
 
 <p align="center">
 <video src="https://github.com/ThinkThroughLabs/AltaeraAI/assets/121747280/4fb1a268-cf8f-450b-b5ea-eb41bb874547" width="720" height="1560" />
