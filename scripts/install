@@ -31,8 +31,14 @@ echo "Before we install...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
 echo "
 Notice: AltaeraAI periodically undergoes heavy changes that can disrupt the installation process. If this disruption occurs, please try the installation a little later.
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 "
 
 echo "[If you wish to stop the installation, press 'Ctrl+D']
@@ -40,9 +46,19 @@ echo "[If you wish to stop the installation, press 'Ctrl+D']
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 Beginning installation in:
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
 
+echo "
+6...
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+sleep 1
+echo "
+5...
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+sleep 1
 echo "
 5...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
