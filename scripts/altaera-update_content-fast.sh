@@ -11,7 +11,7 @@
   ██      █
   █       ████████
 
-  AltaeraAI - v5.6
+  AltaeraAI - v5.7
 
     by ThinkThroughLabs
 
@@ -309,7 +309,7 @@ cd '/data/data/com.termux/files/home'
   ██      █
   █       ████████
 
-  AltaeraAI - v5.6
+  AltaeraAI - v5.7
 
     by ThinkThroughLabs
 
@@ -365,8 +365,8 @@ rm -rf 'upgrade.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/upgrade.sh
 chmod a+x 'upgrade.sh'
 rm -rf 'ngrok-authtoken.sh'
-wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/v5.6/altaera-v5.6.tar.gz
-tar -xf 'altaera-v5.6.tar.gz'
+wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/v5.7/altaera-v5.7.tar.gz
+tar -xf 'altaera-v5.7.tar.gz'
 
 
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
@@ -383,7 +383,7 @@ rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/al
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-v2.9.tar.gz'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-v3.0.tar.gz'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-v3.1.tar.gz'
-rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-v5.6.tar.gz'
+rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-v5.7.tar.gz'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-temporary'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/chat-with-bob.txt'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera_install_pt-3.sh'
@@ -448,7 +448,7 @@ cd '/data/data/com.termux/files/home'
   ██      █
   █       ████████
 
-  AltaeraAI - v5.6
+  AltaeraAI - v5.7
 
     by ThinkThroughLabs
 
@@ -511,7 +511,7 @@ clear
   ██      █
   █       ████████
 
-  AltaeraAI - v5.6
+  AltaeraAI - v5.7
 
     by ThinkThroughLabs
 

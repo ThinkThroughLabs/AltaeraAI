@@ -28,5 +28,5 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 
 
       cd '~'
-      rm -rf 'altaera-v5.6.tar.gz'
+      rm -rf 'altaera-v5.7.tar.gz'
 } &> /dev/null 2>&1;

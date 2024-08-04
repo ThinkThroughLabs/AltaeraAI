@@ -15,11 +15,11 @@ rm -rf 'upgrade.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/upgrade.sh
 chmod a+x 'upgrade.sh'
 rm -rf 'ngrok-authtoken.sh'
-wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/v5.6/altaera-v5.6.tar.gz
-tar -xf 'altaera-v5.6.tar.gz'
+wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/v5.7/altaera-v5.7.tar.gz
+tar -xf 'altaera-v5.7.tar.gz'
 
 
 
       cd '~'
-      rm -rf 'altaera-v5.6.tar.gz'
+      rm -rf 'altaera-v5.7.tar.gz'
 } &> /dev/null 2>&1;
