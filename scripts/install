@@ -247,6 +247,8 @@ echo "Removing previous AltaeraAI files [if there are any] ✔
 
 sleep 0.5
 
+ae
+
 HEIGHT=20
 WIDTH=60
 CHOICE_HEIGHT=6
