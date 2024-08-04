@@ -39,7 +39,6 @@ Notice: AltaeraAI periodically undergoes heavy changes that can disrupt the inst
 
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-"
 
 echo "[If you wish to stop the installation, press 'Ctrl+D']
 
