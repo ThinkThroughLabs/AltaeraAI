@@ -11,7 +11,7 @@
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7
+  AltaeraAI - v5.7.1
 
     by ThinkThroughLabs
 
@@ -316,7 +316,7 @@ cd '/data/data/com.termux/files/home'
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7
+  AltaeraAI - v5.7.1
 
     by ThinkThroughLabs
 
@@ -418,7 +418,7 @@ cd '/data/data/com.termux/files/home'
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7
+  AltaeraAI - v5.7.1
 
     by ThinkThroughLabs
 
@@ -483,7 +483,7 @@ clear
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7
+  AltaeraAI - v5.7.1
 
     by ThinkThroughLabs
 
