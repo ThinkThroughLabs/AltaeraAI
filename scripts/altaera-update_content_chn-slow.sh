@@ -345,6 +345,9 @@ chmod a+x 'altaera-ollama.sh'
 rm -rf 'altaera-ollama_start.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_start.sh
 chmod a+x 'altaera-ollama_start.sh'
+rm -rf 'altaera-ollama_official_models.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_official_models.sh
+chmod a+x 'altaera-ollama_official_models.sh'
 rm -rf 'Modelfile'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/Modelfile
 chmod a+x 'Modelfile'
