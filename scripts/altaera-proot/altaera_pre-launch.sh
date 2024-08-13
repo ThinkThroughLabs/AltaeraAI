@@ -32,7 +32,7 @@ case $CHOICE in
 	    ;;
 	    
         2)
-            './altaera-ollama.sh"
+            bash 'altaera-ollama.sh'
 	    ;;
       
 esac
