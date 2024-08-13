@@ -78,6 +78,9 @@ chmod a+x 'altaera_auto-check.sh'
 rm -rf 'altaera_auto-check_corrupted-files.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_auto-check_corrupted-files.sh
 chmod a+x 'altaera_auto-check_corrupted-files.sh'
+rm -rf 'altaera-ollama_install.sh'
+wget wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_install.sh
+chmod a+x 'altaera-ollama_install.sh'
 rm -rf 'altaera_no-check.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_no-check.sh
 chmod a+x 'altaera_no-check.sh'
