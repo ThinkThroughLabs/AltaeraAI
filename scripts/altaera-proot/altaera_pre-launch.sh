@@ -22,7 +22,13 @@ CHOICE=$(dialog --clear \
 
 clear
 case $CHOICE in
+
         1)
+            exit
+            ./altaera.sh
+	    ;;
+     
+        2)
             if [ -d /root/kcpp-ae ]
             then
             bash 'altaera.sh'
@@ -31,7 +37,7 @@ case $CHOICE in
             fi
 	    ;;
 	    
-        2)
+        3)
             bash 'altaera-ollama.sh'
 	    ;;
       
