@@ -1,17 +1,13 @@
-FROM models
-PARAMETER num_ctx 3900
-PARAMETER temperature 0.7
-PARAMETER top_k 50
-PARAMETER top_p 0.95
-PARAMETER stop "<|system|>"
-PARAMETER stop "<|user|>"
-PARAMETER stop "<|assistant|>"
-PARAMETER stop "</s>"
+# Modelfile
+FROM "./models"
+
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
+
 TEMPLATE """
-<|system|>\n system
-{{ .System }}</s>
-<|user|>\n user
-{{ .Prompt }}</s>
-<|assistant|>\n 
+<|im_start|>system
+{{ .System }}<|im_end|>
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
 """
-SYSTEM """You are an assistant for PhD researchers, you help them find infos from research papers at ease."""
