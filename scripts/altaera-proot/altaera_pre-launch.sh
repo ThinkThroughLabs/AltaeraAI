@@ -38,7 +38,12 @@ case $CHOICE in
 	    ;;
 	    
         3)
+            if [ -d /root/.ollama ]
+            then
             bash 'altaera-ollama.sh'
+	    else
+	    bash 'altaera-ollama_install.sh'
+	    fi
 	    ;;
       
 esac
