@@ -20,7 +20,7 @@ if [ $RESULT -eq 0 ]; then
 if [[ $file == *.gguf ]]
 then
     clear
-    sed -i '/FROM models/c\FROM models/models/'$result' \\' Modelfile
+    sed -i '/FROM/c\FROM '$result' \\' Modelfile
     ollama create $result -f Modelfile
     ollama run $result
 else
