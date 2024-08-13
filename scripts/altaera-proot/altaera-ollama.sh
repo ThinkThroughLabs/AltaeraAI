@@ -10,7 +10,7 @@ MENU="Choose what to do:"
 OPTIONS=(1 "[...] Go Back"
          2 "Initialize ollama [do this first!]"
          3 "Start ollama [broken!]"
-         4 "Start ollama [its official models])
+         4 "Start ollama [its official models]")
 
 
 CHOICE=$(dialog --clear \
