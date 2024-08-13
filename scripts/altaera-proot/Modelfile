@@ -1,0 +1,17 @@
+FROM models
+PARAMETER num_ctx 3900
+PARAMETER temperature 0.7
+PARAMETER top_k 50
+PARAMETER top_p 0.95
+PARAMETER stop "<|system|>"
+PARAMETER stop "<|user|>"
+PARAMETER stop "<|assistant|>"
+PARAMETER stop "</s>"
+TEMPLATE """
+<|system|>\n system
+{{ .System }}</s>
+<|user|>\n user
+{{ .Prompt }}</s>
+<|assistant|>\n 
+"""
+SYSTEM """You are an assistant for PhD researchers, you help them find infos from research papers at ease."""
