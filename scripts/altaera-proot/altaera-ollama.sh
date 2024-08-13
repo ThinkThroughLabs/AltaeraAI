@@ -29,7 +29,7 @@ case $CHOICE in
             ;;
         2)
         clear
-        echo "Initializing ollama... Now press 'Ctrl+T', type in "ae" and start ollama 
+        echo "Initializing ollama... Now press 'Ctrl+T', type in 'ae' and start ollama 
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
