@@ -322,6 +322,12 @@ cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaer
 rm -rf 'altaera_pre-launch.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_pre-launch.sh
 chmod a+x 'altaera_pre-launch.sh'
+rm -rf 'altaera.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
+chmod a+x 'altaera.sh'
+rm -rf 'altaera-ollama.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama.sh
+chmod a+x 'altaera-ollama.sh'
 
 rm -rf 'altaera-fix.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix.sh
