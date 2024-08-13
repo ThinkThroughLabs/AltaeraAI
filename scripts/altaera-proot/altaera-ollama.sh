@@ -38,7 +38,6 @@ case $CHOICE in
             
             ;;
         3)
-            ;;
 
 files=() #blank the variable so its empty for next use
 # Loop folder, add files to array
@@ -68,4 +67,6 @@ clear
 exit
 './data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 fi
+;;
+
 esac
