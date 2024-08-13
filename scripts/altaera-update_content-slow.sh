@@ -421,6 +421,9 @@ chmod a+x 'altaera.sh'
 rm -rf 'altaera-ollama.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama.sh
 chmod a+x 'altaera-ollama.sh'
+rm -rf 'Modelfile'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/Modelfile
+chmod a+x 'Modelfile'
 
 rm -rf 'altaera-fix.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix.sh
