@@ -9,7 +9,8 @@ MENU="Choose what to do:"
 
 OPTIONS=(1 "[...] Go Back"
          2 "Initialize ollama [do this first!]"
-         3 "Start ollama")
+         3 "Start ollama [broken!]"
+         4 "Start ollama [its official models])
 
 
 CHOICE=$(dialog --clear \
@@ -39,6 +40,11 @@ case $CHOICE in
             ;;
         3)
         bash 'altaera-ollama_start.sh'
+
+;;
+
+4)
+bash 'altaera-ollama_official_models.sh'
 
 ;;
 
