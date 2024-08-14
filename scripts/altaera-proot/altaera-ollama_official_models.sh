@@ -8,7 +8,20 @@ TITLE="AltaeraAI - ollama Official Models"
 MENU="Choose a model to run:"
 
 OPTIONS=(1 "[...] Go Back"
-         2 "TinyDolphin")
+         2 "Llama 3.1 8B [4.7GB]"
+         3 "Phi 3 Mini 3.8B [2.3GB]"
+         4 "Phi 3 Medium 14B [7.9GB]"
+         5 "Gemma 2 2B [1.6GB]"
+         6 "Gemma 2 9B [5.5GB]"
+         7 "Mistral 7B [4.1GB]"
+         8 "Moondream 2 [829MB]"
+         9 "Neural Chat 7B [4.1GB]"
+         10 "Starling 7B [4.1GB]"
+         11 "Code Llama 7B [3.8GB]"
+         12 "Llama 2 Uncensored 7B [3.8GB]"
+         13 "LLaVA 7B [4.5GB]"
+         14 "Solar 10.7B [6.1GB]"
+         15 "TinyDolphin 1.1B [637MB]")
 
 
 CHOICE=$(dialog --clear \
@@ -24,11 +37,63 @@ case $CHOICE in
 
         1)
             exit
-            ./altaera.sh
+            bash '/root/altaera-ollama.sh'
             ;;
         2)
-        ollama pull tinydolphin
-        ollama run tinydolphin
-        ;;
+            ollama pull llama3.1
+            ollama run llama3.1
+            ;;
+        3)
+            ollama pull phi3
+            ollama run phi3
+            ;;
+        4)
+            ollama pull phi3:medium
+            ollama run phi3:medium
+            ;;
+        5)
+            ollama pull gemma2:2b
+            ollama run gemma2:2b
+            ;;
+        6)
+            ollama pull gemma2
+            ollama run gemma2
+            ;;
+        7)
+            ollama pull mistral
+            ollama run mistral
+            ;;
+        8)
+            ollama pull moondream
+            ollama run moondream
+            ;;
+        9)
+            ollama pull neural-chat
+            ollama run neural-chat
+            ;;
+        10)
+            ollama pull starling-lm
+            ollama run starling-lm
+            ;;
+        11)
+            ollama pull codellama
+            ollama run codellama
+            ;;
+        12)
+            ollama pull llama2-uncensored
+            ollama run llama2-uncensored
+            ;;
+        13)
+            ollama pull llama2-uncensored
+            ollama run llama2-uncensored
+            ;;
+        14)
+            ollama pull llama2-uncensored
+            ollama run llama2-uncensored
+            ;;
+        15)
+            ollama pull tinydolphin
+            ollama run tinydolphin
+            ;;
 
 esac
