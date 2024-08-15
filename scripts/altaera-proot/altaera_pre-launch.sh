@@ -25,7 +25,7 @@ case $CHOICE in
 
         1)
             exit
-            ./altaera.sh
+            bash 'AltaeraAI/altaera.sh'
 	    ;;
      
         2)
