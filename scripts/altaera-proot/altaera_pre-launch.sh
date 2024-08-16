@@ -9,7 +9,7 @@ MENU="Choose a Backend to proceed:"
 
 OPTIONS=(1 "[...] Go Back"
          2 "KoboldCpp - [Default]"
-         3 "ollama [don't use, not yet implemented!]")
+         3 "ollama [...]")
 
 
 CHOICE=$(dialog --clear \
