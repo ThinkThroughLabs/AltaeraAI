@@ -3,7 +3,7 @@
 dialog --backtitle "AltaeraAI" \
 --title "AltaeraAI - Changelog [CLI]" \
 --msgbox '
-    * v5.7.1 - added Gemma-2-2B-it and Gemma-2-2B-it-abliterated weights to the list of models
+    * v5.7.2 - added Gemma-2-2B-it and Gemma-2-2B-it-abliterated weights to the list of models
     * v5.7 - updated to koboldcpp-1.72
     * re-written the installation script to be more automated and user friendly, added visual enhancements and fixed bugs related to it
     * v5.6 - updated to koboldcpp-1.71.1

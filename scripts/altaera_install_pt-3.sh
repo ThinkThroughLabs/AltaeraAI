@@ -36,7 +36,7 @@ case $CHOICE in
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.1
+  AltaeraAI - v5.7.2
 
     by ThinkThroughLabs
 
@@ -152,7 +152,7 @@ rm -rf 'altaera-v5.7.tar.gz'
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.1
+  AltaeraAI - v5.7.2
 
     by ThinkThroughLabs
 
