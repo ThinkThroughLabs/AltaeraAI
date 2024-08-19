@@ -42,58 +42,72 @@ case $CHOICE in
         2)
             ollama pull llama3.1
             ollama run llama3.1
+            bash 'altaera-ollama_front-end.sh'
             ;;
         3)
             ollama pull phi3
             ollama run phi3
+            bash 'altaera-ollama_front-end.sh'
             ;;
         4)
             ollama pull phi3:medium
             ollama run phi3:medium
+            bash 'altaera-ollama_front-end.sh'
             ;;
         5)
             ollama pull gemma2:2b
             ollama run gemma2:2b
+            bash 'altaera-ollama_front-end.sh'
             ;;
         6)
             ollama pull gemma2
             ollama run gemma2
+            bash 'altaera-ollama_front-end.sh'
             ;;
         7)
             ollama pull mistral
             ollama run mistral
+            bash 'altaera-ollama_front-end.sh'
             ;;
         8)
             ollama pull moondream
             ollama run moondream
+            bash 'altaera-ollama_front-end.sh'
             ;;
         9)
             ollama pull neural-chat
             ollama run neural-chat
+            bash 'altaera-ollama_front-end.sh'
             ;;
         10)
             ollama pull starling-lm
             ollama run starling-lm
+            bash 'altaera-ollama_front-end.sh'
             ;;
         11)
             ollama pull codellama
             ollama run codellama
+            bash 'altaera-ollama_front-end.sh'
             ;;
         12)
             ollama pull llama2-uncensored
             ollama run llama2-uncensored
+            bash 'altaera-ollama_front-end.sh'
             ;;
         13)
             ollama pull llama2-uncensored
             ollama run llama2-uncensored
+            bash 'altaera-ollama_front-end.sh'
             ;;
         14)
             ollama pull llama2-uncensored
             ollama run llama2-uncensored
+            bash 'altaera-ollama_front-end.sh'
             ;;
         15)
             ollama pull tinydolphin
             ollama run tinydolphin
+            bash 'altaera-ollama_front-end.sh'
             ;;
 
 esac
