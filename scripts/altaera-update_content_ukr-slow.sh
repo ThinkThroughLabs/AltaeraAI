@@ -336,6 +336,9 @@ chmod a+x 'altaera.sh'
 rm -rf 'altaera-ollama.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama.sh
 chmod a+x 'altaera-ollama.sh'
+rm -rf 'altaera-ollama_install.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_install.sh
+chmod a+x 'altaera-ollama_install.sh'
 rm -rf 'altaera-ollama_start.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_start.sh
 chmod a+x 'altaera-ollama_start.sh'
