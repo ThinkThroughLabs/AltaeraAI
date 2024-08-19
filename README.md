@@ -63,7 +63,7 @@ You can read more at: [altaera.ai](https://altaera.ai)
 1. Download and install [Termux](https://f-droid.org/repo/com.termux_118.apk)
 2. Open Termux and paste in:
    
-   ```
+   ```bash
    curl -fsSL install.altaera.ai | bash
    ```
 - Then press ENTER and wait for the installation to finish. Make sure you have a Wi-Fi connection, as the process will download about 0.5 GB (or more) of data. The installation will take just 2 minutes or more, depending on your device and internet speed.
