@@ -64,7 +64,7 @@ You can read more at: [altaera.ai](https://altaera.ai)
 2. Open Termux and paste in:
    
    ```
-   curl -o install https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/install && chmod +x install && ./install
+   curl -fsSL https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/install | sh
    ```
 - Then press ENTER and wait for the installation to finish. Make sure you have a Wi-Fi connection, as the process will download about 0.5 GB (or more) of data. The installation will take just 2 minutes or more, depending on your device and internet speed.
 
