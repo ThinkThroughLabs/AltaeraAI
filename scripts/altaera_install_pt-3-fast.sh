@@ -68,6 +68,12 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 chmod a+x 'altaera-ollama_start.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_official_models.sh
 chmod a+x 'altaera-ollama_official_models.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_front-end.sh
+chmod a+x 'altaera-ollama_front-end.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_maid-install.sh
+chmod a+x 'altaera-ollama_maid-install.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_maid.sh
+chmod a+x 'altaera-ollama_maid.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/Modelfile
 chmod a+x 'Modelfile'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_pre-launch.sh
