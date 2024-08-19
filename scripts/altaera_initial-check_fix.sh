@@ -227,9 +227,43 @@ chmod a+x 'altaera-model_backup-restore.sh'
 chmod a+x 'altaera-model_restore.sh'
 
 cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/'
+rm -rf 'altaera_pre-launch.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_pre-launch.sh
+chmod a+x 'altaera_pre-launch.sh'
 rm -rf 'altaera.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
 chmod a+x 'altaera.sh'
+rm -rf 'altaera-ollama.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama.sh
+chmod a+x 'altaera-ollama.sh'
+rm -rf 'altaera-ollama_start.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_start.sh
+chmod a+x 'altaera-ollama_start.sh'
+rm -rf 'altaera-ollama_official_models.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_official_models.sh
+chmod a+x 'altaera-ollama_official_models.sh'
+rm -rf 'altaera-ollama_front-end.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_front-end.sh
+chmod a+x 'altaera-ollama_front-end.sh'
+rm -rf 'altaera-ollama_maid-install.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_maid-install.sh
+chmod a+x 'altaera-ollama_maid-install.sh'
+rm -rf 'altaera-ollama_maid.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_maid.sh
+chmod a+x 'altaera-ollama_maid.sh'
+rm -rf 'Modelfile'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/Modelfile
+chmod a+x 'Modelfile'
+
+rm -rf 'altaera-fix.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix.sh
+chmod a+x 'altaera-fix.sh'
+rm -rf 'altaera-fixed_successfully.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fixed_successfully.sh
+chmod a+x 'altaera-fixed_successfully.sh'
+rm -rf 'altaera_corrupted-files.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_corrupted-files.sh
+chmod a+x 'altaera_corrupted-files.sh'
 rm -rf 'benchmark.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/benchmark.sh
 chmod a+x 'benchmark.sh'
