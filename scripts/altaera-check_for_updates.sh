@@ -17,8 +17,7 @@ case $response in
                 cd ..
                 } &> /dev/null 2>&1;
 
-         if [ -d /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae ]
-         elif [ $(bash 'AltaeraAI/altaera-version_upstream.sh'
+         if [ $(bash 'AltaeraAI/altaera-version_upstream.sh'
           ) = "v5.7.2" ]; then
           rm -rf 'AltaeraAI/altaera-version_upstream.sh'
           bash 'AltaeraAI/altaera-up_to_date.sh'
