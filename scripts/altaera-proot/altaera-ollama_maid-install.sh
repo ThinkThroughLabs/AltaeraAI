@@ -10,20 +10,34 @@ case $response in
         0)  
         clear
         echo "We will download and install Maid on your device. Once it's installed, please open the app, then expand the Back-end option on top of the interface and choose 'Ollama' to proceed"
-        echo "Downloading and installing Maid in:"
-        echo "6..."
+        echo "Downloading and installing Maid in:
+        
+                " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);"
+        echo "6...
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
         sleep 1
-        echo "5..."
+        echo "5...
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
         sleep 1
-        echo "4..."
+        echo "4...
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
         sleep 1
-        echo "3..."
+        echo "3...
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
         sleep 1
-        echo "2..."
+        echo "2...
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
         sleep 1
-        echo "1..."
+        echo "1...
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
         sleep 1
-        echo "Downloading Maid..."
+        
+        echo "________________________________________________________________
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+        
+        echo "Downloading Maid...
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);"
+        
         {
         cd '/sdcard/Download'
         } &> /dev/null 2>&1;
