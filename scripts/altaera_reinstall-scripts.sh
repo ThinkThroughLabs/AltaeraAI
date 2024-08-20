@@ -13,7 +13,7 @@
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.2
+  AltaeraAI - v5.7.3
 
     by ThinkThroughLabs
 
