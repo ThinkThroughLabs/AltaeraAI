@@ -5,16 +5,16 @@
          if [ -d /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae ]; then
                 {
                 cd "AltaeraAI"
-                rm -rf 'altaera-version_package.sh'
-                wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-version_package.sh
-                chmod a+x 'altaera-version_package.sh'
+                rm -rf 'kcpp-ae-version_package.sh'
+                wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/kcpp-ae-version_package.sh
+                chmod a+x 'kcpp-ae-version_package.sh'
                 cd ..
                 } &> /dev/null 2>&1;
                 
-         if [ $(bash 'AltaeraAI/altaera-version_package.sh'
+         if [ $(bash 'AltaeraAI/kcpp-ae-version_package.sh'
           ) = "v5.7.tar.gz" ]; then
           cd "AltaeraAI"
-          rm -rf 'AltaeraAI/altaera-version_package.sh'
+          rm -rf 'AltaeraAI/kcpp-ae-version_package.sh'
           rm -rf 'altaera-update_content.sh'
             clear
             echo "
