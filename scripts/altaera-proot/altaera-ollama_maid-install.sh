@@ -12,17 +12,17 @@ case $response in
         echo "We will download and install Maid on your device. Once it's installed, please open the app, then expand the Back-end option on top of the interface and choose 'Ollama' to proceed"
         echo "Downloading and installing Maid in:"
         echo "6..."
-        wait 1
+        sleep 1
         echo "5..."
-        wait 1
+        sleep 1
         echo "4..."
-        wait 1
+        sleep 1
         echo "3..."
-        wait 1
+        sleep 1
         echo "2..."
-        wait 1
+        sleep 1
         echo "1..."
-        wait 1
+        sleep 1
         echo "Downloading Maid..."
         {
         cd '/sdcard/Download'
