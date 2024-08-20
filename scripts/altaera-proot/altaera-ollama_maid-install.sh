@@ -13,6 +13,7 @@ case $response in
         echo "Downloading and installing Maid in:
         
         " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+        
         echo "6...
         " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
         sleep 1
