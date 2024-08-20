@@ -9,7 +9,12 @@ case $response in
 
         0)  
         clear
-        echo "Please, open 'Maid', then expand the Back-end option on top of the interface and choose 'Ollama' to proceed"
+        echo "Please, open 'Maid', then expand the Back-end option on top of the interface and choose 'Ollama' to proceed.
+        You can also use the CLI interface on the bottom of this terminal window, if you wish
+        
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+        echo "________________________________________________________________
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
           ;;
         1) ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
         255) ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
