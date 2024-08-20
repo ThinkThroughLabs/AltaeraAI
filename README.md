@@ -27,7 +27,7 @@ AltaeraAI is a [Termux](https://github.com/termux) wrapper that packages multipl
 
 - [KoboldCpp](https://github.com/LostRuins/koboldcpp) and Kobold Lite UI
 
-- ollama and its external Front-ends
+- [ollama](https://github.com/ollama/ollama) and its external Front-ends
 
 ## What is it about?
 
