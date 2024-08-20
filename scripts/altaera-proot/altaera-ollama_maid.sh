@@ -16,6 +16,6 @@ case $response in
         echo "________________________________________________________________
         " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
           ;;
-        1) ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
-        255) ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
+        1) bash '/root/altaera-ollama.sh';;
+        255) bash '/root/altaera-ollama.sh';;
 esac
