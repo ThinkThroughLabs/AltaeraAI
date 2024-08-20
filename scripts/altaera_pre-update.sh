@@ -74,7 +74,7 @@ echo "________________________________________________________________
           else
           bash 'AltaeraAI/altaera-update.sh'
           
-          elif [ ! -d /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae ]; then
+          if [ ! -d /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae ]; then
             clear
             echo "
 
