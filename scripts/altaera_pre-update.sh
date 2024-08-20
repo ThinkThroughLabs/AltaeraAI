@@ -73,6 +73,7 @@ echo "________________________________________________________________
           exit
           else
           bash 'AltaeraAI/altaera-update.sh'
+          fi
           
           if [ ! -d /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae ]; then
             clear
@@ -130,5 +131,4 @@ echo "________________________________________________________________
           clear
           bash 'altaera-updated_successfully.sh'
           exit
-         fi
          fi
