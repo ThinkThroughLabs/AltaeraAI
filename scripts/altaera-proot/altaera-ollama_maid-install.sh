@@ -12,7 +12,7 @@ case $response in
         echo "We will download and install Maid on your device. Once it's installed, please open the app, then expand the Back-end option on top of the interface and choose 'Ollama' to proceed"
         echo "Downloading and installing Maid in:
         
-        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);"
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
         echo "6...
         " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
         sleep 1
