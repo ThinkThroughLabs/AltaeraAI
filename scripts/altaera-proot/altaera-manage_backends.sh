@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -d /root/kcpp-ae ] [ -d /root/.ollama ]
+if [ -d /root/kcpp-ae ] && [ -d /root/.ollama ]
 then
 
 HEIGHT=20
@@ -37,7 +37,7 @@ case $CHOICE in
 
             esac
 
-elif [ ! -d /root/kcpp-ae ] [ ! -d /root/.ollama ]
+elif [ ! -d /root/kcpp-ae ] && [ ! -d /root/.ollama ]
 then
 
 HEIGHT=20
@@ -74,7 +74,7 @@ case $CHOICE in
 
             esac
 
-elif [ -d /root/kcpp-ae ] [ ! -d /root/.ollama ]
+elif [ -d /root/kcpp-ae ] && [ ! -d /root/.ollama ]
 then
 
 HEIGHT=20
@@ -111,7 +111,7 @@ case $CHOICE in
 
 esac
 
-elif [ ! -d /root/kcpp-ae ] [ ! -d /root/.ollama ]
+elif [ ! -d /root/kcpp-ae ] && [ ! -d /root/.ollama ]
 then
 
 HEIGHT=20
