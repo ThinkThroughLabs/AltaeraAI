@@ -35,6 +35,8 @@ case $CHOICE in
             rm -rf '/root/.ollama'
             ;;
 
+            esac
+
 elif [ ! -d /root/kcpp-ae ] [ ! -d /root/.ollama ]
 then
 
@@ -70,6 +72,8 @@ case $CHOICE in
         ###    rm -rf '/root/.ollama'
             ;;
 
+            esac
+
 elif [ -d /root/kcpp-ae ] [ ! -d /root/.ollama ]
 then
 
@@ -104,6 +108,8 @@ case $CHOICE in
         3)
           ###  rm -rf '/root/.ollama'
             ;;
+
+esac
 
 elif [ ! -d /root/kcpp-ae ] [ ! -d /root/.ollama ]
 then
