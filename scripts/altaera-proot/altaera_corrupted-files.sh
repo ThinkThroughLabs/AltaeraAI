@@ -11,9 +11,7 @@ case $response in
         bash 'altaera-fix.sh'
           ;;
         1) 
-        exit
-        ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
+        bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh';;
         255)
-        exit
-        ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
+        bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh';;
 esac
