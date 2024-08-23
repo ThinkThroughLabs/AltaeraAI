@@ -81,7 +81,7 @@ You can read more at: [altaera.ai](https://altaera.ai)
 - Open Termux, type in '`ae`' – you will be welcomed with the MENU screen.
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/0d0b1856-cc8a-4db0-adca-233c8088b7dc" width="324" height="390" />
+<img src="https://github.com/user-attachments/assets/0d0b1856-cc8a-4db0-adca-233c8088b7dc" width="360" height="390" />
 </p>
 
 The “Start AltaeraAI” button will ask you to choose from currently installed models, and then forward you to a browser with deployed UI.
