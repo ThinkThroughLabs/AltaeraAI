@@ -99,6 +99,7 @@ You can access your AI Inference on external devices like PCs, laptops, etc., wi
 ## License [derived from KoboldCpp]
 
 - The original GGML library and llama.cpp by ggerganov are licensed under the MIT License
+- ollama is licensed under the MIT License
 - However, Kobold Lite is licensed under the AGPL v3.0 License
 - The other files are also under the AGPL v3.0 License unless otherwise stated
 
