@@ -62,6 +62,10 @@ sed -i '/^screen_color = (CYAN,BLUE,ON)/d' ~/.dialogrc
 echo "screen_color = (CYAN,BLACK,ON)" >> ~/.dialogrc
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
 chmod a+x 'altaera.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-manage_backends.sh
+chmod a+x 'altaera-manage_backends.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-koboldcpp_install.sh
+chmod a+x 'altaera-koboldcpp_install.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama.sh
 chmod a+x 'altaera-ollama.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_install.sh
