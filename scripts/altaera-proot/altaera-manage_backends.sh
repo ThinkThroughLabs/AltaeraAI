@@ -69,7 +69,7 @@ case $CHOICE in
           ###  rm -rf '/root/kcpp-ae'
             ;;
         3)
-        ###    rm -rf '/root/.ollama'
+            bash '/root/altaera-ollama_install.sh'
             ;;
 
             esac
@@ -106,7 +106,7 @@ case $CHOICE in
             rm -rf '/root/kcpp-ae'
             ;;
         3)
-          ###  rm -rf '/root/.ollama'
+            bash '/root/altaera-ollama_install.sh'
             ;;
 
 esac
