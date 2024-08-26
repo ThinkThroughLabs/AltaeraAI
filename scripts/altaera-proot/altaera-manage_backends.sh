@@ -66,7 +66,7 @@ case $CHOICE in
             exit
             ;;
         2)
-          ###  rm -rf '/root/kcpp-ae'
+            bash '/root/altaera-koboldcpp_install.sh'
             ;;
         3)
             bash '/root/altaera-ollama_install.sh'
@@ -140,7 +140,7 @@ case $CHOICE in
             exit
             ;;
         2)
-       ###     rm -rf '/root/kcpp-ae'
+            bash '/root/altaera-koboldcpp_install.sh'
             ;;
         3)
             rm -rf '/root/.ollama'
