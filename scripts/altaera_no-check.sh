@@ -10,22 +10,23 @@ TITLE="Welcome!"
 MENU="What would you like to do?"
 
 OPTIONS=(1 "Start AltaeraAI [...]"
-         2 "Check for updates [...]"
-         3 "Force update [...]"
-         4 "Changelog [...]"
-         5 "Horde [KoboldCpp]"
-         6 "Benchmark AI Models [KoboldCpp]"
-         7 "Manage AI Models 🤖 [...]"
-         8 "Change language 🌐"
-         9 "Change KoboldCpp Settings [...]"
-         10 "Change AltaeraAI Settings [...]"
-         11 "ngrok Secure Tunnelling [...]"
-         12 "Reinstall (fix) AltaeraAI [...]"
-         13 "Uninstall AltaeraAI"
-         14 "Customer Support [...]"
-         15 "Visit altaera.ai [URL]"
-         16 "Donate 💸 [URL]"
-         17 "Exit")
+         2 "Manage AI Back-ends [...]"
+         3 "Check for updates [...]"
+         4 "Force update [...]"
+         5 "Changelog [...]"
+         6 "Horde [KoboldCpp]"
+         7 "Benchmark AI Models [KoboldCpp]"
+         8 "Manage AI Models 🤖 [...]"
+         9 "Change language 🌐"
+         10 "Change KoboldCpp Settings [...]"
+         11 "Change AltaeraAI Settings [...]"
+         12 "ngrok Secure Tunnelling [...]"
+         13 "Reinstall (fix) AltaeraAI [...]"
+         14 "Uninstall AltaeraAI"
+         15 "Customer Support [...]"
+         16 "Visit altaera.ai [URL]"
+         17 "Donate 💸 [URL]"
+         18 "Exit")
          
 
 CHOICE=$(dialog --clear \
@@ -91,74 +92,125 @@ echo "Logging into PRoot Distro...
             ;;
         2)
             clear
-            './AltaeraAI/altaera-check_for_updates.sh'
-            './AltaeraAI/altaera.sh'
+            echo "
+
+        ██████████
+       ██ █
+      ██  █
+     ██   █
+     █    ████████
+    ██    █
+   ████████
+  ██      █
+  █       ████████
+
+  AltaeraAI - v5.7.3
+
+    by ThinkThroughLabs
+
+
+  "
+
+  echo "Did you know...
+
+  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+  	function random_message() {
+    # Array of random messages
+    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
+
+    # Generate a random index
+    index=$(( RANDOM % ${#messages[@]} ))
+
+    # Get the random message
+    message=${messages[$index]}
+
+    # Print the random message
+    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+}
+
+# Call the function
+random_message
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Logging into PRoot Distro...
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);            
+
+            proot-distro login altaera -- ./altaera-manage_backends.sh
             ;;
         3)
             clear
-            './AltaeraAI/altaera-force_update.sh'
+            './AltaeraAI/altaera-check_for_updates.sh'
             './AltaeraAI/altaera.sh'
             ;;
         4)
             clear
-            './AltaeraAI/altaera-changelog.sh'
+            './AltaeraAI/altaera-force_update.sh'
             './AltaeraAI/altaera.sh'
             ;;
         5)
             clear
-            './AltaeraAI/altaera-horde.sh'
+            './AltaeraAI/altaera-changelog.sh'
             './AltaeraAI/altaera.sh'
             ;;
         6)
             clear
-            proot-distro login altaera -- ./benchmark.sh
+            './AltaeraAI/altaera-horde.sh'
+            './AltaeraAI/altaera.sh'
             ;;
         7)
+            clear
+            proot-distro login altaera -- ./benchmark.sh
+            ;;
+        8)
             clear
             './AltaeraAI/altaera-manage_models.sh'
             './AltaeraAI/altaera.sh'
             ;;
-        8)
+        9)
             clear
             './AltaeraAI/altaera-lang.sh'
             './AltaeraAI/altaera.sh'
             ;;
-        9)
+        10)
             clear
             './AltaeraAI/altaera-koboldcpp_settings.sh'
             './AltaeraAI/altaera.sh'
             ;;
-        10)
+        11)
             clear
             './AltaeraAI/altaera-settings.sh'
             './AltaeraAI/altaera.sh'
             ;;
-        11)
+        12)
             clear
             './AltaeraAI/altaera-ngrok.sh'
             './AltaeraAI/altaera.sh'
             ;;
-        12)
+        13)
             clear
             './AltaeraAI/altaera-reinstall.sh'
             ;;
-        13)
+        14)
             clear
             './AltaeraAI/altaera-uninstall.sh'
             ;;
-        14)
+        15)
             clear
             './AltaeraAI/altaera-customer_support.sh'
             ;;
-        15)
+        16)
             clear
             termux-open-url 'https://altaera.ai/'
             ;;
-        16)
+        17)
             clear
             termux-open-url 'https://altaera.ai/donate/'
             ;;
-        17)
+        18)
             clear
             exit
 esac
