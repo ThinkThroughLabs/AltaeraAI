@@ -29,6 +29,8 @@ AltaeraAI is a [Termux](https://github.com/termux) wrapper that packages multipl
 
 - [ollama](https://github.com/ollama/ollama) and its external Front-ends
 
+- [SillyTavern](https://sillytavernai.com/)
+
 ## What is it about?
 
 AltaeraAI is a Free and Open Source solution for running GGML/GGUF models with the power of your smartphone. It wraps the Termux instructions for installing Artix Linux with all the necessary dependencies in the "PRoot Distro" environment, and then lets you install AI Back & Front-ends with ease. Lastly, it adds lines of arguments in your "bash.bashrc" file, so you can easily reach out for MENU by simply typing "ae".
