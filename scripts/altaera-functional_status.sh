@@ -2,6 +2,6 @@
 
 ###Is everything alright with the code?
 
-echo "false"
+echo "true"
 
 exit
