@@ -13,7 +13,7 @@
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.3
+  AltaeraAI - v5.7.4
 
     by ThinkThroughLabs
 
@@ -82,7 +82,7 @@ bash 'altaera_install-architecture.sh'
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.3
+  AltaeraAI - v5.7.4
 
     by ThinkThroughLabs
 
@@ -150,7 +150,7 @@ cd ~
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.3
+  AltaeraAI - v5.7.4
 
     by ThinkThroughLabs
 
