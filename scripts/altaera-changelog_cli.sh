@@ -3,7 +3,10 @@
 dialog --backtitle "AltaeraAI" \
 --title "AltaeraAI - Changelog [CLI]" \
 --msgbox '
-    * v5.7.4 - updated the pre-packaged KoboldCpp to v1.73
+    * v5.7.4 - updated the pre-packaged KoboldCpp to v1.73.1
+    * added initial SillyTavern support
+    * added "Manage AI Back-ends" to the MENU
+    * v5.7.3 - updated the pre-packaged KoboldCpp to v1.73
     * a mechanism has been added so that when updating AltaeraAI, the pre-packaged KoboldCpp will update only if it was previously installed
     * added ability to use “maid” as an external front-end for ollama
     * various fixes and expanded ollama support
