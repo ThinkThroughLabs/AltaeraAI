@@ -1,3 +1,7 @@
+exit
+pkg install nodejs -y
+proot-distro login altaera
+
 git clone github.com/Cohee1207/SillyTavern
 npm install
 
