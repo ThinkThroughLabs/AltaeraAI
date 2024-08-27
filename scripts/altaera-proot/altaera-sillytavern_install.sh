@@ -1,5 +1,5 @@
 cd '/root'
-git clone github.com/Cohee1207/SillyTavern
+git clone https://github.com/SillyTavern/SillyTavern
 npm install
 
 dialog --title "SillyTavern - Installation" \
