@@ -11,7 +11,6 @@ case $response in
 
         0)      
         ./start.sh
-        fi
           ;;
         1) ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
         255) ./data/data/com.termux/files/home/AltaeraAI/altaera.sh;;
