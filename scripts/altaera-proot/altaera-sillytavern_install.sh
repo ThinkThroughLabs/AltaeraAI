@@ -1,3 +1,4 @@
+cd '/root'
 git clone github.com/Cohee1207/SillyTavern
 npm install
 
