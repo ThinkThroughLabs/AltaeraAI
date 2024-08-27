@@ -607,6 +607,7 @@ echo "Updating Termux files...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 {
+pkg install nodejs -y
 cd '~/.termux/'
 rm 'termux.properties'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/termux/termux.properties
