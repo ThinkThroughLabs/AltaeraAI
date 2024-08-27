@@ -9,7 +9,8 @@ MENU="Choose a Backend to proceed:"
 
 OPTIONS=(1 "[...] Go Back"
          2 "KoboldCpp - [Default]"
-         3 "ollama [...]")
+         3 "ollama [...]"
+	 4 "SillyTavern")
 
 
 CHOICE=$(dialog --clear \
@@ -45,5 +46,12 @@ case $CHOICE in
 	    bash 'altaera-ollama_install.sh'
 	    fi
 	    ;;
+        4)
+            if [ -d /root/SillyTavern]
+	    then
+            bash 'altaera-sillytavern.sh'
+	    else
+            bash 'altaera-sillytavern_install.sh'
+	    fi
       
 esac
