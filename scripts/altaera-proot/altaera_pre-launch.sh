@@ -47,7 +47,7 @@ case $CHOICE in
 	    fi
 	    ;;
         4)
-            if [ -d /root/SillyTavern]
+            if [ -d /root/SillyTavern ]
 	    then
             bash 'altaera-sillytavern.sh'
 	    else
