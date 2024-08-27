@@ -7,6 +7,7 @@ dialog --backtitle "AltaeraAI" \
 
 Recent changes:
 
+    * v5.7.4.1 - Hotfix: fixed the issue related to the new version of pre-packaged KoboldCpp not being recognised as an update
     * v5.7.4 - updated the pre-packaged KoboldCpp to v1.73.1
     * added initial SillyTavern support
     * added "Manage AI Back-ends" to the MENU
@@ -16,8 +17,6 @@ Recent changes:
     * various fixes and expanded ollama support
     * v5.7.2 – added initial ollama support
     * v5.7.1 - added Gemma-2-2B-it and Gemma-2-2B-it-abliterated weights to the list of models
-    * v5.7 - updated to koboldcpp-1.72
-    * re-written the installation script to be more automated and user friendly, added visual enhancements and fixed bugs related to it
 ' 25 40
 
 bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
