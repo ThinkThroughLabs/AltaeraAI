@@ -24,4 +24,6 @@ else
 
 echo "There were problems installing SillyTavern. You can try to install it again, or wait until proper AltaeraAI fixes are implemented"
 
+fi
+
 esac
