@@ -3,7 +3,7 @@
 HEIGHT=15
 WIDTH=80
 CHOICE_HEIGHT=24
-BACKTITLE="AltaeraAI - v5.7.4.1 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2/1000)}') | Free Storage:$(df -Ph . | tail -1 | awk '{print $4}')"
+BACKTITLE="AltaeraAI - v5.7.4.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2/1000)}') | Free Storage:$(df -Ph . | tail -1 | awk '{print $4}')"
 TITLE="AltaeraAI - ollama Official Models: Front-end"
 MENU="What Front-end interface would you like to use?:"
 

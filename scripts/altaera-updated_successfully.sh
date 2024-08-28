@@ -7,7 +7,7 @@ dialog --backtitle "AltaeraAI" \
 
 Recent changes:
 
-    * v5.7.4.1 - Hotfix: fixed the issue related to the new version of pre-packaged KoboldCpp not being recognised as an update
+    * v5.7.4.2 - Hotfix: fixed the issue related to the new version of pre-packaged KoboldCpp not being recognised as an update
     * v5.7.4 - updated the pre-packaged KoboldCpp to v1.73.1
     * added initial SillyTavern support
     * added "Manage AI Back-ends" to the MENU
