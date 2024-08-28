@@ -82,12 +82,6 @@ echo "
 _______________________________________________________________________
 
 
-      !!!  - Press 'CTRL+D' once again  !!!
-
-      
-      --- Then, open Termux and:
-
-
 - To start, please type in 'ae'.
 
 
@@ -132,12 +126,6 @@ echo "
 
               **********INSTALLATION COMPLETED**********
 _______________________________________________________________________
-
-
-      !!!  - Press 'CTRL+D' once again  !!!
-
-      
-      --- Then, open Termux and:
 
 
 - To start, please type in 'ae'.
@@ -185,12 +173,6 @@ echo "
 _______________________________________________________________________
 
 
-      !!!  - Press 'CTRL+D' once again  !!!
-
-      
-      --- Then, open Termux and:
-
-
 - To start, please type in 'ae'.
 
 
@@ -234,12 +216,6 @@ echo "
 
               **********INSTALLATION COMPLETED**********
 _______________________________________________________________________
-
-
-      !!!  - Press 'CTRL+D' once again  !!!
-
-      
-      --- Then, open Termux and:
 
 
 - To start, please type in 'ae'.
@@ -287,12 +263,6 @@ echo "
 _______________________________________________________________________
 
 
-      !!!  - Press 'CTRL+D' once again  !!!
-
-      
-      --- Then, open Termux and:
-
-
 - To start, please type in 'ae'.
 
 
@@ -336,12 +306,6 @@ echo "
 
               **********INSTALLATION COMPLETED**********
 _______________________________________________________________________
-
-
-      !!!  - Press 'CTRL+D' once again  !!!
-
-      
-      --- Then, open Termux and:
 
 
 - To start, please type in 'ae'.
@@ -389,12 +353,6 @@ echo "
 _______________________________________________________________________
 
 
-      !!!  - Press 'CTRL+D' once again  !!!
-
-      
-      --- Then, open Termux and:
-
-
 - To start, please type in 'ae'.
 
 
@@ -438,12 +396,6 @@ echo "
 
               **********INSTALLATION COMPLETED**********
 _______________________________________________________________________
-
-
-      !!!  - Press 'CTRL+D' once again  !!!
-
-      
-      --- Then, open Termux and:
 
 
 - To start, please type in 'ae'.
@@ -491,12 +443,6 @@ echo "
 _______________________________________________________________________
 
 
-      !!!  - Press 'CTRL+D' once again  !!!
-
-      
-      --- Then, open Termux and:
-
-
 - To start, please type in 'ae'.
 
 
@@ -540,12 +486,6 @@ echo "
 
               **********INSTALLATION COMPLETED**********
 _______________________________________________________________________
-
-
-      !!!  - Press 'CTRL+D' once again  !!!
-
-      
-      --- Then, open Termux and:
 
 
 - To start, please type in 'ae'.
@@ -642,12 +582,6 @@ echo "
 
               **********INSTALLATION COMPLETED**********
 _______________________________________________________________________
-
-
-      !!!  - Press 'CTRL+D' once again  !!!
-
-      
-      --- Then, open Termux and:
 
 
 - To start, please type in 'ae'.
