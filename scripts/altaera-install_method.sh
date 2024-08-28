@@ -7,10 +7,8 @@ BACKTITLE="AltaeraAI Installation - Method"
 TITLE="Please choose your method of installing AltaeraAI"
 MENU="Which installation method do you prefer?:"
 
-OPTIONS=(1 "Install pre-packaged PD and KCPP (Very Fast) - [Default]"
-         2 "Install pre-packaged KoboldCpp (Fast)"
-         3 "Build KoboldCpp from scratch (Slow)"
-         4 "Build KoboldCpp [No-Blas] (Slow)")
+OPTIONS=(1 "Install pre-packaged PD (Fast) - [Default]"
+         2 "Install PD from scratch (Slow)")
          
          
 CHOICE=$(dialog --clear \
@@ -37,18 +35,6 @@ case $CHOICE in
         rm 'altaera.sh'
         wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-fast.sh -O 'altaera.sh' -q --show-progress
         
-        ;;
-        
-        3)
-        cd $PREFIX/etc/proot-distro
-        rm 'altaera.sh'
-        wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-slow.sh -O 'altaera.sh' -q --show-progress
-        ;;
-        
-        4)
-        cd $PREFIX/etc/proot-distro
-        rm 'altaera.sh'
-        wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/rootfs/altaera-slow_no-blas.sh -O 'altaera.sh' -q --show-progress
         ;;
         
         esac
