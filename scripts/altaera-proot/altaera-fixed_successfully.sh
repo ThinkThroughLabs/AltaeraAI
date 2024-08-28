@@ -1,8 +1,8 @@
 #!/bin/bash
 
 dialog --backtitle "AltaeraAI" \
---title "AltaeraAI - Fix" \
---msgbox 'AltaeraAI core files have been fixed succesfully!
+--title "AltaeraAI - Installing KoboldCpp" \
+--msgbox 'KoboldCpp has been installed successfully!
 ' 25 40
 
 exit
