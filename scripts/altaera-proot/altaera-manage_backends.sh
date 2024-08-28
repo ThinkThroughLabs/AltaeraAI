@@ -41,7 +41,7 @@ case $CHOICE in
 
             esac
 
-elif [ ! -d /root/kcpp-ae ] && [ ! -d /root/.ollama ] && [! -d /root/SillyTavern ]
+elif [ ! -d /root/kcpp-ae ] && [ ! -d /root/.ollama ] && [ ! -d /root/SillyTavern ]
 then
 
 HEIGHT=20
