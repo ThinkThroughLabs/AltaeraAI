@@ -5,5 +5,4 @@ dialog --backtitle "AltaeraAI" \
 --msgbox 'KoboldCpp has been installed successfully!
 ' 25 40
 
-exit
 bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
