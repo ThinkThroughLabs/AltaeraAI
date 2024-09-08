@@ -38,7 +38,7 @@ case $CHOICE in
 
   AltaeraAI - v5.7.5
 
-    by ThinkThroughLabs
+    by ThinkThrough
 
 
   "
@@ -170,7 +170,7 @@ rm -rf 'kcpp-ae_v5.7.5.tar.gz'
 
   AltaeraAI - v5.7.5
 
-    by ThinkThroughLabs
+    by ThinkThrough
 
 
   "

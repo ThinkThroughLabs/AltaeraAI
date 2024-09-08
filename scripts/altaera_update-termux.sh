@@ -38,7 +38,7 @@ case $CHOICE in
 
   AltaeraAI - v5.7.5
 
-    by ThinkThroughLabs
+    by ThinkThrough
 
 
   "
@@ -91,7 +91,7 @@ echo "________________________________________________________________
 
   AltaeraAI - v5.7.5
 
-    by ThinkThroughLabs
+    by ThinkThrough
 
 
   "
@@ -146,7 +146,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 
   AltaeraAI - v5.7.5
 
-    by ThinkThroughLabs
+    by ThinkThrough
 
 
   "
@@ -202,7 +202,7 @@ sleep .5
 
   AltaeraAI - v5.7.5
 
-    by ThinkThroughLabs
+    by ThinkThrough
 
 
   "
@@ -255,7 +255,7 @@ echo "________________________________________________________________
 
   AltaeraAI - v5.7.5
 
-    by ThinkThroughLabs
+    by ThinkThrough
 
 
   "
@@ -310,7 +310,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 
   AltaeraAI - v5.7.5
 
-    by ThinkThroughLabs
+    by ThinkThrough
 
 
   "

@@ -57,7 +57,7 @@ case $CHOICE in
 
   AltaeraAI - v5.7.5
 
-    by ThinkThroughLabs
+    by ThinkThrough
 
 
   "
@@ -108,7 +108,7 @@ echo "Logging into PRoot Distro...
 
   AltaeraAI - v5.7.5
 
-    by ThinkThroughLabs
+    by ThinkThrough
 
 
   "
