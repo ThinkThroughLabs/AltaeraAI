@@ -7,7 +7,7 @@ BACKTITLE="AltaeraAI - Fix"
 TITLE="Choosing fixing method"
 MENU="Would you like to install the pre-packaged KoboldCpp [Faster], or compile your own? [Slower]"
 
-OPTIONS=(1 "Fix with pre-packaged KoboldCpp [Faster]"
+OPTIONS=(1 "Install pre-packaged KoboldCpp [Faster]"
          2 "Compile own KoboldCpp (No-Blas) [Slower]"
          3 "Compile own KoboldCpp (Blas) [Slower]"
          4 "Compile own experimental KoboldCpp (No-Blas) [Slower]"
