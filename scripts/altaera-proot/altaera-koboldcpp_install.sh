@@ -4,7 +4,7 @@ HEIGHT=20
 WIDTH=100
 CHOICE_HEIGHT=24
 BACKTITLE="AltaeraAI - Installing KoboldCpp"
-TITLE="Choosing fixing method"
+TITLE="Choosing installation method"
 MENU="Would you like to install the pre-packaged KoboldCpp [Faster], or compile your own? [Slower]"
 
 OPTIONS=(1 "Install pre-packaged KoboldCpp [Faster]"
