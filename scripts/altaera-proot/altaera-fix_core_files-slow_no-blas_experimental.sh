@@ -22,7 +22,7 @@ clear
  if git pull | grep 'Already up to date.'; then
           :
           else
-          make LLAMA_OPENBLAS=1
+          make
         fi
 else
 git clone https://github.com/LostRuins/koboldcpp
