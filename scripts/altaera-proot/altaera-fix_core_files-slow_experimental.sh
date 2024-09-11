@@ -29,7 +29,7 @@ git clone https://github.com/LostRuins/koboldcpp
 mv 'koboldcpp' 'kcpp-ae'
 cd 'kcpp-ae'
 git switch concedo_experimental
-make
+make LLAMA_OPENBLAS=1
 fi
 
 } &> /dev/null 2>&1;
