@@ -175,6 +175,7 @@ echo "Logging into PRoot Distro...
             clear
             './AltaeraAI/altaera-manage_stories.sh'
             './AltaeraAI/altaera.sh'
+            ;;
         10)
             clear
             './AltaeraAI/altaera-lang.sh'
