@@ -26,18 +26,12 @@ case $CHOICE in
             exit
             ;;
         2)
-            {
-            mega-cmd
-            } &> /dev/null 2>&1;
             bash 'altaera-mega_login.sh'
             mkdir 'AltaeraAI-stories'
             bash 'altaera-mega_backup.sh'
             exit
             ;;
         3)
-            {
-            mega-cmd
-            } &> /dev/null 2>&1;
             bash 'altaera-mega_login.sh'
             mkdir 'AltaeraAI-stories'
             bash 'altaera-mega_restore.sh'
