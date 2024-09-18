@@ -328,6 +328,18 @@ chmod a+x 'altaera.sh'
 rm -rf 'altaera-manage_backends.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-manage_backends.sh
 chmod a+x 'altaera-manage_backends.sh'
+rm -rf 'altaera-mega.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega.sh
+chmod a+x 'altaera-mega.sh'
+rm -rf 'altaera-mega_backup.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega_backup.sh
+chmod a+x 'altaera-mega_backup.sh'
+rm -rf 'altaera-mega_login.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega_login.sh
+chmod a+x 'altaera-mega_login.sh'
+rm -rf 'altaera-mega_restore.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega_restore.sh
+chmod a+x 'altaera-mega_restore.sh'
 rm -rf 'altaera-koboldcpp_install.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-koboldcpp_install.sh
 chmod a+x 'altaera-koboldcpp_install.sh'
