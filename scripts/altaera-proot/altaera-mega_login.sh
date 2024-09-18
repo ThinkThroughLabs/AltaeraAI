@@ -9,4 +9,4 @@ exec 3>&1  # Save the place that stdout (1) points to
 password=$(dialog --title "Input Required" --inputbox "Enter password:" 10 30 2>&1 >/dev/tty)
 exec 3>&-  # Close the temporary stream
 
-            login $email $password
+            mega-login $email $password
