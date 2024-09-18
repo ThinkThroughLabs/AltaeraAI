@@ -263,13 +263,13 @@ rm -rf 'altaera-manage_models.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_models.sh
 chmod a+x 'altaera-manage_models.sh'
 rm -rf 'altaera-manage_stories.sh'
-https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_stories.sh
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_stories.sh
 chmod a+x 'altaera-manage_stories.sh'
 rm -rf 'altaera-manage_models.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_models.sh
 chmod a+x 'altaera-manage_models.sh'
 rm -rf 'altaera-manage_stories.sh'
-https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_stories.sh
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_stories.sh
 chmod a+x 'altaera-manage_stories.sh'
 rm -rf 'altaera-model_remove.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model_remove.sh

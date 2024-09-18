@@ -153,7 +153,7 @@ rm -rf 'altaera-manage_models.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_models.sh
 chmod a+x 'altaera-manage_models.sh'
 rm -rf 'altaera-manage_stories.sh'
-https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_stories.sh
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_stories.sh
 chmod a+x 'altaera-manage_stories.sh'
 rm -rf 'altaera-koboldcpp_settings.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-koboldcpp_settings.sh
@@ -183,7 +183,7 @@ rm -rf 'altaera-manage_models.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_models.sh
 chmod a+x 'altaera-manage_models.sh'
 rm -rf 'altaera-manage_stories.sh'
-https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_stories.sh
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-manage_stories.sh
 chmod a+x 'altaera-manage_stories.sh'
 chmod a+x 'altaera-model-vicuna-7b-v1.5.sh'
 chmod a+x 'altaera_install_model.sh'
