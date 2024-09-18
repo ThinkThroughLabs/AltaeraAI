@@ -28,7 +28,7 @@ case $CHOICE in
             clear
             {
             pkg in megacmd
-            mega-cmd
+            proot-distro login altaera -- ./altaera-mega.sh
             } &> /dev/null 2>&1;
             exit
             ;;
