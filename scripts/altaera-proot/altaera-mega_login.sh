@@ -10,4 +10,5 @@ password=$(dialog --title "Input Required" --inputbox "Enter password:" 10 30 2>
 exec 3>&-  # Close the temporary stream
 
             mega-login $email $password
+            
 echo "Logging into MEGA..."
