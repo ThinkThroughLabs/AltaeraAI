@@ -328,6 +328,9 @@ chmod a+x 'altaera_pre-launch.sh'
 rm -rf 'altaera.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
 chmod a+x 'altaera.sh'
+rm -rf 'altaera-cq_gguf_models.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-proot/altaera-cq_gguf_models.sh
+chmod a+x 'altaera-cq_gguf_models.sh'
 rm -rf 'altaera-convert_hf_to_gguf.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-proot/altaera-convert_hf_to_gguf.sh
 chmod a+x 'altaera-convert_hf_to_gguf.sh'
