@@ -165,6 +165,53 @@ echo "Logging into PRoot Distro...
             ;;
         7)
             clear
+            echo "
+
+        ██████████
+       ██ █
+      ██  █
+     ██   █
+     █    ████████
+    ██    █
+   ████████
+  ██      █
+  █       ████████
+
+  AltaeraAI - v5.7.5
+
+    by ThinkThrough
+
+
+  "
+
+  echo "Did you know...
+
+  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+  	function random_message() {
+    # Array of random messages
+    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
+
+    # Generate a random index
+    index=$(( RANDOM % ${#messages[@]} ))
+
+    # Get the random message
+    message=${messages[$index]}
+
+    # Print the random message
+    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+}
+
+# Call the function
+random_message
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Logging into PRoot Distro...
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
             proot-distro login altaera -- ./benchmark.sh
             ;;
         8)
@@ -179,6 +226,53 @@ echo "Logging into PRoot Distro...
             ;;
         10)
             clear
+            echo "
+
+        ██████████
+       ██ █
+      ██  █
+     ██   █
+     █    ████████
+    ██    █
+   ████████
+  ██      █
+  █       ████████
+
+  AltaeraAI - v5.7.5
+
+    by ThinkThrough
+
+
+  "
+
+  echo "Did you know...
+
+  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+  	function random_message() {
+    # Array of random messages
+    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
+
+    # Generate a random index
+    index=$(( RANDOM % ${#messages[@]} ))
+
+    # Get the random message
+    message=${messages[$index]}
+
+    # Print the random message
+    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+}
+
+# Call the function
+random_message
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+echo "Logging into PRoot Distro...
+
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
             proot-distro login altaera -- ./altaera-cq_gguf_models.sh
             ;;
         11)
