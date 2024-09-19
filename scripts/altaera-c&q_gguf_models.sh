@@ -23,6 +23,6 @@ case $CHOICE in
             exit
             ;;
         2)
-            #####
+            proot-distro login altaera -- ./altaera-convert_hf_to_gguf.sh
             ;;
 esac
