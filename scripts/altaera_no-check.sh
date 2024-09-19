@@ -179,8 +179,7 @@ echo "Logging into PRoot Distro...
             ;;
         10)
             clear
-            './AltaeraAI/altaera-c&q_gguf_models.sh'
-            './AltaeraAI/altaera.sh'
+            proot-distro login altaera -- ./altaera-c&q_gguf_models.sh
             ;;
         11)
             clear
