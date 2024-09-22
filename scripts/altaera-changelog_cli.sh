@@ -3,6 +3,9 @@
 dialog --backtitle "AltaeraAI" \
 --title "AltaeraAI - Changelog [CLI]" \
 --msgbox '
+    * v5.7.7 - added RWKV-6-Finch and RWKV-6-World weights to the list of models
+    * added option to compile experimental KoboldCpp
+    * removed OpenBLAS, which was replaced by the "llamafile" library - it is now set by default
     * v5.7.6 - updated the pre-packaged KoboldCpp to v1.75.2
     * added the ability to back up stories to the encrypted MEGA cloud
     * v5.7.5 - updated the pre-packaged KoboldCpp to v1.74
