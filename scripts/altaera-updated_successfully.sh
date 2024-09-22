@@ -7,6 +7,9 @@ dialog --backtitle "AltaeraAI" \
 
 Recent changes:
 
+    * v5.7.7 - added RWKV-6-Finch and RWKV-6-World weights to the list of models
+    * added option to compile experimental KoboldCpp
+    * removed OpenBLAS, which was replaced by the "llamafile" library - it is now set by default
     * v5.7.6 - updated the pre-packaged KoboldCpp to v1.75.2
     * added the ability to back up stories to the encrypted MEGA cloud
     * v5.7.5 - updated the pre-packaged KoboldCpp to v1.74
@@ -15,10 +18,6 @@ Recent changes:
     * v5.7.4 - updated the pre-packaged KoboldCpp to v1.73.1
     * added initial SillyTavern support
     * added "Manage AI Back-ends" to the MENU
-    * v5.7.3 - updated the pre-packaged KoboldCpp to v1.73
-    * a mechanism has been added so that when updating AltaeraAI, the pre-packaged KoboldCpp will update only if it was previously installed
-    * added ability to use “maid” as an external front-end for ollama
-    * various fixes and expanded ollama support
 ' 25 40
 
 bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
