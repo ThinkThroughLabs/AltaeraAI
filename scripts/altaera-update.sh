@@ -9,7 +9,7 @@ MENU="Would you like to update with the pre-packaged KoboldCpp [Faster], or by b
 
 OPTIONS=(1 "Update with pre-packaged KoboldCpp [Faster]"
          2 "Update with building your own KoboldCpp [Slower]"
-         3 "Update with building your own KoboldCpp (No-Blas) [Slower]"
+         3 "Update with building your own Experimental KoboldCpp [Slower]"
          4 "Update shell files only")
 
 
@@ -131,7 +131,7 @@ echo "________________________________________________________________
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
             rm -rf 'altaera-update_content.sh'
-            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow.sh -O 'altaera-update_content.sh'
+            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow_no-blas.sh -O 'altaera-update_content.sh'
             chmod a+x 'altaera-update_content.sh'
             } &> /dev/null 2>&1;
             bash 'altaera-update_content.sh'
@@ -188,7 +188,7 @@ echo "________________________________________________________________
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
             rm -rf 'altaera-update_content.sh'
-            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow_no-blas.sh -O 'altaera-update_content.sh'
+            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-update_content-slow_experimental.sh -O 'altaera-update_content.sh'
             chmod a+x 'altaera-update_content.sh'
             } &> /dev/null 2>&1;
             bash 'altaera-update_content.sh'
