@@ -17,19 +17,19 @@ rm -rf 'ngrok-authtoken.sh'
 if [ -d /root/kcpp-ae ]
 then
 cd 'kcpp-ae'
-rm -rf 'klite.embd'
+
 clear
  if git pull | grep 'Already up to date.'; then
           :
           else
-          make LLAMA_OPENBLAS=1
+          make
         fi
 else
 git clone https://github.com/LostRuins/koboldcpp
 mv 'koboldcpp' 'kcpp-ae'
 cd 'kcpp-ae'
 git switch concedo_experimental
-make LLAMA_OPENBLAS=1
+make
 fi
 
 } &> /dev/null 2>&1;

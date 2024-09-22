@@ -302,7 +302,7 @@ mv 'koboldcpp' 'kcpp-ae'
 
 
 cd '/root/kcpp-ae'
-make LLAMA_OPENBLAS=1
+make
 } &> /dev/null 2>&1;
 ;;
 

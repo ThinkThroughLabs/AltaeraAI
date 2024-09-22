@@ -246,7 +246,7 @@ echo "________________________________________________________________
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
             rm -rf 'altaera-fix_core_files.sh'
-            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix_core_files-slow_no-blas_experimental.sh -O 'altaera-fix_core_files.sh'
+            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix_core_files-slow_experimental.sh -O 'altaera-fix_core_files.sh'
             chmod a+x 'altaera-fix_core_files.sh'
             } &> /dev/null 2>&1;
             bash 'altaera-fix_core_files.sh'

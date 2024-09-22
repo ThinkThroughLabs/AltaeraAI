@@ -374,7 +374,7 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 chmod a+x 'upgrade.sh'
 rm -rf 'ngrok-authtoken.sh'
 cd 'kcpp-ae'
-rm -rf 'klite.embd'
+
 clear
  if git pull | grep 'Already up to date.'; then
           :

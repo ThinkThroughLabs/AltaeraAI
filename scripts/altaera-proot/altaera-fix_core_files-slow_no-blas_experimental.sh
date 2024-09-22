@@ -17,7 +17,7 @@ rm -rf 'ngrok-authtoken.sh'
 if [ -d /root/kcpp-ae ]
 then
 cd 'kcpp-ae'
-rm -rf 'klite.embd'
+
 clear
  if git pull | grep 'Already up to date.'; then
           :
