@@ -15,11 +15,11 @@ rm -rf 'upgrade.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/upgrade.sh
 chmod a+x 'upgrade.sh'
 rm -rf 'ngrok-authtoken.sh'
-wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/kcpp-ae_v5.7.5/kcpp-ae_v5.7.5.tar.gz
-tar -xf 'kcpp-ae_v5.7.5.tar.gz'
+wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/kcpp-ae_v5.7.6/kcpp-ae_v5.7.6.tar.gz
+tar -xf 'kcpp-ae_v5.7.6.tar.gz'
 
 
 
       cd '~'
-      rm -rf 'kcpp-ae_v5.7.5.tar.gz'
+      rm -rf 'kcpp-ae_v5.7.6.tar.gz'
 } &> /dev/null 2>&1;

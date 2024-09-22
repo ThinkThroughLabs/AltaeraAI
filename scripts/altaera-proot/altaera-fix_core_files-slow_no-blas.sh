@@ -28,5 +28,5 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 
 
       cd '~'
-      rm -rf 'kcpp-ae_v5.7.5.tar.gz'
+      rm -rf 'kcpp-ae_v5.7.6.tar.gz'
 } &> /dev/null 2>&1;
