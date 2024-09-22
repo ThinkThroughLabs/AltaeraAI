@@ -38,7 +38,7 @@ case $CHOICE in
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.6
+  AltaeraAI - v5.7.7
 
     by ThinkThrough
 
@@ -95,7 +95,7 @@ echo "________________________________________________________________
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.6
+  AltaeraAI - v5.7.7
 
     by ThinkThrough
 
@@ -152,7 +152,7 @@ echo "________________________________________________________________
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.6
+  AltaeraAI - v5.7.7
 
     by ThinkThrough
 
@@ -209,7 +209,7 @@ echo "________________________________________________________________
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.6
+  AltaeraAI - v5.7.7
 
     by ThinkThrough
 
