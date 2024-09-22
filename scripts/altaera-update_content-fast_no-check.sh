@@ -107,6 +107,27 @@ chmod a+x 'altaera-model-tinyllama-1.1b-chat-v1.0.sh'
 rm -rf 'altaera-model-yi-1.5-6b-chat.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-yi-1.5-6b-chat.sh
 chmod a+x 'altaera-model-yi-1.5-6b-chat.sh'
+rm -rf 'altaera-model-rwkv-6-world-1b6'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv-6-world-1b6
+chmod a+x 'altaera-model-rwkv-6-world-1b6'
+rm -rf 'altaera-model-rwkv-6-world-3b'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv-6-world-3b
+chmod a+x 'altaera-model-rwkv-6-world-3b'
+rm -rf 'altaera-model-rwkv-6-world-7b'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv-6-world-7b
+chmod a+x 'altaera-model-rwkv-6-world-7b'
+rm -rf 'altaera-model-rwkv-6-finch-1b6'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv-6-finch-1b6
+chmod a+x 'altaera-model-rwkv-6-finch-1b6'
+rm -rf 'altaera-model-rwkv-6-finch-3b'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv-6-finch-3b
+chmod a+x 'altaera-model-rwkv-6-finch-3b'
+rm -rf 'altaera-model-rwkv-6-finch-7b'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv-6-finch-7b
+chmod a+x 'altaera-model-rwkv-6-finch-7b'
+rm -rf 'altaera-model-rwkv-6-finch-14b'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv-6-finch-14b
+chmod a+x 'altaera-model-rwkv-6-finch-14b'
 rm -rf 'altaera-model-gemma-2-9b-it.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-gemma-2-9b-it.sh
 chmod a+x 'altaera-model-gemma-2-9b-it.sh'
