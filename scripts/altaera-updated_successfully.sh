@@ -7,6 +7,8 @@ dialog --backtitle "AltaeraAI" \
 
 Recent changes:
 
+    * v5.7.6 - updated the pre-packaged KoboldCpp to v1.75.2
+    * added the ability to back up stories to the encrypted MEGA cloud
     * v5.7.5 - updated the pre-packaged KoboldCpp to v1.74
     * v5.7.4.2 - Hotfix: fixed code mistakes related to the "Manage AI Back-ends" option
     * v5.7.4.1 - Hotfix: fixed the issue related to the new version of pre-packaged KoboldCpp not being recognised as an update
@@ -17,7 +19,6 @@ Recent changes:
     * a mechanism has been added so that when updating AltaeraAI, the pre-packaged KoboldCpp will update only if it was previously installed
     * added ability to use “maid” as an external front-end for ollama
     * various fixes and expanded ollama support
-    * v5.7.2 – added initial ollama support
 ' 25 40
 
 bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
