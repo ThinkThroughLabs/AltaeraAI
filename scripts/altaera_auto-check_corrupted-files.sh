@@ -21,7 +21,7 @@ case $response in
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.7
+  AltaeraAI - v5.7.8
 
     by ThinkThrough
 
@@ -73,7 +73,7 @@ echo "________________________________________________________________
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.7
+  AltaeraAI - v5.7.8
 
     by ThinkThrough
 
@@ -128,7 +128,7 @@ echo "________________________________________________________________
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.7
+  AltaeraAI - v5.7.8
 
     by ThinkThrough
 
