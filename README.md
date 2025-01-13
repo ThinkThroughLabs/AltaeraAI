@@ -3,7 +3,7 @@
 [![Github All Releases](https://img.shields.io/github/downloads/ThinkThroughLabs/AltaeraAI/total.svg)]()
 [![Github All Releases](https://img.shields.io/github/downloads/latestissue/AltaeraAI/total.svg)]()
 
-**This project is deprecated; no updates at this time, although core functionalities are still working, Back&Front-end software needs to be updated manually in the MENU. Project reactivation is possible in the future, but no promises at this point. ~~January 2025**
+**This project is deprecated; no updates at this time, although core functionalities are still working; Back&Front-end software needs to be updated manually in the MENU. Project reactivation is possible in the future, but no promises at this point. ~~January 2025**
 
 **Note**: *the number of downloads shown is only for the pre-packaged* KoboldCpp *and also includes downloads resulting from updates containing package upgrades*.
 
