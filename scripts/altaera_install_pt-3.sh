@@ -36,7 +36,7 @@ case $CHOICE in
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.8
+  AltaeraAI - v6.0.0
 
     by ThinkThrough
 
@@ -182,7 +182,7 @@ rm -rf 'kcpp-ae_v6.0.0.tar.gz'
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.8
+  AltaeraAI - v6.0.0
 
     by ThinkThrough
 

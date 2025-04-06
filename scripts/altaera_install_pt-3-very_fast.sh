@@ -13,7 +13,7 @@
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.8
+  AltaeraAI - v6.0.0
 
     by ThinkThrough
 
@@ -73,7 +73,7 @@ clear
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.8
+  AltaeraAI - v6.0.0
 
     by ThinkThrough
 
@@ -136,7 +136,7 @@ clear
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.8
+  AltaeraAI - v6.0.0
 
     by ThinkThrough
 
@@ -212,7 +212,7 @@ clear
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.8
+  AltaeraAI - v6.0.0
 
     by ThinkThrough
 

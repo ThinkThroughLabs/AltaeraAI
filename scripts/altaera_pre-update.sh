@@ -29,7 +29,7 @@
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.8
+  AltaeraAI - v6.0.0
 
     by ThinkThrough
 
@@ -90,7 +90,7 @@ echo "________________________________________________________________
   ██      █
   █       ████████
 
-  AltaeraAI - v5.7.8
+  AltaeraAI - v6.0.0
 
     by ThinkThrough
 
