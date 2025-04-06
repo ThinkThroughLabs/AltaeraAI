@@ -8,7 +8,7 @@ response=$?
 case $response in
 
         0)      
-        echo "アップデートの有無を確認する...";
+        echo "アップデートの有無を確認する ...";
         
                 {
                 cd "AltaeraAI"

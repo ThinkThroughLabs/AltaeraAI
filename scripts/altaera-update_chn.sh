@@ -24,7 +24,7 @@ case $CHOICE in
 
         1)
             clear
-            echo "初始化更新...
+            echo "初始化更新 ...
             
             ";
             {
@@ -38,7 +38,7 @@ case $CHOICE in
             ;;
         2)
             clear
-            echo "初始化更新...
+            echo "初始化更新 ...
             
             ";
             {

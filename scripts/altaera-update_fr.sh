@@ -24,7 +24,7 @@ case $CHOICE in
 
         1)
             clear
-            echo "Initialisation de la mise à jour...
+            echo "Initialisation de la mise à jour ...
             
             ";
             {
@@ -38,7 +38,7 @@ case $CHOICE in
             ;;
         2)
             clear
-            echo "Initialisation de la mise à jour...
+            echo "Initialisation de la mise à jour ...
             
             ";
             {

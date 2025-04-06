@@ -10,7 +10,7 @@ MENU="무엇이 필요하신가요?"
 OPTIONS=(1 "개인정보 보호정책 [URL]"
          2 "기술 지원 [URL]"
          3 "연락처 [URL]"
-         4 "FAQ [URL] - ...창작에서")
+         4 "FAQ [URL] -  ...창작에서")
          
 
 CHOICE=$(dialog --clear \

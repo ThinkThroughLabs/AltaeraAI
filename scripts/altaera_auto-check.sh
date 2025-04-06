@@ -1,6 +1,6 @@
 clear
 
-        echo "Checking for instabilities...";
+        echo "Checking for instabilities ...";
         
                 {
                 cd "AltaeraAI"
@@ -30,7 +30,7 @@ if
         
         ";
           
-        echo "Automatically checking for updates...
+        echo "Automatically checking for updates ...
         
         ";
 
@@ -73,7 +73,7 @@ clear
         
         ";
 
-        echo "Running essential file integrity checks...
+        echo "Running essential file integrity checks ...
 
         ";
 

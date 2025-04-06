@@ -18,7 +18,7 @@
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -46,7 +46,7 @@ echo "Initializing update ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Updating AltaeraAI shell files...
+echo "Updating AltaeraAI shell files ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -347,7 +347,7 @@ cd '/data/data/com.termux/files/home'
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -379,7 +379,7 @@ echo "Updating AltaeraAI shell files ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Updating AltaeraAI shell files (PRoot Distro)...
+echo "Updating AltaeraAI shell files (PRoot Distro) ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -509,7 +509,7 @@ cd '/data/data/com.termux/files/home'
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -545,7 +545,7 @@ echo "Updating AltaeraAI shell files (PRoot Distro) ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Updating AltaeraAI PRoot Distro environment (Artix Linux)...
+echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -574,7 +574,7 @@ clear
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -632,7 +632,7 @@ echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ✔"
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -670,7 +670,7 @@ echo "Updating AltaeraAI shell files (PRoot Distro) ✔
 
 echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ✔"
 
-echo "Updating Termux files...
+echo "Updating Termux files ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -702,7 +702,7 @@ cd ~
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 

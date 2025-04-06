@@ -26,7 +26,7 @@ case $CHOICE in
 
         1)
             clear
-            echo "Initializing update...
+            echo "Initializing update ...
             
             ";
             {
@@ -40,7 +40,7 @@ case $CHOICE in
             ;;
         2)
             clear
-            echo "Initializing update...
+            echo "Initializing update ...
             
             ";
             {
@@ -54,7 +54,7 @@ case $CHOICE in
             ;;
         3)
             clear
-            echo "Initializing update...
+            echo "Initializing update ...
             
             ";
             {
@@ -68,7 +68,7 @@ case $CHOICE in
             ;;
         4)
             clear
-            echo "Initializing update...
+            echo "Initializing update ...
             
             ";
             {

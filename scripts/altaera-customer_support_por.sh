@@ -10,7 +10,7 @@ MENU="O que é que precisa?"
 OPTIONS=(1 "Política de privacidade [URL]"
          2 "Apoio técnico [URL]"
          3 "Contacto [URL]"
-         4 "FAQ [URL] - ...na criação")
+         4 "FAQ [URL] -  ...na criação")
          
 
 CHOICE=$(dialog --clear \

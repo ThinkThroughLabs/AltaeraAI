@@ -1,4 +1,4 @@
-echo "AltaeraAI 셸 파일 업데이트 중...
+echo "AltaeraAI 셸 파일 업데이트 중 ...
 
 ";
 
@@ -317,7 +317,7 @@ cd '/data/data/com.termux/files/home'
 
 } &> /dev/null 2>&1;
 
-echo "알타에라AI 코어 파일 업데이트 중...
+echo "알타에라AI 코어 파일 업데이트 중 ...
 
 ";
 
@@ -471,7 +471,7 @@ chmod a+x 'dialog_theme-off.sh'
 cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
 
-echo "알타에라AI PRoot 배포 환경 업데이트(Artix Linux)...";
+echo "알타에라AI PRoot 배포 환경 업데이트(Artix Linux) ...";
 
 {
 proot-distro login altaera -- ./upgrade.sh &

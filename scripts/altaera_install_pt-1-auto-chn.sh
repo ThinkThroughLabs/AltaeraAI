@@ -4,7 +4,7 @@ clear
 
 cd 'AltaeraAI-tmp'
 
-echo "下载人工智能模型..."
+echo "下载人工智能模型 ..."
 
    if [ $(free -h | awk '/Mem\:/ { print $2 }'
 ) = "15Gi" ]; then

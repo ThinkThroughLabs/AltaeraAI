@@ -62,7 +62,7 @@ case $CHOICE in
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -86,7 +86,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Logging into PRoot Distro...
+echo "Logging into PRoot Distro ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);            
 
@@ -113,7 +113,7 @@ echo "Logging into PRoot Distro...
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -137,7 +137,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Logging into PRoot Distro...
+echo "Logging into PRoot Distro ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);            
 
@@ -184,7 +184,7 @@ echo "Logging into PRoot Distro...
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -208,7 +208,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Logging into PRoot Distro...
+echo "Logging into PRoot Distro ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -245,7 +245,7 @@ echo "Logging into PRoot Distro...
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -269,7 +269,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Logging into PRoot Distro...
+echo "Logging into PRoot Distro ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 

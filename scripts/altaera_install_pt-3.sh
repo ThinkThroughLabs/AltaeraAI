@@ -43,7 +43,7 @@ case $CHOICE in
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -74,7 +74,7 @@ echo "Installing initial files ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Installing core files...
+echo "Installing core files ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -189,7 +189,7 @@ rm -rf 'kcpp-ae_v6.0.0.tar.gz'
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -213,7 +213,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Installing core files (please be patient)...;
+echo "Installing core files (please be patient) ...;
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 

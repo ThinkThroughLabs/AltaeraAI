@@ -7,13 +7,13 @@ dialog --title "Reinstall (fix) Altaera AI" \
 response=$?
 case $response in
    
-   0)   echo "Making a backup copy of your currently installed AI models...";
+   0)   echo "Making a backup copy of your currently installed AI models ...";
 
 {
 mv '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models' '/data/data/com.termux/files/home/AltaeraAI-tmp'
 } &> /dev/null 2>&1;
 
-echo "Removing previous AltaeraAI files...";
+echo "Removing previous AltaeraAI files ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/AltaeraAI'

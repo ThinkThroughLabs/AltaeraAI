@@ -24,7 +24,7 @@ case $CHOICE in
 
         1)
             clear
-            echo "Inicjowanie aktualizacji...
+            echo "Inicjowanie aktualizacji ...
             
             ";
             {
@@ -38,7 +38,7 @@ case $CHOICE in
             ;;
         2)
             clear
-            echo "Inicjowanie aktualizacji...
+            echo "Inicjowanie aktualizacji ...
             
             ";
             {

@@ -54,7 +54,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -62,7 +62,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -101,7 +101,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -109,7 +109,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -146,7 +146,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -154,7 +154,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -191,7 +191,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -199,7 +199,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -236,7 +236,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -244,7 +244,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -281,7 +281,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -289,7 +289,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -326,7 +326,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -334,7 +334,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -371,7 +371,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -379,7 +379,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -416,7 +416,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -424,7 +424,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -461,7 +461,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -469,7 +469,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -506,7 +506,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -514,7 +514,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -557,7 +557,7 @@ chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 proot-distro install altaera
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -565,7 +565,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'

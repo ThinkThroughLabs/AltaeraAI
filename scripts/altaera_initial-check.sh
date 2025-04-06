@@ -4,7 +4,7 @@ if
          [ $(cat < /dev/null > /dev/tcp/8.8.8.8/53; echo $?
           ) = "0" ]; then
           
-        echo "Automatically checking for updates...";
+        echo "Automatically checking for updates ...";
 
                 {
                 cd "AltaeraAI"
@@ -30,7 +30,7 @@ clear
         
         ";
 
-        echo "Running essential file integrity checks...
+        echo "Running essential file integrity checks ...
 
         ";
 

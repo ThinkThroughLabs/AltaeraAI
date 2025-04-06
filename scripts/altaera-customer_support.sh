@@ -11,7 +11,7 @@ OPTIONS=(1 "[...] Go Back"
          2 "Privacy Policy [URL]"
          3 "Technical Support [URL]"
          4 "Contact [URL]"
-         5 "FAQ [URL] - ...in creation")
+         5 "FAQ [URL] -  ...in creation")
          
 
 CHOICE=$(dialog --clear \

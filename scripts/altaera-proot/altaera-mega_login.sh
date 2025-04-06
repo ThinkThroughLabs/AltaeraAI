@@ -11,6 +11,6 @@ exec 3>&-  # Close the temporary stream
 
             mega-login $email $password
             
-echo "Logging into MEGA...
+echo "Logging into MEGA ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);

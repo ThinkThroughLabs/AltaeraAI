@@ -26,14 +26,14 @@ case $CHOICE in
             ;;
         2)
             clear
-            echo "Installing mega-cmd [if it isn't installed]...
+            echo "Installing mega-cmd [if it isn't installed] ...
             
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
             pkg in megacmd -y
             } &> /dev/null 2>&1;
             clear
-            echo "Logging into PRoot Distro...
+            echo "Logging into PRoot Distro ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);   
             proot-distro login altaera -- ./altaera-mega.sh

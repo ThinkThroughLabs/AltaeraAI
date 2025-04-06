@@ -1,4 +1,4 @@
-echo "Initializing installation...";
+echo "Initializing installation ...";
 
 {
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-3.sh

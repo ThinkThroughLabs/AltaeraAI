@@ -36,7 +36,7 @@ case $CHOICE in
             exit
 	    ;;
         2)
-            echo "Changing language to 'English'...";
+            echo "Changing language to 'English' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'
@@ -71,7 +71,7 @@ case $CHOICE in
             } &> /dev/null 2>&1;
             ;;
         3)
-            echo "Changing language to '中国'...";
+            echo "Changing language to '中国' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'
@@ -106,7 +106,7 @@ case $CHOICE in
             } &> /dev/null 2>&1;
             ;;
         4)
-            echo "Changing language to 'Deutsch'...";
+            echo "Changing language to 'Deutsch' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'
@@ -141,7 +141,7 @@ case $CHOICE in
             } &> /dev/null 2>&1;
             ;;
         5)
-            echo "Changing language to 'Español'...";
+            echo "Changing language to 'Español' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'
@@ -176,7 +176,7 @@ case $CHOICE in
             } &> /dev/null 2>&1;
             ;;
         6)
-            echo "Changing language to 'Français'...";
+            echo "Changing language to 'Français' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'
@@ -211,7 +211,7 @@ case $CHOICE in
             } &> /dev/null 2>&1;
             ;;
         7)
-            echo "Changing language to 'Italiano'...";
+            echo "Changing language to 'Italiano' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'
@@ -246,7 +246,7 @@ case $CHOICE in
             } &> /dev/null 2>&1;
             ;;
         8)
-            echo "Changing language to '日本語'...";
+            echo "Changing language to '日本語' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'
@@ -281,7 +281,7 @@ case $CHOICE in
             } &> /dev/null 2>&1;
             ;;
         9)
-            echo "Changing language to '한국어'...";
+            echo "Changing language to '한국어' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'
@@ -316,7 +316,7 @@ case $CHOICE in
             } &> /dev/null 2>&1;
             ;;
         10)
-            echo "Changing language to 'Polski'...";
+            echo "Changing language to 'Polski' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'
@@ -351,7 +351,7 @@ case $CHOICE in
             } &> /dev/null 2>&1;
             ;;
         11)
-            echo "Changing language to 'Portugês'...";
+            echo "Changing language to 'Portugês' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'
@@ -386,7 +386,7 @@ case $CHOICE in
             } &> /dev/null 2>&1;
             ;;
         12)
-            echo "Changing language to 'Русский'...";
+            echo "Changing language to 'Русский' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'
@@ -421,7 +421,7 @@ case $CHOICE in
             } &> /dev/null 2>&1;
             ;;
         13)
-            echo "Changing language to 'Українська'...";
+            echo "Changing language to 'Українська' ...";
 
             {
             cd '/data/data/com.termux/files/home/AltaeraAI'

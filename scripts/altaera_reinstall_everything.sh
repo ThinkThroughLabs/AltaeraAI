@@ -7,7 +7,7 @@ dialog --title "Reinstall (fix) Altaera AI" \
 response=$?
 case $response in
    
-   0)   echo "Removing previous AltaeraAI files...";
+   0)   echo "Removing previous AltaeraAI files ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/AltaeraAI'

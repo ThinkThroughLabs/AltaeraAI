@@ -8,7 +8,7 @@ response=$?
 case $response in
 
         0)      
-        echo "检查更新的可用性...";
+        echo "检查更新的可用性 ...";
         
                 {
                 cd "AltaeraAI"

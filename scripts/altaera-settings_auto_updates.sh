@@ -26,7 +26,7 @@ case $CHOICE in
             exit
 	    ;;
         2)
-            echo "Turning ON automatic update & file integrity checks..."
+            echo "Turning ON automatic update & file integrity checks ..."
             {
             clear
             rm -rf './AltaeraAI/altaera_auto-check.sh'
@@ -42,7 +42,7 @@ case $CHOICE in
 	    sleep .5
             ;;
         3)
-            echo "Turning OFF automatic update & file integrity checks..."
+            echo "Turning OFF automatic update & file integrity checks ..."
             {
             clear
             rm -rf './AltaeraAI/altaera_auto-check.sh'

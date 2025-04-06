@@ -8,7 +8,7 @@ response=$?
 case $response in
 
         0)      
-        echo "업데이트 사용 가능 여부 확인 중...";
+        echo "업데이트 사용 가능 여부 확인 중 ...";
         
                 {
                 cd "AltaeraAI"

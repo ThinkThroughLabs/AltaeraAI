@@ -1,5 +1,5 @@
 clear
-echo "Installing initial files...";
+echo "Installing initial files ...";
 
 {
 cd /data/data/com.termux/files/home

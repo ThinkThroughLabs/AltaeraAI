@@ -8,7 +8,7 @@ response=$?
 case $response in
 
         0)      
-        echo "Проверка доступности обновлений...";
+        echo "Проверка доступности обновлений ...";
         
                 {
                 cd "AltaeraAI"

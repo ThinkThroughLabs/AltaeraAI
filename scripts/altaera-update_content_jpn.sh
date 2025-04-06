@@ -1,4 +1,4 @@
-echo "AltaeraAIシェルファイルの更新...
+echo "AltaeraAIシェルファイルの更新 ...
 
 ";
 
@@ -317,7 +317,7 @@ cd '/data/data/com.termux/files/home'
 
 } &> /dev/null 2>&1;
 
-echo "AltaeraAIコアファイルの更新...
+echo "AltaeraAIコアファイルの更新 ...
 
 ";
 
@@ -464,7 +464,7 @@ chmod a+x 'dialog_theme-off.sh'
 cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
 
-echo "AltaeraAI PRoot Distro環境（Artix Linux）のアップデート...";
+echo "AltaeraAI PRoot Distro環境（Artix Linux）のアップデート ...";
 
 {
 proot-distro login altaera -- ./upgrade.sh &

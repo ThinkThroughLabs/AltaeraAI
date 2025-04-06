@@ -28,7 +28,7 @@ case $response in
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -52,7 +52,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-            echo "Initializing fix...
+            echo "Initializing fix ...
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
@@ -80,7 +80,7 @@ echo "________________________________________________________________
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -108,7 +108,7 @@ echo "________________________________________________________________
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             
-            echo "Fixing AltaeraAI essential files...
+            echo "Fixing AltaeraAI essential files ...
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
@@ -135,7 +135,7 @@ echo "________________________________________________________________
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 

@@ -43,7 +43,7 @@ case $CHOICE in
 
   "
 
-    echo "Did you know...
+    echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -67,7 +67,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-            echo "Downloading new Termux package...
+            echo "Downloading new Termux package ...
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
           {
@@ -96,7 +96,7 @@ echo "________________________________________________________________
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -124,7 +124,7 @@ echo "Downloading new Termux package ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Updating Termux...
+echo "Updating Termux ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -151,7 +151,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -207,7 +207,7 @@ sleep .5
 
   "
 
-    echo "Did you know...
+    echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -231,7 +231,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-            echo "Downloading new Termux package...
+            echo "Downloading new Termux package ...
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
           {
@@ -260,7 +260,7 @@ echo "________________________________________________________________
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -288,7 +288,7 @@ echo "Downloading new Termux package ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Updating Termux...
+echo "Updating Termux ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -315,7 +315,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 
   "
 
-  echo "Did you know...
+  echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 

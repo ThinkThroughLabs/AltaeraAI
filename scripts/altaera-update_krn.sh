@@ -24,7 +24,7 @@ case $CHOICE in
 
         1)
             clear
-            echo "업데이트 초기화 중...
+            echo "업데이트 초기화 중 ...
             
             ";
             {
@@ -38,7 +38,7 @@ case $CHOICE in
             ;;
         2)
             clear
-            echo "업데이트 초기화 중...
+            echo "업데이트 초기화 중 ...
             
             ";
             {

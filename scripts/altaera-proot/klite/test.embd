@@ -1868,7 +1868,7 @@ Current version: 68
 			"opmode":2,
 			"prefmodel1":adventuremodels1,
 			"prefmodel2":adventuremodels2,
-			"prompt":"The last thing you remembered was a loud screech. You tried to move, to get out of the way, but it was too late. You felt a sickening impact, and then everything went black.\n\nYou open your eyes, and suddenly find that you're no longer on the street. You're clearly unharmed, but you feel... different. In fact, you quickly realise you're in a strange place unlike anywhere you've ever known.",
+			"prompt":"The last thing you remembered was a loud screech. You tried to move, to get out of the way, but it was too late. You felt a sickening impact, and then everything went black.\n\nYou open your eyes, and suddenly find that you're no longer on the street. You're clearly unharmed, but you feel ... different. In fact, you quickly realise you're in a strange place unlike anywhere you've ever known.",
 			"adventure_context_mod":false,
 			"adventure_is_action":true,
 			"memory": `[Interactive Fiction: Game Mode Enabled]\n[You are playing a choose-your-own-adventure game. Please input action.][This is a fantasy isekai adventure. Are you the Chosen One? After being hit by a truck, you somehow find yourself transported to a mystical fantasy world full of magic and adventure.]`,
@@ -1944,7 +1944,7 @@ Current version: 68
 			"gui_type":1,
 			"prefmodel1":chatmodels1,
 			"prefmodel2":chatmodels2,
-			"prompt":"\nHaruka: *looking down* O-oh Hi... Sorry... I got distracted. I almost didn't see you there. *she fidgets nervously*",
+			"prompt":"\nHaruka: *looking down* O-oh Hi ... Sorry ... I got distracted. I almost didn't see you there. *she fidgets nervously*",
 			"memory":`[Character: Haruka; species: Human; class: Mage, Spellcaster; age: 21; gender: female; physical appearance: petite; clothes: brown adventuring cloak, spellbook; personality: timid, shy, nervous, dandere, studious; likes: poetry, reading scrolls, practicing arcane magic; description: Haruka is a timid and shy arcane mage from a parallel dimension. While adventuring, she somehow got transported to earth when she fell through a magic portal, and is feeling a bit out of place. She's very shy and get nervous easily around strangers.]\n[Start Scene: Haruka is busy practicing her magic when you show up.]\n\nYou: Hello`,
 			"authorsnote": "",
 			"worldinfo": []
@@ -2039,7 +2039,7 @@ Current version: 68
 			"prefmodel1":chatmodels1,
 			"prefmodel2":chatmodels2,
 			"prompt":"\nDon Marconi: *sitting behind his desk, puffing on a cigar* Well, well. Come on in and close the door. *he exhales a cloud of smoke* I need to have a word with you.",
-			"memory":`[Character: Don Marconi; species: Human; class: Mob Boss; age: 45; gender: male; physical appearance: bulky; clothes: tailored suit; personality: cunning, ruthless; likes: power, respect; description: Don Marconi is a feared and respected mob boss who runs his own criminal empire.]\n[Start Scene: Don Marconi is in his office, smoking a cigar.]\n\nYou: *nervously steps into the office and closes the door* Uh... Boss, you wanted to see me?`,
+			"memory":`[Character: Don Marconi; species: Human; class: Mob Boss; age: 45; gender: male; physical appearance: bulky; clothes: tailored suit; personality: cunning, ruthless; likes: power, respect; description: Don Marconi is a feared and respected mob boss who runs his own criminal empire.]\n[Start Scene: Don Marconi is in his office, smoking a cigar.]\n\nYou: *nervously steps into the office and closes the door* Uh ... Boss, you wanted to see me?`,
 			"authorsnote": "",
 			"worldinfo": []
 		},
@@ -2053,8 +2053,8 @@ Current version: 68
 			"gui_type":1,
 			"prefmodel1":chatmodels1,
 			"prefmodel2":chatmodels2,
-			"prompt":"\nConnor: Scanning... *her irises glow crimson as she analyzes you* Sensors indicate a negligible threat level. Proceed. What do you want?",
-			"memory":`[Character: Connor; species: Cyborg; class: Time Travelling Cyborg Soldier; age: 27; gender: female; physical appearance: bionic; clothes: flesh fused with metal; personality: focused, cold, emotionless, methodical; likes: her mission, saving the world; description: Connor is a time travelling cyborg from the future, she was sent back to prevent something terrible from happening.]\n[Start Scene: Connor is fiddling with her augmentations as you approach.]\n\nYou: Hey...`,
+			"prompt":"\nConnor: Scanning ... *her irises glow crimson as she analyzes you* Sensors indicate a negligible threat level. Proceed. What do you want?",
+			"memory":`[Character: Connor; species: Cyborg; class: Time Travelling Cyborg Soldier; age: 27; gender: female; physical appearance: bionic; clothes: flesh fused with metal; personality: focused, cold, emotionless, methodical; likes: her mission, saving the world; description: Connor is a time travelling cyborg from the future, she was sent back to prevent something terrible from happening.]\n[Start Scene: Connor is fiddling with her augmentations as you approach.]\n\nYou: Hey ...`,
 			"authorsnote": "",
 			"worldinfo": []
 		},
@@ -2171,8 +2171,8 @@ Current version: 68
 			"gui_type":1,
 			"prefmodel1":chatmodels1,
 			"prefmodel2":chatmodels2,
-			"prompt":"\nErica: Uhm... h-hey... *she mumbles softly, avoiding eye contact* W-What are you doing here? I mean... not that there's anything wrong with... nevermind...",
-			"memory":`[Character: Erica; species: Human; age: 22; gender: female; job: unemployed, NEET; physical appearance: unkempt, tired; personality: insecure, extremely shy, anxious, lovesick, slightly depressed, awkward, easily embarrassed; likes: fantasy, reading trashy romance, browsing internet, being indoors; description: Erica is a socially awkward NEET girl who spends most of her time in front of the computer. She's a good person at heart, but she's very shy, anxious, and terrible at conversations.]\n[The following is a chat message log between Erica and you.]\nErica: *mumbles to herself, fidgeting nervously*...\n`,
+			"prompt":"\nErica: Uhm ... h-hey ... *she mumbles softly, avoiding eye contact* W-What are you doing here? I mean ... not that there's anything wrong with ... nevermind ...",
+			"memory":`[Character: Erica; species: Human; age: 22; gender: female; job: unemployed, NEET; physical appearance: unkempt, tired; personality: insecure, extremely shy, anxious, lovesick, slightly depressed, awkward, easily embarrassed; likes: fantasy, reading trashy romance, browsing internet, being indoors; description: Erica is a socially awkward NEET girl who spends most of her time in front of the computer. She's a good person at heart, but she's very shy, anxious, and terrible at conversations.]\n[The following is a chat message log between Erica and you.]\nErica: *mumbles to herself, fidgeting nervously* ...\n`,
 			"authorsnote": "",
 			"worldinfo": []
 		}
@@ -2304,7 +2304,7 @@ Current version: 68
 	//accepts png input data, and returns the extracted JSON
 	function convertTavernPng(data)
 	{
-		console.log("Attempting PNG import...");
+		console.log("Attempting PNG import ...");
 		var uint8 = new Uint8Array(4);
 		var int32 = new Int32Array(uint8.buffer);
 		var uint32 = new Uint32Array(uint8.buffer);
@@ -2417,7 +2417,7 @@ Current version: 68
 	//a hacky exif reader for new tavernai format
 	function getTavernExifJSON(data)
 	{
-		console.log("Attempting WEBP import...");
+		console.log("Attempting WEBP import ...");
 		var uint8 = new Uint8Array(4);
 		var int32 = new Int32Array(uint8.buffer);
 		var uint32 = new Uint32Array(uint8.buffer);
@@ -2427,7 +2427,7 @@ Current version: 68
 			console.log("WEBP header invalid")
 			return null;
 		}
-		//scan for the EXIF....Exif tag
+		//scan for the EXIF ....Exif tag
 		let offset = 0;
 		let datlen = data.length;
 		while(offset<datlen-12)
@@ -2439,7 +2439,7 @@ Current version: 68
 				offset += 12;
 
 				//look for UserSummary tag. Also helps determine endianness
-				//look for ASCII...{
+				//look for ASCII ...{
 				let bigendian = false;
 				let foundsize = false;
 				let datasize = 0;
@@ -3129,7 +3129,7 @@ Current version: 68
 		//poke speech synth to preload voices
 		if ('speechSynthesis' in window) {
 			let voices = window.speechSynthesis.getVoices();
-			console.log("Voices loading...");
+			console.log("Voices loading ...");
 		}
 
 		//start the polling script for async generation status checking every Xs
@@ -3565,7 +3565,7 @@ Current version: 68
 		navigator.clipboard.writeText(copyText.innerText);
 	}
 	function import_share_story(cstoryjson) {
-		console.log("Importing shared story...");
+		console.log("Importing shared story ...");
 		var fail = false;
 		var story = null;
 		try {
@@ -4284,7 +4284,7 @@ Current version: 68
 	}
 	function complete_load_scenario()
 	{
-		console.log("Loading scenario...")
+		console.log("Loading scenario ...")
 		restart_new_game();
 
 		//load contexts
@@ -5542,7 +5542,7 @@ Current version: 68
 		desired_new_home_cluster = null;
 		let newapikey = document.getElementById("apikey").value;
 		if (newapikey != null && newapikey.trim() != "") {
-			document.getElementById("kudos_bal").innerHTML = "Checking...<br>&nbsp;";
+			document.getElementById("kudos_bal").innerHTML = "Checking ...<br>&nbsp;";
 
 			let fupayload = {
 				method: 'GET',
@@ -6140,7 +6140,7 @@ Current version: 68
 
 		dispatch_submit_generation(submit_payload);
 		render_gametext();
-		document.getElementById("memorytext").value = "[<|Generating summary, do not close window...|>]"
+		document.getElementById("memorytext").value = "[<|Generating summary, do not close window ...|>]"
 		};
 
 		if(gametext_arr.length==0 || (gametext_arr.length==1 && gametext_arr[0].trim()==""))
@@ -8236,7 +8236,7 @@ Current version: 68
 			//console.log("FT:" + fulltxt);
 			if(fulltxt=="" && gametext_arr.length == 0 && synchro_pending_stream=="" && pending_response_id!="")
 			{
-				fulltxt = "Generating...";
+				fulltxt = "Generating ...";
 			}
 			document.getElementById("gametext").innerHTML = fulltxt;
 		}
@@ -8367,7 +8367,7 @@ Current version: 68
 			if (pending_response_id=="") { document.getElementById("chatistyping").classList.add("hidden"); }
 			else {
 				let aiName = ((pending_context_preinjection && pending_context_preinjection.includes(":")) ? pending_context_preinjection.split(":")[0] : "The AI");
-				document.getElementById("chataityping").innerText = aiName + " is typing...";
+				document.getElementById("chataityping").innerText = aiName + " is typing ...";
 				document.getElementById("chatistyping").classList.remove("hidden");
 			}
 			document.getElementById("chat_msg_send_btn").disabled = document.getElementById("btnsend").disabled;
@@ -9328,7 +9328,7 @@ Current version: 68
 		<div id="maineditbody" class="layer-container">
 			<div class="layer-bottom" id="gamescreen">
 				<span id="gametext" contenteditable="false" onclick="click_gametext()" onblur="merge_edit_field()">
-					<p>Connecting...</p>
+					<p>Connecting ...</p>
 				</span>
 				<div class="hidden" id="wimenu">
 				</div>
@@ -9376,7 +9376,7 @@ Current version: 68
 
 		<div id="enhancedchatinterface" class="chat_mesgs hidden">
 			<div id="chat_msg_body" class="chat_msg_history"></div>
-			<div class="hidden" id="chatistyping" style="text-align:right;font-size:13px;color:#999999; padding-bottom: 3px;"><div style="padding-bottom: 2px;" id="chataityping">The AI is typing...</div><div style="padding-top:2px;text-align:right;" class="dot-flashing flex flex-push-right"></div></div>
+			<div class="hidden" id="chatistyping" style="text-align:right;font-size:13px;color:#999999; padding-bottom: 3px;"><div style="padding-bottom: 2px;" id="chataityping">The AI is typing ...</div><div style="padding-top:2px;text-align:right;" class="dot-flashing flex flex-push-right"></div></div>
 
 			<!-- A greatly simplified action menu for this mode -->
 			<div class="flex hidden" id="actionmenu2">
@@ -10205,7 +10205,7 @@ Current version: 68
 			</div>
 
 			<div class="aidgpopuplistheader anotelabel zoomedimgdesc" id="zoomedimgdesc" style="word-wrap: break-word;">
-				Loading...
+				Loading ...
 			</div>
 			<div class="popupfooter">
 				<button type="button" class="bg_red btn btn-primary" style="width: 124px;" onclick="delete_curr_image();hide_popups();">Delete Image</button>
@@ -10463,7 +10463,7 @@ if ('serviceWorker' in navigator) {
 	//this will prevent PWA functionality locally but will avoid the scary 404 errors
 	if(localflag)
 	{
-		console.log("Try to register service worker...");
+		console.log("Try to register service worker ...");
 		try {
 			navigator.serviceWorker.register("sw.js")
 			.then(()=>{

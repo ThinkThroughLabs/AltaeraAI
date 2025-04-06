@@ -8,7 +8,7 @@ response=$?
 case $response in
 
         0)      
-        echo "Checking for updates...";
+        echo "Checking for updates ...";
         
                 {
                 cd "AltaeraAI"

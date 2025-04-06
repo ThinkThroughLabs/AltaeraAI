@@ -4,7 +4,7 @@
 
 clear
 
-echo "Installing mandatory packages before installation..."
+echo "Installing mandatory packages before installation ..."
 
 {
 pkg in ncurses-utils -y
@@ -35,7 +35,7 @@ echo "Welcome!
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Before we install...
+echo "Before we install ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -60,27 +60,27 @@ Beginning installation in:
 "
 
 echo "
-6...
+6 ...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 sleep 1
 echo "
-5...
+5 ...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 sleep 1
 echo "
-4...
+4 ...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 sleep 1
 echo "
-3...
+3 ...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 sleep 1
 echo "
-2...
+2 ...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 sleep 1
 echo "
-1...
+1 ...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 sleep 1
 
@@ -92,7 +92,7 @@ clear
    | |/ -_) '_| '  \ || \ \ /
    |_|\___|_| |_|_|_\_,_/_\_\                
                                     
-  Installing Termux dependencies...
+  Installing Termux dependencies ...
 
 
   "
@@ -100,7 +100,7 @@ clear
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Updating Termux apt repositories' mirrors...
+echo "Updating Termux apt repositories' mirrors ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -119,7 +119,7 @@ clear
    | |/ -_) '_| '  \ || \ \ /
    |_|\___|_| |_|_|_\_,_/_\_\    
                                     
-  Installing Termux dependencies...
+  Installing Termux dependencies ...
 
 
   "
@@ -131,7 +131,7 @@ echo "Updating Termux apt repositories' mirrors ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Installing Termux Activity Manager...
+echo "Installing Termux Activity Manager ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -149,7 +149,7 @@ clear
    | |/ -_) '_| '  \ || \ \ /
    |_|\___|_| |_|_|_\_,_/_\_\    
                                     
-  Installing Termux dependencies...
+  Installing Termux dependencies ...
 
 
   "
@@ -165,7 +165,7 @@ echo "Installing Termux Activity Manager ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Installing necessary Termux packages...
+echo "Installing necessary Termux packages ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -183,7 +183,7 @@ clear
    | |/ -_) '_| '  \ || \ \ /
    |_|\___|_| |_|_|_\_,_/_\_\    
                                     
-  Installing Termux dependencies...
+  Installing Termux dependencies ...
 
 
   "
@@ -203,7 +203,7 @@ echo "Installing necessary Termux packages ✔
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo "Removing previous AltaeraAI files [if there are any]...
+echo "Removing previous AltaeraAI files [if there are any] ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -225,7 +225,7 @@ clear
    | |/ -_) '_| '  \ || \ \ /
    |_|\___|_| |_|_|_\_,_/_\_\    
                                     
-  Installing Termux dependencies...
+  Installing Termux dependencies ...
 
 
   "
@@ -308,7 +308,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -316,7 +316,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -379,7 +379,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -387,7 +387,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -434,7 +434,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -442,7 +442,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -489,7 +489,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -497,7 +497,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -544,7 +544,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -552,7 +552,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -599,7 +599,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -607,7 +607,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -654,7 +654,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -662,7 +662,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -709,7 +709,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -717,7 +717,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -764,7 +764,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -772,7 +772,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -819,7 +819,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -827,7 +827,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -874,7 +874,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -882,7 +882,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'
@@ -935,7 +935,7 @@ else
 :
 fi
 
-echo "Moving the AI model and prompt file into proper directory...";
+echo "Moving the AI model and prompt file into proper directory ...";
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/chat-with-bob.txt' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae/prompts/chat-with-bob.txt'
@@ -943,7 +943,7 @@ mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termu
 clear
 } &> /dev/null 2>&1;
 
-echo "Cleaning up File System...";
+echo "Cleaning up File System ...";
 
 {
 rm -rf '/data/data/com.termux/files/home/altaera_install_pt-1.sh'

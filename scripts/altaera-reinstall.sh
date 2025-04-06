@@ -26,7 +26,7 @@ case $CHOICE in
             exit
 	    ;;
         2)
-            echo "You chose 'Reinstall without re-downloading the AI model (faster)'...";
+            echo "You chose 'Reinstall without re-downloading the AI model (faster)' ...";
             {
             cd 'AltaeraAI-tmp'
             wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_reinstall_keep_model.sh
@@ -38,7 +38,7 @@ case $CHOICE in
             ;;
 
         3)
-            echo "You chose 'Reinstall everything, including the AI model (slower)'...";
+            echo "You chose 'Reinstall everything, including the AI model (slower)' ...";
             {
             cd 'AltaeraAI-tmp'
             wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_reinstall_everything.sh

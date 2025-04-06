@@ -1,4 +1,4 @@
-echo "Updating AltaeraAI shell files...
+echo "Updating AltaeraAI shell files ...
 
 ";
 
@@ -317,7 +317,7 @@ cd '/data/data/com.termux/files/home'
 
 } &> /dev/null 2>&1;
 
-echo "Updating AltaeraAI core files...
+echo "Updating AltaeraAI core files ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -464,7 +464,7 @@ chmod a+x 'dialog_theme-off.sh'
 cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
 
-echo "Updating AltaeraAI PRoot Distro environment (Artix Linux)...";
+echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ...";
 
 {
 proot-distro login altaera -- ./upgrade.sh &

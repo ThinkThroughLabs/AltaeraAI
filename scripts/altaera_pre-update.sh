@@ -1,6 +1,6 @@
 #!/bin/bash
 
-        echo "Establishing whether a package update is needed...
+        echo "Establishing whether a package update is needed ...
         ";
          if [ -d /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae ]; then
                 {
@@ -36,7 +36,7 @@
 
   "
 
-    echo "Did you know...
+    echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -60,7 +60,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-            echo "Initializing update...
+            echo "Initializing update ...
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
           {
@@ -97,7 +97,7 @@ echo "________________________________________________________________
 
   "
 
-    echo "Did you know...
+    echo "Did you know ...
 
   " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
@@ -121,7 +121,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-            echo "Initializing update...
+            echo "Initializing update ...
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
           {
