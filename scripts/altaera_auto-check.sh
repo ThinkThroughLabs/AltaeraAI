@@ -41,20 +41,19 @@ if
                 cd ..
                 } &> /dev/null 2>&1;
 
-if [ $(bash 'AltaeraAI/altaera-version_upstream.sh'
-          ) = "v6.0.0" ]; then
-          rm -rf 'AltaeraAI/altaera-version_upstream.sh'
+version_upstream=$(bash 'AltaeraAI/altaera-version_upstream.sh')
+if [ "$version_upstream" = "v6.0.0" ]; then
+    rm -rf 'AltaeraAI/altaera-version_upstream.sh'
 else
-          rm -rf 'AltaeraAI/altaera-version_upstream.sh'
-          bash 'AltaeraAI/altaera-auto-update_available.sh'
+    rm -rf 'AltaeraAI/altaera-version_upstream.sh'
+    bash 'AltaeraAI/altaera-auto-update_available.sh'
 fi
 
-if [ $(bash 'AltaeraAI/altaera_termux-version.sh'
-          ) = "0.118.1" ]; then
-          :
+version_termux=$(bash 'AltaeraAI/altaera_termux-version.sh')
+if [ "$version_termux" = "0.118.1" ]; then
+    :
 else
-         bash 'AltaeraAI/altaera-auto-update_available-termux.sh'
-
+    bash 'AltaeraAI/altaera-auto-update_available-termux.sh'
 fi
 fi
           
