@@ -7,7 +7,7 @@ dialog --backtitle "AltaeraAI" \
 
 Recent changes:
 
-    * v5.7.9 - updated the pre-packaged KoboldCpp to v1.77
+    * v6.0.0 - updated the pre-packaged KoboldCpp to v1.77
     * v5.7.8 - updated the pre-packaged KoboldCpp to v1.76
     * v5.7.7 - added RWKV-6-Finch and RWKV-6-World weights to the list of models
     * added option to compile experimental KoboldCpp
