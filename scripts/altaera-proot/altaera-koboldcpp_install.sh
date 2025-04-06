@@ -70,7 +70,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-            echo "Initialazing KoboldCpp installation ...
+            echo "Initializing KoboldCpp installation ...
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
@@ -127,7 +127,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-            echo "Initialazing KoboldCpp installation ...
+            echo "Initializing KoboldCpp installation ...
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
@@ -184,7 +184,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-            echo "Initialazing KoboldCpp installation ...
+            echo "Initializing KoboldCpp installation ...
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
@@ -241,7 +241,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-            echo "Initialazing KoboldCpp installation ...
+            echo "Initializing KoboldCpp installation ...
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
@@ -298,7 +298,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-            echo "Initialazing KoboldCpp installation ...
+            echo "Initializing KoboldCpp installation ...
 
             " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
             {
