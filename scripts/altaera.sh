@@ -4,6 +4,13 @@ cd '/data/data/com.termux/files/home'
 
 './AltaeraAI/altaera_auto-check.sh'
 
+{
+rm 'AltaeraAI-tmp/termux-default/dialogrc'
+cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc'
+rm '/data/data/com.termux/files/home/.dialogrc'
+cp '/data/data/com.termux/files/home/AltaeraAI/termux/dialogrc' '/data/data/com.termux/files/home/.dialogrc'
+} &> /dev/null 2>&1;
+
 HEIGHT=25
 WIDTH=60
 CHOICE_HEIGHT=7
@@ -267,5 +274,10 @@ echo "Logging into PRoot Distro ...
             ;;
         19)
             clear
+            {
+rm '/data/data/com.termux/files/home/.dialogrc'
+cp '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc' '/data/data/com.termux/files/home/.dialogrc'
+} &> /dev/null 2>&1;
             exit
 esac
+
