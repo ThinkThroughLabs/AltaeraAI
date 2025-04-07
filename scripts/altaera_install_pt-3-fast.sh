@@ -67,7 +67,6 @@ cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/hom
 rm '/data/data/com.termux/files/home/.dialogrc'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O '.dialogrc' -P '/data/data/com.termux/files/home'
 fi
-fi
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
 chmod a+x 'altaera.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-proot/altaera-cq_gguf_models.sh

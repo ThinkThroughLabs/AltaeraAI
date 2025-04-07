@@ -199,7 +199,6 @@ cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/hom
 rm '/data/data/com.termux/files/home/.dialogrc'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O '.dialogrc' -P '/data/data/com.termux/files/home'
 fi
-fi
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-4.sh
 chmod a+x 'altaera_install_pt-4.sh'
 } &> /dev/null 2>&1;
