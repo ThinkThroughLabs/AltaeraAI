@@ -3,8 +3,6 @@
 [![Github All Releases](https://img.shields.io/github/downloads/ThinkThroughLabs/AltaeraAI/total.svg)]()
 [![Github All Releases](https://img.shields.io/github/downloads/latestissue/AltaeraAI/total.svg)]()
 
-**This project is deprecated; no updates at this time, although core functionalities are still working; Back&Front-end software needs to be updated manually in the MENU. Project reactivation is possible in the future, but no promises at this point. ~~January 2025**
-
 **Note**: *the number of downloads shown is only for the pre-packaged* KoboldCpp *and also includes downloads resulting from updates containing package upgrades*.
 
 **Notice**: AltaeraAI *periodically undergoes **heavy changes** that can disrupt the installation process*. **If this disruption occurs, please try the installation a little later**.
@@ -77,7 +75,7 @@ You can read more at: [altaera.ai](https://altaera.ai)
    ```
    WORKING
    ```bash
-   curl -o install https://raw.githubusercontent.com/latestissue/AltaeraAI/main/scripts/install && chmod +x install && ./install
+   curl -o install https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/install && chmod +x install && ./install
    ```
    
 - Then press ENTER and wait for the installation to finish. Make sure you have a Wi-Fi connection, as the process will download about 0.5 GB (or more) of data. The installation will take just 2 minutes or more, depending on your device and internet speed.
