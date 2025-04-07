@@ -209,7 +209,7 @@ rm -rf 'altaera_install_pt-3.sh'
 rm -rf 'altaera_install_pt-4.sh'
 rm -rf 'altaera_install-architecture.sh'
 rm '/data/data/com.termux/files/home/.dialogrc'
-cp '/data/data/com.termux/files/home/AltaeraAI-tmp'/termux-default/dialogrc' '/data/data/com.termux/files/home/.dialogrc'
+cp '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc' '/data/data/com.termux/files/home/.dialogrc'
 } &> /dev/null 2>&1;
 
 clear
