@@ -57,9 +57,17 @@ rm -rf "/etc/bash.bashrc"
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/bash.bashrc
 cp 'bash.bashrc' "/etc"
 rm -rf 'bash.bashrc'
+if [ -f "/data/data/com.termux/files/home/.dialogrc" ]; then
+cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/home/AltaeraAI-tmp'/termux-default/dialogrc'
+rm '/data/data/com.termux/files/home/.dialogrc'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O '.dialogrc' -P '/data/data/com.termux/files/home'
+elif [ ! -f "/data/data/com.termux/files/home/.dialogrc" ]; then
 dialog --create-rc ~/.dialogrc
-sed -i '/^screen_color = (CYAN,BLUE,ON)/d' ~/.dialogrc
-echo "screen_color = (CYAN,BLACK,ON)" >> ~/.dialogrc
+cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/home/AltaeraAI-tmp'/termux-default/dialogrc'
+rm '/data/data/com.termux/files/home/.dialogrc'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O '.dialogrc' -P '/data/data/com.termux/files/home'
+fi
+fi
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
 chmod a+x 'altaera.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-proot/altaera-cq_gguf_models.sh
