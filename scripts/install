@@ -1,7 +1,5 @@
 #!/bin/bash
 
-##termux-change-repo
-
 clear
 
 echo "Installing mandatory packages before installation ..."
