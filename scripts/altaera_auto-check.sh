@@ -58,8 +58,6 @@ if
          [ $(cat < /dev/null > /dev/tcp/8.8.8.8/53; echo $?
           ) = "0" ]; then
 
-     clear
-
             echo "
 
         ██████████
