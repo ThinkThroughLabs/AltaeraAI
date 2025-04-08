@@ -1,6 +1,16 @@
 clear
 
-        echo "Checking for instabilities ...";
+        echo "Checking for instabilities [ ... ]
+        
+        ";
+
+        echo "Automatically checking for updates [  ]
+        
+        ";
+
+        echo "Running essential file integrity checks [  ]
+        
+        ";
         
                 {
                 cd "AltaeraAI"
@@ -26,11 +36,15 @@ if
          [ $(cat < /dev/null > /dev/tcp/8.8.8.8/53; echo $?
           ) = "0" ]; then
 
-        echo "Checking for instabilities ✔
+        echo "Checking for instabilities [ ✔ ]
         
         ";
-          
-        echo "Automatically checking for updates ...
+
+        echo "Automatically checking for updates [ ... ]
+        
+        ";
+
+        echo "Running essential file integrity checks [  ]
         
         ";
 
@@ -64,16 +78,16 @@ rm -rf '/sdcard/com.termux_118.1.apk'
 
 clear
 
-        echo "Checking for instabilities ✔
+        echo "Checking for instabilities [ ✔ ]
         
         ";
 
-        echo "Automatically checking for updates ✔
+        echo "Automatically checking for updates [ ✔ ]
         
         ";
 
-        echo "Running essential file integrity checks ...
-
+        echo "Running essential file integrity checks [ ... ]
+        
         ";
 
 sleep .5
@@ -83,16 +97,16 @@ then
 
      clear
 
-        echo "Checking for instabilities ✔
-        
-        ";
-     
-        echo "Automatically checking for updates ✔
+        echo "Checking for instabilities [ ✔ ]
         
         ";
 
-        echo "Running essential file integrity checks ✔
+        echo "Automatically checking for updates [ ✔ ]
+        
+        ";
 
+        echo "Running essential file integrity checks [ ✔ ]
+        
         ";
 
 sleep .5
