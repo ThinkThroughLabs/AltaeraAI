@@ -49,12 +49,12 @@ else
     bash 'AltaeraAI/altaera-auto-update_available.sh'
 fi
 
-version_termux=$(bash 'AltaeraAI/altaera_termux-version.sh')
-if [ "$version_termux" = "0.118.1" ]; then
-    :
-else
-    bash 'AltaeraAI/altaera-auto-update_available-termux.sh'
-fi
+#version_termux=$(bash 'AltaeraAI/altaera_termux-version.sh')
+#if [ "$version_termux" = "0.118.1" ]; then
+#    :
+#else
+#    bash 'AltaeraAI/altaera-auto-update_available-termux.sh'
+#fi
 fi
           
 {
