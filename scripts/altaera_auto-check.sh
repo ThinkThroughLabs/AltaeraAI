@@ -25,10 +25,20 @@ echo "________________________________________________________________
 
 # Check for instabilities
 echo -n "Checking for instabilities [ ... ] "
+
+                {
+                cd "AltaeraAI"
+                wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-functional_status.sh
+                chmod a+x 'altaera-functional_status.sh'
+                cd ..
+                } &> /dev/null 2>&1;
+                
 if [ $(bash 'AltaeraAI/altaera-functional_status.sh'
 ) = "true" ]; then
+    rm 'AltaeraAI/altaera-functional_status.sh'
     echo -e "[\033[0;32m✔\033[0m]"
 else
+    rm 'AltaeraAI/altaera-functional_status.sh'
     echo -e "[\033[0;31m✘\033[0m]"
     dialog --backtitle "AltaeraAI" \
         --title "AltaeraAI - Technical Difficulties" \
