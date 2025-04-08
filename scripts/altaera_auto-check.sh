@@ -1,16 +1,38 @@
 clear
 
+            echo "
+
+        ██████████
+       ██ █
+      ██  █
+     ██   █
+     █    ████████
+    ██    █
+   ████████
+  ██      █
+  █       ████████
+
+  AltaeraAI - v6.0.0
+
+    by ThinkThrough
+
+
+  "
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
         echo "Checking for instabilities [ ... ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
         echo "Automatically checking for updates [  ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
         echo "Running essential file integrity checks [  ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
         
                 {
                 cd "AltaeraAI"
@@ -36,17 +58,41 @@ if
          [ $(cat < /dev/null > /dev/tcp/8.8.8.8/53; echo $?
           ) = "0" ]; then
 
+     clear
+
+            echo "
+
+        ██████████
+       ██ █
+      ██  █
+     ██   █
+     █    ████████
+    ██    █
+   ████████
+  ██      █
+  █       ████████
+
+  AltaeraAI - v6.0.0
+
+    by ThinkThrough
+
+
+  "
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
         echo "Checking for instabilities [ ✔ ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
         echo "Automatically checking for updates [ ... ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
         echo "Running essential file integrity checks [  ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
                 {
                 cd "AltaeraAI"
@@ -78,17 +124,39 @@ rm -rf '/sdcard/com.termux_118.1.apk'
 
 clear
 
+            echo "
+
+        ██████████
+       ██ █
+      ██  █
+     ██   █
+     █    ████████
+    ██    █
+   ████████
+  ██      █
+  █       ████████
+
+  AltaeraAI - v6.0.0
+
+    by ThinkThrough
+
+
+  "
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
         echo "Checking for instabilities [ ✔ ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
         echo "Automatically checking for updates [ ✔ ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
         echo "Running essential file integrity checks [ ... ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 sleep .5
         
@@ -97,17 +165,39 @@ then
 
      clear
 
+            echo "
+
+        ██████████
+       ██ █
+      ██  █
+     ██   █
+     █    ████████
+    ██    █
+   ████████
+  ██      █
+  █       ████████
+
+  AltaeraAI - v6.0.0
+
+    by ThinkThrough
+
+
+  "
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
         echo "Checking for instabilities [ ✔ ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
         echo "Automatically checking for updates [ ✔ ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
         echo "Running essential file integrity checks [ ✔ ]
         
-        ";
+        " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 sleep .5
 
