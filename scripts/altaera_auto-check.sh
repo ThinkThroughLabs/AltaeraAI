@@ -21,32 +21,29 @@ echo "
     by ThinkThrough
 "
 
-# Create a visually separated header line
+# Visual separator line
 echo "________________________________________________________________"
 echo ""
 
-# Function to simulate progress with dynamic check marks
-display_check() {
-    echo -n "$1"
+# Check function for dynamically updating check marks
+check_status() {
+    echo -n "$1 [ ... ]"
     tput el
-    sleep 1
-    echo -n "[ ✔ ]"
+    sleep 1  # Simulate task time
+    echo -n "$1 [ ✔ ]"
     echo
 }
 
 # Checking for instabilities
-echo "Checking for instabilities [ ... ]"
-display_check "Checking for instabilities"
+check_status "Checking for instabilities"
 
 # Automatically checking for updates
-echo "Automatically checking for updates [ ... ]"
-display_check "Automatically checking for updates"
+check_status "Automatically checking for updates"
 
 # Running essential file integrity checks
-echo "Running essential file integrity checks [ ... ]"
-display_check "Running essential file integrity checks"
+check_status "Running essential file integrity checks"
 
-# Download and check functional status
+# Download functional status script
 {
     cd "AltaeraAI"
     wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-functional_status.sh
@@ -54,6 +51,7 @@ display_check "Running essential file integrity checks"
     cd ..
 } &> /dev/null 2>&1;
 
+# Check functional status
 if [ "$(bash 'AltaeraAI/altaera-functional_status.sh')" = "true" ]; then
     rm -rf 'AltaeraAI/altaera-functional_status.sh'
 else
@@ -86,25 +84,22 @@ if [ "$(cat < /dev/null > /dev/tcp/8.8.8.8/53; echo $?)" = "0" ]; then
 
     by ThinkThrough
 "
-    # Create a visually separated header line
+    # Visual separator line
     echo "________________________________________________________________"
     echo ""
 
     # Checking for instabilities
-    echo "Checking for instabilities [ ✔ ]"
-    display_check "Checking for instabilities"
+    check_status "Checking for instabilities"
 
     # Automatically checking for updates
-    echo "Automatically checking for updates [ ✔ ]"
-    display_check "Automatically checking for updates"
+    check_status "Automatically checking for updates"
 
     # Running essential file integrity checks
-    echo "Running essential file integrity checks [ ✔ ]"
-    display_check "Running essential file integrity checks"
+    check_status "Running essential file integrity checks"
 
     sleep .5
 
-    # Download and update version if necessary
+    # Download version upstream script
     {
         cd "AltaeraAI"
         wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-version_upstream.sh
@@ -129,7 +124,7 @@ fi
 
 clear
 
-# Re-display header
+# Re-display the header
 echo "
 ████████████████████████
 ██                    ██
@@ -150,25 +145,23 @@ echo "
     by ThinkThrough
 "
 
-# Create a visually separated header line
+# Visual separator line
 echo "________________________________________________________________"
 echo ""
 
 # Checking for instabilities
-echo "Checking for instabilities [ ✔ ]"
-display_check "Checking for instabilities"
+check_status "Checking for instabilities"
 
 # Automatically checking for updates
-echo "Automatically checking for updates [ ✔ ]"
-display_check "Automatically checking for updates"
+check_status "Automatically checking for updates"
 
 # Running essential file integrity checks
-echo "Running essential file integrity checks [ ✔ ]"
-display_check "Running essential file integrity checks"
+check_status "Running essential file integrity checks"
 
-# Check for necessary files and scripts
+# Sleep to simulate task duration
 sleep .5
 
+# File check
 if [ -f /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera.sh ] && \
    [ -f /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/benchmark.sh ] && \
    [ -f /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/horde.sh ] && \
@@ -219,14 +212,9 @@ if [ -f /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/al
     echo ""
 
     # Confirming checks with green checkmarks
-    echo "Checking for instabilities [ ✔ ]"
-    display_check "Checking for instabilities"
-
-    echo "Automatically checking for updates [ ✔ ]"
-    display_check "Automatically checking for updates"
-
-    echo "Running essential file integrity checks [ ✔ ]"
-    display_check "Running essential file integrity checks"
+    check_status "Checking for instabilities"
+    check_status "Automatically checking for updates"
+    check_status "Running essential file integrity checks"
 else
     bash 'AltaeraAI/altaera_auto-check_corrupted-files.sh'
 fi
