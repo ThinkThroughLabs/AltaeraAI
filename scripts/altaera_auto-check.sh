@@ -24,7 +24,7 @@ echo "________________________________________________________________
 " | sed -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 # Check for instabilities
-echo -n "Checking for instabilities [ ... ] "
+echo -n "Checking for instabilities [ ... ] " | pv -qL 25
 
                 {
                 cd "AltaeraAI"
@@ -60,7 +60,7 @@ fi
 ##fi
 
 # Automatically checking for updates
-echo -n "Automatically checking for updates [ ... ] "
+echo -n "Automatically checking for updates [ ... ] " | pv -qL 25
 
 {
     cd "AltaeraAI"
@@ -93,7 +93,7 @@ rm -rf '/sdcard/com.termux_118.1.apk'
 } &> /dev/null 2>&1;
 
 # Running essential file integrity checks
-echo -n "Running essential file integrity checks [ ... ] "
+echo -n "Running essential file integrity checks [ ... ] " | pv -qL 25
 sleep .5
 
 # Placeholder for actual file integrity checks
