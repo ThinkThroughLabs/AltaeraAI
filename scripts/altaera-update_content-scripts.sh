@@ -1,3 +1,12 @@
+# Check function for dynamically updating check marks
+check_status() {
+    echo -n "$1"
+    tput el  # Clear to the end of the line
+    sleep 1  # Simulate task time
+    echo -n " [ ✔ ]"
+    echo
+}
+
 check_status "Updating AltaeraAI shell files"
 
 {
