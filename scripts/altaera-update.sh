@@ -82,15 +82,15 @@ echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
             # Updating steps
-            check_status "Initializing update [...] "
+            check_status "Initializing update [ ... ] "
             {
                 rm -rf 'altaera-update_content.sh'
                 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-fast.sh -O 'altaera-update_content.sh'
                 chmod a+x 'altaera-update_content.sh'
             } &> /dev/null 2>&1
-            check_status "Downloading update content [...] "
+            check_status "Downloading update content [ ... ] "
             bash 'altaera-update_content.sh'
-            check_status "Finishing up [...] "
+            check_status "Finishing up [ ... ] "
             wait 1
             clear
             bash 'AltaeraAI/altaera-updated_successfully.sh'
@@ -142,15 +142,15 @@ echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
             # Updating steps
-            check_status "Initializing update [...] "
+            check_status "Initializing update [ ... ] "
             {
                 rm -rf 'altaera-update_content.sh'
                 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow.sh -O 'altaera-update_content.sh'
                 chmod a+x 'altaera-update_content.sh'
             } &> /dev/null 2>&1
-            check_status "Downloading update content [...] "
+            check_status "Downloading update content [ ... ] "
             bash 'altaera-update_content.sh'
-            check_status "Finishing up [...] "
+            check_status "Finishing up [ ... ] "
             wait 1
             clear
             bash 'AltaeraAI/altaera-updated_successfully.sh'
@@ -202,15 +202,15 @@ echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
             # Updating steps
-            check_status "Initializing update [...] "
+            check_status "Initializing update [ ... ] "
             {
                 rm -rf 'altaera-update_content.sh'
                 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-update_content-slow_experimental.sh -O 'altaera-update_content.sh'
                 chmod a+x 'altaera-update_content.sh'
             } &> /dev/null 2>&1
-            check_status "Downloading update content [...] "
+            check_status "Downloading update content [ ... ] "
             bash 'altaera-update_content.sh'
-            check_status "Finishing up [...] "
+            check_status "Finishing up [ ... ] "
             wait 1
             clear
             bash 'AltaeraAI/altaera-updated_successfully.sh'
@@ -262,15 +262,15 @@ echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
             # Updating steps
-            check_status "Initializing update [...] "
+            check_status "Initializing update [ ... ] "
             {
                 rm -rf 'altaera-update_content.sh'
                 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-scripts.sh -O 'altaera-update_content.sh'
                 chmod a+x 'altaera-update_content.sh'
             } &> /dev/null 2>&1
-            check_status "Downloading update content [...] "
+            check_status "Downloading update content [ ... ] "
             bash 'altaera-update_content.sh'
-            check_status "Finishing up [...] "
+            check_status "Finishing up [ ... ] "
             wait 1
             clear
             bash 'AltaeraAI/altaera-updated_successfully.sh'
