@@ -24,10 +24,10 @@ clear
 
 # Check function for dynamically updating check marks
 check_status() {
-    echo -n "$1 [ ... ]"
-    tput el
+    echo -n "$1"
+    tput el  # Clear to the end of the line
     sleep 1  # Simulate task time
-    echo -n "$1 [ ✔ ]"
+    echo -n " [ ✔ ]"
     echo
 }
 
