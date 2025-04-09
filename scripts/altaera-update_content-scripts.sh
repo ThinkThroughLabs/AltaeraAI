@@ -7,8 +7,6 @@ check_status() {
     echo
 }
 
-check_status "Updating AltaeraAI shell files"
-
 {
 mkdir '/data/data/com.termux/files/home/AltaeraAI'
 mv 'altaera.sh' 'altaeralogin.sh' 'altaera-lang.sh' 'altaera-model' 'altaera-model-rwkv-4.sh' 'altaera-update.sh' 'altaera-update-proot.sh' 'altaera-ngrok.sh' 'altaera-ngrok-configuration.sh' 'altaera-ngrok-on.sh' 'altaera-reinstall.sh' 'altaera-uninstall.sh' './AltaeraAI'
@@ -285,8 +283,7 @@ alias altaera-model='/data/data/com.termux/files/home/AltaeraAI/altaera-model.sh
 cd '/data/data/com.termux/files/home'
 
 } &> /dev/null 2>&1;
-
-check_status "Updating AltaeraAI shell files (PRoot Distro)"
+check_status "Updating AltaeraAI shell files"
 
 {
 cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
@@ -393,15 +390,13 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 chmod a+x 'dialog_theme-off.sh'
 cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
-
-check_status "Updating AltaeraAI PRoot Distro environment"
+check_status "Updating AltaeraAI shell files (PRoot Distro)"
 
 {
 proot-distro login altaera -- ./upgrade.sh &
 clear
 } &> /dev/null 2>&1;
-
-check_status "Updating Termux files"
+check_status "Updating AltaeraAI PRoot Distro environment"
 
 {
 pkg install nodejs -y
@@ -410,5 +405,6 @@ rm 'termux.properties'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/termux/termux.properties
 cd ~
 } &> /dev/null 2>&1;
+check_status "Updating Termux files"
 
 sleep .5
