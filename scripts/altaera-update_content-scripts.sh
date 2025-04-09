@@ -288,7 +288,7 @@ cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
 
 # Call check_status while a task is processed and then a check mark appears
-check_status "Updating AltaeraAI shell files [...] "
+check_status "Updating AltaeraAI shell files [ ... ] "
 
 {
     cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
@@ -396,14 +396,14 @@ check_status "Updating AltaeraAI shell files [...] "
     cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
 
-check_status "Updating AltaeraAI shell files (PRoot Distro) [...] "
+check_status "Updating AltaeraAI shell files (PRoot Distro) [ ... ] "
 
 {
     proot-distro login altaera -- ./upgrade.sh &
     clear
 } &> /dev/null 2>&1;
 
-check_status "Updating AltaeraAI PRoot Distro environment [...] "
+check_status "Updating AltaeraAI PRoot Distro environment [ ... ] "
 
 {
     pkg install nodejs -y
@@ -413,6 +413,6 @@ check_status "Updating AltaeraAI PRoot Distro environment [...] "
     cd ~
 } &> /dev/null 2>&1;
 
-check_status "Updating Termux files [...] "
+check_status "Updating Termux files [ ... ] "
 
 sleep .5
