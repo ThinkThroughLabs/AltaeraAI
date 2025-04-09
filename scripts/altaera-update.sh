@@ -27,7 +27,11 @@ check_status() {
     echo -n "$1"
     tput el  # Clear to the end of the line
     sleep 1  # Simulate task time
-    echo -n " [ \033[32m✔\033[0m ]"
+    
+    # Use tput to set the color to green
+    tput setaf 2  # Set text color to green (color 2 is green)
+    echo -n " [ ✔ ]"
+    tput sgr0  # Reset the color back to default
     echo
 }
 
