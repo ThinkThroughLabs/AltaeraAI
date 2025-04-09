@@ -2,15 +2,16 @@
 check_status() {
     echo -n "$1"
     tput el  # Clear to the end of the line
+    # Allow time for the task to be processed before displaying the checkmark
     sleep 1  # Simulate task time
     echo -n " [ ✔ ]"
     echo
 }
 
 {
-mkdir '/data/data/com.termux/files/home/AltaeraAI'
-mv 'altaera.sh' 'altaeralogin.sh' 'altaera-lang.sh' 'altaera-model' 'altaera-model-rwkv-4.sh' 'altaera-update.sh' 'altaera-update-proot.sh' 'altaera-ngrok.sh' 'altaera-ngrok-configuration.sh' 'altaera-ngrok-on.sh' 'altaera-reinstall.sh' 'altaera-uninstall.sh' './AltaeraAI'
-cd 'AltaeraAI'
+    mkdir '/data/data/com.termux/files/home/AltaeraAI'
+    mv 'altaera.sh' 'altaeralogin.sh' 'altaera-lang.sh' 'altaera-model' 'altaera-model-rwkv-4.sh' 'altaera-update.sh' 'altaera-update-proot.sh' 'altaera-ngrok.sh' 'altaera-ngrok-configuration.sh' 'altaera-ngrok-on.sh' 'altaera-reinstall.sh' 'altaera-uninstall.sh' './AltaeraAI'
+    cd 'AltaeraAI'
 rm -rf 'altaera_pre-update.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_pre-update.sh
 chmod a+x 'altaera_pre-update.sh'
@@ -281,130 +282,134 @@ alias altaera-lang='/data/data/com.termux/files/home/AltaeraAI/altaera-lang.sh'
 alias altaera-model='/data/data/com.termux/files/home/AltaeraAI/altaera-model.sh'" >> bash.bashrc
 
 cd '/data/data/com.termux/files/home'
-
 } &> /dev/null 2>&1;
+
+# Call check_status while a task is processed and then a check mark appears
 check_status "Updating AltaeraAI shell files"
 
 {
-cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
-rm -rf 'upgrade.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/upgrade.sh
-chmod a+x 'upgrade.sh'
-rm -rf 'ngrok-authtoken.sh'
-rm -rf 'altaera_pre-launch.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_pre-launch.sh
-chmod a+x 'altaera_pre-launch.sh'
-rm -rf 'altaera.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
-chmod a+x 'altaera.sh'
-rm -rf 'altaera-cq_gguf_models.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-proot/altaera-cq_gguf_models.sh
-chmod a+x 'altaera-cq_gguf_models.sh'
-rm -rf 'altaera-convert_hf_to_gguf.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-proot/altaera-convert_hf_to_gguf.sh
-chmod a+x 'altaera-convert_hf_to_gguf.sh'
-rm -rf 'altaera-convert_url.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-proot/altaera-convert_url.sh
-chmod a+x 'altaera-convert_url.sh'
-rm -rf 'altaera-manage_backends.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-manage_backends.sh
-chmod a+x 'altaera-manage_backends.sh'
-rm -rf 'altaera-mega.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega.sh
-chmod a+x 'altaera-mega.sh'
-rm -rf 'altaera-mega_backup.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega_backup.sh
-chmod a+x 'altaera-mega_backup.sh'
-rm -rf 'altaera-mega_login.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega_login.sh
-chmod a+x 'altaera-mega_login.sh'
-rm -rf 'altaera-mega_restore.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega_restore.sh
-chmod a+x 'altaera-mega_restore.sh'
-rm -rf 'altaera-koboldcpp_install.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-koboldcpp_install.sh
-chmod a+x 'altaera-koboldcpp_install.sh'
-rm -rf 'altaera-ollama.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama.sh
-chmod a+x 'altaera-ollama.sh'
-rm -rf 'altaera-ollama_install.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_install.sh
-chmod a+x 'altaera-ollama_install.sh'
-rm -rf 'altaera-sillytavern.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-sillytavern.sh
-chmod a+x 'altaera-sillytavern.sh'
-rm -rf 'altaera-sillytavern_install.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-sillytavern_install.sh
-chmod a+x 'altaera-sillytavern_install.sh'
-rm -rf 'altaera-ollama_start.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_start.sh
-chmod a+x 'altaera-ollama_start.sh'
-rm -rf 'altaera-ollama_official_models.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_official_models.sh
-chmod a+x 'altaera-ollama_official_models.sh'
-rm -rf 'altaera-ollama_front-end.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_front-end.sh
-chmod a+x 'altaera-ollama_front-end.sh'
-rm -rf 'altaera-ollama_maid-install.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_maid-install.sh
-chmod a+x 'altaera-ollama_maid-install.sh'
-rm -rf 'altaera-ollama_maid.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_maid.sh
-chmod a+x 'altaera-ollama_maid.sh'
-rm -rf 'Modelfile'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/Modelfile
-chmod a+x 'Modelfile'
+    cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
+    rm -rf 'upgrade.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/upgrade.sh
+    chmod a+x 'upgrade.sh'
+    rm -rf 'ngrok-authtoken.sh'
+    rm -rf 'altaera_pre-launch.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_pre-launch.sh
+    chmod a+x 'altaera_pre-launch.sh'
+    rm -rf 'altaera.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera.sh
+    chmod a+x 'altaera.sh'
+    rm -rf 'altaera-cq_gguf_models.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-proot/altaera-cq_gguf_models.sh
+    chmod a+x 'altaera-cq_gguf_models.sh'
+    rm -rf 'altaera-convert_hf_to_gguf.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-proot/altaera-convert_hf_to_gguf.sh
+    chmod a+x 'altaera-convert_hf_to_gguf.sh'
+    rm -rf 'altaera-convert_url.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-proot/altaera-convert_url.sh
+    chmod a+x 'altaera-convert_url.sh'
+    rm -rf 'altaera-manage_backends.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-manage_backends.sh
+    chmod a+x 'altaera-manage_backends.sh'
+    rm -rf 'altaera-mega.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega.sh
+    chmod a+x 'altaera-mega.sh'
+    rm -rf 'altaera-mega_backup.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega_backup.sh
+    chmod a+x 'altaera-mega_backup.sh'
+    rm -rf 'altaera-mega_login.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega_login.sh
+    chmod a+x 'altaera-mega_login.sh'
+    rm -rf 'altaera-mega_restore.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-mega_restore.sh
+    chmod a+x 'altaera-mega_restore.sh'
+    rm -rf 'altaera-koboldcpp_install.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-koboldcpp_install.sh
+    chmod a+x 'altaera-koboldcpp_install.sh'
+    rm -rf 'altaera-ollama.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama.sh
+    chmod a+x 'altaera-ollama.sh'
+    rm -rf 'altaera-ollama_install.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_install.sh
+    chmod a+x 'altaera-ollama_install.sh'
+    rm -rf 'altaera-sillytavern.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-sillytavern.sh
+    chmod a+x 'altaera-sillytavern.sh'
+    rm -rf 'altaera-sillytavern_install.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-sillytavern_install.sh
+    chmod a+x 'altaera-sillytavern_install.sh'
+    rm -rf 'altaera-ollama_start.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_start.sh
+    chmod a+x 'altaera-ollama_start.sh'
+    rm -rf 'altaera-ollama_official_models.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_official_models.sh
+    chmod a+x 'altaera-ollama_official_models.sh'
+    rm -rf 'altaera-ollama_front-end.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_front-end.sh
+    chmod a+x 'altaera-ollama_front-end.sh'
+    rm -rf 'altaera-ollama_maid-install.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_maid-install.sh
+    chmod a+x 'altaera-ollama_maid-install.sh'
+    rm -rf 'altaera-ollama_maid.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-ollama_maid.sh
+    chmod a+x 'altaera-ollama_maid.sh'
+    rm -rf 'Modelfile'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/Modelfile
+    chmod a+x 'Modelfile'
 
-rm -rf 'altaera-fix.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix.sh
-chmod a+x 'altaera-fix.sh'
-rm -rf 'altaera-fixed_successfully.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fixed_successfully.sh
-chmod a+x 'altaera-fixed_successfully.sh'
-rm -rf 'altaera_corrupted-files.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_corrupted-files.sh
-chmod a+x 'altaera_corrupted-files.sh'
-rm -rf 'benchmark.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/benchmark.sh
-chmod a+x 'benchmark.sh'
-rm -rf 'altaera-model_empty.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_empty.sh
-chmod a+x 'altaera-model_empty.sh'
-rm -rf 'altaera-model_list_empty.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_list_empty.sh
-chmod a+x 'altaera-model_list_empty.sh'
-rm -rf 'altaera-model_list.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_list.sh
-chmod a+x 'altaera-model_list.sh'
-rm -rf 'altaera-model_remove_in.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_remove_in.sh
-chmod a+x 'altaera-model_remove_in.sh'
-rm -rf 'altaera-model_backup.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_backup.sh
-chmod a+x 'altaera-model_backup.sh'
-rm -rf 'dialog_theme-on.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-on.sh
-chmod a+x 'dialog_theme-on.sh'
-rm -rf 'dialog_theme-off.sh'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-off.sh
-chmod a+x 'dialog_theme-off.sh'
-cd '/data/data/com.termux/files/home'
+    rm -rf 'altaera-fix.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fix.sh
+    chmod a+x 'altaera-fix.sh'
+    rm -rf 'altaera-fixed_successfully.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-fixed_successfully.sh
+    chmod a+x 'altaera-fixed_successfully.sh'
+    rm -rf 'altaera_corrupted-files.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera_corrupted-files.sh
+    chmod a+x 'altaera_corrupted-files.sh'
+    rm -rf 'benchmark.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/benchmark.sh
+    chmod a+x 'benchmark.sh'
+    rm -rf 'altaera-model_empty.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_empty.sh
+    chmod a+x 'altaera-model_empty.sh'
+    rm -rf 'altaera-model_list_empty.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_list_empty.sh
+    chmod a+x 'altaera-model_list_empty.sh'
+    rm -rf 'altaera-model_list.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_list.sh
+    chmod a+x 'altaera-model_list.sh'
+    rm -rf 'altaera-model_remove_in.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_remove_in.sh
+    chmod a+x 'altaera-model_remove_in.sh'
+    rm -rf 'altaera-model_backup.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/altaera-model_backup.sh
+    chmod a+x 'altaera-model_backup.sh'
+    rm -rf 'dialog_theme-on.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-on.sh
+    chmod a+x 'dialog_theme-on.sh'
+    rm -rf 'dialog_theme-off.sh'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-off.sh
+    chmod a+x 'dialog_theme-off.sh'
+    cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
+
 check_status "Updating AltaeraAI shell files (PRoot Distro)"
 
 {
-proot-distro login altaera -- ./upgrade.sh &
-clear
+    proot-distro login altaera -- ./upgrade.sh &
+    clear
 } &> /dev/null 2>&1;
+
 check_status "Updating AltaeraAI PRoot Distro environment"
 
 {
-pkg install nodejs -y
-cd '~/.termux/'
-rm 'termux.properties'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/termux/termux.properties
-cd ~
+    pkg install nodejs -y
+    cd '~/.termux/'
+    rm 'termux.properties'
+    wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/termux/termux.properties
+    cd ~
 } &> /dev/null 2>&1;
+
 check_status "Updating Termux files"
 
 sleep .5
