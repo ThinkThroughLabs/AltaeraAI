@@ -27,7 +27,7 @@ check_status() {
     echo -n "$1"
     tput el  # Clear to the end of the line
     sleep 1  # Simulate task time
-    echo -n "[\033[0;32m✔\033[0m]"
+    echo -n " [ \033[32m✔\033[0m ]"
     echo
 }
 
