@@ -91,7 +91,7 @@ echo "________________________________________________________________
             check_status "Downloading update content [...] "
             bash 'altaera-update_content.sh'
             check_status "Finishing up [...] "
-            wait .5
+            wait 1
             clear
             bash 'AltaeraAI/altaera-updated_successfully.sh'
             ;;
@@ -151,7 +151,7 @@ echo "________________________________________________________________
             check_status "Downloading update content [...] "
             bash 'altaera-update_content.sh'
             check_status "Finishing up [...] "
-            wait .5
+            wait 1
             clear
             bash 'AltaeraAI/altaera-updated_successfully.sh'
             ;;
@@ -211,7 +211,7 @@ echo "________________________________________________________________
             check_status "Downloading update content [...] "
             bash 'altaera-update_content.sh'
             check_status "Finishing up [...] "
-            wait .5
+            wait 1
             clear
             bash 'AltaeraAI/altaera-updated_successfully.sh'
             ;;
@@ -271,7 +271,7 @@ echo "________________________________________________________________
             check_status "Downloading update content [...] "
             bash 'altaera-update_content.sh'
             check_status "Finishing up [...] "
-            wait .5
+            wait 1
             clear
             bash 'AltaeraAI/altaera-updated_successfully.sh'
             ;;
