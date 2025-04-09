@@ -1,58 +1,15 @@
-            clear
-            echo "
-
-████████████████████████
-██                    ██
-██        ██████████  ██
-██       ██ █         ██
-██      ██  █         ██
-██     ██   █         ██
-██     █    ████████  ██
-██    ██    █         ██
-██   ████████         ██
-██  ██      █         ██
-██  █       ████████  ██
-██                    ██
-████████████████████████
-
-  AltaeraAI - v6.0.0
-
-    by ThinkThrough
-
-
-  "
-
-  echo "Did you know...
-
-  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-  	function random_message() {
-    # Array of random messages
-    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-
-    # Generate a random index
-    index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
-    message=${messages[$index]}
-
-    # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+# Check function for dynamically updating check marks
+check_status() {
+    echo -n "$1"
+    tput el  # Clear to the end of the line
+    sleep 1  # Simulate task time
+    
+    # Use tput to set the color to green
+    tput setaf 2  # Set text color to green (color 2 is green)
+    echo -n " [ ✔ ]"
+    tput sgr0  # Reset the color back to default
+    echo
 }
-
-# Call the function
-random_message
-
-echo "________________________________________________________________
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Initializing update ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI shell files ...
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 {
 mkdir '/data/data/com.termux/files/home/AltaeraAI'
@@ -330,65 +287,8 @@ cd '/data/data/com.termux/files/home'
 
 } &> /dev/null 2>&1;
 
-            clear
-            echo "
-
-████████████████████████
-██                    ██
-██        ██████████  ██
-██       ██ █         ██
-██      ██  █         ██
-██     ██   █         ██
-██     █    ████████  ██
-██    ██    █         ██
-██   ████████         ██
-██  ██      █         ██
-██  █       ████████  ██
-██                    ██
-████████████████████████
-
-  AltaeraAI - v6.0.0
-
-    by ThinkThrough
-
-
-  "
-
-  echo "Did you know...
-
-  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-  	function random_message() {
-    # Array of random messages
-    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-
-    # Generate a random index
-    index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
-    message=${messages[$index]}
-
-    # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-}
-
-# Call the function
-random_message
-
-echo "________________________________________________________________
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Initializing update ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI shell files ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI core files ...
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+# Call check_status while a task is processed and then a check mark appears
+check_status "Updating AltaeraAI shell files [ ... ] "
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-temp' '/data/data/com.termux/files/home/AltaeraAI-tmp'
@@ -533,138 +433,14 @@ chmod a+x 'dialog_theme-off.sh'
 cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
 
-            clear
-            echo "
-
-████████████████████████
-██                    ██
-██        ██████████  ██
-██       ██ █         ██
-██      ██  █         ██
-██     ██   █         ██
-██     █    ████████  ██
-██    ██    █         ██
-██   ████████         ██
-██  ██      █         ██
-██  █       ████████  ██
-██                    ██
-████████████████████████
-
-  AltaeraAI - v6.0.0
-
-    by ThinkThrough
-
-
-  "
-
-  echo "Did you know...
-
-  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-  	function random_message() {
-    # Array of random messages
-    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-
-    # Generate a random index
-    index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
-    message=${messages[$index]}
-
-    # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-}
-
-# Call the function
-random_message
-
-echo "________________________________________________________________
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Initializing update ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI shell files ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI core files ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ..." | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+check_status "Updating AltaeraAI core files [ ... ] "
 
 {
 proot-distro login altaera -- ./upgrade.sh &
 clear
 } &> /dev/null 2>&1;
 
-            clear
-            echo "
-
-████████████████████████
-██                    ██
-██        ██████████  ██
-██       ██ █         ██
-██      ██  █         ██
-██     ██   █         ██
-██     █    ████████  ██
-██    ██    █         ██
-██   ████████         ██
-██  ██      █         ██
-██  █       ████████  ██
-██                    ██
-████████████████████████
-
-  AltaeraAI - v6.0.0
-
-    by ThinkThrough
-
-
-  "
-
-  echo "Did you know...
-
-  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-  	function random_message() {
-    # Array of random messages
-    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-
-    # Generate a random index
-    index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
-    message=${messages[$index]}
-
-    # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-}
-
-# Call the function
-random_message
-
-echo "________________________________________________________________
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Initializing update ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI shell files ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI core files ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ✔"
-
-echo "Updating Termux files ...
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+check_status "Updating AltaeraAI PRoot Distro environment [ ... ] "
 
 {
 pkg install nodejs -y
@@ -674,70 +450,6 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/termux/te
 cd ~
 } &> /dev/null 2>&1;
 
-            clear
-            echo "
-
-████████████████████████
-██                    ██
-██        ██████████  ██
-██       ██ █         ██
-██      ██  █         ██
-██     ██   █         ██
-██     █    ████████  ██
-██    ██    █         ██
-██   ████████         ██
-██  ██      █         ██
-██  █       ████████  ██
-██                    ██
-████████████████████████
-
-  AltaeraAI - v6.0.0
-
-    by ThinkThrough
-
-
-  "
-
-  echo "Did you know...
-
-  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-  	function random_message() {
-    # Array of random messages
-    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-
-    # Generate a random index
-    index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
-    message=${messages[$index]}
-
-    # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-}
-
-# Call the function
-random_message
-
-echo "________________________________________________________________
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Initializing update ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI shell files ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI core files ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-
-echo "Updating AltaeraAI PRoot Distro environment (Artix Linux) ✔"
-
-echo "Updating Termux files ✔
-
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+check_status "Updating Termux files [ ... ] "
 
 sleep .5
