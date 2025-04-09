@@ -27,7 +27,7 @@ check_status() {
     echo -n "$1"
     tput el  # Clear to the end of the line
     sleep 1  # Simulate task time
-    echo -n " [ ✔ ]"
+    echo -n "[\033[0;32m✔\033[0m]"
     echo
 }
 
@@ -53,16 +53,29 @@ case $CHOICE in
 
     by ThinkThrough
   "
-            echo "Did you know..."
+  echo "Did you know...
 
-            # Random message function
-            function random_message() {
-                messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-                index=$(( RANDOM % ${#messages[@]} ))
-                message=${messages[$index]}
-                echo $message
-            }
-            random_message
+  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+  	function random_message() {
+    # Array of random messages
+    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
+
+    # Generate a random index
+    index=$(( RANDOM % ${#messages[@]} ))
+
+    # Get the random message
+    message=${messages[$index]}
+
+    # Print the random message
+    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+}
+
+# Call the function
+random_message
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
             # Updating steps
             check_status "Initializing update"
@@ -99,16 +112,29 @@ case $CHOICE in
 
     by ThinkThrough
   "
-            echo "Did you know..."
+  echo "Did you know...
 
-            # Random message function
-            function random_message() {
-                messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-                index=$(( RANDOM % ${#messages[@]} ))
-                message=${messages[$index]}
-                echo $message
-            }
-            random_message
+  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+  	function random_message() {
+    # Array of random messages
+    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
+
+    # Generate a random index
+    index=$(( RANDOM % ${#messages[@]} ))
+
+    # Get the random message
+    message=${messages[$index]}
+
+    # Print the random message
+    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+}
+
+# Call the function
+random_message
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
             # Updating steps
             check_status "Initializing update"
@@ -145,16 +171,29 @@ case $CHOICE in
 
     by ThinkThrough
   "
-            echo "Did you know..."
+  echo "Did you know...
 
-            # Random message function
-            function random_message() {
-                messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-                index=$(( RANDOM % ${#messages[@]} ))
-                message=${messages[$index]}
-                echo $message
-            }
-            random_message
+  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+  	function random_message() {
+    # Array of random messages
+    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
+
+    # Generate a random index
+    index=$(( RANDOM % ${#messages[@]} ))
+
+    # Get the random message
+    message=${messages[$index]}
+
+    # Print the random message
+    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+}
+
+# Call the function
+random_message
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
             # Updating steps
             check_status "Initializing update"
@@ -191,16 +230,29 @@ case $CHOICE in
 
     by ThinkThrough
   "
-            echo "Did you know..."
+  echo "Did you know...
 
-            # Random message function
-            function random_message() {
-                messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
-                index=$(( RANDOM % ${#messages[@]} ))
-                message=${messages[$index]}
-                echo $message
-            }
-            random_message
+  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
+  	function random_message() {
+    # Array of random messages
+    messages=("that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?")
+
+    # Generate a random index
+    index=$(( RANDOM % ${#messages[@]} ))
+
+    # Get the random message
+    message=${messages[$index]}
+
+    # Print the random message
+    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+}
+
+# Call the function
+random_message
+
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
             # Updating steps
             check_status "Initializing update"
