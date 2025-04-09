@@ -2,9 +2,12 @@
 check_status() {
     echo -n "$1"
     tput el  # Clear to the end of the line
-    # Allow time for the task to be processed before displaying the checkmark
     sleep 1  # Simulate task time
+    
+    # Use tput to set the color to green
+    tput setaf 2  # Set text color to green (color 2 is green)
     echo -n " [ ✔ ]"
+    tput sgr0  # Reset the color back to default
     echo
 }
 
