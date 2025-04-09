@@ -56,6 +56,7 @@ rm -rf 'altaera-model.sh'
 rm -rf '/data/data/com.termux/files/home/altaera-model.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model.sh
 chmod a+x 'altaera-model.sh'
+
 rm -rf 'altaera-model-rwkv-4-world-claude-for-mobile.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-rwkv-4-world-claude-for-mobile.sh
 chmod a+x 'altaera-model-rwkv-4-world-claude-for-mobile.sh'
@@ -249,6 +250,7 @@ chmod a+x 'altaera-manage_stories.sh'
 rm -rf 'altaera-model_remove.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model_remove.sh
 chmod a+x 'altaera-model_remove.sh'
+
 rm -rf 'altaera-model_backup-restore.sh'
 rm -rf 'altaera-model_backup.sh'
 rm -rf 'altaera-model_restore.sh'
@@ -257,12 +259,17 @@ rm -rf 'altaera-model_restored-cleanup.sh'
 rm -rf 'altaera-model_backup-cleaned-up.sh'
 rm -rf 'altaera-hugginface.sh'
 rm -rf '/data/data/com.termux/files/home/altaera-update_content.sh'
+
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model_backup-restore.sh
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model_restore.sh
+
 chmod a+x 'altaera-model_backup-restore.sh'
 chmod a+x 'altaera-model_restore.sh'
+
 cd '/data/data/com.termux/files/usr/etc/'
+
 sed -i '/altaera/d' bash.bashrc
+
 echo "alias ae='/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 alias altaera='/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 alias aef='/data/data/com.termux/files/home/AltaeraAI/altaera_no-check.sh'
@@ -274,7 +281,9 @@ alias altaeralogin='/data/data/com.termux/files/home/AltaeraAI/altaeralogin.sh'
 alias altaera-update='/data/data/com.termux/files/home/AltaeraAI/altaera-update.sh'
 alias altaera-lang='/data/data/com.termux/files/home/AltaeraAI/altaera-lang.sh'
 alias altaera-model='/data/data/com.termux/files/home/AltaeraAI/altaera-model.sh'" >> bash.bashrc
+
 cd '/data/data/com.termux/files/home'
+
 } &> /dev/null 2>&1;
 
 check_status "Updating AltaeraAI shell files (PRoot Distro)"
