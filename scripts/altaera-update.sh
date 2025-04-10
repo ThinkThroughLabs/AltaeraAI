@@ -40,7 +40,7 @@ spin() {
 
 # Optional check_status for fake steps (short tasks)
 check_status() {
-    echo -n "$1"
+    echo -n "$1" | pv -qL 50
     tput el
     (sleep 1) &
     local pid=$!
