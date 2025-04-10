@@ -90,7 +90,7 @@ case $CHOICE in
         echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-        echo -n "Downloading update content [ ... ] "
+        echo -n "Initializing update [ ... ] "
         case $CHOICE in
             1)
                 {
@@ -124,7 +124,10 @@ case $CHOICE in
         spin $!
         tput setaf 2; echo -n " [ ✔ ]"; tput sgr0; echo
 
-        bash 'altaera-update_content.sh' &> /dev/null &
+        echo -n "Downloading update content [ ... ] "
+        bash 'altaera-update_content.sh'
+        spin $!
+        tput setaf 2; echo -n " [ ✔ ]"; tput sgr0; echo
 
         check_status "Finishing up [ ... ] "
 
