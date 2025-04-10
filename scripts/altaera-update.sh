@@ -124,7 +124,7 @@ case $CHOICE in
         spin $!
         tput setaf 2; echo -n " [ ✔ ]"; tput sgr0; echo
 
-        echo -n "Downloading update content [ ... ] "
+        check_status "Downloading update content [ ... ] "
         bash 'altaera-update_content.sh'
         spin $!
         tput setaf 2; echo -n " [ ✔ ]"; tput sgr0; echo
