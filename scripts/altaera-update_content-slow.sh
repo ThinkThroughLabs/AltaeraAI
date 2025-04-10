@@ -1,15 +1,34 @@
-# Check function for dynamically updating check marks
+# Spinner function (fixed and tested)
+spin() {
+    local -r pid="$1"
+    local delay=0.1
+    local chars='|/-\\'
+    tput civis
+    while kill -0 "$pid" 2>/dev/null; do
+        for ((i=0; i<${#chars}; i++)); do
+            printf " [%c]  " "${chars:i:1}"
+            sleep $delay
+            printf "\b\b\b\b\b\b"
+        done
+    done
+    tput cnorm
+}
+
+# Optional check_status for fake steps (short tasks)
 check_status() {
     echo -n "$1" | pv -qL 50
-    tput el  # Clear to the end of the line
-    sleep 1  # Simulate task time
-    
-    # Use tput to set the color to green
-    tput setaf 2  # Set text color to green (color 2 is green)
+    tput el
+    (sleep 1) &
+    local pid=$!
+    spin "$pid"
+    wait "$pid"
+    tput setaf 2
     echo -n " [ ✔ ]"
-    tput sgr0  # Reset the color back to default
+    tput sgr0
     echo
 }
+
+check_status "Downloading update content "
 
 {
 mkdir '/data/data/com.termux/files/home/AltaeraAI'
@@ -288,7 +307,7 @@ cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
 
 # Call check_status while a task is processed and then a check mark appears
-check_status "Updating AltaeraAI shell files [ ... ] "
+check_status "Updating AltaeraAI shell files "
 
 {
 mv '/data/data/com.termux/files/home/AltaeraAI-temp' '/data/data/com.termux/files/home/AltaeraAI-tmp'
@@ -439,14 +458,14 @@ chmod a+x 'dialog_theme-off.sh'
 cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
 
-check_status "Updating AltaeraAI core files [ ... ] "
+check_status "Updating AltaeraAI core files "
 
 {
 proot-distro login altaera -- ./upgrade.sh &
 clear
 } &> /dev/null 2>&1;
 
-check_status "Updating AltaeraAI PRoot Distro environment [ ... ] "
+check_status "Updating AltaeraAI PRoot Distro environment "
 
 {
     pkg install nodejs -y
@@ -456,6 +475,6 @@ check_status "Updating AltaeraAI PRoot Distro environment [ ... ] "
     cd ~
 } &> /dev/null 2>&1;
 
-check_status "Updating Termux files [ ... ] "
+check_status "Updating Termux files "
 
 sleep .5
