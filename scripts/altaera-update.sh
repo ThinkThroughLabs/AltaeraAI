@@ -88,11 +88,8 @@ case $CHOICE in
         random_message
 
         echo "________________________________________________________________
-
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-echo -n "Updating " | pv -qL 50 | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-{
         echo -n "Initializing update " | pv -qL 50
         case $CHOICE in
             1)
@@ -138,5 +135,4 @@ echo -n "Updating " | pv -qL 50 | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta
         clear
         bash 'AltaeraAI/altaera-updated_successfully.sh'
         ;;
-        }
 esac
