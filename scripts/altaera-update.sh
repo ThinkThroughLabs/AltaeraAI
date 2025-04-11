@@ -131,7 +131,7 @@ case $CHOICE in
 
         check_status "Finishing up "
 
-        wait 1
+     #   wait 1
         clear
         bash 'AltaeraAI/altaera-updated_successfully.sh'
         ;;
