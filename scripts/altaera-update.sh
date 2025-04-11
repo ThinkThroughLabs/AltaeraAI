@@ -126,8 +126,8 @@ case $CHOICE in
 
         check_status "Executing update method "
         bash 'altaera-update_content.sh'
-        spin $!
-        tput setaf 2; echo -n " [ ✔ ]"; tput sgr0; echo
+     #   spin $!
+     #   tput setaf 2; echo -n " [ ✔ ]"; tput sgr0; echo
 
         check_status "Finishing up "
 
