@@ -18,4 +18,5 @@ Recent changes:
     * v5.7.4.2 - Hotfix: fixed code mistakes related to the "Manage AI Back-ends" option
 ' 25 40
 
-bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
+#bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
+exit
