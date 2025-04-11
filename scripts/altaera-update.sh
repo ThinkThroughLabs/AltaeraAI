@@ -70,9 +70,9 @@ case $CHOICE in
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.0                        ██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██
-                                            ██ Updating [ ... ] ██
-    by ThinkThrough                         ██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██
+  AltaeraAI - v6.0.0
+                                    [ Updating... ]
+    by ThinkThrough
   "
         echo "Did you know...
 
