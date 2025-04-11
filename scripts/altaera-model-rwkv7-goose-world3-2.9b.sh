@@ -23,7 +23,7 @@ OPTIONS=(1 "[...] Go Back"
          14 "q8_0-rwkv7-goose-world3-2.9b.gguf \ 3.26 GB"
          15 "bf16-rwkv7-goose-world3-2.9b.gguf \ 5.93 GB"
          16 "f16-rwkv7-goose-world3-2.9b.gguf \ 5.93 GB"
-         17 "f32-rwkv7-goose-world3-2.9b.gguf \ ????? GB")
+         17 "f32-rwkv7-goose-world3-2.9b.gguf \ 11.6 GB")
 
 
 CHOICE=$(dialog --clear \
