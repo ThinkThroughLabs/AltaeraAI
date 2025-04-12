@@ -3,7 +3,8 @@
 dialog --backtitle "AltaeraAI" \
 --title "AltaeraAI - Changelog [CLI]" \
 --msgbox '
-    * v6.0.1 - updated the pre-packaged KoboldCpp to v1.87.4
+    * v6.0.1 - added RWKV7-Goose-World weights to the list of models
+    * v6.0.0 - updated the pre-packaged KoboldCpp to v1.87.4
     * v5.7.9 - updated the pre-packaged KoboldCpp to v1.77
     * v5.7.8 - updated the pre-packaged KoboldCpp to v1.76
     * v5.7.7 - added RWKV-6-Finch and RWKV-6-World weights to the list of models
