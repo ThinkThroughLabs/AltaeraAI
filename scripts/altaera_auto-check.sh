@@ -18,7 +18,7 @@ spin() {
 check_status() {
     echo -n "$1" | pv -qL 150
     tput el
-    (sleep 1) &
+    (sleep .5) &
     local pid=$!
     spin "$pid"
     wait "$pid"
