@@ -15,7 +15,7 @@
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.0
+  AltaeraAI - v6.0.1
 
     by ThinkThrough
 

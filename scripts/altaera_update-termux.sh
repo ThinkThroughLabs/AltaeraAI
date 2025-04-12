@@ -40,7 +40,7 @@ case $CHOICE in
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.0
+  AltaeraAI - v6.0.1
 
     by ThinkThrough
 
@@ -97,7 +97,7 @@ echo "________________________________________________________________
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.0
+  AltaeraAI - v6.0.1
 
     by ThinkThrough
 
@@ -156,7 +156,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.0
+  AltaeraAI - v6.0.1
 
     by ThinkThrough
 
@@ -216,7 +216,7 @@ sleep .5
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.0
+  AltaeraAI - v6.0.1
 
     by ThinkThrough
 
@@ -273,7 +273,7 @@ echo "________________________________________________________________
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.0
+  AltaeraAI - v6.0.1
 
     by ThinkThrough
 
@@ -332,7 +332,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.0
+  AltaeraAI - v6.0.1
 
     by ThinkThrough
 
