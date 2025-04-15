@@ -252,7 +252,7 @@ AltaeraAI is a Free and Open Source solution for running GGML/GGUF models with t
    curl -fsSL in.altaera.ai | bash
    ```
    
-- Then press ENTER and wait for the installation to finish. Make sure you have a Wi-Fi connection, as the process will download about 0.5 GB (or more) of data. The installation will take just 2 minutes or more, depending on your device and internet speed.
+- Press Enter to begin the installation process. Ensure that your device is connected to a Wi-Fi network, as the installer will download approximately 0.5 GB of data—or more, depending on your configuration. The installation typically takes around 2 minutes, but this may vary based on your device's performance and internet speed
 
 ## Launching & Updating
 
