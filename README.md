@@ -67,6 +67,7 @@ You can read more at: [altaera.ai](https://altaera.ai)
 - [Gemma-2-2B/9B](https://ai.google.dev/gemma) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
 - [Gemma-2B/7B](https://ai.google.dev/gemma) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
   </summary>
+     A1: JavaScript
 </details>
 
 ## Installation
