@@ -81,6 +81,7 @@ AltaeraAI works as a platform in order to provide easy instructions and support 
    ```
    
 > ⚠️ **Deprecated / Unavailable:**
+
    ```bash
    curl -fsSL in.altaera.ai | bash
    ```
