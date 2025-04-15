@@ -3,6 +3,7 @@
 dialog --backtitle "AltaeraAI" \
 --title "AltaeraAI - Changelog [CLI]" \
 --msgbox '
+    * v6.0.2 - updated the pre-packaged KoboldCpp to experimental/v1.88 — the reason being that the experimental branch included a fix for RWKV related to a broken recurrent cache component in upstream LlamaCpp
     * v6.0.1 - added RWKV7-Goose-World weights to the list of models
     * v6.0.0 - updated the pre-packaged KoboldCpp to v1.87.4
     * v5.7.9 - updated the pre-packaged KoboldCpp to v1.77
