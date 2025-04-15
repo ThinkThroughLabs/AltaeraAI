@@ -45,11 +45,13 @@ AltaeraAI works as a platform in order to provide easy instructions and support 
 You can read more at: [altaera.ai](https://altaera.ai)
 
 <details>
-  <summary>
+  <summary> (<i>click to expand</i>) </summary>
 
 ```java
 ## Current Models List:
 ```
+<details>
+<summary><u>nested</u> <b>stuff</b> (<i>click to expand</i>)</summary>
 
 - [RWKV-4](https://github.com/BlinkDL/RWKV-LM) (GGML) - [No-Blas]
 - [KobbleTinyV2-1.1B](https://huggingface.co/concedo/KobbleTiny) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
@@ -70,7 +72,7 @@ You can read more at: [altaera.ai](https://altaera.ai)
 - [Gemma-2-2B/9B](https://ai.google.dev/gemma) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
 - [Gemma-2B/7B](https://ai.google.dev/gemma) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
 
-  </summary>
+</details>
 </details>
 
 ## Installation
