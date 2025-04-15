@@ -7,15 +7,12 @@ dialog --backtitle "AltaeraAI" \
 
 Recent changes:
 
-    * v6.0.1 - updated the pre-packaged KoboldCpp to v1.77
+    * v6.0.2 - updated the pre-packaged KoboldCpp to experimental/v1.88 — the reason being that the experimental branch included a fix for RWKV related to a broken recurrent cache component in upstream LlamaCpp
+    * v6.0.1 - added RWKV7-Goose-World weights to the list of models
+    * v6.0.0 - updated the pre-packaged KoboldCpp to v1.87.4
+    * v5.7.9 - updated the pre-packaged KoboldCpp to v1.77
     * v5.7.8 - updated the pre-packaged KoboldCpp to v1.76
     * v5.7.7 - added RWKV-6-Finch and RWKV-6-World weights to the list of models
-    * added option to compile experimental KoboldCpp
-    * removed OpenBLAS, which was replaced by the "llamafile" library - it is now set by default
-    * v5.7.6 - updated the pre-packaged KoboldCpp to v1.75.2
-    * added the ability to back up stories to the end-to-end encrypted MEGA cloud service
-    * v5.7.5 - updated the pre-packaged KoboldCpp to v1.74
-    * v5.7.4.2 - Hotfix: fixed code mistakes related to the "Manage AI Back-ends" option
 ' 25 40
 
 #bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
