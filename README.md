@@ -262,7 +262,7 @@ AltaeraAI is a Free and Open Source solution for running GGML/GGUF models with t
 - Open Termux, type in '`ae`' – you will be welcomed with the MENU screen.
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/4f59f909-b62a-4ed4-b06d-19e6706af4a9" width="360" height="390" />
+<img src="https://github.com/user-attachments/assets/4f59f909-b62a-4ed4-b06d-19e6706af4a9" width="540" height="585" />
 </p>
 
 The “Start AltaeraAI” button will ask you to choose from currently installed models, and then forward you to a browser with deployed UI.
