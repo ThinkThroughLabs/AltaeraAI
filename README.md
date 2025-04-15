@@ -210,8 +210,8 @@ AltaeraAI works as a platform in order to provide easy instructions and support 
 
 </details>
 
-<details>
-  ## <summary><b>Current Models List</b></summary>
+## <details>
+  <summary><b>Current Models List</b></summary>
 
 - [RWKV7](https://github.com/BlinkDL/RWKV-LM)
 - [RWKV-6](https://github.com/BlinkDL/RWKV-LM)
