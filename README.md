@@ -50,24 +50,26 @@ You can read more at: [altaera.ai](https://altaera.ai)
 ```java
 ## Current Models List:
 
-- [RWKV-4](https://github.com/BlinkDL/RWKV-LM) (GGML) - [No-Blas]
-- [KobbleTinyV2-1.1B](https://huggingface.co/concedo/KobbleTiny) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [KobbleTinyV2-1.1B (imatrix)](https://huggingface.co/MarsupialAI/KobbleTiny-1.1B_iMatrix_GGUF) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [TinyDolphin (imatrix/laser)](https://ollama.com/library/tinydolphin) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [TinyLlama](https://github.com/jzhang38/TinyLlama) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [TinyVicuna](https://anakin.ai/blog/tiny-vicuna-1b/) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [LLaMa-3](https://llama.meta.com/llama3/) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [LLaMA-2](https://ai.meta.com/llama/) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [Mistral](https://mistral.ai/) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [Vicuna-v1.5](https://lmsys.org/blog/2023-03-30-vicuna/) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [Mamba](https://github.com/state-spaces/mamba) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [Phi-3](https://techcommunity.microsoft.com/t5/microsoft-developer-community/getting-started-generative-ai-with-phi-3-mini-a-guide-to/ba-p/4121315) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [Phi-SoSerious-Mini-V1](https://huggingface.co/concedo/Phi-SoSerious-Mini-V1-GGUF) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [Phi-SoSerious-Mini-V1-imatrix](https://huggingface.co/duyntnet/Phi-SoSerious-Mini-V1-imatrix-GGUF) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [Phi-2](https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [Yi-1.5-6B-Chat](https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [Gemma-2-2B/9B](https://ai.google.dev/gemma) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-- [Gemma-2B/7B](https://ai.google.dev/gemma) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
+- RWKV7
+- RWKV-6
+- RWKV-4
+- KobbleTinyV2-1.1B
+- KobbleTinyV2-1.1B (imatrix)
+- TinyDolphin (imatrix/laser)
+- TinyLlama
+- TinyVicuna
+- LLaMa-3
+- LLaMA-2
+- Mistral
+- Vicuna-v1.5
+- Mamba
+- Phi-3
+- Phi-SoSerious-Mini-V1
+- Phi-SoSerious-Mini-V1-imatrix
+- Phi-2
+- Yi-1.5-6B-Chat
+- Gemma-2-2B/9B
+- Gemma-2B/7B
 ```
 
 </details>
