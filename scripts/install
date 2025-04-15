@@ -136,7 +136,7 @@ echo "Installing Termux Activity Manager ...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 {
-pkg install termux-am
+pkg install termux-am -y
 } &> /dev/null 2>&1;
 clear
 termux-setup-storage
