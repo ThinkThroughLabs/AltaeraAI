@@ -45,10 +45,9 @@ AltaeraAI works as a platform in order to provide easy instructions and support 
 You can read more at: [altaera.ai](https://altaera.ai)
 
 <details>
-  <summary> (<i>click to expand</i>) </summary>
+  <summary> (<i>Current Models List</i>) </summary>
 
 ```java
-## Current Models List:
 
 - RWKV7
 - RWKV-6
