@@ -48,6 +48,7 @@ You can read more at: [altaera.ai](https://altaera.ai)
    <summary>
 ## Current Models List:
    </summary>
+  ```java
 - [RWKV-4](https://github.com/BlinkDL/RWKV-LM) (GGML) - [No-Blas]
 - [KobbleTinyV2-1.1B](https://huggingface.co/concedo/KobbleTiny) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
 - [KobbleTinyV2-1.1B (imatrix)](https://huggingface.co/MarsupialAI/KobbleTiny-1.1B_iMatrix_GGUF) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
@@ -66,7 +67,7 @@ You can read more at: [altaera.ai](https://altaera.ai)
 - [Yi-1.5-6B-Chat](https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
 - [Gemma-2-2B/9B](https://ai.google.dev/gemma) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
 - [Gemma-2B/7B](https://ai.google.dev/gemma) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-   A1: JavaScript
+  ```
 </details>
 
 ## Installation
