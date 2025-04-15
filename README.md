@@ -13,7 +13,6 @@ README parts:
 
 - [What is it?](#what-is-it)
 - [What is it about?](#what-is-it-about)
-- [Current Models List](#current-models-list)
 - [Installation](#installation)
 - [Launching & Updating](#launching--updating)
 - [Access Inference on external devices](#access-inference-on-external-devices)
@@ -210,7 +209,7 @@ AltaeraAI works as a platform in order to provide easy instructions and support 
 
 </details>
 
-## <details>
+<details>
   <summary><b>Current Models List</b></summary>
 
 - [RWKV7](https://github.com/BlinkDL/RWKV-LM)
