@@ -38,8 +38,7 @@ AltaeraAI is a Free and Open Source solution for running GGML/GGUF models with t
 
 - The instalation process will ask whether you want to install the pre-packaged KoboldCpp, or if you want to have it built directly on your device. The same applies each time you want you update your AltaeraAI.
 
-- Then, you will asked if you want to download a model straight away. If so, you will be allowed either to choose AI model via an auto-detection mechanism (currently reserved for 'RWKV-4-World-Claude-for-Mobile'), or you can select the model manually. The former runs a simple algorithm to detect amount of RAM installed on device, then downloads an AI model accordingly.
-<br/ > 
+- Then, you will asked if you want to download a model straight away. If so, you will be allowed either to choose AI model via an auto-detection mechanism (currently reserved for 'RWKV-4-World-Claude-for-Mobile'), or you can select the model manually. The former runs a simple algorithm to detect amount of RAM installed on device, then downloads an AI model accordingly. <br/> 
 
 AltaeraAI works as a platform in order to provide easy instructions and support for AI deployment on Android devices with the use of Termux.
 ~~You can read more at: [altaera.ai](https://altaera.ai)~~
