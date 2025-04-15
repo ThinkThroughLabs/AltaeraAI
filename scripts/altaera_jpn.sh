@@ -7,7 +7,7 @@ cd '/data/data/com.termux/files/home'
 HEIGHT=25
 WIDTH=60
 CHOICE_HEIGHT=7
-BACKTITLE="AltaeraAI - v6.0.1 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2/1000)}') | Free Storage:$(df -Ph . | tail -1 | awk '{print $4}')"
+BACKTITLE="AltaeraAI - v6.0.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2/1000)}') | Free Storage:$(df -Ph . | tail -1 | awk '{print $4}')"
 TITLE="ようこそ"
 MENU="何をしたいですか？"
 
