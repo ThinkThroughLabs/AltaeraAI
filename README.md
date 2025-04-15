@@ -245,7 +245,7 @@ AltaeraAI works as a platform in order to provide easy instructions and support 
    curl -fLo install https://github.com/ThinkThroughLabs/AltaeraAI/raw/refs/heads/main/scripts/install && chmod +x install && ./install
    ```
    
-⚠️ **Deprecated / Unavailable:**
+> ⚠️ **Deprecated / Unavailable:**
 
    ```bash
    curl -fsSL in.altaera.ai | bash
