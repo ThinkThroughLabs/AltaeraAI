@@ -53,7 +53,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q2_K.gguf -O 'q2_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q2_K.gguf -O 'q2_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -70,7 +70,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q3_K.gguf -O 'q3_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q3_K.gguf -O 'q3_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -87,7 +87,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q3_K_L.gguf -O 'q3_k_l-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q3_K_L.gguf -O 'q3_k_l-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -104,7 +104,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q4_0.gguf -O 'q4_0-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_0.gguf -O 'q4_0-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -121,7 +121,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q4_1.gguf -O 'q4_1-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_1.gguf -O 'q4_1-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -138,7 +138,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q4_K.gguf -O 'q4_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_K.gguf -O 'q4_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -156,7 +156,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q4_K_S.gguf -O 'q4_k_s-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_K_S.gguf -O 'q4_k_s-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -174,7 +174,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q5_0.gguf -O 'q5_0-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_0.gguf -O 'q5_0-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -192,7 +192,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q5_1.gguf -O 'q5_1-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_1.gguf -O 'q5_1-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -209,7 +209,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q5_K.gguf -O 'q5_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_K.gguf -O 'q5_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -226,7 +226,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q5_K_S.gguf -O 'q5_k_s-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_K_S.gguf -O 'q5_k_s-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -243,7 +243,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q6_K.gguf -O 'q6_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q6_K.gguf -O 'q6_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -260,7 +260,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-Q8_0.gguf -O 'q8_0-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q8_0.gguf -O 'q8_0-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -277,7 +277,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-BF16.gguf -O 'bf16-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-BF16.gguf -O 'bf16-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -294,7 +294,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-F16.gguf -O 'f16-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-F16.gguf -O 'f16-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -312,7 +312,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/rwkv7-goose-world3-2.9b-F32.gguf -O 'f32-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-F32.gguf -O 'f32-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
             cd /root
             clear
             ;;
