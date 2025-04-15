@@ -47,29 +47,26 @@ You can read more at: [altaera.ai](https://altaera.ai)
 <details>
   <summary> (<i>Current Models List</i>) </summary>
 
-```java
-
-- RWKV7
-- RWKV-6
-- RWKV-4
-- KobbleTinyV2-1.1B
-- KobbleTinyV2-1.1B (imatrix)
-- TinyDolphin (imatrix/laser)
-- TinyLlama
-- TinyVicuna
-- LLaMa-3
-- LLaMA-2
-- Mistral
-- Vicuna-v1.5
-- Mamba
-- Phi-3
-- Phi-SoSerious-Mini-V1
-- Phi-SoSerious-Mini-V1-imatrix
-- Phi-2
-- Yi-1.5-6B-Chat
-- Gemma-2-2B/9B
-- Gemma-2B/7B
-```
+- [RWKV7](https://github.com/BlinkDL/RWKV-LM) (GGML))
+- [RWKV-6](https://github.com/BlinkDL/RWKV-LM) (GGML)
+- [RWKV-4](https://github.com/BlinkDL/RWKV-LM) (GGML)
+- [KobbleTinyV2-1.1B](https://huggingface.co/concedo/KobbleTiny)
+- [KobbleTinyV2-1.1B (imatrix)](https://huggingface.co/MarsupialAI/KobbleTiny-1.1B_iMatrix_GGUF)
+- [TinyDolphin (imatrix/laser)](https://ollama.com/library/tinydolphin)
+- [TinyLlama](https://github.com/jzhang38/TinyLlama)
+- [TinyVicuna](https://anakin.ai/blog/tiny-vicuna-1b/)
+- [LLaMa-3](https://llama.meta.com/llama3/)
+- [LLaMA-2](https://ai.meta.com/llama/)
+- [Mistral](https://mistral.ai/)
+- [Vicuna-v1.5](https://lmsys.org/blog/2023-03-30-vicuna/)
+- [Mamba](https://github.com/state-spaces/mamba) (GGUF)
+- [Phi-3](https://techcommunity.microsoft.com/t5/microsoft-developer-community/getting-started-generative-ai-with-phi-3-mini-a-guide-to/ba-p/4121315)
+- [Phi-SoSerious-Mini-V1](https://huggingface.co/concedo/Phi-SoSerious-Mini-V1-GGUF)
+- [Phi-SoSerious-Mini-V1-imatrix](https://huggingface.co/duyntnet/Phi-SoSerious-Mini-V1-imatrix-GGUF)
+- [Phi-2](https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/)
+- [Yi-1.5-6B-Chat](https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF)
+- [Gemma-2-2B/9B](https://ai.google.dev/gemma)
+- [Gemma-2B/7B](https://ai.google.dev/gemma) (GGUF)
 
 </details>
 
