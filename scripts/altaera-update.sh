@@ -70,7 +70,7 @@ case $CHOICE in
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.2
+  AltaeraAI - v6.0.3
                                     [ Updating... ]
     by ThinkThrough
   "

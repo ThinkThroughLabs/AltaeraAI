@@ -3,7 +3,7 @@
 HEIGHT=25
 WIDTH=160
 CHOICE_HEIGHT=24
-BACKTITLE="AltaeraAI - v6.0.2 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2/1000)}') | Free Storage:$(df -Ph . | tail -1 | awk '{print $4}')"
+BACKTITLE="AltaeraAI - v6.0.3 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2/1000)}') | Free Storage:$(df -Ph . | tail -1 | awk '{print $4}')"
 TITLE="AI Model Selection"
 MENU="Choose your desired rwkv7-goose-world3-2.9b-GGUF model size/strategy:"
 
