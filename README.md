@@ -44,11 +44,9 @@ AltaeraAI is a Free and Open Source solution for running GGML/GGUF models with t
 AltaeraAI works as a platform in order to provide easy instructions and support for AI deployment on Android devices with the use of Termux.
 You can read more at: [altaera.ai](https://altaera.ai)
 
-<details>
-   <summary>
+[](#spoiler "
 ## Current Models List:
-   </summary>
-  ```java
+
 - [RWKV-4](https://github.com/BlinkDL/RWKV-LM) (GGML) - [No-Blas]
 - [KobbleTinyV2-1.1B](https://huggingface.co/concedo/KobbleTiny) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
 - [KobbleTinyV2-1.1B (imatrix)](https://huggingface.co/MarsupialAI/KobbleTiny-1.1B_iMatrix_GGUF) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
@@ -67,8 +65,32 @@ You can read more at: [altaera.ai](https://altaera.ai)
 - [Yi-1.5-6B-Chat](https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
 - [Gemma-2-2B/9B](https://ai.google.dev/gemma) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
 - [Gemma-2B/7B](https://ai.google.dev/gemma) (GGUF) - [No-Blas] / [[OpenBLAS]](https://www.openblas.net/)
-  ```
-</details>
+")
+
+a[href="#spoiler"] {
+  text-decoration: none !important;
+  cursor: default;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #FFF8DC;
+  border-left: 2px solid #ffeb8e;
+  display: inline-block;
+}
+a[href="#spoiler"]::after {
+  content: attr(title);
+  color: #FFF8DC;
+  padding: 0 0.5em;
+}
+a[href="#spoiler"]:hover::after,
+a[href="#spoiler"]:active::after {
+  cursor: auto;
+  color: black;
+  transition: color .5s ease-in-out;
+}
+
+<p>
+  <a href="#spoiler" title="Spoiler Filled Text"></a>
+</p>
 
 ## Installation
 
