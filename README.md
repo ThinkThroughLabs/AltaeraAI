@@ -254,10 +254,6 @@ AltaeraAI is a Free and Open Source solution for running GGML/GGUF models with t
    
 - Then press ENTER and wait for the installation to finish. Make sure you have a Wi-Fi connection, as the process will download about 0.5 GB (or more) of data. The installation will take just 2 minutes or more, depending on your device and internet speed.
 
-<p align="center">
-<video src="https://github.com/ThinkThroughLabs/AltaeraAI/assets/121747280/4fb1a268-cf8f-450b-b5ea-eb41bb874547" width="720" height="1560" />
-</p>
-
 ## Launching & Updating
 
 - Open Termux, type in '`ae`' – you will be welcomed with the MENU screen.
