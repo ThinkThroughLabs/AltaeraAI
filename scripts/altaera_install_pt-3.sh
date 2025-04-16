@@ -145,8 +145,7 @@ case $CHOICE in
 # Call the function
 random_message
 
-echo "
-________________________________________________________________
+echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "________________________________________________________________
@@ -380,8 +379,7 @@ rm -rf 'kcpp-ae_v6.0.2.tar.gz'
 # Call the function
 random_message
 
-echo "
-________________________________________________________________
+echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "Installing core files (please be patient) ...;

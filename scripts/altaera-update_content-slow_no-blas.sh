@@ -120,8 +120,7 @@
 # Call the function
 random_message
 
-echo "
-________________________________________________________________
+echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "Initializing update ✔
@@ -542,8 +541,7 @@ cd '/data/data/com.termux/files/home'
 # Call the function
 random_message
 
-echo "
-________________________________________________________________
+echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "Initializing update ✔
@@ -829,8 +827,7 @@ cd '/data/data/com.termux/files/home'
 # Call the function
 random_message
 
-echo "
-________________________________________________________________
+echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "Initializing update ✔
@@ -974,8 +971,7 @@ clear
 # Call the function
 random_message
 
-echo "
-________________________________________________________________
+echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "Initializing update ✔
@@ -1126,8 +1122,7 @@ cd ~
 # Call the function
 random_message
 
-echo "
-________________________________________________________________
+echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "Initializing update ✔

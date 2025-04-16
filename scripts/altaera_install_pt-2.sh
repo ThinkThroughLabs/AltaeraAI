@@ -120,8 +120,7 @@
 # Call the function
 random_message
 
-echo "
-________________________________________________________________
+echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "Installing initial files ...
