@@ -107,17 +107,23 @@
 "that in one experiment, an AI trained on Reddit posts quickly turned toxic—demonstrating how the internet can warp machine learning?"
 "that some futurists believe AI might one day experience emotions or consciousness, while others argue it's fundamentally impossible?")
 
-    # Generate a random index
     index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
     message=${messages[$index]}
 
-    # Print the random message
-    echo "$message" | fmt -w $(tput cols)
+    # Wrap the message properly
+    wrapped_message=$(echo "$message" | fmt -w $(tput cols))
+
+    # Calculate the number of spaces required for centering
+    terminal_width=$(tput cols)
+
+    # Center each line
+    while IFS= read -r line; do
+        message_length=$(echo "$line" | wc -L)
+        padding=$(( (terminal_width - message_length) / 2 ))
+        printf "%${padding}s%s\n" "" "$line"
+    done <<< "$wrapped_message"
 }
 
-# Call the function
 random_message
 
 echo "________________________________________________________________
@@ -522,17 +528,23 @@ cd '/data/data/com.termux/files/home'
 "that in one experiment, an AI trained on Reddit posts quickly turned toxic—demonstrating how the internet can warp machine learning?"
 "that some futurists believe AI might one day experience emotions or consciousness, while others argue it's fundamentally impossible?")
 
-    # Generate a random index
     index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
     message=${messages[$index]}
 
-    # Print the random message
-    echo "$message" | fmt -w $(tput cols)
+    # Wrap the message properly
+    wrapped_message=$(echo "$message" | fmt -w $(tput cols))
+
+    # Calculate the number of spaces required for centering
+    terminal_width=$(tput cols)
+
+    # Center each line
+    while IFS= read -r line; do
+        message_length=$(echo "$line" | wc -L)
+        padding=$(( (terminal_width - message_length) / 2 ))
+        printf "%${padding}s%s\n" "" "$line"
+    done <<< "$wrapped_message"
 }
 
-# Call the function
 random_message
 
 echo "________________________________________________________________
@@ -808,17 +820,23 @@ cd '/data/data/com.termux/files/home'
 "that in one experiment, an AI trained on Reddit posts quickly turned toxic—demonstrating how the internet can warp machine learning?"
 "that some futurists believe AI might one day experience emotions or consciousness, while others argue it's fundamentally impossible?")
 
-    # Generate a random index
     index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
     message=${messages[$index]}
 
-    # Print the random message
-    echo "$message" | fmt -w $(tput cols)
+    # Wrap the message properly
+    wrapped_message=$(echo "$message" | fmt -w $(tput cols))
+
+    # Calculate the number of spaces required for centering
+    terminal_width=$(tput cols)
+
+    # Center each line
+    while IFS= read -r line; do
+        message_length=$(echo "$line" | wc -L)
+        padding=$(( (terminal_width - message_length) / 2 ))
+        printf "%${padding}s%s\n" "" "$line"
+    done <<< "$wrapped_message"
 }
 
-# Call the function
 random_message
 
 echo "________________________________________________________________
@@ -952,17 +970,23 @@ clear
 "that in one experiment, an AI trained on Reddit posts quickly turned toxic—demonstrating how the internet can warp machine learning?"
 "that some futurists believe AI might one day experience emotions or consciousness, while others argue it's fundamentally impossible?")
 
-    # Generate a random index
     index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
     message=${messages[$index]}
 
-    # Print the random message
-    echo "$message" | fmt -w $(tput cols)
+    # Wrap the message properly
+    wrapped_message=$(echo "$message" | fmt -w $(tput cols))
+
+    # Calculate the number of spaces required for centering
+    terminal_width=$(tput cols)
+
+    # Center each line
+    while IFS= read -r line; do
+        message_length=$(echo "$line" | wc -L)
+        padding=$(( (terminal_width - message_length) / 2 ))
+        printf "%${padding}s%s\n" "" "$line"
+    done <<< "$wrapped_message"
 }
 
-# Call the function
 random_message
 
 echo "________________________________________________________________
@@ -1103,17 +1127,23 @@ cd ~
 "that in one experiment, an AI trained on Reddit posts quickly turned toxic—demonstrating how the internet can warp machine learning?"
 "that some futurists believe AI might one day experience emotions or consciousness, while others argue it's fundamentally impossible?")
 
-    # Generate a random index
     index=$(( RANDOM % ${#messages[@]} ))
-
-    # Get the random message
     message=${messages[$index]}
 
-    # Print the random message
-    echo "$message" | fmt -w $(tput cols)
+    # Wrap the message properly
+    wrapped_message=$(echo "$message" | fmt -w $(tput cols))
+
+    # Calculate the number of spaces required for centering
+    terminal_width=$(tput cols)
+
+    # Center each line
+    while IFS= read -r line; do
+        message_length=$(echo "$line" | wc -L)
+        padding=$(( (terminal_width - message_length) / 2 ))
+        printf "%${padding}s%s\n" "" "$line"
+    done <<< "$wrapped_message"
 }
 
-# Call the function
 random_message
 
 echo "________________________________________________________________
