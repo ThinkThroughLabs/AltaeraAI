@@ -157,12 +157,19 @@ case $CHOICE in
 "that Isaac Asimov's 'Three Laws of Robotics'—written in the 1940s—are still frequently referenced in modern AI ethics discussions?"
 "that in one experiment, an AI trained on Reddit posts quickly turned toxic—demonstrating how the internet can warp machine learning?"
 "that some futurists believe AI might one day experience emotions or consciousness, while others argue it's fundamentally impossible?")
-            index=$(( RANDOM % ${#messages[@]} ))
-            message=${messages[$index]}
-            echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
-        }
 
-        random_message
+    # Generate a random index
+    index=$(( RANDOM % ${#messages[@]} ))
+
+    # Get the random message
+    message=${messages[$index]}
+
+    # Print the random message
+    echo "$message" | fmt -w $(tput cols)
+}
+
+# Call the function
+random_message
 
         echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);

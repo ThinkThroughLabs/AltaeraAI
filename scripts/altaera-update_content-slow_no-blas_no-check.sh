@@ -114,7 +114,7 @@
     message=${messages[$index]}
 
     # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+    echo "$message" | fmt -w $(tput cols)
 }
 
 # Call the function
@@ -529,7 +529,7 @@ cd '/data/data/com.termux/files/home'
     message=${messages[$index]}
 
     # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+    echo "$message" | fmt -w $(tput cols)
 }
 
 # Call the function
@@ -815,7 +815,7 @@ cd '/data/data/com.termux/files/home'
     message=${messages[$index]}
 
     # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+    echo "$message" | fmt -w $(tput cols)
 }
 
 # Call the function
@@ -959,7 +959,7 @@ clear
     message=${messages[$index]}
 
     # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+    echo "$message" | fmt -w $(tput cols)
 }
 
 # Call the function
@@ -1110,7 +1110,7 @@ cd ~
     message=${messages[$index]}
 
     # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+    echo "$message" | fmt -w $(tput cols)
 }
 
 # Call the function

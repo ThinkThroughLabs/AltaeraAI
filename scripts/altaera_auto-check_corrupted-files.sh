@@ -124,7 +124,7 @@ case $response in
     message=${messages[$index]}
 
     # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+    echo "$message" | fmt -w $(tput cols)
 }
 
 # Call the function
@@ -257,7 +257,7 @@ echo "________________________________________________________________
     message=${messages[$index]}
 
     # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+    echo "$message" | fmt -w $(tput cols)
 }
 
 # Call the function
@@ -393,7 +393,7 @@ echo "________________________________________________________________
     message=${messages[$index]}
 
     # Print the random message
-    echo $message | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+    echo "$message" | fmt -w $(tput cols)
 }
 
 # Call the function
