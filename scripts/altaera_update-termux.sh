@@ -145,7 +145,8 @@ case $CHOICE in
 # Call the function
 random_message
 
-echo "________________________________________________________________
+echo "
+________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
             echo "Downloading new Termux package ...
@@ -279,7 +280,8 @@ echo "________________________________________________________________
 # Call the function
 random_message
 
-echo "________________________________________________________________
+echo "
+________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "Downloading new Termux package ✔
@@ -415,7 +417,8 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 # Call the function
 random_message
 
-echo "________________________________________________________________
+echo "
+________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "Initializing Termux update ✔
@@ -552,7 +555,8 @@ sleep .5
 # Call the function
 random_message
 
-echo "________________________________________________________________
+echo "
+________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
             echo "Downloading new Termux package ...
@@ -686,7 +690,8 @@ echo "________________________________________________________________
 # Call the function
 random_message
 
-echo "________________________________________________________________
+echo "
+________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "Downloading new Termux package ✔
@@ -822,7 +827,8 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 # Call the function
 random_message
 
-echo "________________________________________________________________
+echo "
+________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 echo "Initializing Termux update ✔
