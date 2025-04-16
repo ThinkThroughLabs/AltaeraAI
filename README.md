@@ -32,13 +32,11 @@ AltaeraAI is a [Termux](https://github.com/termux) wrapper that packages multipl
 
 ## What is it about?
 
-AltaeraAI is a Free and Open Source solution for running GGML/GGUF models with the power of your smartphone. It wraps the Termux instructions for installing Artix Linux with all the necessary dependencies in the "PRoot Distro" environment, and then lets you install AI Back & Front-ends with ease. Lastly, it adds lines of arguments in your "bash.bashrc" file, so you can easily reach out for MENU by simply typing "ae".
+AltaeraAI is a free and open-source solution designed to bring the power of AI directly to your smartphone. It enables you to run GGML/GGUF models with ease, even if you're not familiar with programming or command-line tools.
 
-- The main premise of it is to automate AI Inference using a smartphone, with the help of cherry-picked, Open-Source tools and software. This allows you for instant, localized access to Artificial Intelligence - whether that be companionship, assistance or just text generation. At the same time, you maintain 100% privacy over your stories - you own the software due to the nature of locality, in the form of a self contained distributable.
+By simplifying the installation process, it sets up Artix Linux (a lightweight operating system) within a special environment called PRoot Distro. This approach ensures you can quickly get everything you need—without dealing with complex setup steps or dependencies.
 
-- The instalation process will ask whether you want to install the pre-packaged KoboldCpp, or if you want to have it built directly on your device. The same applies each time you want you update your AltaeraAI.
-
-- Then, you will asked if you want to download a model straight away. If so, you will be allowed either to choose AI model via an auto-detection mechanism (currently reserved for 'RWKV-4-World-Claude-for-Mobile'), or you can select the model manually. The former runs a simple algorithm to detect amount of RAM installed on device, then downloads an AI model accordingly.
+The tool also streamlines the installation of both AI backends and frontends for easy deployment. Additionally, it automatically configures your bash.bashrc file, adding a simple shortcut—just type ae to access the main menu.
 
 > AltaeraAI works as a platform in order to provide easy instructions and support for AI deployment on Android devices with the use of Termux.
 ~~You can read more at: [altaera.ai](https://altaera.ai)~~
