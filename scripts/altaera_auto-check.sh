@@ -1,31 +1,44 @@
-# Spinner function (fixed and tested)
+# Spinner that runs while a given PID is alive
 spin() {
-    local -r pid="$1"
+    local pid="$1"
     local delay=0.1
     local chars='|/-\\'
     tput civis
     while kill -0 "$pid" 2>/dev/null; do
         for ((i=0; i<${#chars}; i++)); do
-            printf " [%c]  " "${chars:i:1}"
+            printf "\r%-50s [ %c ]" "$spinner_msg" "${chars:i:1}"
             sleep $delay
-            printf "\b\b\b\b\b\b"
         done
     done
     tput cnorm
 }
 
-# Optional check_status for fake steps (short tasks)
+# Run command with spinner and checkmark
 check_status() {
-    echo -n "$1" | pv -qL 150
+    local msg="$1"
+    spinner_msg="$msg"
+    shift
+
+    # Animate the message *cleanly* first
+    echo -n ""
+    for ((i=0; i<${#msg}; i++)); do
+        printf "%s" "${msg:$i:1}"
+        sleep 0.01
+    done
+
+    # Clear any leftovers from previous output
     tput el
-    (sleep .2) &
-    local pid=$!
-    spin "$pid"
-    wait "$pid"
+
+    # Background the command and start spinner
+    ("$@") &> /dev/null &
+    local cmd_pid=$!
+    spin "$cmd_pid"
+    wait "$cmd_pid"
+
+    # Green checkmark after finish
     tput setaf 2
-    echo -n " [ ✔ ]"
+    printf "\r%-50s [ ✔ ]\n" "$spinner_msg"
     tput sgr0
-    echo
 }
 
 clear
