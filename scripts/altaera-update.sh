@@ -22,34 +22,40 @@ CHOICE=$(dialog --clear \
 
 clear
 
-# Spinner with dynamic progress bar and green checkmarks
-progress_step() {
-    local message="$1"
-    shift
-    local command=("$@")
-
-    printf "%-60s" "$message"
-    {
-        "${command[@]}" &> /dev/null
-    } &
-    local pid=$!
-    local spinner='|/-\\'
-    local i=0
-
+# Spinner that runs while a given PID is alive
+spin() {
+    local pid="$1"
+    local delay=0.1
+    local chars='|/-\\'
     tput civis
-    while kill -0 $pid 2> /dev/null; do
-        printf "\b[%c]" "${spinner:i++%${#spinner}:1}"
-        sleep 0.1
+    while kill -0 "$pid" 2>/dev/null; do
+        for ((i=0; i<${#chars}; i++)); do
+            printf " [%c]  " "${chars:i:1}"
+            sleep $delay
+            printf "\b\b\b\b\b\b"
+        done
     done
-    wait $pid
-    printf "\b"
-    tput setaf 2; echo "[ ✔ ]"; tput sgr0
     tput cnorm
 }
 
-# Random AI fact
-random_ai_fact() {
-    facts=(
+# Run command with spinner and checkmark
+run_with_spinner() {
+    local msg="$1"
+    shift
+    echo -n "$msg" | pv -qL 50
+    tput el
+    ("$@") &> /dev/null &
+    local cmd_pid=$!
+    spin "$cmd_pid"
+    wait "$cmd_pid"
+    tput setaf 2
+    echo -n " [ ✔ ]"
+    tput sgr0
+    echo
+}
+
+random_message() {
+    messages=( # [Same list as before, omitted for brevity]
         "that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?" "that the term 'Artificial Intelligence' was first coined in 1956 by John McCarthy at the Dartmouth Conference?"
 "that Alan Turing’s 1950 paper 'Computing Machinery and Intelligence' laid the groundwork for thinking about machines imitating human intelligence?"
 "that AI doesn’t 'think' the way humans do—it analyzes patterns and statistical probabilities, not emotions or intuition?"
@@ -129,15 +135,21 @@ random_ai_fact() {
 "that in one experiment, an AI trained on Reddit posts quickly turned toxic—demonstrating how the internet can warp machine learning?"
 "that some futurists believe AI might one day experience emotions or consciousness, while others argue it's fundamentally impossible?"
     )
-    local index=$((RANDOM % ${#facts[@]}))
-    echo
-    echo "💡 Did you know... ${facts[$index]}"
-    echo
+    index=$(( RANDOM % ${#messages[@]} ))
+    message=${messages[$index]}
+    wrapped_message=$(echo "$message" | fmt -w $(tput cols))
+    terminal_width=$(tput cols)
+    while IFS= read -r line; do
+        message_length=$(echo "$line" | wc -L)
+        padding=$(( (terminal_width - message_length) / 2 ))
+        printf "%${padding}s%s\n" "" "$line"
+    done <<< "$wrapped_message"
 }
 
-# Title and ASCII
-clear
-cat <<'EOF'
+case $CHOICE in
+    1|2|3|4)
+        clear
+        echo "
 ████████████████████████
 ██                    ██
 ██        ██████████  ██
@@ -155,50 +167,37 @@ cat <<'EOF'
   AltaeraAI - v6.0.3
                                     [ Updating... ]
     by ThinkThrough
-EOF
+  "
 
-random_ai_fact
-echo "________________________________________________________________"
-echo
+        echo "Did you know...
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-# Progress %
-total_steps=4
-current_step=0
-step_progress() {
-    ((current_step++))
-    percent=$((current_step * 100 / total_steps))
-    printf "Progress: [%-20s] %3d%%\n" "$(head -c $((percent/5)) < /dev/zero | tr '\0' '#')" "$percent"
-}
+        random_message
 
-step_progress
-progress_step "Initializing update..." true
+        echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-step_progress
-case $CHOICE in
-    1)
-        progress_step "Downloading fast update content..." \
-            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-fast.sh -O 'altaera-update_content.sh'
-        ;;
-    2)
-        progress_step "Downloading slow update content..." \
-            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow.sh -O 'altaera-update_content.sh'
-        ;;
-    3)
-        progress_step "Downloading experimental update content..." \
-            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow_experimental.sh -O 'altaera-update_content.sh'
-        ;;
-    4)
-        progress_step "Downloading shell-only update content..." \
-            wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-scripts.sh -O 'altaera-update_content.sh'
+        echo -n "Initializing update " | pv -qL 50
+
+        case $CHOICE in
+            1)
+                run_with_spinner "Downloading pre-packaged update " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-fast.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                ;;
+            2)
+                run_with_spinner "Downloading source update " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                ;;
+            3)
+                run_with_spinner "Downloading experimental update " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-update_content-slow_experimental.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                ;;
+            4)
+                run_with_spinner "Downloading shell files update " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-scripts.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                ;;
+        esac
+
+        run_with_spinner "Executing update method " bash altaera-update_content.sh
+        run_with_spinner "Finishing up " sleep 1
+
+        clear
+        bash 'AltaeraAI/altaera-updated_successfully.sh'
         ;;
 esac
-
-progress_step "Making content files executable..." chmod +x 'altaera-update_content.sh'
-
-step_progress
-progress_step "Executing update method..." bash 'altaera-update_content.sh'
-
-progress_step "Finalizing update..." sleep 1
-
-clear
-bash 'AltaeraAI/altaera-updated_successfully.sh'
