@@ -27,14 +27,22 @@ spin() {
     local pid="$1"
     local delay=0.1
     local chars='|/-\\'
+    local spinner_col=52  # column where the spinner starts (adjust if needed)
     tput civis
     while kill -0 "$pid" 2>/dev/null; do
         for ((i=0; i<${#chars}; i++)); do
-            printf "\r[ %c ]" "${chars:i:1}"
+            tput sc                      # save cursor position
+            tput cuf $spinner_col        # move cursor to spinner column
+            printf "[ %c ]" "${chars:i:1}"
+            tput rc                      # restore cursor to saved position
             sleep $delay
         done
     done
-    printf "\r     \r"  # clean up spinner line
+    # Clean up spinner
+    tput sc
+    tput cuf $spinner_col
+    printf "       "  # overwrite spinner with spaces
+    tput rc
     tput cnorm
 }
 
