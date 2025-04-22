@@ -68,7 +68,7 @@ echo "________________________________________________________________
 
 # Check for instabilities
 
-check_status "Checking for instabilities "
+check_status "Checking for instabilities... "
 
                 {
                 cd "AltaeraAI"
@@ -102,7 +102,7 @@ fi
 ##fi
 
 # Automatically checking for updates
-check_status "Automatically checking for updates "
+check_status "Automatically checking for updates... "
 
 {
     cd "AltaeraAI"
@@ -134,7 +134,7 @@ rm -rf '/sdcard/com.termux_118.1.apk'
 } &> /dev/null 2>&1;
 
 # Running essential file integrity checks
-check_status "Running essential file integrity checks "
+check_status "Running essential file integrity checks... "
 sleep .2
 
 # Placeholder for actual file integrity checks
