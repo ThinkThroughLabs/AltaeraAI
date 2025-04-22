@@ -42,8 +42,11 @@ spin() {
 run_with_spinner() {
     local msg="$1"
     shift
-    echo -n "$msg" | pv -qL 50
-    tput el
+    echo "$msg" | fmt -w $(tput cols) | while IFS= read -r line; do
+        echo -n "$line" | pv -qL 50
+        tput el
+        echo
+    done
     ("$@") &> /dev/null &
     local cmd_pid=$!
     spin "$cmd_pid"
@@ -55,7 +58,7 @@ run_with_spinner() {
 }
 
 random_message() {
-    messages=( # [Same list as before, omitted for brevity]
+    messages=(
         "that KobbleTiny is the world's sweetest child?" "that KobbleTiny is concedo's designed mind?" "that the term 'Artificial Intelligence' was first coined in 1956 by John McCarthy at the Dartmouth Conference?"
 "that Alan Turing’s 1950 paper 'Computing Machinery and Intelligence' laid the groundwork for thinking about machines imitating human intelligence?"
 "that AI doesn’t 'think' the way humans do—it analyzes patterns and statistical probabilities, not emotions or intuition?"
