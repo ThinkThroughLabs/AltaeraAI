@@ -176,8 +176,6 @@ case $CHOICE in
         echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-        echo -n "Initializing update " | pv -qL 50
-
         case $CHOICE in
             1)
                 run_with_spinner "Downloading pre-packaged update " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-fast.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
