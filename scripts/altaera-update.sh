@@ -177,24 +177,22 @@ case $CHOICE in
         echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-        echo -n "Initializing update " | pv -qL 50
-
         case $CHOICE in
             1)
-                run_with_spinner "Downloading pre-packaged update " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-fast.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                run_with_spinner "Downloading update content, alongside with the pre-packaged KoboldCpp " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-fast.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
                 ;;
             2)
-                run_with_spinner "Downloading source update " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                run_with_spinner "Downloading update content, alongside with KoboldCpp source files " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
                 ;;
             3)
-                run_with_spinner "Downloading experimental update " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-update_content-slow_experimental.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                run_with_spinner "Downloading update content, alongside with experimental KoboldCpp source files " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-update_content-slow_experimental.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
                 ;;
             4)
-                run_with_spinner "Downloading shell files update " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-scripts.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                run_with_spinner "Downloading update content (shell files) " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-scripts.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
                 ;;
         esac
 
-        run_with_spinner "Executing update method " bash altaera-update_content.sh
+        run_with_spinner "Executing update method (be patient) " bash altaera-update_content.sh sleep 1
         run_with_spinner "Finishing up " sleep 1
 
         clear
