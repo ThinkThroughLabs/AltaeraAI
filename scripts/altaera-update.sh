@@ -188,7 +188,7 @@ case $CHOICE in
                 run_with_spinner "Downloading update content, alongside with experimental KoboldCpp source files " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-update_content-slow_experimental.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
                 ;;
             4)
-                run_with_spinner "Downloading update content (shell files) " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-scripts.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                run_with_spinner "Downloading update content [shell files only] " bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-scripts.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
                 ;;
         esac
 
