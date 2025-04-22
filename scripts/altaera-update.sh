@@ -27,21 +27,24 @@ spin() {
     local pid="$1"
     local delay=0.1
     local chars='|/-\\'
-    local spinner_col=52  # column where the spinner starts (adjust if needed)
+    local spinner_offset=1  # how many spaces after the message to place the spinner
+    local checkmark_col=50  # same as used in run_with_spinner
+    local spinner_col=$((checkmark_col + spinner_offset))
+
     tput civis
     while kill -0 "$pid" 2>/dev/null; do
         for ((i=0; i<${#chars}; i++)); do
-            tput sc                      # save cursor position
-            tput cuf $spinner_col        # move cursor to spinner column
+            tput sc                          # save cursor position
+            tput cuf $spinner_col            # move cursor right
             printf "[ %c ]" "${chars:i:1}"
-            tput rc                      # restore cursor to saved position
+            tput rc                          # restore cursor
             sleep $delay
         done
     done
     # Clean up spinner
     tput sc
     tput cuf $spinner_col
-    printf "       "  # overwrite spinner with spaces
+    printf "       "  # clear the spinner
     tput rc
     tput cnorm
 }
