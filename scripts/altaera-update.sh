@@ -25,27 +25,18 @@ clear
 # Spinner that runs while a given PID is alive
 spin() {
     local pid="$1"
+    local message="$2"
     local delay=0.1
     local chars='|/-\\'
-    local spinner_offset=1  # how many spaces after the message to place the spinner
-    local checkmark_col=50  # same as used in run_with_spinner
-    local spinner_col=$((checkmark_col + spinner_offset))
 
     tput civis
     while kill -0 "$pid" 2>/dev/null; do
         for ((i=0; i<${#chars}; i++)); do
-            tput sc                          # save cursor position
-            tput cuf $spinner_col            # move cursor right
-            printf "[ %c ]" "${chars:i:1}"
-            tput rc                          # restore cursor
+            printf "\r%-50s [ %c ]" "$message" "${chars:i:1}"
             sleep $delay
         done
     done
-    # Clean up spinner
-    tput sc
-    tput cuf $spinner_col
-    printf "       "  # clear the spinner
-    tput rc
+    printf "\r%-50s" "$message"  # clear spinner afterward
     tput cnorm
 }
 
@@ -53,24 +44,17 @@ spin() {
 run_with_spinner() {
     local msg="$1"
     shift
-    local checkmark_col=50
-
-    # Trim the message if it's too long
-    local trimmed_msg=$(echo "$msg" | cut -c1-$((checkmark_col - 2)))
-    local padding=$((checkmark_col - ${#trimmed_msg}))
-    printf "%s%*s" "$trimmed_msg" "$padding" ""
 
     # Run command in background and spin
     ("$@") &> /dev/null &
     local cmd_pid=$!
-    spin "$cmd_pid"
+    spin "$cmd_pid" "$msg"
     wait "$cmd_pid"
 
-    # Print green checkmark on same line
+    # Print green checkmark
     tput setaf 2
-    printf "[ ✔ ]"
+    printf " [ ✔ ]\n"
     tput sgr0
-    echo
 }
 
 random_message() {
