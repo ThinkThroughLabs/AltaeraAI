@@ -42,7 +42,7 @@ spin() {
 run_with_spinner() {
     local msg="$1"
     shift
-    local checkmark_col=70
+    local checkmark_col=50
 
     # Trim the message if it's too long
     local trimmed_msg=$(echo "$msg" | cut -c1-$((checkmark_col - 2)))
@@ -57,7 +57,7 @@ run_with_spinner() {
 
     # Print green checkmark on same line
     tput setaf 2
-    printf "[✔]"
+    printf "[ ✔ ]"
     tput sgr0
     echo
 }
