@@ -164,9 +164,12 @@ case $CHOICE in
 ████████████████████████
 
   AltaeraAI - v6.0.3
-                                    [ Updating... ]
+
     by ThinkThrough
   "
+
+        run_with_spinner "Updating
+  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
         echo "Did you know...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
