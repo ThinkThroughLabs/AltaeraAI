@@ -192,7 +192,7 @@ case $CHOICE in
                 ;;
         esac
 
-        run_with_spinner "Executing update method (be patient) " bash altaera-update_content.sh sleep 1
+        run_with_spinner "Executing update method (be patient) " bash altaera-update_content.sh
         run_with_spinner "Finishing up " sleep 1
 
         clear
