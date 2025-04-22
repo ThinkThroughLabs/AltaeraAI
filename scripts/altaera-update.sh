@@ -42,12 +42,24 @@ run_with_spinner() {
     local msg="$1"
     spinner_msg="$msg"
     shift
-    printf "%-50s" "$msg" | pv -qL 50
+
+    # Animate the message *cleanly* first
+    echo -n ""
+    for ((i=0; i<${#msg}; i++)); do
+        printf "%s" "${msg:$i:1}"
+        sleep 0.01
+    done
+
+    # Clear any leftovers from previous output
     tput el
+
+    # Background the command and start spinner
     ("$@") &> /dev/null &
     local cmd_pid=$!
     spin "$cmd_pid"
     wait "$cmd_pid"
+
+    # Green checkmark after finish
     tput setaf 2
     printf "\r%-50s [ ✔ ]\n" "$spinner_msg"
     tput sgr0
