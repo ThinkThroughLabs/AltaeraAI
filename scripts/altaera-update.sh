@@ -30,11 +30,11 @@ spin() {
     tput civis
     while kill -0 "$pid" 2>/dev/null; do
         for ((i=0; i<${#chars}; i++)); do
-            printf "\b%c" "${chars:i:1}"
+            printf "\r[ %c ]" "${chars:i:1}"
             sleep $delay
         done
     done
-    printf "\b"  # clean up spinner character
+    printf "\r     \r"  # clean up spinner line
     tput cnorm
 }
 
