@@ -23,7 +23,7 @@ check_status() {
     echo -n ""
     for ((i=0; i<${#msg}; i++)); do
         printf "%s" "${msg:$i:1}"
-        sleep 0.0025
+        sleep 0.0001
     done
 
     # Clear any leftovers from previous output
