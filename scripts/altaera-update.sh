@@ -30,19 +30,19 @@ spin() {
     tput civis
     while kill -0 "$pid" 2>/dev/null; do
         for ((i=0; i<${#chars}; i++)); do
-            printf " [%c]  " "${chars:i:1}"
+            printf "\b%c" "${chars:i:1}"
             sleep $delay
-            printf "\b\b\b\b\b\b"
         done
     done
+    printf "\b"  # clean up spinner character
     tput cnorm
 }
 
-# Run command with spinner and print aligned checkmark
+# Run command with spinner and aligned checkmark
 run_with_spinner() {
     local msg="$1"
     shift
-    local checkmark_col=50
+    local checkmark_col=70
 
     # Trim the message if it's too long
     local trimmed_msg=$(echo "$msg" | cut -c1-$((checkmark_col - 2)))
