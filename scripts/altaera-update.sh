@@ -1,4 +1,5 @@
 #!/bin/bash
+# coding=UTF-8
 
 HEIGHT=20
 WIDTH=100
@@ -25,8 +26,8 @@ clear
 # Spinner that runs while a given PID is alive
 spin() {
     local pid="$1"
-    local delay=0.2
-    local chars='⠁ ⠂ ⠄ ⡀ ⢀ ⠠ ⠐ ⠈'
+    local delay=0.1
+    local chars='|/-\\'
     tput civis
     while kill -0 "$pid" 2>/dev/null; do
         for ((i=0; i<${#chars}; i++)); do
