@@ -38,30 +38,26 @@ spin() {
     tput cnorm
 }
 
-# Run command with spinner and checkmark aligned
+# Run command with spinner and print aligned checkmark
 run_with_spinner() {
     local msg="$1"
     shift
-    local term_width=$(tput cols)
-
-    # Set the column where the checkmark should appear
     local checkmark_col=70
 
-    # Truncate/wrap message if too long
-    local trimmed_msg=$(echo "$msg" | fmt -w $((checkmark_col - 8)) | head -n1)
-    local msg_length=${#trimmed_msg}
-    local padding=$((checkmark_col - msg_length))
+    # Trim the message if it's too long
+    local trimmed_msg=$(echo "$msg" | cut -c1-$((checkmark_col - 2)))
+    local padding=$((checkmark_col - ${#trimmed_msg}))
     printf "%s%*s" "$trimmed_msg" "$padding" ""
 
-    # Run command with spinner
+    # Run command in background and spin
     ("$@") &> /dev/null &
     local cmd_pid=$!
     spin "$cmd_pid"
     wait "$cmd_pid"
 
-    # Aligned green checkmark
+    # Print green checkmark on same line
     tput setaf 2
-    printf "[ ✔ ]"
+    printf "[✔]"
     tput sgr0
     echo
 }
@@ -191,21 +187,21 @@ case $CHOICE in
 
         case $CHOICE in
             1)
-                run_with_spinner "Downloading update content, alongside with the pre-packaged KoboldCpp" bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-fast.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                run_with_spinner "Downloading update content with pre-packaged KoboldCpp" bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-fast.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
                 ;;
             2)
-                run_with_spinner "Downloading update content, alongside with KoboldCpp source files" bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                run_with_spinner "Downloading update content with KoboldCpp source files" bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
                 ;;
             3)
-                run_with_spinner "Downloading update content, alongside with experimental KoboldCpp source files" bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-update_content-slow_experimental.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                run_with_spinner "Downloading experimental KoboldCpp source files" bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-slow_experimental.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
                 ;;
             4)
-                run_with_spinner "Downloading update content [shell files only]" bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-scripts.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
+                run_with_spinner "Downloading shell-only update content" bash -c "rm -rf 'altaera-update_content.sh' && wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-update_content-scripts.sh -O 'altaera-update_content.sh' && chmod a+x 'altaera-update_content.sh'"
                 ;;
         esac
 
-        run_with_spinner "Executing update method (be patient)" bash altaera-update_content.sh
-        run_with_spinner "Finishing up" sleep 1
+        run_with_spinner "Executing update method (please wait)" bash altaera-update_content.sh
+        run_with_spinner "Finalizing update" sleep 1
 
         clear
         bash 'AltaeraAI/altaera-updated_successfully.sh'
