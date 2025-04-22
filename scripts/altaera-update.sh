@@ -47,7 +47,7 @@ run_with_spinner() {
     echo -n ""
     for ((i=0; i<${#msg}; i++)); do
         printf "%s" "${msg:$i:1}"
-        sleep 0.01
+        sleep 0.005
     done
 
     # Clear any leftovers from previous output
