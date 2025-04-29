@@ -14,7 +14,7 @@ if
                 } &> /dev/null 2>&1;
 
 if [ $(bash 'AltaeraAI/altaera-version_upstream.sh'
-          ) = "v6.0.3" ]; then
+          ) = "v6.0.4" ]; then
           rm -rf 'AltaeraAI/altaera-version_upstream.sh'
 else
           rm -rf 'AltaeraAI/altaera-version_upstream.sh'

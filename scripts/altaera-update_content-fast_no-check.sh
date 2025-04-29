@@ -15,7 +15,7 @@
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.3
+  AltaeraAI - v6.0.4
 
     by ThinkThrough
 
@@ -433,7 +433,7 @@ cd '/data/data/com.termux/files/home'
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.3
+  AltaeraAI - v6.0.4
 
     by ThinkThrough
 
@@ -572,8 +572,8 @@ rm -rf 'upgrade.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/upgrade.sh
 chmod a+x 'upgrade.sh'
 rm -rf 'ngrok-authtoken.sh'
-wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/kcpp-ae_v6.0.2/kcpp-ae_v6.0.2.tar.gz
-tar -xf 'kcpp-ae_v6.0.2.tar.gz'
+wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/kcpp-ae_v6.0.4/kcpp-ae_v6.0.4.tar.gz
+tar -xf 'kcpp-ae_v6.0.4.tar.gz'
 
 
 mv '/data/data/com.termux/files/home/AltaeraAI-tmp/models' '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root'
@@ -590,7 +590,7 @@ rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/al
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-v2.9.tar.gz'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-v3.0.tar.gz'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-v3.1.tar.gz'
-rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae_v6.0.2.tar.gz'
+rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae_v6.0.4.tar.gz'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-temporary'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/chat-with-bob.txt'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera_install_pt-3.sh'
@@ -719,7 +719,7 @@ cd '/data/data/com.termux/files/home'
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.3
+  AltaeraAI - v6.0.4
 
     by ThinkThrough
 
@@ -869,7 +869,7 @@ clear
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.3
+  AltaeraAI - v6.0.4
 
     by ThinkThrough
 
@@ -1026,7 +1026,7 @@ cd ~
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.3
+  AltaeraAI - v6.0.4
 
     by ThinkThrough
 

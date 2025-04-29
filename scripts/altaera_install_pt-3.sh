@@ -40,7 +40,7 @@ case $CHOICE in
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.3
+  AltaeraAI - v6.0.4
 
     by ThinkThrough
 
@@ -248,9 +248,9 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 chmod a+x 'dialog_theme-on.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-off.sh
 chmod a+x 'dialog_theme-off.sh'
-wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/kcpp-ae_v6.0.2/kcpp-ae_v6.0.2.tar.gz
-tar -xf 'kcpp-ae_v6.0.2.tar.gz'
-rm -rf 'kcpp-ae_v6.0.2.tar.gz'
+wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/kcpp-ae_v6.0.4/kcpp-ae_v6.0.4.tar.gz
+tar -xf 'kcpp-ae_v6.0.4.tar.gz'
+rm -rf 'kcpp-ae_v6.0.4.tar.gz'
       rm -rf 'koboldcpp-altaera'
       rm -rf 'kcpp-ae_cm'
       wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/v3.1/altaera-v3.1.tar.gz
@@ -280,7 +280,7 @@ rm -rf 'kcpp-ae_v6.0.2.tar.gz'
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.3
+  AltaeraAI - v6.0.4
 
     by ThinkThrough
 
