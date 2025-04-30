@@ -1,12 +1,5 @@
 #!/bin/bash
 
-{
-rm 'AltaeraAI-tmp/termux-default/dialogrc'
-cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc'
-rm '/data/data/com.termux/files/home/.dialogrc'
-cp '/data/data/com.termux/files/home/AltaeraAI/termux/dialogrc/dialogrc' '/data/data/com.termux/files/home/.dialogrc'
-} &> /dev/null 2>&1;
-
 HEIGHT=20
 WIDTH=60
 CHOICE_HEIGHT=24
@@ -62,8 +55,3 @@ case $CHOICE in
 	    fi
       
 esac
-
-{
-rm '/data/data/com.termux/files/home/.dialogrc'
-cp '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc' '/data/data/com.termux/files/home/.dialogrc'
-} &> /dev/null 2>&1;
