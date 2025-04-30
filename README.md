@@ -44,6 +44,7 @@ The tool also streamlines the installation of both AI backends and frontends for
 <details>
   <summary><b>Changelog</b></summary>
 
+    * v6.0.4 - updated the pre-packaged KoboldCpp to v1.89
     * v6.0.3 - fixed the link to RWKV7-Goose-World3-2.9B
     * v6.0.4 - updated the pre-packaged KoboldCpp to experimental/v1.88 — the reason being that the experimental branch included a fix for RWKV related to a broken recurrent cache component in upstream LlamaCpp
     * v6.0.1 - added RWKV7-Goose-World weights to the list of models
