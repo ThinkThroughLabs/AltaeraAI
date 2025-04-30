@@ -185,6 +185,12 @@ echo "Logging into PRoot Distro ...
 
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);            
 
+{
+rm 'AltaeraAI-tmp/termux-default/dialogrc'
+cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc'
+rm '/data/data/com.termux/files/home/.dialogrc'
+cp '/data/data/com.termux/files/home/AltaeraAI/termux/dialogrc/dialogrc' '/data/data/com.termux/files/home/.dialogrc'
+} &> /dev/null 2>&1;
             proot-distro login altaera -- ./altaera_pre-launch.sh
             ;;
         2)
