@@ -306,7 +306,7 @@ then
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/pd-in.sh
 } &> /dev/null 2>&1;
 chmod a+x 'pd-in.sh'
-bash 'pd-in.sh'
+##bash 'pd-in.sh'
 else
 :
 fi
