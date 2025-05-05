@@ -300,16 +300,16 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 chmod a+x 'altaera-install_method.sh'
 bash 'altaera-install_method.sh'
 clear
-if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
-then
-{
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/pd-in.sh
-} &> /dev/null 2>&1;
-chmod a+x 'pd-in.sh'
+##if [ -f $PREFIX/etc/proot-distro/altaera.sh ]
+##then
+##{
+##wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/pd-in.sh
+##} &> /dev/null 2>&1;
+##chmod a+x 'pd-in.sh'
 ##bash 'pd-in.sh'
-else
-:
-fi
+##else
+##:
+##fi
 
 echo "Moving the AI model and prompt file into proper directory ...";
 
