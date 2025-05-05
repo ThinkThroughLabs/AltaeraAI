@@ -23,4 +23,3 @@ printf "%*s\033[1;32m%s\033[0m\n\n" "$padding" "" "$success_msg"
 
 # Animated, centered instruction
 type_text_centered "To start, please type in 'ae'."
-;;
