@@ -970,4 +970,6 @@ _______________________________________________________________________
 
 esac
 
-bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
+echo "
+Installation completed. To start, please type in 'ae'.
+"
