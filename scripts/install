@@ -139,7 +139,12 @@ echo "Installing Termux Activity Manager ...
 pkg install termux-am -y
 } &> /dev/null 2>&1;
 clear
+
+if [ ! -d "/sdcard" ]; then
 termux-setup-storage
+else
+:
+fi
 
 clear
 
