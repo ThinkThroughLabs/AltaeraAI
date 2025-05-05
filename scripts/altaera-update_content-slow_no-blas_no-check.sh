@@ -15,7 +15,7 @@
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.4
+  AltaeraAI - v6.0.5
 
     by ThinkThrough
 
@@ -436,7 +436,7 @@ cd '/data/data/com.termux/files/home'
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.4
+  AltaeraAI - v6.0.5
 
     by ThinkThrough
 
@@ -599,7 +599,7 @@ rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/al
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-v2.9.tar.gz'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-v3.0.tar.gz'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-v3.1.tar.gz'
-rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae_v6.0.4.tar.gz'
+rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae_v6.0.5.tar.gz'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera-temporary'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/chat-with-bob.txt'
 rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/altaera_install_pt-3.sh'
@@ -728,7 +728,7 @@ cd '/data/data/com.termux/files/home'
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.4
+  AltaeraAI - v6.0.5
 
     by ThinkThrough
 
@@ -878,7 +878,7 @@ clear
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.4
+  AltaeraAI - v6.0.5
 
     by ThinkThrough
 
@@ -1035,7 +1035,7 @@ cd ~
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.4
+  AltaeraAI - v6.0.5
 
     by ThinkThrough
 
