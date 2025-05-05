@@ -353,7 +353,7 @@ rm -rf '/data/data/com.termux/files/home/pd-login.sh'
 
 exec bash
 
-./data/data/com.termux/files/home/AltaeraAI/altaera.sh
+bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 ;;
 
          2)
