@@ -357,6 +357,7 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/mai
 chmod +x 'altaera_install-success.sh'
 bash 'altaera_install-success.sh'
 rm 'altaera_install-success.sh'
+;;
 
          2)
 ## wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_model.sh -q --show-progress
