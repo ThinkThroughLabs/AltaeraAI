@@ -488,3 +488,5 @@ fi
 exit
 
 exec <&-
+
+bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
