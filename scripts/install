@@ -155,7 +155,7 @@ fi
 
 run_with_spinner "Installing necessary Termux packages" bash -c "apt update && apt -o DPkg::Options::='--force-confnew' -y upgrade && apt-get -o DPkg::Options::='--force-confnew' -y install openssl-1.1 wget && pkg install wget curl proot-distro nodejs -y"
 
-run_with_spinner "Removing previous AltaeraAI files [if there are any] " bash -c "proot-distro remove altaera"
+run_with_spinner "Removing previous AltaeraAI files " bash -c "proot-distro remove altaera"
 
 rm -rf 'AltaeraAI-tmp'
 rm -rf 'AltaeraAI'
@@ -199,7 +199,11 @@ clear
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-run_with_spinner "Installing initial files " bash -c "wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-2.sh -q --show-progress && chmod a+x 'altaera_install_pt-2.sh' && bash 'altaera_install_pt-2.sh'"
+{
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-2.sh -q --show-progress && chmod a+x 'altaera_install_pt-2.sh' && 
+} &> /dev/null 2>&1;
+
+run_with_spinner "Installing initial files " bash -c "bash 'altaera_install_pt-2.sh'"
 
 {
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
