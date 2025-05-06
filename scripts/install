@@ -4,17 +4,12 @@
 
 clear
 
-center_text() {
-  local text="$1"
-  local width=$(stty size | awk '{print $2}')  # Get the width of the terminal
-  local text_length=${#text}
-  local padding=$(( (width - text_length) / 2 ))  # Calculate padding to center the text
-  printf "%*s%s\n" $padding "" "$text"  # Print the text with the padding
-}
+echo "Installing mandatory packages before installation..."
 
+{
 pkg install ncurses-utils -y &
+} &> /dev/null 2>&1;
 
-center_text "Installing mandatory packages before installation..."
 
 # Spinner that runs while a given PID is alive
 spin() {
