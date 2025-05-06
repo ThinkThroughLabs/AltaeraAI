@@ -3,6 +3,7 @@
 ##termux-change-repo
 
 echo "Installing mandatory packages before installation..."
+{
 pkg in ncurses-utils -y
 } &> /dev/null 2>&1;
 
