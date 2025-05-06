@@ -168,8 +168,7 @@ run_with_spinner() {
 }
 
 random_message
-echo "________________________________________________________________
-" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d "\n' | head -c $(tput cols);
+echo "________________________________________________________________" | sed -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
 run_with_spinner "Installing initial files " bash -c '
 cd "/data/data/com.termux/files/home" &&
@@ -452,10 +451,10 @@ alias altaera-update='/data/data/com.termux/files/home/AltaeraAI/altaera-update.
 alias altaera-lang='/data/data/com.termux/files/home/AltaeraAI/altaera-lang.sh'
 alias altaera-model='/data/data/com.termux/files/home/AltaeraAI/altaera-model.sh'" >> bash.bashrc
 
-cd '/data/data/com.termux/files/home'
+cd "/data/data/com.termux/files/home"
 
-rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/initial.sh'
-rm -rf 'initial.sh'
+rm -rf "/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/initial.sh"
+rm -rf "initial.sh"
 
 cd ..
 } &> /dev/null 2>&1;
