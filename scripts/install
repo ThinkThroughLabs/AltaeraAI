@@ -199,7 +199,7 @@ clear
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-run_with_spinner "Installing initial files "wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-2.sh -q --show-progress && chmod a+x 'altaera_install_pt-2.sh' && bash 'altaera_install_pt-2.sh'"
+run_with_spinner "Installing initial files " wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-2.sh -q --show-progress && chmod a+x 'altaera_install_pt-2.sh' && bash 'altaera_install_pt-2.sh'"
 
 {
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
@@ -270,7 +270,7 @@ echo -e "\n"
 printf "%*s\033[1;32m%s\033[0m\n\n" "$padding" "" "$success_msg"
 
 # Animated, centered instruction
-type_text_centered 'To start, please type in "ae".'
+type_text_centered "To start, please type in 'ae'."
 
 exec bash
 
