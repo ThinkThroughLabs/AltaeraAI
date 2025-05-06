@@ -172,7 +172,10 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-run_with_spinner "Installing initial files " bash -c "cd /data/data/com.termux/files/home && rm -rf 'altaera_install.sh' && cd 'AltaeraAI' &&
+run_with_spinner "Installing initial files " bash -c "
+cd /data/data/com.termux/files/home &&
+rm -rf 'altaera_install.sh'
+&& cd 'AltaeraAI' &&
 
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_initial-check.sh -O 'altaera_auto-check.sh' &&
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_auto-check_corrupted-files.sh &&
@@ -420,7 +423,8 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 chmod a+x 'altaera-model_backup-restore.sh' &&
 chmod a+x 'altaera-model_restore.sh' &&
 
-cd '/data/data/com.termux/files/home'"
+cd '/data/data/com.termux/files/home'
+"
 
 {
 if [ -f '/data/data/com.termux/files/home/.dialogrc' ]; then
