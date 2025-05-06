@@ -171,7 +171,7 @@ random_message
 
 echo "________________________________________________________________" | sed -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-run_with_spinner "Installing initial files" bash -c "$(cat <<'EOF'
+cat <<'EOF' > EOF.sh
 cd "/data/data/com.termux/files/home" &&
 rm -rf "altaera_install.sh" &&
 cd "AltaeraAI" &&
@@ -425,7 +425,8 @@ chmod a+x "altaera-model_restore.sh" &&
 cd "/data/data/com.termux/files/home"
 
 EOF
-)"
+
+run_with_spinner "Installing initial files" bash EOF.sh
 
 if [ -f "/data/data/com.termux/files/home/.dialogrc" ]; then
 cp "/data/data/com.termux/files/home/.dialogrc" "/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc"
