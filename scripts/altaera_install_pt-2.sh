@@ -172,7 +172,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d "\n' | head -c $(tput cols);
 
-run_with_spinner "Installing initial files " bash -c "
+run_with_spinner 'Installing initial files ' bash -c "
 cd /data/data/com.termux/files/home &&
 rm -rf "altaera_install.sh"
 && cd "AltaeraAI" &&
