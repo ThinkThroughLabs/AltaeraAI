@@ -423,7 +423,9 @@ chmod a+x "altaera-model_backup-restore.sh" &&
 chmod a+x "altaera-model_restore.sh" &&
 
 cd "/data/data/com.termux/files/home"
-'
+
+EOF
+)"
 
 if [ -f "/data/data/com.termux/files/home/.dialogrc" ]; then
 cp "/data/data/com.termux/files/home/.dialogrc" "/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc"
@@ -437,9 +439,6 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/mai
 fi
 
 cd "/data/data/com.termux/files/usr/etc/"
-
-EOF
-)"
 
 sed -i '/altaera/d' bash.bashrc
 
