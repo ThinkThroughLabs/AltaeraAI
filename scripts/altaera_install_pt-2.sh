@@ -172,7 +172,7 @@ echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d "\n' | head -c $(tput cols);
 
 run_with_spinner "Installing initial files " bash -c '
-cd /data/data/com.termux/files/home &&
+cd "/data/data/com.termux/files/home" &&
 rm -rf "altaera_install.sh" &&
 cd "AltaeraAI" &&
 
@@ -426,17 +426,17 @@ cd "/data/data/com.termux/files/home"
 '
 
 if [ -f "/data/data/com.termux/files/home/.dialogrc" ]; then
-cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc'
-rm '/data/data/com.termux/files/home/.dialogrc'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O '.dialogrc' -P '/data/data/com.termux/files/home'
+cp "/data/data/com.termux/files/home/.dialogrc" "/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc"
+rm "/data/data/com.termux/files/home/.dialogrc"
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O ".dialogrc" -P "/data/data/com.termux/files/home"
 elif [ ! -f "/data/data/com.termux/files/home/.dialogrc" ]; then
 dialog --create-rc ~/.dialogrc
-cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc'
-rm '/data/data/com.termux/files/home/.dialogrc'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O '.dialogrc' -P '/data/data/com.termux/files/home'
+cp "/data/data/com.termux/files/home/.dialogrc" "/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc"
+rm "/data/data/com.termux/files/home/.dialogrc"
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O ".dialogrc" -P "/data/data/com.termux/files/home"
 fi
 
-cd '/data/data/com.termux/files/usr/etc/'
+cd "/data/data/com.termux/files/usr/etc/"
 
 sed -i '/altaera/d' bash.bashrc
 
