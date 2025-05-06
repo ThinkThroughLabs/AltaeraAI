@@ -67,7 +67,7 @@ run_with_spinner() {
 
   echo "Did you know...
 
-  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d "\n' | head -c $(tput cols);
+  " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
   	function random_message() {
     # Array of random messages
@@ -168,14 +168,13 @@ run_with_spinner() {
 }
 
 random_message
-
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d "\n' | head -c $(tput cols);
 
-run_with_spinner 'Installing initial files ' bash -c "
+run_with_spinner "Installing initial files " bash -c '
 cd /data/data/com.termux/files/home &&
-rm -rf "altaera_install.sh"
-&& cd "AltaeraAI" &&
+rm -rf "altaera_install.sh" &&
+cd "AltaeraAI" &&
 
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_initial-check.sh -O "altaera_auto-check.sh" &&
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_auto-check_corrupted-files.sh &&
@@ -423,7 +422,7 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 chmod a+x "altaera-model_backup-restore.sh" &&
 chmod a+x "altaera-model_restore.sh" &&
 
-cd "/data/data/com.termux/files/home'
+cd "/data/data/com.termux/files/home"
 '
 
 {
