@@ -425,21 +425,20 @@ chmod a+x "altaera-model_restore.sh" &&
 cd "/data/data/com.termux/files/home"
 '
 
-{
-if [ -f "/data/data/com.termux/files/home/.dialogrc' ]; then
-cp "/data/data/com.termux/files/home/.dialogrc' "/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc'
-rm "/data/data/com.termux/files/home/.dialogrc'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O ".dialogrc' -P "/data/data/com.termux/files/home'
-elif [ ! -f "/data/data/com.termux/files/home/.dialogrc' ]; then
+if [ -f "/data/data/com.termux/files/home/.dialogrc" ]; then
+cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc'
+rm '/data/data/com.termux/files/home/.dialogrc'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O '.dialogrc' -P '/data/data/com.termux/files/home'
+elif [ ! -f "/data/data/com.termux/files/home/.dialogrc" ]; then
 dialog --create-rc ~/.dialogrc
-cp "/data/data/com.termux/files/home/.dialogrc' "/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc'
-rm "/data/data/com.termux/files/home/.dialogrc'
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O ".dialogrc' -P "/data/data/com.termux/files/home'
+cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc'
+rm '/data/data/com.termux/files/home/.dialogrc'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O '.dialogrc' -P '/data/data/com.termux/files/home'
 fi
 
-cd "/data/data/com.termux/files/usr/etc/'
+cd '/data/data/com.termux/files/usr/etc/'
 
-sed -i "/altaera/d' bash.bashrc
+sed -i '/altaera/d' bash.bashrc
 
 echo "alias ae='/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 alias altaera='/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
@@ -453,10 +452,10 @@ alias altaera-update='/data/data/com.termux/files/home/AltaeraAI/altaera-update.
 alias altaera-lang='/data/data/com.termux/files/home/AltaeraAI/altaera-lang.sh'
 alias altaera-model='/data/data/com.termux/files/home/AltaeraAI/altaera-model.sh'" >> bash.bashrc
 
-cd "/data/data/com.termux/files/home'
+cd '/data/data/com.termux/files/home'
 
-rm -rf "/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/initial.sh'
-rm -rf "initial.sh'
+rm -rf '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/initial.sh'
+rm -rf 'initial.sh'
 
 cd ..
 } &> /dev/null 2>&1;
