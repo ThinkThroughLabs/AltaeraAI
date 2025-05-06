@@ -199,7 +199,7 @@ clear
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-run_with_spinner "Installing initial files " bash -c wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-2.sh -q --show-progress && chmod a+x 'altaera_install_pt-2.sh' && bash 'altaera_install_pt-2.sh'"
+run_with_spinner "Installing initial files " bash -c "wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-2.sh -q --show-progress && chmod a+x 'altaera_install_pt-2.sh' && bash 'altaera_install_pt-2.sh'"
 
 {
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-install_method.sh -q --show-progress
