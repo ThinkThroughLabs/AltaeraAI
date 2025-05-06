@@ -438,7 +438,7 @@ cd '/data/data/com.termux/files/usr/etc/'
 
 sed -i '/altaera/d' bash.bashrc
 
-echo 'alias ae="/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
+echo "alias ae='/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 alias altaera='/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 alias aef='/data/data/com.termux/files/home/AltaeraAI/altaera_no-check.sh'
 alias aeforce='/data/data/com.termux/files/home/AltaeraAI/altaera_no-check.sh'
