@@ -4,13 +4,6 @@
 
 clear
 
-echo "Installing mandatory packages before installation..."
-
-{
-pkg install ncurses-utils -y &
-} &> /dev/null 2>&1;
-
-
 # Spinner that runs while a given PID is alive
 spin() {
     local pid="$1"
@@ -53,6 +46,8 @@ run_with_spinner() {
     printf "\r%-50s [ ✔ ]\n" "$spinner_msg"
     tput sgr0
 }
+
+run_with_spinner "Installing mandatory packages before installation " bash -c "pkg in ncurses-utils -y"
 
 clear
             echo "
