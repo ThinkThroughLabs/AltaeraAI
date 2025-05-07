@@ -184,7 +184,7 @@ echo "________________________________________________________________
 
 print_done_step "Installing initial files"
 
-animate_message "Downloading pre-packaged PRoot-Distro sources "
+animate_message "Downloading pre-packaged PRoot-Distro..."
 
 {
 ##mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro'
@@ -325,7 +325,7 @@ random_message
 echo "________________________________________________________________
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
 
-print_done_step "Installing initial files"
+print_done_step "Installing initial files "
 
 print_done_step "Downloading pre-packaged PRoot-Distro "
 
