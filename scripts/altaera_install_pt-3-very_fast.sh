@@ -15,39 +15,13 @@ spin() {
     tput civis
     while kill -0 "$pid" 2>/dev/null; do
         for ((i=0; i<${#chars}; i++)); do
-            printf "\r%-50s [ %c ]" "$spinner_msg" "${chars:i:1}"
-            sleep $delay
+            tput cuu 2  # Move up two lines
+            tput el     # Clear line
+            printf "%-50s [ %c ]\n\n" "$spinner_msg" "${chars:i:1}"
+            sleep "$delay"
         done
     done
     tput cnorm
-}
-
-# Run command with spinner and checkmark
-run_with_spinner() {
-    local msg="$1"
-    spinner_msg="$msg"
-    shift
-
-    # Animate the message *cleanly* first
-    echo -n ""
-    for ((i=0; i<${#msg}; i++)); do
-        printf "%s" "${msg:$i:1}"
-        sleep 0.005
-    done
-
-    # Clear any leftovers from previous output
-    tput el
-
-    # Background the command and start spinner
-    ("$@") &> /dev/null &
-    local cmd_pid=$!
-    spin "$cmd_pid"
-    wait "$cmd_pid"
-
-    # Green checkmark after finish
-    tput setaf 2
-    printf "\r%-50s [ ✔ ]\n" "$spinner_msg"
-    tput sgr0
 }
 
             clear
@@ -183,34 +157,34 @@ echo "________________________________________________________________
 
 print_done_step "Installing initial files"
 
-# Spinner message
-spinner_msg="Downloading pre-packaged PRoot-Distro"
+run_with_spinner_wget() {
+    local msg="$1"
+    spinner_msg="$msg"
+    shift
 
-# Print the spinner message line (top)
-echo ""
-for ((i=0; i<${#spinner_msg}; i++)); do
-    printf "%s" "${spinner_msg:$i:1}"
-    sleep 0.005
-done
-tput el
+    # Move to the right directory silently
+    cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs' &> /dev/null
 
-# Print one empty line to make room for wget progress
-echo ""
+    # Print spinner message and blank line
+    printf "%-50s [   ]\n\n" "$spinner_msg"
 
-# Run wget in background, redirecting output to *stay on next line*
-wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distro/altaera-pd.xz -q --show-progress &> /dev/tty &
-wget_pid=$!
+    # Run wget in background and save its PID
+    "$@" &
+    local cmd_pid=$!
 
-# Spinner on the original line
-spin "$wget_pid"
-wait "$wget_pid"
+    # Start spinner
+    spin "$cmd_pid"
+    wait "$cmd_pid"
 
-# Overwrite spinner line with green checkmark
-tput cuu1 && tput cr
-tput setaf 2
-printf "%-50s [ ✔ ]\n" "$spinner_msg"
-tput sgr0
+    # After completion, clear wget output and show checkmark
+    tput cuu 2  # Move up two lines
+    tput el     # Clear spinner line
+    printf "%-50s [ ✔ ]\n\n" "$spinner_msg"
+}
 
+run_with_spinner_wget "Downloading pre-packaged PRoot-Distro" \
+    wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distro/altaera-pd.xz --show-progress -q
+    
 clear
 
             echo "
