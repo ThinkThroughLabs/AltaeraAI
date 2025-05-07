@@ -7,7 +7,7 @@ print_done_step() {
     tput sgr0      # Reset
 }
 
-# Spinner that runs while a given PID is alive
+# Spinner runs while a given PID is alive
 spin() {
     local pid="$1"
     local delay=0.1
@@ -15,9 +15,9 @@ spin() {
     tput civis
     while kill -0 "$pid" 2>/dev/null; do
         for ((i=0; i<${#chars}; i++)); do
-            tput cuu 2  # Move up two lines
-            tput el     # Clear line
-            printf "%-50s [ %c ]\n\n" "$spinner_msg" "${chars:i:1}"
+            tput cuu1         # Move up one line
+            tput el           # Clear line
+            printf "%s [ %c ]\n" "$spinner_msg" "${chars:i:1}"
             sleep "$delay"
         done
     done
@@ -157,31 +157,34 @@ echo "________________________________________________________________
 
 print_done_step "Installing initial files"
 
+# Run wget with spinner above
 run_with_spinner_wget() {
     local msg="$1"
     spinner_msg="$msg"
     shift
 
-    # Move to the right directory silently
     cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs' &> /dev/null
 
-    # Print spinner message and blank line
-    printf "%-50s [   ]\n\n" "$spinner_msg"
+    # Print spinner message above and a blank line
+    printf "%s [   ]\n\n" "$spinner_msg"
 
-    # Run wget in background and save its PID
+    # Start wget in background
     "$@" &
     local cmd_pid=$!
 
-    # Start spinner
+    # Start spinner above
     spin "$cmd_pid"
     wait "$cmd_pid"
 
-    # After completion, clear wget output and show checkmark
-    tput cuu 2  # Move up two lines
-    tput el     # Clear spinner line
-    printf "%-50s [ ✔ ]\n\n" "$spinner_msg"
+    # Clean up spinner + leave a checkmark
+    tput cuu1
+    tput el
+    tput setaf 2
+    printf "%s [ ✔ ]\n" "$spinner_msg"
+    tput sgr0
 }
 
+# Usage
 run_with_spinner_wget "Downloading pre-packaged PRoot-Distro" \
     wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distro/altaera-pd.xz --show-progress -q
     
