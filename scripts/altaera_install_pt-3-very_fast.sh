@@ -327,26 +327,27 @@ print_done_step "Downloading pre-packaged PRoot-Distro "
 
 run_with_spinner "Extracting pre-packaged PRoot-Distro " bash -c "proot-distro restore 'altaera-pd.xz' && rm 'altaera-pd.xz' && rm '$PREFIX/etc/proot-distro/altaera.sh'"
 
+echo "Installing internal Termux files...
 
-run_with_spinner "Installing internal Termux files " bash -c '
-cd "/data/data/com.termux/files/home" &&
-rm -rf "/etc/bash.bashrc" &&
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/bash.bashrc &&
-cp "bash.bashrc" "/etc" &&
-rm -rf "bash.bashrc" &&
+cd '/data/data/com.termux/files/home'
+{
+rm -rf "/etc/bash.bashrc"
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/bash.bashrc
+cp 'bash.bashrc' "/etc"
+rm -rf 'bash.bashrc'
 if [ -f "/data/data/com.termux/files/home/.dialogrc" ]; then
-cp "/data/data/com.termux/files/home/.dialogrc" "/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc"
-rm "/data/data/com.termux/files/home/.dialogrc"
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O ".dialogrc" -P "/data/data/com.termux/files/home"
+cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc'
+rm '/data/data/com.termux/files/home/.dialogrc'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O '.dialogrc' -P '/data/data/com.termux/files/home'
 elif [ ! -f "/data/data/com.termux/files/home/.dialogrc" ]; then
 dialog --create-rc ~/.dialogrc
-cp "/data/data/com.termux/files/home/.dialogrc" "/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc"
-rm "/data/data/com.termux/files/home/.dialogrc"
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O ".dialogrc" -P "/data/data/com.termux/files/home"
-fi &&
-wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-4.sh &&
-chmod a+x "altaera_install_pt-4.sh" &&
-'
+cp '/data/data/com.termux/files/home/.dialogrc' '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc'
+rm '/data/data/com.termux/files/home/.dialogrc'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/termux/dialogrc -O '.dialogrc' -P '/data/data/com.termux/files/home'
+fi
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera_install_pt-4.sh
+chmod a+x 'altaera_install_pt-4.sh'
+} &> /dev/null 2>&1;
 
 wait .5
 
