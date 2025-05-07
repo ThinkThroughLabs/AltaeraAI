@@ -49,6 +49,7 @@ animate_message() {
 
     # Clear any leftovers from previous output
     tput el
+}
 
             clear
             echo "
