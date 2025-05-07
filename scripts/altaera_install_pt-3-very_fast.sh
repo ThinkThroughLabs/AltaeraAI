@@ -157,37 +157,52 @@ echo "________________________________________________________________
 
 print_done_step "Installing initial files"
 
-# Run wget with spinner above
-run_with_spinner_wget() {
-    local msg="$1"
-    spinner_msg="$msg"
-    shift
+run_wget_with_spinner() {
+    local msg="Downloading pre-packaged PRoot-Distro"
+    local url="https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distro/altaera-pd.xz"
+    local target_dir="/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs"
 
-    cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs' &> /dev/null
+    mkdir -p "$target_dir"
+    cd "$target_dir" || exit 1
 
-    # Print spinner message above and a blank line
-    printf "%s [   ]\n\n" "$spinner_msg"
+    # Print the spinner line first, then move to a blank line for wget
+    printf "%s [   ]\n" "$msg"
 
-    # Start wget in background
-    "$@" &
-    local cmd_pid=$!
+    # Save current cursor position to come back later
+    tput sc
 
-    # Start spinner above
-    spin "$cmd_pid"
-    wait "$cmd_pid"
+    # Start wget in a subshell, so we can monitor it
+    {
+        wget "$url" --show-progress -q
+    } &
+    pid=$!
 
-    # Clean up spinner + leave a checkmark
+    # Let wget write to the second line only
+    tput rc  # Restore cursor to spinner line
     tput cuu1
+
+    spinner_chars='|/-\\'
+    i=0
+    tput civis
+    while kill -0 $pid 2>/dev/null; do
+        tput rc        # Back to spinner line
+        tput el        # Clear line
+        printf "%s [ %c ]\n" "$msg" "${spinner_chars:i++%4}"
+        sleep 0.1
+    done
+    wait $pid
+    tput cnorm
+
+    # Final overwrite with checkmark
+    tput rc
     tput el
     tput setaf 2
-    printf "%s [ ✔ ]\n" "$spinner_msg"
+    printf "%s [ ✔ ]\n" "$msg"
     tput sgr0
 }
 
-# Usage
-run_with_spinner_wget "Downloading pre-packaged PRoot-Distro" \
-    wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distro/altaera-pd.xz --show-progress -q
-    
+run_wget_with_spinner
+
 clear
 
             echo "
