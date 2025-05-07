@@ -321,6 +321,9 @@ clear
 
 random_message
 
+echo "________________________________________________________________
+" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);
+
 print_done_step "Installing initial files"
 
 print_done_step "Downloading pre-packaged PRoot-Distro "
