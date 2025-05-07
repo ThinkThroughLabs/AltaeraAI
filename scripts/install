@@ -8,6 +8,7 @@ echo "Installing mandatory packages before installation..."
 {
 pkg in ncurses-utils -y
 dpkg -L termux-exec
+pkg upgrade -y
 } &> /dev/null 2>&1;
 
 clear
