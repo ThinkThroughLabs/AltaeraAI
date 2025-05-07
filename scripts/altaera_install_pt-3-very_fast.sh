@@ -165,35 +165,30 @@ run_wget_with_spinner() {
     mkdir -p "$target_dir"
     cd "$target_dir" || exit 1
 
-    # Print the spinner line first, then move to a blank line for wget
+    # Print fixed message line ONCE
     printf "%s [   ]\n" "$msg"
 
-    # Save current cursor position to come back later
-    tput sc
+    # Save cursor where spinner will animate
+    tput cuu1       # Move up to spinner line
+    tput sc         # Save position (cursor at spinner [ ])
 
-    # Start wget in a subshell, so we can monitor it
-    {
-        wget "$url" --show-progress -q
-    } &
+    # Start wget in background
+    wget "$url" --show-progress &
     pid=$!
 
-    # Let wget write to the second line only
-    tput rc  # Restore cursor to spinner line
-    tput cuu1
-
+    # Spinner characters
     spinner_chars='|/-\\'
     i=0
     tput civis
     while kill -0 $pid 2>/dev/null; do
-        tput rc        # Back to spinner line
-        tput el        # Clear line
-        printf "%s [ %c ]\n" "$msg" "${spinner_chars:i++%4}"
+        tput rc       # Restore to spinner position
+        printf "%s [ %c ]" "$msg" "${spinner_chars:i++%4}"
         sleep 0.1
     done
     wait $pid
     tput cnorm
 
-    # Final overwrite with checkmark
+    # Show green checkmark once done
     tput rc
     tput el
     tput setaf 2
