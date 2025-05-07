@@ -325,7 +325,7 @@ print_done_step "Installing initial files"
 
 print_done_step "Downloading pre-packaged PRoot-Distro "
 
-echo "Extracting pre-packaged PRoot-Distro "
+echo "Extracting pre-packaged PRoot-Distro..."
 
 {
 proot-distro restore 'altaera-pd.xz'
