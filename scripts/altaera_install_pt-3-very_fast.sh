@@ -183,23 +183,32 @@ echo "________________________________________________________________
 
 print_done_step "Installing initial files"
 
-echo ""
-
+# Spinner message
 spinner_msg="Downloading pre-packaged PRoot-Distro"
-echo -n ""
+
+# Print the spinner message line (top)
+echo ""
 for ((i=0; i<${#spinner_msg}; i++)); do
     printf "%s" "${spinner_msg:$i:1}"
     sleep 0.005
 done
 tput el
 
-wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distro/altaera-pd.xz -q --show-progress 1>&2 &
+# Print one empty line to make room for wget progress
+echo ""
+
+# Run wget in background, redirecting output to *stay on next line*
+wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distro/altaera-pd.xz -q --show-progress &> /dev/tty &
 wget_pid=$!
+
+# Spinner on the original line
 spin "$wget_pid"
 wait "$wget_pid"
 
+# Overwrite spinner line with green checkmark
+tput cuu1 && tput cr
 tput setaf 2
-printf "\r%-50s [ ✔ ]\n" "$spinner_msg"
+printf "%-50s [ ✔ ]\n" "$spinner_msg"
 tput sgr0
 
 clear
