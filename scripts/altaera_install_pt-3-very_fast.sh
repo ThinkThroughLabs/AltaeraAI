@@ -183,6 +183,8 @@ echo "________________________________________________________________
 
 print_done_step "Installing initial files"
 
+echo ""
+
 spinner_msg="Downloading pre-packaged PRoot-Distro"
 echo -n ""
 for ((i=0; i<${#spinner_msg}; i++)); do
@@ -190,8 +192,6 @@ for ((i=0; i<${#spinner_msg}; i++)); do
     sleep 0.005
 done
 tput el
-
-echo ""
 
 wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distro/altaera-pd.xz -q --show-progress 1>&2 &
 wget_pid=$!
