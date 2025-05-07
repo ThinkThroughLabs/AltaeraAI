@@ -325,7 +325,13 @@ print_done_step "Installing initial files"
 
 print_done_step "Downloading pre-packaged PRoot-Distro "
 
-run_with_spinner "Extracting pre-packaged PRoot-Distro " bash -c "proot-distro restore 'altaera-pd.xz' && rm 'altaera-pd.xz' && rm '$PREFIX/etc/proot-distro/altaera.sh'"
+echo "Extracting pre-packaged PRoot-Distro "
+
+{
+proot-distro restore 'altaera-pd.xz'
+rm 'altaera-pd.xz'
+rm '$PREFIX/etc/proot-distro/altaera.sh'
+} &> /dev/null 2>&1;
 
 echo "Installing internal Termux files..."
 
