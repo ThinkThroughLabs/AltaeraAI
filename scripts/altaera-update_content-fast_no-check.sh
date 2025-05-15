@@ -194,6 +194,15 @@ chmod a+x 'altaera-model-tinyllama-1.1b-chat-v1.0.sh'
 rm -rf 'altaera-model-yi-1.5-6b-chat.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-yi-1.5-6b-chat.sh
 chmod a+x 'altaera-model-yi-1.5-6b-chat.sh'
+rm -rf 'altaera-model-rwkv7-g1-0.1b.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv7-g1-0.1b.sh
+chmod a+x 'altaera-model-rwkv7-g1-0.1b.sh'
+rm -rf 'altaera-model-rwkv7-g1-0.4b.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv7-g1-0.4b.sh
+chmod a+x 'altaera-model-rwkv7-g1-0.4b.sh'
+rm -rf 'altaera-model-rwkv7-g1-1.5b.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv7-g1-1.5b.sh
+chmod a+x 'altaera-model-rwkv7-g1-1.5b.sh'
 rm -rf 'altaera-model-rwkv7-goose-world2.8-0.1b.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv7-goose-world2.8-0.1b.sh
 chmod a+x 'altaera-model-rwkv7-goose-world2.8-0.1b.sh'
