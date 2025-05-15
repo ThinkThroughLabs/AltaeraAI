@@ -483,7 +483,7 @@ clear
 check_status "Updating AltaeraAI PRoot Distro environment "
 
 {
-pkg install nodejs -y
+pkg install nodejs pv -y
 cd '~/.termux/'
 rm 'termux.properties'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/termux/termux.properties
