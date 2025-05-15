@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "v6.0.5.tar.gz"
+echo "v6.0.6.tar.gz"
 
 exit

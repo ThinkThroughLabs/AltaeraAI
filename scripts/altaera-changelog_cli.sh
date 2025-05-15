@@ -3,6 +3,7 @@
 dialog --backtitle "AltaeraAI" \
 --title "AltaeraAI - Changelog [CLI]" \
 --msgbox '
+    * v6.0.6 - updated the pre-packaged KoboldCpp to v1.91
     * v6.0.5 - updated the pre-packaged KoboldCpp to v1.90.2
     * v6.0.4 - updated the pre-packaged KoboldCpp to v1.89
     * v6.0.3 - fixed the link to RWKV7-Goose-World3-2.9B
