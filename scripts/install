@@ -7,7 +7,7 @@ clear
 echo "Installing mandatory packages before installation..."
 {
 pkg --check-mirror upgrade -y
-pkg in ncurses-utils -y
+pkg in ncurses-utils pv -y
 dpkg -L termux-exec
 } &> /dev/null 2>&1;
 
