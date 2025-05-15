@@ -44,6 +44,9 @@ chmod a+x 'altaera-model.sh'
 rm -rf 'altaera-model-rwkv-4-world-claude-for-mobile.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-rwkv-4-world-claude-for-mobile.sh
 chmod a+x 'altaera-model-rwkv-4-world-claude-for-mobile.sh'
+rm -rf 'altaera-model-gemma-3-4b-it.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-gemma-3-4b-it.sh
+chmod a+x 'altaera-model-gemma-3-4b-it.sh'
 rm -rf 'altaera-model-gemma-2-2b-it.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-gemma-2-2b-it.sh
 chmod a+x 'altaera-model-gemma-2-2b-it.sh'
