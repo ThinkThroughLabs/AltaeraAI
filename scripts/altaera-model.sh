@@ -40,11 +40,12 @@ OPTIONS=(1 "[...] Go Back"
 	 31 "Phi-SoSerious-Mini-V1-imatrix [...]"
   	 32 "Phi-2-DPO-GGUF [...]"
   	 33 "Yi-1.5-6B-Chat [...]"
-      	 34 "Gemma-2-2b-it [...]"
-  	 35 "Gemma-2-2b-it-abliterated [...]"
-  	 36 "Gemma-2-9b-it [...]"
-  	 37 "Gemma-2B-it [...]"
-  	 38 "Gemma-7B-it [...]")
+      	 34 "Gemma-3-4b-it [...]"
+      	 35 "Gemma-2-2b-it [...]"
+  	 36 "Gemma-2-2b-it-abliterated [...]"
+  	 37 "Gemma-2-9b-it [...]"
+  	 38 "Gemma-2B-it [...]"
+  	 39 "Gemma-7B-it [...]")
 
 
 CHOICE=$(dialog --clear \
@@ -190,22 +191,26 @@ case $CHOICE in
     		;;
       
     	34)
+     		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-3-4b-it.sh'
+    		;;
+      
+    	35)
      		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-2-2b-it.sh'
     		;;
 
-    	35)
+    	36)
      		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-2-2b-it-abliterated.sh'
     		;;
 
-    	36)
+    	37)
      		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-2-9b-it.sh'
     		;;
       
-    	37)
+    	38)
      		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-2b-it.sh'
     		;;
       
-    	38)
+    	39)
      		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-7b-it.sh'
     		;;
       
