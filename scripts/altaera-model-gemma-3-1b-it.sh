@@ -120,7 +120,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/unsloth/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it-IQ4_NL.gguf -O 'q4_k_m-gemma-3-1b-it.gguf' -q --show-progress
+            wget https://huggingface.co/unsloth/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it-IQ4_NL.gguf -O 'iq4_nl-gemma-3-1b-it.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -137,7 +137,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/unsloth/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it-IQ4_XS.gguf -O 'q4_k_s-gemma-3-1b-it.gguf' -q --show-progress
+            wget https://huggingface.co/unsloth/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it-IQ4_XS.gguf -O 'iq4_xs-gemma-3-1b-it.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -155,7 +155,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q4_K_M.gguf -O 'iq4_xs-gemma-3-1b-it.gguf' -q --show-progress
+            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q4_K_M.gguf -O 'iq4_k_m-gemma-3-1b-it.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -173,7 +173,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q4_K_S.gguf -O 'q5_k_m-gemma-3-1b-it.gguf' -q --show-progress
+            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q4_K_S.gguf -O 'q4_k_s-gemma-3-1b-it.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -191,7 +191,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/unsloth/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it-Q4_0.gguf -O 'q5_k_s-gemma-3-1b-it.gguf' -q --show-progress
+            wget https://huggingface.co/unsloth/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it-Q4_0.gguf -O 'q4_0-gemma-3-1b-it.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -208,7 +208,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/unsloth/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it-Q4_1.gguf -O 'q6_k-gemma-3-1b-it.gguf' -q --show-progress
+            wget https://huggingface.co/unsloth/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it-Q4_1.gguf -O 'q4_1-gemma-3-1b-it.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -225,7 +225,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q5_K_M.gguf -O 'q8_0-gemma-3-1b-it.gguf' -q --show-progress
+            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q5_K_M.gguf -O 'q5_k_m-gemma-3-1b-it.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -242,7 +242,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q5_K_S.gguf -O 'f16-gemma-3-1b-it.gguf' -q --show-progress
+            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q5_K_S.gguf -O 'q5_k_s-gemma-3-1b-it.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -259,7 +259,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q6_K.gguf -O 'f16-gemma-3-1b-it.gguf' -q --show-progress
+            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q6_K.gguf -O 'q6_k-gemma-3-1b-it.gguf' -q --show-progress
             cd /root
             clear
             ;;
@@ -276,7 +276,7 @@ case $CHOICE in
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             rm -rf 'RWKV-model.bin'
             rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q8_0.gguf -O 'f16-gemma-3-1b-it.gguf' -q --show-progress
+            wget https://huggingface.co/MaziyarPanahi/gemma-3-1b-it-GGUF/resolve/main/gemma-3-1b-it.Q8_0.gguf -O 'q8_0-gemma-3-1b-it.gguf' -q --show-progress
             cd /root
             clear
             ;;
