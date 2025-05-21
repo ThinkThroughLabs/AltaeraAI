@@ -193,19 +193,19 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/mai
 chmod a+x 'altaera-model-gemma-3-1b-it.sh'
 rm -rf 'altaera-model-gemma-3-1b-it-abliterated.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-gemma-3-1b-it-abliterated.sh
-chmod a+x 'altaera-model-gemma-3-1b-it.sh'
+chmod a+x 'altaera-model-gemma-3-1b-it-abliterated.sh'
 rm -rf 'altaera-model-gemma-3-4b-it.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-gemma-3-4b-it.sh
 chmod a+x 'altaera-model-gemma-3-4b-it.sh'
 rm -rf 'altaera-model-gemma-3-4b-it-abliterated.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-gemma-3-4b-it-abliterated.sh
-chmod a+x 'altaera-model-gemma-3-4b-it.sh'
+chmod a+x 'altaera-model-gemma-3-4b-it-abliterated.sh'
 rm -rf 'altaera-model-gemma-3-12b-it.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-gemma-3-12b-it.sh
 chmod a+x 'altaera-model-gemma-3-12b-it.sh'
 rm -rf 'altaera-model-gemma-3-12b-it-abliterated.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-gemma-3-12b-it-abliterated.sh
-chmod a+x 'altaera-model-gemma-3-12b-it.sh'
+chmod a+x 'altaera-model-gemma-3-12b-it-abliterated.sh'
 rm -rf 'altaera-model-gemma-2-2b-it.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-model-gemma-2-2b-it.sh
 chmod a+x 'altaera-model-gemma-2-2b-it.sh'
