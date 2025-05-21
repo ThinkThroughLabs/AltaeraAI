@@ -1,7 +1,7 @@
 #!/bin/bash
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -19,10 +19,10 @@
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -157,7 +157,7 @@ bash 'altaera_install-architecture.sh'
 } &> /dev/null 2>&1;
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -175,10 +175,10 @@ bash 'altaera_install-architecture.sh'
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -312,7 +312,7 @@ cd ~
 } &> /dev/null 2>&1;
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -330,10 +330,10 @@ cd ~
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 

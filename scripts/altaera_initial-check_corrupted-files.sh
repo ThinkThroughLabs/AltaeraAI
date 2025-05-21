@@ -1,5 +1,5 @@
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -17,10 +17,10 @@
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -138,7 +138,7 @@ echo "________________________________________________________________
         chmod a+x 'altaera_initial-check_fix.sh'
             } &> /dev/null 2>&1;
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -156,10 +156,10 @@ echo "________________________________________________________________
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -280,7 +280,7 @@ echo "________________________________________________________________
         rm -rf 'altaera_initial-check_fix.sh'
             } &> /dev/null 2>&1;
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -298,10 +298,10 @@ echo "________________________________________________________________
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 

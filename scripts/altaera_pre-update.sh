@@ -17,7 +17,7 @@
           rm -rf 'AltaeraAI/kcpp-ae-version_package.sh'
           rm -rf 'altaera-update_content.sh'
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -35,10 +35,10 @@
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
     echo "Did you know...
 
@@ -165,7 +165,7 @@ echo "________________________________________________________________
           
           if [ ! -d /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae ]; then
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -183,10 +183,10 @@ echo "________________________________________________________________
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
     echo "Did you know...
 

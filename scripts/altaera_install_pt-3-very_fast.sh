@@ -52,7 +52,7 @@ animate_message() {
 }
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -70,10 +70,10 @@ animate_message() {
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -195,7 +195,7 @@ wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/PRoot-Distr
 
 clear
 
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -213,10 +213,10 @@ clear
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 

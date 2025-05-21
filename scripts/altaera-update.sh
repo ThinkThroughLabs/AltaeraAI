@@ -161,7 +161,8 @@ random_message() {
 case $CHOICE in
     1|2|3|4)
         clear
-        echo "
+        echo -e "
+
 ████████████████████████
 ██                    ██
 ██        ██████████  ██
@@ -178,8 +179,8 @@ case $CHOICE in
 
   AltaeraAI - v6.0.6
                                     [ Updating ]
-    by ThinkThrough
-  "
+    by \e[3mThinkThrough\e[0m
+"
 
         echo "Did you know...
 " | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols);

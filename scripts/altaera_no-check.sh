@@ -49,7 +49,7 @@ clear
 case $CHOICE in
         1)
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -67,10 +67,10 @@ case $CHOICE in
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -187,7 +187,7 @@ echo "Logging into PRoot Distro ...
             ;;
         2)
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -205,10 +205,10 @@ echo "Logging into PRoot Distro ...
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -345,7 +345,7 @@ echo "Logging into PRoot Distro ...
             ;;
         7)
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -363,10 +363,10 @@ echo "Logging into PRoot Distro ...
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 

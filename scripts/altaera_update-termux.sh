@@ -24,7 +24,7 @@ case $CHOICE in
 
         1)
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -42,10 +42,10 @@ case $CHOICE in
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
     echo "Did you know...
 
@@ -164,7 +164,7 @@ echo "________________________________________________________________
           } &> /dev/null 2>&1;
           
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -182,10 +182,10 @@ echo "________________________________________________________________
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -306,7 +306,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
          termux-open 'com.termux_118.1.apk'
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -324,10 +324,10 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -449,7 +449,7 @@ sleep .5
 
         2)
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -467,10 +467,10 @@ sleep .5
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
     echo "Did you know...
 
@@ -589,7 +589,7 @@ echo "________________________________________________________________
           } &> /dev/null 2>&1;
           
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -607,10 +607,10 @@ echo "________________________________________________________________
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -731,7 +731,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
          termux-open 'com.termux_118.1.apk'
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -749,10 +749,10 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 

@@ -57,7 +57,7 @@ run_with_spinner() {
 }
 
 clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -75,10 +75,10 @@ clear
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
 
 echo "Welcome!
@@ -180,7 +180,7 @@ sleep 0.5
 ## bash 'altaera_install_model.sh'
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -198,10 +198,10 @@ sleep 0.5
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 

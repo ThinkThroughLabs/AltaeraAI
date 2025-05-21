@@ -1,7 +1,7 @@
 #!/bin/bash
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -19,10 +19,10 @@
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 

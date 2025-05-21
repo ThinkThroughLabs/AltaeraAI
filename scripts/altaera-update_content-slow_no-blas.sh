@@ -1,5 +1,5 @@
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -17,10 +17,10 @@
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -453,7 +453,7 @@ cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -471,10 +471,10 @@ cd '/data/data/com.termux/files/home'
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -745,7 +745,7 @@ cd '/data/data/com.termux/files/home'
 } &> /dev/null 2>&1;
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -763,10 +763,10 @@ cd '/data/data/com.termux/files/home'
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -895,7 +895,7 @@ clear
 } &> /dev/null 2>&1;
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -913,10 +913,10 @@ clear
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
@@ -1052,7 +1052,7 @@ cd ~
 } &> /dev/null 2>&1;
 
             clear
-            echo "
+            echo -e "
 
 ████████████████████████
 ██                    ██
@@ -1070,10 +1070,10 @@ cd ~
 
   AltaeraAI - v6.0.6
 
-    by ThinkThrough
+    by \e[3mThinkThrough\e[0m
 
 
-  "
+"
 
   echo "Did you know...
 
