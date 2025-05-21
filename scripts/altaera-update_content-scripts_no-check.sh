@@ -224,6 +224,9 @@ chmod a+x 'altaera-model-rwkv7-g1-0.1b.sh'
 rm -rf 'altaera-model-rwkv7-g1-0.4b.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv7-g1-0.4b.sh
 chmod a+x 'altaera-model-rwkv7-g1-0.4b.sh'
+rm -rf 'altaera-model-rwkv7-g1-2.9b.sh'
+wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv7-g1-2.9b.sh
+chmod a+x 'altaera-model-rwkv7-g1-2.9b.sh'
 rm -rf 'altaera-model-rwkv7-g1-1.5b.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/refs/heads/main/scripts/altaera-model-rwkv7-g1-1.5b.sh
 chmod a+x 'altaera-model-rwkv7-g1-1.5b.sh'
