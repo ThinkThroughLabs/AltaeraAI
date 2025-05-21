@@ -70,7 +70,7 @@ animate_message() {
 
   AltaeraAI - v6.0.6
 
-    by \e[3mThinkThrough\e[0m
+    by \e[36mThinkThrough\e[0m
 
 
 "
@@ -213,7 +213,7 @@ clear
 
   AltaeraAI - v6.0.6
 
-    by \e[3mThinkThrough\e[0m
+    by \e[36mThinkThrough\e[0m
 
 
 "
