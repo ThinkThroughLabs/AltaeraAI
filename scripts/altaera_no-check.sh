@@ -65,7 +65,7 @@ case $CHOICE in
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.6
+  \e[1;37mAltaeraAI\e[0m - v6.0.6
 
     by \e[1;36mThinkThrough\e[0m
 
@@ -203,7 +203,7 @@ echo "Logging into PRoot Distro ...
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.6
+  \e[1;37mAltaeraAI\e[0m - v6.0.6
 
     by \e[1;36mThinkThrough\e[0m
 
@@ -361,7 +361,7 @@ echo "Logging into PRoot Distro ...
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.6
+  \e[1;37mAltaeraAI\e[0m - v6.0.6
 
     by \e[1;36mThinkThrough\e[0m
 

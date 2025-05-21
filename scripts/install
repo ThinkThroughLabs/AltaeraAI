@@ -73,7 +73,7 @@ clear
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.6
+  \e[1;37mAltaeraAI\e[0m - v6.0.6
 
     by \e[1;36mThinkThrough\e[0m
 
@@ -196,7 +196,7 @@ sleep 0.5
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.6
+  \e[1;37mAltaeraAI\e[0m - v6.0.6
 
     by \e[1;36mThinkThrough\e[0m
 

@@ -58,7 +58,7 @@ echo "
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.6
+  \e[1;37mAltaeraAI\e[0m - v6.0.6
 
     by ThinkThrough
 "

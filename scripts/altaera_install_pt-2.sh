@@ -15,7 +15,7 @@
 ██                    ██
 ████████████████████████
 
-  AltaeraAI - v6.0.4
+  \e[1;37mAltaeraAI\e[0m - v6.0.4
 
     by ThinkThrough
 
