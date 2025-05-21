@@ -17,7 +17,7 @@
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -471,7 +471,7 @@ cd '/data/data/com.termux/files/home'
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -763,7 +763,7 @@ cd '/data/data/com.termux/files/home'
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -913,7 +913,7 @@ clear
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -1070,7 +1070,7 @@ cd ~
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "

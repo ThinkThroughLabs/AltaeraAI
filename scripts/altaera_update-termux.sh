@@ -42,7 +42,7 @@ case $CHOICE in
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -182,7 +182,7 @@ echo "________________________________________________________________
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -324,7 +324,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -467,7 +467,7 @@ sleep .5
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -607,7 +607,7 @@ echo "________________________________________________________________
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -749,7 +749,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "

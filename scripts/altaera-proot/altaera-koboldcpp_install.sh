@@ -45,7 +45,7 @@ case $CHOICE in
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -189,7 +189,7 @@ echo "________________________________________________________________
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -333,7 +333,7 @@ echo "________________________________________________________________
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -477,7 +477,7 @@ echo "________________________________________________________________
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "
@@ -621,7 +621,7 @@ echo "________________________________________________________________
 
   AltaeraAI - v6.0.6
 
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 
 
 "

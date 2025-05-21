@@ -179,7 +179,7 @@ case $CHOICE in
 
   AltaeraAI - v6.0.6
                                     [ Updating ]
-    by \e[36mThinkThrough\e[0m
+    by \e[1;36mThinkThrough\e[0m
 "
 
         echo "Did you know...
