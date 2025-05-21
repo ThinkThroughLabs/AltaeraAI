@@ -17,7 +17,7 @@
 
   \e[1;37mAltaeraAI\e[0m - v6.0.4
 
-    by ThinkThrough
+    by \e[1;3;36mThinkThrough\e[0m
 
 
   "
