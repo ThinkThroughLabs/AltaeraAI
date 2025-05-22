@@ -17,7 +17,7 @@
 
   \e[1;37mAltaeraAI\e[0m - v6.0.6
 
-    by \e[1;3;36mThinkThrough\e[0m
+     by \e[38;5;27mThinkThrough\e[0m
 
 
 "
@@ -156,7 +156,7 @@ echo "________________________________________________________________
 
   \e[1;37mAltaeraAI\e[0m - v6.0.6
 
-    by \e[1;3;36mThinkThrough\e[0m
+     by \e[38;5;27mThinkThrough\e[0m
 
 
 "
@@ -298,7 +298,7 @@ echo "________________________________________________________________
 
   \e[1;37mAltaeraAI\e[0m - v6.0.6
 
-    by \e[1;3;36mThinkThrough\e[0m
+     by \e[38;5;27mThinkThrough\e[0m
 
 
 "
