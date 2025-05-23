@@ -42,7 +42,7 @@ case $CHOICE in
 
   \e[1;37mAltaeraAI\e[0m - v6.0.6
 
-     by \e[38;5;27mThinkThrough\e[0m
+     by \e[1;3;38;5;27mThinkThrough\e[0m
 
 
 "
@@ -282,7 +282,7 @@ rm -rf 'kcpp-ae_v6.0.6.tar.gz'
 
   \e[1;37mAltaeraAI\e[0m - v6.0.6
 
-     by \e[38;5;27mThinkThrough\e[0m
+     by \e[1;3;38;5;27mThinkThrough\e[0m
 
 
 "
