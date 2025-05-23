@@ -542,3 +542,4 @@ cp '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc' '/da
             exit 
 esac
 
+done
