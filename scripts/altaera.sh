@@ -2,7 +2,7 @@
 
 cd '/data/data/com.termux/files/home'
 
-'./AltaeraAI/altaera_auto-check.sh'
+##'./AltaeraAI/altaera_auto-check.sh'
 
 {
 rm 'AltaeraAI-tmp/termux-default/dialogrc'
