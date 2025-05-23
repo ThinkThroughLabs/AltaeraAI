@@ -48,6 +48,15 @@ while true; do
                 "${OPTIONS[@]}" \
                 --output-fd 1)
 
+    if [ $? -ne 0 ]; then
+        clear
+        {
+        rm '/data/data/com.termux/files/home/.dialogrc'
+        cp '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc' '/data/data/com.termux/files/home/.dialogrc'
+        } &> /dev/null
+        break
+    fi
+
 clear
 case $CHOICE in
         1)
