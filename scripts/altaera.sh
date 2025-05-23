@@ -486,7 +486,7 @@ echo "Logging into PRoot Distro ...
         8)
             clear
             './AltaeraAI/altaera-manage_models.sh'
-            './AltaeraAI/altaera.sh'
+            './AltaeraAI/altaera_no-check.sh'
             ;;
         9)
             clear
