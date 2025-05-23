@@ -27,5 +27,5 @@ clear
 
 
       cd '~'
-      rm -rf 'kcpp-ae_v6.1.0.tar.gz'
+      rm -rf 'kcpp-ae_v6.1.0'
 } &> /dev/null 2>&1;
