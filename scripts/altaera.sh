@@ -2,7 +2,7 @@
 
 cd '/data/data/com.termux/files/home'
 
-##'./AltaeraAI/altaera_auto-check.sh'
+##./AltaeraAI/altaera_auto-check.sh
 
 {
 rm 'AltaeraAI-tmp/termux-default/dialogrc'
@@ -328,23 +328,23 @@ echo "Logging into PRoot Distro ...
             ;;
         3)
             clear
-            './AltaeraAI/altaera-check_for_updates.sh'
-            './AltaeraAI/altaera.sh'
+            ./AltaeraAI/altaera-check_for_updates.sh
+            ./AltaeraAI/altaera.sh
             ;;
         4)
             clear
-            './AltaeraAI/altaera-force_update.sh'
-            './AltaeraAI/altaera.sh'
+            ./AltaeraAI/altaera-force_update.sh
+            ./AltaeraAI/altaera.sh
             ;;
         5)
             clear
-            './AltaeraAI/altaera-changelog.sh'
-            './AltaeraAI/altaera.sh'
+            ./AltaeraAI/altaera-changelog.sh
+            ./AltaeraAI/altaera.sh
             ;;
         6)
             clear
-            './AltaeraAI/altaera-horde.sh'
-            './AltaeraAI/altaera.sh'
+            ./AltaeraAI/altaera-horde.sh
+            ./AltaeraAI/altaera.sh
             ;;
         7)
             clear
@@ -486,44 +486,44 @@ echo "Logging into PRoot Distro ...
             ;;
         8)
             clear
-            './AltaeraAI/altaera-manage_models.sh'
+            ./AltaeraAI/altaera-manage_models.sh
             ;;
         9)
             clear
-            './AltaeraAI/altaera-manage_stories.sh'
-            './AltaeraAI/altaera.sh'
+            ./AltaeraAI/altaera-manage_stories.sh
+            ./AltaeraAI/altaera.sh
             ;;
         10)
             clear
-            './AltaeraAI/altaera-lang.sh'
-            './AltaeraAI/altaera.sh'
+            ./AltaeraAI/altaera-lang.sh
+            ./AltaeraAI/altaera.sh
             ;;
         11)
             clear
-            './AltaeraAI/altaera-koboldcpp_settings.sh'
-            './AltaeraAI/altaera.sh'
+            ./AltaeraAI/altaera-koboldcpp_settings.sh
+            ./AltaeraAI/altaera.sh
             ;;
         12)
             clear
-            './AltaeraAI/altaera-settings.sh'
-            './AltaeraAI/altaera.sh'
+            ./AltaeraAI/altaera-settings.sh
+            ./AltaeraAI/altaera.sh
             ;;
         13)
             clear
-            './AltaeraAI/altaera-ngrok.sh'
-            './AltaeraAI/altaera.sh'
+            ./AltaeraAI/altaera-ngrok.sh
+            ./AltaeraAI/altaera.sh
             ;;
         14)
             clear
-            './AltaeraAI/altaera-reinstall.sh'
+            ./AltaeraAI/altaera-reinstall.sh
             ;;
         15)
             clear
-            './AltaeraAI/altaera-uninstall.sh'
+            ./AltaeraAI/altaera-uninstall.sh
             ;;
         16)
             clear
-            './AltaeraAI/altaera-customer_support.sh'
+            ./AltaeraAI/altaera-customer_support.sh
             ;;
         17)
             clear
@@ -539,7 +539,10 @@ echo "Logging into PRoot Distro ...
 rm '/data/data/com.termux/files/home/.dialogrc'
 cp '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc' '/data/data/com.termux/files/home/.dialogrc'
 } &> /dev/null 2>&1;
-            exit 
+            break
+            ;;
 esac
 
 done
+
+exit 0
