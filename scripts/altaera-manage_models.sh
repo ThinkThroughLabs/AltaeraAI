@@ -26,7 +26,6 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            bash '/data/data/com.termux/files/home/AltaeraAI/altaera_no-check.sh'
             exit 0
 	    ;;
         2)
