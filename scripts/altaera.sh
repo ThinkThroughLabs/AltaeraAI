@@ -39,13 +39,14 @@ OPTIONS=(1 "Start AltaeraAI [...]"
          19 "Exit")
          
 
-CHOICE=$(dialog --clear \
+while true; do
+         CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
                 --title "$TITLE" \
                 --menu "$MENU" \
                 $HEIGHT $WIDTH $CHOICE_HEIGHT \
                 "${OPTIONS[@]}" \
-                2>&1 >/dev/tty)
+                --output-fd 1))
 
 clear
 case $CHOICE in
@@ -538,6 +539,6 @@ echo "Logging into PRoot Distro ...
 rm '/data/data/com.termux/files/home/.dialogrc'
 cp '/data/data/com.termux/files/home/AltaeraAI-tmp/termux-default/dialogrc' '/data/data/com.termux/files/home/.dialogrc'
 } &> /dev/null 2>&1;
-            exit
+            exit 
 esac
 
