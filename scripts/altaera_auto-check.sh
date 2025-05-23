@@ -58,7 +58,7 @@ echo -e "
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.0.6
+  \e[1;37mAltaeraAI\e[0m - v6.1.0
 
      by \e[1;3;38;5;27mThinkThrough\e[0m
 "
@@ -112,7 +112,7 @@ check_status "Automatically checking for updates... "
     } &> /dev/null 2>&1;
 
 version_upstream=$(bash 'AltaeraAI/altaera-version_upstream.sh')
-if [ "$version_upstream" = "v6.0.6" ]; then
+if [ "$version_upstream" = "v6.1.0" ]; then
 rm -rf 'AltaeraAI/altaera-version_upstream.sh'
 else
 rm -rf 'AltaeraAI/altaera-version_upstream.sh'
