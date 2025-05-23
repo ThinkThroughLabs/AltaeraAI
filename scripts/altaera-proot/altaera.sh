@@ -1,5 +1,18 @@
 #!/bin/bash
 
+clear
+
+# Terminal dimensions
+LINES=$(tput lines)
+COLUMNS=$(tput cols)
+RESERVED=2
+OUTPUT_HEIGHT=$((LINES - RESERVED))
+SEPARATOR_LINE=$((LINES - 2))
+FOOTER_LINE=$((LINES - 1))
+
+# Create log file
+LOGFILE=$(mktemp)
+
 files=() #blank the variable so its empty for next use
 # Loop folder, add files to array
 while IFS= read -r -d $'\0' file; do
@@ -19,24 +32,64 @@ if [ $RESULT -eq 0 ]; then
 
 if [[ $file == *.gguf ]]
 then
-    clear
-    cd kcpp-ae
+clear
+cd kcpp-ae
 termux-open-url 'http://localhost:1551/?streaming=1#'
+
+# Start Python script, redirect output
 python3 koboldcpp.py $file 1551 \
 --blasbatchsize 2048 \
---contextsize 2048
-elif [[ $file == *.bin ]]
-then
-    clear
-   ###CM no longer needed### echo "*****Launching in Compatiblity-Mode [GGML/.bin]*****" | sed  -e :a -e "s/^.\{1,$(tput cols)\}$/ & /;ta" | tr -d '\n' | head -c $(tput cols)
-   ###CM no longer needed### cd kcpp-ae_cm
-    cd kcpp-ae
-termux-open-url 'http://localhost:1551/?streaming=1#'
-python3 koboldcpp.py $file 1551 \
---noshift \
---smartcontext \
---blasbatchsize 2048 \
---contextsize 2048
+--contextsize 2048 > "$LOGFILE" 2>&1 &
+PYTHON_PID=$!
+
+# Function to draw footer once
+draw_footer() {
+    tput cup "$SEPARATOR_LINE" 0
+    printf '%*s' "$COLUMNS" '' | tr ' ' '-'
+
+    tput cup "$FOOTER_LINE" 0
+    tput el
+    FOOTER_MSG="KoboldCpp initialized. To stop, press 'q'."
+    PADDING=$(( (COLUMNS - ${#FOOTER_MSG}) / 2 ))
+    printf "%*s\033[1m%s\033[0m" "$PADDING" '' "$FOOTER_MSG"
+}
+draw_footer
+
+# Show log output within the top portion of terminal
+(
+    tput civis  # hide cursor
+    LINE_COUNT=0
+    tail -n +1 -F "$LOGFILE" | while IFS= read -r line; do
+        # If too many lines, start from top again
+        if (( LINE_COUNT >= OUTPUT_HEIGHT )); then
+            clear
+            draw_footer
+            LINE_COUNT=0
+        fi
+        tput cup "$LINE_COUNT" 0
+        tput el
+        printf "%s\n" "$line"
+        ((LINE_COUNT++))
+    done
+) &
+DISPLAY_PID=$!
+
+# Wait for 'q' keypress
+while IFS= read -rsn1 key; do
+    [[ $key == "q" ]] && break
+done
+
+# Cleanup
+kill -15 "$PYTHON_PID" "$DISPLAY_PID" 2>/dev/null
+wait "$PYTHON_PID" 2>/dev/null
+rm "$LOGFILE"
+tput cnorm
+
+# Clear footer
+tput cup "$SEPARATOR_LINE" 0; tput el
+tput cup "$FOOTER_LINE" 0; tput el
+clear
+echo "KoboldCpp session terminated. To start AltaeraAI again, type in 'ae'."
 fi
 
 else
