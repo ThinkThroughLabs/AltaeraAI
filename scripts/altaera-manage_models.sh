@@ -26,7 +26,7 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            exit
+            (exit 0) && exit 0
 	    './AltaeraAI/altaera_no-check.sh'
 	    ;;
         2)
