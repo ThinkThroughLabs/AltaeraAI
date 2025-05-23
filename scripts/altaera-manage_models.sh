@@ -27,6 +27,7 @@ clear
 case $CHOICE in
         1)
             exit
+	    './AltaeraAI/altaera_no-check.sh'
 	    ;;
         2)
             clear
