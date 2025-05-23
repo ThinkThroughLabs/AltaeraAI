@@ -329,22 +329,18 @@ echo "Logging into PRoot Distro ...
         3)
             clear
             ./AltaeraAI/altaera-check_for_updates.sh
-            ./AltaeraAI/altaera.sh
             ;;
         4)
             clear
             ./AltaeraAI/altaera-force_update.sh
-            ./AltaeraAI/altaera.sh
             ;;
         5)
             clear
             ./AltaeraAI/altaera-changelog.sh
-            ./AltaeraAI/altaera.sh
             ;;
         6)
             clear
             ./AltaeraAI/altaera-horde.sh
-            ./AltaeraAI/altaera.sh
             ;;
         7)
             clear
@@ -491,27 +487,22 @@ echo "Logging into PRoot Distro ...
         9)
             clear
             ./AltaeraAI/altaera-manage_stories.sh
-            ./AltaeraAI/altaera.sh
             ;;
         10)
             clear
             ./AltaeraAI/altaera-lang.sh
-            ./AltaeraAI/altaera.sh
             ;;
         11)
             clear
             ./AltaeraAI/altaera-koboldcpp_settings.sh
-            ./AltaeraAI/altaera.sh
             ;;
         12)
             clear
             ./AltaeraAI/altaera-settings.sh
-            ./AltaeraAI/altaera.sh
             ;;
         13)
             clear
             ./AltaeraAI/altaera-ngrok.sh
-            ./AltaeraAI/altaera.sh
             ;;
         14)
             clear
