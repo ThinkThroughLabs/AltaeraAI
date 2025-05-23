@@ -42,6 +42,7 @@ check_status() {
 }
 
 clear
+cd '/data/data/com.termux/files/home'
 
 echo -e "
 ████████████████████████
