@@ -46,7 +46,7 @@ while true; do
                 --menu "$MENU" \
                 $HEIGHT $WIDTH $CHOICE_HEIGHT \
                 "${OPTIONS[@]}" \
-                --output-fd 1))
+                --output-fd 1)
 
 clear
 case $CHOICE in
