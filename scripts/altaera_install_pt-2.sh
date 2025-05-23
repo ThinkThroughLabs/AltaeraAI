@@ -418,8 +418,8 @@ cd '/data/data/com.termux/files/usr/etc/'
 
 sed -i '/altaera/d' bash.bashrc
 
-echo "alias ae='/data/data/com.termux/files/home/AltaeraAI/altaera_auto-check.sh.sh'
-alias altaera='/data/data/com.termux/files/home/AltaeraAI/altaera_auto-check.sh.sh'
+echo "alias ae='/data/data/com.termux/files/home/AltaeraAI/altaera_auto-check.sh'
+alias altaera='/data/data/com.termux/files/home/AltaeraAI/altaera_auto-check.sh'
 alias aef='/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 alias aeforce='/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 alias altaeraforce='/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
