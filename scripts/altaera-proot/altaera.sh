@@ -49,7 +49,7 @@ draw_footer() {
 
     tput cup "$FOOTER_LINE" 0
     tput el
-    FOOTER_MSG="KoboldCpp initialized. To stop, press 'q'."
+    FOOTER_MSG="KoboldCpp session initialized. To stop it, press 'q'."
     PADDING=$(( (COLUMNS - ${#FOOTER_MSG}) / 2 ))
     printf "%*s\033[1m%s\033[0m" "$PADDING" '' "$FOOTER_MSG"
 }
