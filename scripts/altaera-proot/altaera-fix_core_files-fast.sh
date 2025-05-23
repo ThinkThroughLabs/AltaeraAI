@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 chmod a+x 'upgrade.sh'
 rm -rf 'ngrok-authtoken.sh'
 wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/kcpp-ae_v6.0.6/kcpp-ae_v6.0.6.tar.gz
-tar -xf 'kcpp-ae_v6.1.0'
+tar -xf 'kcpp-ae_v6.0.6.tar.gz'
 
 
 
