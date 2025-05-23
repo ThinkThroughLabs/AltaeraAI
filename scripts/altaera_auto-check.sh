@@ -86,6 +86,7 @@ else
     dialog --backtitle "AltaeraAI" \
         --title "AltaeraAI - Technical Difficulties" \
         --msgbox 'AltaeraAI is experiencing malfunctions at this very moment. If you have recently downloaded or updated it, chances are some things will be broken. Please, give us some time to carry out code repairs. Sorry for the inconvenience!' 10 45
+exit 1
 fi
 
 # Check for Internet connectivity
@@ -117,7 +118,8 @@ if [ "$version_upstream" = "v6.1.0" ]; then
 rm -rf 'AltaeraAI/altaera-version_upstream.sh'
 else
 rm -rf 'AltaeraAI/altaera-version_upstream.sh'
-bash 'AltaeraAI/altaera-auto-update_available.sh'
+bash 'AltaeraAI/altaera-auto-update_available.sh' || exit 1
+exit 1
 fi
     
 #version_termux=$(bash 'AltaeraAI/altaera_termux-version.sh')
@@ -148,7 +150,7 @@ else
     
     sleep .5
     
-    bash 'AltaeraAI/altaera_auto-check_corrupted-files.sh'
+    bash 'AltaeraAI/altaera_auto-check_corrupted-files.sh' || exit 1
 fi
 
 clear
