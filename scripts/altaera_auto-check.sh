@@ -135,5 +135,5 @@ for file in "${altaera_files[@]}"; do
 done
 
 clear
-bash "$ALTAERA_DIR/altaera.sh"
+exec bash "$ALTAERA_DIR/altaera.sh"
 exit 0
