@@ -234,8 +234,9 @@ The tool also streamlines the installation of both AI backends and frontends for
 - [Phi-SoSerious-Mini-V1-imatrix](https://huggingface.co/duyntnet/Phi-SoSerious-Mini-V1-imatrix-GGUF)
 - [Phi-2](https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/)
 - [Yi-1.5-6B-Chat](https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF)
-- [Gemma-2-2B/9B](https://ai.google.dev/gemma)
-- [Gemma-2B/7B](https://ai.google.dev/gemma)
+- [Gemma-3](https://ai.google.dev/gemma)
+- [Gemma-2](https://ai.google.dev/gemma)
+- [Gemma](https://ai.google.dev/gemma)
 
 </details>
 
