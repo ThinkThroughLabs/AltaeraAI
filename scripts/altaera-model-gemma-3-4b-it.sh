@@ -51,7 +51,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
@@ -92,7 +93,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
@@ -133,7 +135,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
@@ -174,7 +177,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
@@ -215,7 +219,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
@@ -256,7 +261,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
@@ -298,7 +304,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
@@ -340,7 +347,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
@@ -382,7 +390,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
@@ -423,7 +432,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
@@ -464,7 +474,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
@@ -505,7 +516,8 @@ wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
 
 # Prompt user in foreground
-echo -e "\nPress 'c' to cancel the download at any time."
+echo -e "\nPress 'c' to cancel the download at any time.
+"
 
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
