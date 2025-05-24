@@ -31,68 +31,164 @@ case $CHOICE in
         2)
             echo "You chose 'KobbleTiny-Q4_K.gguf \ 668 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/concedo/KobbleTinyV2-1.1B-GGUF/resolve/main/KobbleTiny-Q4_K.gguf -O 'Q4_K-KobbleTiny.gguf' -q --show-progress
+
+URL='https://huggingface.co/concedo/KobbleTinyV2-1.1B-GGUF/resolve/main/KobbleTiny-Q4_K.gguf'
+OUTPUT='Q4_K-KobbleTiny.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         3)
             echo "You chose 'KobbleTiny-Q6_K.gguf \ 903 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/concedo/KobbleTinyV2-1.1B-GGUF/resolve/main/KobbleTiny-Q6_K.gguf -O 'Q6_K-KobbleTiny.gguf' -q --show-progress
+
+URL='https://huggingface.co/concedo/KobbleTinyV2-1.1B-GGUF/resolve/main/KobbleTiny-Q6_K.gguf'
+OUTPUT='Q6_K-KobbleTiny.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         4)
             echo "You chose 'KobbleTiny-Q8_0.gguf \ 1.17 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/concedo/KobbleTinyV2-1.1B-GGUF/resolve/main/KobbleTiny-Q8_0.gguf -O 'Q8_0-KobbleTiny.gguf' -q --show-progress
+
+URL='https://huggingface.co/concedo/KobbleTinyV2-1.1B-GGUF/resolve/main/KobbleTiny-Q8_0.gguf'
+OUTPUT='Q8_0-KobbleTiny.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         5)
             echo "You chose 'KobbleTiny-f16.gguf \ 2.2 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/concedo/KobbleTinyV2-1.1B-GGUF/resolve/main/KobbleTiny-f16.gguf -O 'f16-KobbleTiny.gguf' -q --show-progress
+
+URL='https://huggingface.co/concedo/KobbleTinyV2-1.1B-GGUF/resolve/main/KobbleTiny-f16.gguf'
+OUTPUT='f16-KobbleTiny.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;

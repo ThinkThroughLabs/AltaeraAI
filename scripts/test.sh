@@ -65,9 +65,8 @@ chmod a+x test1.sh
         2)
             echo "You chose 'F32-RWKV-4-World-0.1B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin
             mv 'f32-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -80,9 +79,8 @@ chmod a+x test1.sh
         3)
             echo "You chose 'F16-RWKV-4-World-0.4B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin
             mv 'f16-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -95,9 +93,8 @@ chmod a+x test1.sh
         4)
             echo "You chose 'F32-RWKV-4-World-0.4B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin
             mv 'f32-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -110,9 +107,8 @@ chmod a+x test1.sh
         5)
             echo "You chose 'Q4_0-RWKV-4-World-1.5B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
             mv 'q4_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -125,9 +121,8 @@ chmod a+x test1.sh
         6)
             echo "你选择了 'Q4_0-RWKV-4-World-1.5B-CHNtuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
             mv 'q4_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -140,9 +135,8 @@ chmod a+x test1.sh
         7)
             echo "You chose 'Q4_1-RWKV-4-World-1.5B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
             mv 'q4_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -155,9 +149,8 @@ chmod a+x test1.sh
         8)
             echo "你选择了 'Q4_1-RWKV-4-World-1.5B-CHNtuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
             mv 'q4_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -170,9 +163,8 @@ chmod a+x test1.sh
         9)
             echo "You chose 'Q5_0-RWKV-4-World-1.5B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
             mv 'q5_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -185,9 +177,8 @@ chmod a+x test1.sh
         10)
             echo "你选择了 'Q5_0-RWKV-4-World-1.5B-CHNtuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
             mv 'q5_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -200,9 +191,8 @@ chmod a+x test1.sh
         11)
             echo "You chose 'Q5_1-RWKV-4-World-1.5B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
             mv 'q5_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -215,9 +205,8 @@ chmod a+x test1.sh
         12)
             echo "你选择了 'Q5_1-RWKV-4-World-1.5B-CHNtuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
             mv 'q5_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -230,9 +219,8 @@ chmod a+x test1.sh
         13)
             echo "You chose 'Q8_0-RWKV-4-World-1.5B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
             mv 'q8_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -245,9 +233,8 @@ chmod a+x test1.sh
         14)
             echo "你选择了 'Q8_0-RWKV-4-World-1.5B-CHNtuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
             mv 'q8_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -260,9 +247,8 @@ chmod a+x test1.sh
         15)
             echo "You chose 'Q4_0-RWKV-4-World-3B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
             mv 'q4_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -275,9 +261,8 @@ chmod a+x test1.sh
         16)
             echo "你选择了 'Q4_0-RWKV-4-World-3B-CHNtuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
             mv 'q4_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -290,9 +275,8 @@ chmod a+x test1.sh
         17)
             echo "You chose 'Q4_1-RWKV-4-World-3B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin
             mv 'q4_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -305,9 +289,8 @@ chmod a+x test1.sh
         18)
             echo "你选择了 'Q4_1-RWKV-4-World-3B-CHNtuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
             mv 'q4_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -320,9 +303,8 @@ chmod a+x test1.sh
         19)
             echo "You chose 'Q5_0-RWKV-4-World-3B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
             mv 'q5_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -335,9 +317,8 @@ chmod a+x test1.sh
         20)
             echo "你选择了 'Q5_0-RWKV-4-World-3B-CHNtuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
             mv 'q5_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -350,9 +331,8 @@ chmod a+x test1.sh
         21)
             echo "You chose 'Q5_1-RWKV-4-World-3B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin
             mv 'q5_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -365,9 +345,8 @@ chmod a+x test1.sh
         22)
             echo "你选择了 'Q5_1-RWKV-4-World-3B-CHNtuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
             mv 'q5_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -380,9 +359,8 @@ chmod a+x test1.sh
         23)
             echo "You chose 'Q8_0-RWKV-4-World-3B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
             mv 'q8_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -395,9 +373,8 @@ chmod a+x test1.sh
         24)
             echo "你选择了 'Q8_0-RWKV-4-World-3B-CHNtuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
             mv 'q8_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -410,9 +387,8 @@ chmod a+x test1.sh
         25)
             echo "You chose 'Q4_0-RWKV-4-World-7B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
             mv 'q4_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -425,9 +401,8 @@ chmod a+x test1.sh
         26)
             echo "You chose 'Q4_1-RWKV-4-World-7B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin
             mv 'q4_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -440,9 +415,8 @@ chmod a+x test1.sh
         27)
             echo "You chose 'Q5_0-RWKV-4-World-7B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
             mv 'q5_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -455,9 +429,8 @@ chmod a+x test1.sh
         28)
             echo "You chose 'Q5_1-RWKV-4-World-7B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin
             mv 'q5_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin' 'model.bin'
             cd /root
             clear
@@ -470,9 +443,8 @@ chmod a+x test1.sh
         29)
             echo "You chose 'Q8_0-RWKV-4-World-7B-Untuned'"
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/kcpp-ae'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
             mv 'q8_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin' 'model.bin'
             cd /root
             clear

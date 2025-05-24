@@ -33,81 +33,81 @@ case $CHOICE in
         1)
             echo "You chose 'Yi-1.5-6B-Chat.Q2_K.gguf \ 2.34 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q2_K.gguf -O 'Q2_K.Yi-1.5-6B-Chat.gguf' -q --show-progress
+
+URL='https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q2_K.gguf'
+OUTPUT='Q2_K.Yi-1.5-6B-Chat.gguf'
             cd ../..
             clear
             ;;
         2)
             echo "You chose 'Yi-1.5-6B-Chat.Q3_K_L.gguf \ 3.24 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q3_K_L.gguf -O 'Q3_K_L.Yi-1.5-6B-Chat.gguf' -q --show-progress
+
+URL='https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q3_K_L.gguf'
+OUTPUT='Q3_K_L.Yi-1.5-6B-Chat.gguf'
             cd ../..
             clear
             ;;
         3)
             echo "You chose 'Yi-1.5-6B-Chat.Q3_K_M.gguf \ 2.99 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q3_K_M.gguf -O 'Q3_K_M.Yi-1.5-6B-Chat.gguf' -q --show-progress
+
+URL='https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q3_K_M.gguf'
+OUTPUT='Q3_K_M.Yi-1.5-6B-Chat.gguf'
             cd ../..
             clear
             ;;
         4)
             echo "You chose 'Yi-1.5-6B-Chat.Q3_K_S.gguf \ 2.71 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q3_K_S.gguf -O 'Q3_K_S.Yi-1.5-6B-Chat.gguf' -q --show-progress
+
+URL='https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q3_K_S.gguf'
+OUTPUT='Q3_K_S.Yi-1.5-6B-Chat.gguf'
             cd ../..
             clear
             ;;
         5)
             echo "You chose 'Yi-1.5-6B-Chat.Q4_K_M.gguf \ 3.67 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q4_K_M.gguf -O 'Q4_K_M.Yi-1.5-6B-Chat.gguf' -q --show-progress
+
+URL='https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q4_K_M.gguf'
+OUTPUT='Q4_K_M.Yi-1.5-6B-Chat.gguf'
             cd ../..
             clear
             ;;
         6)
             echo "You chose 'Yi-1.5-6B-Chat.Q4_K_S.gguf \ 3.5 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q4_K_S.gguf -O 'Q4_K_S.Yi-1.5-6B-Chat.gguf' -q --show-progress
+
+URL='https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q4_K_S.gguf'
+OUTPUT='Q4_K_S.Yi-1.5-6B-Chat.gguf'
             cd ../..
             clear
             ;;
         7)
             echo "You chose 'Yi-1.5-6B-Chat.Q5_K_M.gguf \ 4.3 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q5_K_M.gguf -O 'Q5_K_M.Yi-1.5-6B-Chat.gguf' -q --show-progress
+
+URL='https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q5_K_M.gguf'
+OUTPUT='Q5_K_M.Yi-1.5-6B-Chat.gguf'
             cd ../..
             clear
             ;;
         8)
             echo "You chose 'Yi-1.5-6B-Chat.Q5_K_S.gguf \ 4.2 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q5_K_S.gguf -O 'Q5_K_S.Yi-1.5-6B-Chat.gguf' -q --show-progress
+
+URL='https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q5_K_S.gguf'
+OUTPUT='Q5_K_S.Yi-1.5-6B-Chat.gguf'
             cd ../..
             clear
             ;;
         9)
             echo "You chose 'Yi-1.5-6B-Chat.Q6_K.gguf \ 4.97 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q6_K.gguf -O 'Q6_K.Yi-1.5-6B-Chat.gguf' -q --show-progress
+
+URL='https://huggingface.co/MaziyarPanahi/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat.Q6_K.gguf'
+OUTPUT='Q6_K.Yi-1.5-6B-Chat.gguf'
             cd ../..
             clear
             ;;
@@ -115,9 +115,9 @@ case $CHOICE in
         10)
             echo "You chose 'Yi-1.5-6B-Chat-Q8_0.gguf \ 6.44 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/lmstudio-community/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat-Q8_0.gguf -O 'Q8_0.Yi-1.5-6B-Chat.gguf' -q --show-progress
+
+URL='https://huggingface.co/lmstudio-community/Yi-1.5-6B-Chat-GGUF/resolve/main/Yi-1.5-6B-Chat-Q8_0.gguf'
+OUTPUT='Q8_0.Yi-1.5-6B-Chat.gguf'
             cd ../..
             clear
             ;;

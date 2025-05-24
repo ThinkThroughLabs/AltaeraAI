@@ -52,261 +52,232 @@ case $CHOICE in
         1)
             echo "You chose 'F16-RWKV-4-World-0.1B-Untuned \ 0.39GB / min. 1.5GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin -O 'f16-RWKV-4-World-0.1B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin -O 'f16-RWKV-4-World-0.1B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         2)
             echo "You chose 'F32-RWKV-4-World-0.1B-Untuned \ 0.78GB / min. 3GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin -O 'f32-RWKV-4-World-0.1B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin -O 'f32-RWKV-4-World-0.1B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         3)
             echo "You chose 'F16-RWKV-4-World-0.4B-Untuned \ 0.92GB / min. 4GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin -O 'f16-RWKV-4-World-0.4B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin -O 'f16-RWKV-4-World-0.4B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         4)
             echo "You chose 'Q4_0-RWKV-4-World-1.5B-Untuned \ 1.19GB / min. 4GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin -O 'f32-RWKV-4-World-0.4B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin -O 'f32-RWKV-4-World-0.4B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         5)
             echo "You chose 'Q4_0-RWKV-4-World-1.5B-Untuned'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin -O 'q4_0-RWKV-4-World-1.5B-v1-fixed-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin -O 'q4_0-RWKV-4-World-1.5B-v1-fixed-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         6)
             echo "你选择了 'Q4_0-RWKV-4-World-1.5B-CHNtuned \ 1.69GB / min. 6GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin -O 'q4_0-RWKV-4-World-CHNtuned-1.5B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin -O 'q4_0-RWKV-4-World-CHNtuned-1.5B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         7)
             echo "You chose 'Q4_1-RWKV-4-World-1.5B-Untuned \ 1.26GB / min. 4GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin -O 'q4_1-RWKV-4-World-1.5B-v1-fixed-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin -O 'q4_1-RWKV-4-World-1.5B-v1-fixed-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         8)
             echo "你选择了 'Q4_1-RWKV-4-World-1.5B-CHNtuned \ 1.76GB / min. 6GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin -O 'q4_1-RWKV-4-World-CHNtuned-1.5B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin -O 'q4_1-RWKV-4-World-CHNtuned-1.5B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         9)
             echo "You chose 'Q5_0-RWKV-4-World-1.5B-Untuned \ 1.34GB / min. 4/6GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin -O 'q5_0-RWKV-4-World-1.5B-v1-fixed-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin -O 'q5_0-RWKV-4-World-1.5B-v1-fixed-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         10)
             echo "你选择了 'Q5_0-RWKV-4-World-1.5B-CHNtuned \ 1.84GB / min. 6GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin -O 'q5_0-RWKV-4-World-CHNtuned-1.5B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin -O 'q5_0-RWKV-4-World-CHNtuned-1.5B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         11)
             echo "You chose 'Q5_1-RWKV-4-World-1.5B-Untuned \ 1.42GB / min. 6GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin -O 'q5_1-RWKV-4-World-1.5B-v1-fixed-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin -O 'q5_1-RWKV-4-World-1.5B-v1-fixed-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         12)
             echo "你选择了 'Q5_1-RWKV-4-World-1.5B-CHNtuned \ 1.92GB / min. 6GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin -O 'q5_1-RWKV-4-World-CHNtuned-1.5B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin -O 'q5_1-RWKV-4-World-CHNtuned-1.5B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         13)
             echo "You chose 'Q8_0-RWKV-4-World-1.5B-Untuned \ 1.8GB / min. 6GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin -O 'q8_0-RWKV-4-World-1.5B-v1-fixed-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin -O 'q8_0-RWKV-4-World-1.5B-v1-fixed-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         14)
             echo "你选择了 'Q8_0-RWKV-4-World-1.5B-CHNtuned \ 2.3GB / min. 8GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin -O 'q8_0-RWKV-4-World-CHNtuned-1.5B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin -O 'q8_0-RWKV-4-World-CHNtuned-1.5B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         15)
             echo "You chose 'Q4_0-RWKV-4-World-3B-Untuned \ 2.06GB / min. 8GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin -O 'q4_0-RWKV-4-World-3B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin -O 'q4_0-RWKV-4-World-3B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         16)
             echo "你选择了 'Q4_0-RWKV-4-World-3B-CHNtuned \ 2.06GB / min. 8GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin -O 'q4_0-RWKV-4-World-CHNtuned-3B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin -O 'q4_0-RWKV-4-World-CHNtuned-3B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         17)
             echo "You chose 'Q4_1-RWKV-4-World-3B-Untuned \ 2.22GB / min. 8GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin -O 'q4_1-RWKV-4-World-3B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin -O 'q4_1-RWKV-4-World-3B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         18)
             echo "你选择了 'Q4_1-RWKV-4-World-3B-CHNtuned \ 2.22GB / min. 8GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin -O 'q4_1-RWKV-4-World-CHNtuned-3B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin -O 'q4_1-RWKV-4-World-CHNtuned-3B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         19)
             echo "You chose 'Q5_0-RWKV-4-World-3B-Untuned \ 2.37GB / min. 8GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin -O 'q5_0-RWKV-4-World-3B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin -O 'q5_0-RWKV-4-World-3B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         20)
             echo "你选择了 'Q5_0-RWKV-4-World-3B-CHNtuned \ 2.37GB / min. 8GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin -O 'q5_0-RWKV-4-World-CHNtuned-3B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin -O 'q5_0-RWKV-4-World-CHNtuned-3B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         21)
             echo "You chose 'Q5_1-RWKV-4-World-3B-Untuned \ 2.53GB / min. 8/12GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin -O 'q5_1-RWKV-4-World-3B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin -O 'q5_1-RWKV-4-World-3B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         22)
             echo "你选择了 'Q5_1-RWKV-4-World-3B-CHNtuned \ 2.53GB / min. 8/12GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin -O 'q5_1-RWKV-4-World-CHNtuned-3B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin -O 'q5_1-RWKV-4-World-CHNtuned-3B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         23)
             echo "You chose 'Q8_0-RWKV-4-World-3B-Untuned \ 3.33GB / min. 12GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin -O 'q8_0-RWKV-4-World-3B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin -O 'q8_0-RWKV-4-World-3B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         24)
             echo "你选择了 'Q8_0-RWKV-4-World-3B-CHNtuned \ 3.33GB / min. 12GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin -O 'q8_0-RWKV-4-World-CHNtuned-3B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin -O 'q8_0-RWKV-4-World-CHNtuned-3B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         25)
             echo "You chose 'Q4_0-RWKV-4-World-7B-Untuned \ 4.66GB / min. 12GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin -O 'q4_0-RWKV-4-World-7B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin -O 'q4_0-RWKV-4-World-7B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         26)
             echo "You chose 'Q4_1-RWKV-4-World-7B-Untuned \ 5.07GB / min. 12GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin -O 'q4_1-RWKV-4-World-7B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin -O 'q4_1-RWKV-4-World-7B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         27)
             echo "You chose 'Q5_0-RWKV-4-World-7B-Untuned \ 5.47GB / min. 12GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin -O 'q5_0-RWKV-4-World-7B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin -O 'q5_0-RWKV-4-World-7B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         28)
             echo "You chose 'Q5_1-RWKV-4-World-7B-Untuned \ 5.88GB / min. 12/16GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin -O 'q5_1-RWKV-4-World-7B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin -O 'q5_1-RWKV-4-World-7B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;
         29)
             echo "You chose 'Q8_0-RWKV-4-World-7B-Untuned \ 7.91GB / min. 16GB RAM'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin -O 'q8_0-RWKV-4-World-7B-v1-ctx4096.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin -O 'q8_0-RWKV-4-World-7B-v1-ctx4096.bin' -q --show-progress
             cd ../..
             clear
             ;;

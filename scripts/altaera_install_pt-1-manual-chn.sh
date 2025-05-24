@@ -65,34 +65,34 @@ case $CHOICE in
             
    if [ $(free -h | awk '/Mem\:/ { print $2 }'
 ) = "15Gi" ]; then
-	wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
+	URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
   mv 'q8_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin' 'model.bin'
 	elif [ $(free -h | awk '/Mem\:/ { print $2 }'
 ) = "11Gi" ]; then
-	wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+	URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
   mv 'q8_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
 	elif [ $(free -h | awk '/Mem\:/ { print $2 }'
 ) = "7Gi" ]; then
-	wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+	URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin
   mv 'q5_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
 	elif [ $(free -h | awk '/Mem\:/ { print $2 }'
 ) = "5Gi" ]; then
-	wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+	URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
   mv 'q5_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
 	elif [ $(free -h | awk '/Mem\:/ { print $2 }'
 ) = "3Gi" ]; then
-	wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+	URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
   mv 'q4_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
 	elif [ $(free -h | awk '/Mem\:/ { print $2 }'
 ) = "2Gi" ]; then
-	wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin
+	URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin
   mv 'f32-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin' 'model.bin'
 	elif [ $(free -h | awk '/Mem\:/ { print $2 }'
 ) = "1Gi" ]; then
-	wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin
+	URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin
   mv 'f16-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin' 'model.bin'
   else
-	wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+	URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
   mv 'q8_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
 fi
             cd ..
@@ -103,7 +103,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin
             mv 'f16-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -113,7 +113,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin
             mv 'f32-RWKV-4-World-0.1B-v1-20230520-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -123,7 +123,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f16-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin
             mv 'f16-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -133,7 +133,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml/resolve/main/f32-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin
             mv 'f32-RWKV-4-World-0.4B-v1-20230529-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -143,7 +143,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
             mv 'q4_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -153,7 +153,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
             mv 'q4_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -163,7 +163,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
             mv 'q4_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -173,7 +173,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
             mv 'q4_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -183,7 +183,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
             mv 'q5_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -193,7 +193,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
             mv 'q5_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -203,7 +203,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
             mv 'q5_1-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -213,7 +213,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
             mv 'q5_1-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -223,7 +223,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin
             mv 'q8_0-RWKV-4-World-1.5B-v1-fixed-20230612-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -233,7 +233,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin
             mv 'q8_0-RWKV-4-World-CHNtuned-1.5B-v1-20230620-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -243,7 +243,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
             mv 'q4_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -253,7 +253,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
             mv 'q4_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -263,7 +263,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin
             mv 'q4_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -273,7 +273,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
             mv 'q4_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -283,7 +283,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
             mv 'q5_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -293,7 +293,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
             mv 'q5_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -303,7 +303,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin
             mv 'q5_1-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -313,7 +313,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
             mv 'q5_1-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -323,7 +323,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin
             mv 'q8_0-RWKV-4-World-3B-v1-20230619-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -333,7 +333,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin
             mv 'q8_0-RWKV-4-World-CHNtuned-3B-v1-20230625-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -343,7 +343,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
             mv 'q4_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -353,7 +353,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q4_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin
             mv 'q4_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -363,7 +363,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
             mv 'q5_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -373,7 +373,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q5_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin
             mv 'q5_1-RWKV-4-World-7B-v1-20230626-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -383,7 +383,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-4-world-ggml-quantized/resolve/main/q8_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin
             mv 'q8_0-RWKV-4-World-7B-v1-20230626-ctx4096.bin' 'model.bin'
             cd ..
             clear
@@ -393,7 +393,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-q4_0.bin
+URL='https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-q4_0.bin
             mv 'open-llama-3b-q4_0.bin' 'model.bin'
             cd ..
             clear
@@ -403,7 +403,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-q4_1.bin
+URL='https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-q4_1.bin
             mv 'open-llama-3b-q4_1.bin' 'model.bin'
             cd ..
             clear
@@ -413,7 +413,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-q5_0.bin
+URL='https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-q5_0.bin
             mv 'open-llama-3b-q5_0.bin' 'model.bin'
             cd ..
             clear
@@ -423,7 +423,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-q5_1.bin
+URL='https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-q5_1.bin
             mv 'open-llama-3b-q5_1.bin' 'model.bin'
             cd ..
             clear
@@ -433,7 +433,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-q8_0.bin
+URL='https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-q8_0.bin
             mv 'open-llama-3b-q8_0.bin' 'model.bin'
             cd ..
             clear
@@ -443,7 +443,7 @@ fi
 	    echo "下载人工智能模型 ..."
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp'
             rm -rf 'model.bin'
-            wget https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-f16.bin
+URL='https://huggingface.co/SlyEcho/open_llama_3b_ggml/resolve/main/open-llama-3b-f16.bin
             mv 'open-llama-3b-f16.bin' 'model.bin'
             cd ..
             clear

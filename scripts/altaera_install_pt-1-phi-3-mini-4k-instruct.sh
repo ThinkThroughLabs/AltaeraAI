@@ -40,81 +40,81 @@ case $CHOICE in
         1)
             echo "You chose 'phi-3-mini-4k-instruct.Q2_K.gguf \ 1.45 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q2_K.gguf -O 'Q2_K.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q2_K.gguf'
+OUTPUT='Q2_K.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         2)
             echo "You chose 'phi-3-mini-4k-instruct.Q3_K_L.gguf \ 2.05 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q3_K_L.gguf -O 'Q3_K_L.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q3_K_L.gguf'
+OUTPUT='Q3_K_L.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         3)
             echo "You chose 'phi-3-mini-4k-instruct.Q3_K_M.gguf \ 1.88 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q3_K_M.gguf -O 'Q3_K_M.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q3_K_M.gguf'
+OUTPUT='Q3_K_M.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         4)
             echo "You chose 'phi-3-mini-4k-instruct.Q3_K_S.gguf \ 1.68 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q3_K_S.gguf -O 'Q3_K_S.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q3_K_S.gguf'
+OUTPUT='Q3_K_S.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         5)
             echo "You chose 'phi-3-mini-4k-instruct.Q4_0.gguf \ 2.18 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q4_0.gguf -O 'Q4_0.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q4_0.gguf'
+OUTPUT='Q4_0.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         6)
             echo "You chose 'phi-3-mini-4k-instruct.Q4_1.gguf \ 2.41 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q4_1.gguf -O 'Q4_1.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q4_1.gguf'
+OUTPUT='Q4_1.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         7)
             echo "You chose 'phi-3-mini-4k-instruct.Q4_K.gguf \ 2.32 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q4_K.gguf -O 'Q4_K.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q4_K.gguf'
+OUTPUT='Q4_K.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         8)
             echo "You chose 'phi-3-mini-4k-instruct.Q4_K_M.gguf \ 2.32 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q4_K_M.gguf -O 'Q4_K_M.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q4_K_M.gguf'
+OUTPUT='Q4_K_M.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         9)
             echo "You chose 'phi-3-mini-4k-instruct.Q4_K_S.gguf \ 2.19 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q4_K_S.gguf -O 'Q4_K_S.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q4_K_S.gguf'
+OUTPUT='Q4_K_S.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
@@ -122,9 +122,9 @@ case $CHOICE in
         10)
             echo "You chose 'phi-3-mini-4k-instruct.Q5_0.gguf \ 2.64 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q5_0.gguf -O 'Q5_0.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q5_0.gguf'
+OUTPUT='Q5_0.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
@@ -132,9 +132,9 @@ case $CHOICE in
         11)
             echo "You chose 'phi-3-mini-4k-instruct.Q5_1.gguf \ 2.87 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q5_1.gguf -O 'Q5_1.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q5_1.gguf'
+OUTPUT='Q5_1.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
@@ -142,54 +142,54 @@ case $CHOICE in
         12)
             echo "You chose 'phi-3-mini-4k-instruct.Q5_K.gguf \ 2.72 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q5_K.gguf -O 'Q5_K.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q5_K.gguf'
+OUTPUT='Q5_K.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         13)
             echo "You chose 'phi-3-mini-4k-instruct.Q5_K_M.gguf \ 2.72 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q5_K_M.gguf -O 'Q5_K_M.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q5_K_M.gguf'
+OUTPUT='Q5_K_M.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         14)
             echo "You chose 'phi-3-mini-4k-instruct.Q5_K_S.gguf \ 2.64 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q5_K_S.gguf -O 'Q5_K_S.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q5_K_S.gguf'
+OUTPUT='Q5_K_S.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         15)
             echo "You chose 'phi-3-mini-4k-instruct.Q6_K.gguf \ 3.14 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q6_K.gguf -O 'Q6_K.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q6_K.gguf'
+OUTPUT='Q6_K.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         16)
             echo "You chose 'phi-3-mini-4k-instruct.Q8_0.gguf \ 4.06 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q8_0.gguf -O 'Q8_0.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.Q8_0.gguf'
+OUTPUT='Q8_0.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;
         17)
             echo "You chose 'phi-3-mini-4k-instruct.fp16.gguf \ 7.64 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.fp16.gguf -O 'fp16.phi-3-mini-4k-instruct.gguf' -q --show-progress
+
+URL='https://huggingface.co/SanctumAI/Phi-3-mini-4k-instruct-GGUF/resolve/main/phi-3-mini-4k-instruct.fp16.gguf'
+OUTPUT='fp16.phi-3-mini-4k-instruct.gguf'
             cd ../..
             clear
             ;;

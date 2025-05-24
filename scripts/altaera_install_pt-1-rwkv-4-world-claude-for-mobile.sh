@@ -30,63 +30,56 @@ case $CHOICE in
         1)
             echo "You chose 'f16-RWKV-for-mobile-4-world-1.5B \ 3.16GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml/resolve/main/f16-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'f16-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml/resolve/main/f16-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'f16-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
             cd ../..
             clear
             ;;
         2)
             echo "You chose 'f32-RWKV-for-mobile-4-world-1.5B \ 6.31GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml/resolve/main/f32-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'f32-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml/resolve/main/f32-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'f32-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
             cd ../..
             clear
             ;;
         3)
             echo "You chose 'q4_0-RWKV-for-mobile-4-world-1.5B \ 1.28GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml-quantized/resolve/main/q4_0-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'q4_0-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml-quantized/resolve/main/q4_0-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'q4_0-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
             cd ../..
             clear
             ;;
         4)
             echo "You chose 'q4_1-RWKV-for-mobile-4-world-1.5B \ 1.36GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml-quantized/resolve/main/q4_1-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'q4_1-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml-quantized/resolve/main/q4_1-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'q4_1-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
             cd ../..
             clear
             ;;
         5)
             echo "You chose 'q5_0-RWKV-for-mobile-4-world-1.5B \ 1.44GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml-quantized/resolve/main/q5_0-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'q5_0-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml-quantized/resolve/main/q5_0-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'q5_0-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
             cd ../..
             clear
             ;;
         6)
             echo "You chose 'q5_1-RWKV-for-mobile-4-world-1.5B \ 1.52GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml-quantized/resolve/main/q5_1-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'q5_1-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml-quantized/resolve/main/q5_1-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'q5_1-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
             cd ../..
             clear
             ;;
         7)
             echo "You chose 'q8_0-RWKV-for-mobile-4-world-1.5B \ 1.93GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml-quantized/resolve/main/q8_0-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'q8_0-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
+
+URL='https://huggingface.co/ThinkThroughLabs/rwkv-claude-for-mobile-v4-world-1.5b-16k-ggml-quantized/resolve/main/q8_0-RWKV-for-mobile-4-world-1.5B-20230906-ctx16k.bin -O 'q8_0-RWKV-for-mobile-4-world-1.5B-ctx16k.bin' -q --show-progress
             cd ../..
             clear
             ;;

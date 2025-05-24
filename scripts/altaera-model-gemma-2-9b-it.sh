@@ -68,17 +68,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-IQ2_M.gguf \ 3.43 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_M.gguf -O 'IQ2_M-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_M.gguf'
+OUTPUT='IQ2_M-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -105,17 +129,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-IQ2_S.gguf \ 3.21 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_S.gguf -O 'IQ2_S-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_S.gguf'
+OUTPUT='IQ2_S-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -142,17 +190,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-IQ2_XS.gguf \ 3.07 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_XS.gguf -O 'IQ2_XS-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_XS.gguf'
+OUTPUT='IQ2_XS-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -179,17 +251,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-IQ3_M.gguf \ 4.49 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_M.gguf -O 'IQ3_M-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_M.gguf'
+OUTPUT='IQ3_M-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -216,17 +312,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-IQ3_XS.gguf \ 4.14 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_XS.gguf -O 'IQ3_XS-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_XS.gguf'
+OUTPUT='IQ3_XS-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -253,17 +373,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-IQ3_XXS.gguf \ 3.8 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_XXS.gguf -O 'IQ3_XXS-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_XXS.gguf'
+OUTPUT='IQ3_XXS-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -290,17 +434,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-IQ4_XS.gguf \ 5.18 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ4_XS.gguf -O 'IQ4_XS-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ4_XS.gguf'
+OUTPUT='IQ4_XS-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -327,17 +495,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q2_K.gguf \ 3.81 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q2_K.gguf -O 'Q2_K-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q2_K.gguf'
+OUTPUT='Q2_K-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -364,17 +556,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q2_K_L.gguf \ 4.03 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q2_K_L.gguf -O 'Q2_K_L-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q2_K_L.gguf'
+OUTPUT='Q2_K_L-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -401,17 +617,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q3_K_L-Q8.gguf \ 5.35 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_L-Q8.gguf -O 'Q3_K_L-Q8-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_L-Q8.gguf'
+OUTPUT='Q3_K_L-Q8-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -438,17 +678,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q3_K_L.gguf \ 5.13 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_L.gguf -O 'Q3_K_L-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_L.gguf'
+OUTPUT='Q3_K_L-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -475,17 +739,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q3_K_M.gguf \ 4.76 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_M.gguf -O 'Q3_K_M-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_M.gguf'
+OUTPUT='Q3_K_M-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -512,17 +800,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q3_K_S.gguf \ 4.34 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_S.gguf -O 'Q3_K_S-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_S.gguf'
+OUTPUT='Q3_K_S-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -549,17 +861,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q3_K_XL.gguf \ 5.35 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_XL.gguf -O 'Q3_K_XL-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_XL.gguf'
+OUTPUT='Q3_K_XL-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -586,17 +922,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q4_K_L.gguf \ 5.98 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_L.gguf -O 'Q4_K_L-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_L.gguf'
+OUTPUT='Q4_K_L-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -623,17 +983,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q4_K_M.gguf \ 5.76 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_M.gguf -O 'Q4_K_M-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_M.gguf'
+OUTPUT='Q4_K_M-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -660,17 +1044,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q4_K_S.gguf \ 5.48 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_S.gguf -O 'Q4_K_S-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_S.gguf'
+OUTPUT='Q4_K_S-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -697,17 +1105,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q5_K_L.gguf \ 6.87 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_L.gguf -O 'Q5_K_L-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_L.gguf'
+OUTPUT='Q5_K_L-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -734,17 +1166,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q5_K_M.gguf \ 6.65 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_M.gguf -O 'Q5_K_M-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_M.gguf'
+OUTPUT='Q5_K_M-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -771,17 +1227,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q5_K_S.gguf \ 6.48 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_S.gguf -O 'Q5_K_S-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_S.gguf'
+OUTPUT='Q5_K_S-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -808,17 +1288,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q6_K-Q8.gguf \ 7.81 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K-Q8.gguf -O 'Q6_K-Q8-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K-Q8.gguf'
+OUTPUT='Q6_K-Q8-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -845,17 +1349,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q6_K-f32.gguf \ 10.5 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K-f32.gguf -O 'Q6_K-f32-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K-f32.gguf'
+OUTPUT='Q6_K-f32-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -882,17 +1410,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q6_K.gguf \ 7.59 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K.gguf -O 'Q6_K-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K.gguf'
+OUTPUT='Q6_K-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -919,17 +1471,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q6_K_L.gguf \ 7.81 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K_L.gguf -O 'Q6_K_L-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K_L.gguf'
+OUTPUT='Q6_K_L-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -956,17 +1532,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q8_0.gguf \ 9.83 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q8_0.gguf -O 'Q8_0-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q8_0.gguf'
+OUTPUT='Q8_0-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         
@@ -993,17 +1593,41 @@ case $response in
                     clear
                     echo "You chose 'gemma-2-9b-it-Q8_0_L.gguf \ 10.7 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q8_0_L.gguf -O 'Q8_0_L-gemma-2-9b-it.gguf' -q --show-progress
+
+URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q8_0_L.gguf'
+OUTPUT='Q8_0_L-gemma-2-9b-it.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
         

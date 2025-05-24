@@ -35,36 +35,36 @@ case $CHOICE in
         1)
             echo "You chose 'vicuna-7b-v1.5.Q2_K.gguf \ 2.83 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q2_K.gguf -O 'Q2_K.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q2_K.gguf'
+OUTPUT='Q2_K.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;
         2)
             echo "vicuna-7b-v1.5.Q3_K_L.gguf \ 3.6 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q3_K_L.gguf -O 'Q3_K_L.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q3_K_L.gguf'
+OUTPUT='Q3_K_L.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;
         3)
             echo "vicuna-7b-v1.5.Q3_K_M.gguf \ 3.3 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q3_K_M.gguf -O 'Q3_K_M.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q3_K_M.gguf'
+OUTPUT='Q3_K_M.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;
         4)
             echo "vicuna-7b-v1.5.Q3_K_S.gguf \ 2.95 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q3_K_S.gguf -O 'Q3_K_S.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q3_K_S.gguf'
+OUTPUT='Q3_K_S.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;
@@ -72,45 +72,45 @@ case $CHOICE in
             echo "You chose 'vicuna-7b-v1.5.Q4_0.gguf \ 3.83 GB'"
             {
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q4_0.gguf -O 'Q4_0.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q4_0.gguf'
+OUTPUT='Q4_0.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;
         6)
             echo "You chose 'vicuna-7b-v1.5.Q4_K_M.gguf \ 4.08 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q4_K_M.gguf -O 'Q4_K_M.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q4_K_M.gguf'
+OUTPUT='Q4_K_M.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;
         7)
             echo "You chose 'vicuna-7b-v1.5.Q4_K_S.gguf \ 3.86 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q4_K_S.gguf -O 'Q4_K_S.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q4_K_S.gguf'
+OUTPUT='Q4_K_S.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;
         8)
             echo "You chose 'vicuna-7b-v1.5.Q5_0.gguf \ 4.65 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q5_0.gguf -O 'Q5_0.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q5_0.gguf'
+OUTPUT='Q5_0.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;
         9)
             echo "You chose 'vicuna-7b-v1.5.Q5_K_M.gguf \ 4.78 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q5_K_M.gguf -O 'Q5_K_M.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q5_K_M.gguf'
+OUTPUT='Q5_K_M.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;
@@ -118,9 +118,9 @@ case $CHOICE in
         10)
             echo "You chose 'vicuna-7b-v1.5.Q5_K_S.gguf \ 4.65 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q5_K_S.gguf -O 'Q5_K_S.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q5_K_S.gguf'
+OUTPUT='Q5_K_S.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;
@@ -128,9 +128,9 @@ case $CHOICE in
         11)
             echo "You chose 'vicuna-7b-v1.5.Q6_K.gguf \ 5.53 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q6_K.gguf -O 'Q6_K.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q6_K.gguf'
+OUTPUT='Q6_K.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;
@@ -138,9 +138,9 @@ case $CHOICE in
         12)
             echo "You chose 'vicuna-7b-v1.5.Q8_0.gguf \ 7.16 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q8_0.gguf -O 'Q8_0.vicuna-7b-v1.5.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/vicuna-7B-v1.5-GGUF/resolve/main/vicuna-7b-v1.5.Q8_0.gguf'
+OUTPUT='Q8_0.vicuna-7b-v1.5.gguf'
             cd ../..
             clear
             ;;

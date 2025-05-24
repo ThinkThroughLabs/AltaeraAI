@@ -70,7 +70,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_M.gguf -O 'IQ2_M-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_M.gguf'
+OUTPUT='IQ2_M-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -99,7 +100,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_S.gguf -O 'IQ2_S-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_S.gguf'
+OUTPUT='IQ2_S-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -128,7 +130,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_XS.gguf -O 'IQ2_XS-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ2_XS.gguf'
+OUTPUT='IQ2_XS-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -157,7 +160,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_M.gguf -O 'IQ3_M-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_M.gguf'
+OUTPUT='IQ3_M-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -186,7 +190,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_XS.gguf -O 'IQ3_XS-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_XS.gguf'
+OUTPUT='IQ3_XS-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -215,7 +220,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_XXS.gguf -O 'IQ3_XXS-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ3_XXS.gguf'
+OUTPUT='IQ3_XXS-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -244,7 +250,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ4_XS.gguf -O 'IQ4_XS-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-IQ4_XS.gguf'
+OUTPUT='IQ4_XS-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -273,7 +280,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q2_K.gguf -O 'Q2_K-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q2_K.gguf'
+OUTPUT='Q2_K-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -302,7 +310,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q2_K_L.gguf -O 'Q2_K_L-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q2_K_L.gguf'
+OUTPUT='Q2_K_L-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -331,7 +340,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_L-Q8.gguf -O 'Q3_K_L-Q8-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_L-Q8.gguf'
+OUTPUT='Q3_K_L-Q8-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -360,7 +370,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_L.gguf -O 'Q3_K_L-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_L.gguf'
+OUTPUT='Q3_K_L-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -389,7 +400,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_M.gguf -O 'Q3_K_M-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_M.gguf'
+OUTPUT='Q3_K_M-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -418,7 +430,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_S.gguf -O 'Q3_K_S-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_S.gguf'
+OUTPUT='Q3_K_S-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -447,7 +460,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_XL.gguf -O 'Q3_K_XL-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q3_K_XL.gguf'
+OUTPUT='Q3_K_XL-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -476,7 +490,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_L.gguf -O 'Q4_K_L-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_L.gguf'
+OUTPUT='Q4_K_L-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -505,7 +520,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_M.gguf -O 'Q4_K_M-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_M.gguf'
+OUTPUT='Q4_K_M-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -534,7 +550,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_S.gguf -O 'Q4_K_S-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q4_K_S.gguf'
+OUTPUT='Q4_K_S-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -563,7 +580,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_L.gguf -O 'Q5_K_L-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_L.gguf'
+OUTPUT='Q5_K_L-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -592,7 +610,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_M.gguf -O 'Q5_K_M-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_M.gguf'
+OUTPUT='Q5_K_M-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -621,7 +640,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_S.gguf -O 'Q5_K_S-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q5_K_S.gguf'
+OUTPUT='Q5_K_S-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -650,7 +670,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K-Q8.gguf -O 'Q6_K-Q8-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K-Q8.gguf'
+OUTPUT='Q6_K-Q8-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -679,7 +700,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K-f32.gguf -O 'Q6_K-f32-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K-f32.gguf'
+OUTPUT='Q6_K-f32-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -708,7 +730,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K.gguf -O 'Q6_K-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K.gguf'
+OUTPUT='Q6_K-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -737,7 +760,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K_L.gguf -O 'Q6_K_L-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q6_K_L.gguf'
+OUTPUT='Q6_K_L-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -766,7 +790,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q8_0.gguf -O 'Q8_0-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q8_0.gguf'
+OUTPUT='Q8_0-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         
@@ -795,7 +820,8 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q8_0_L.gguf -O 'Q8_0_L-gemma-2-9b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/bartowski/gemma-2-9b-it-GGUF/resolve/main/gemma-2-9b-it-Q8_0_L.gguf'
+OUTPUT='Q8_0_L-gemma-2-9b-it.gguf'
                     cd ../..
                     clear
         

@@ -43,102 +43,246 @@ case $CHOICE in
         2)
             echo "You chose 'q2_k-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q2_K.gguf -O 'q2_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q2_K.gguf'
+OUTPUT='q2_k-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         3)
             echo "You chose 'q3_k-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q3_K.gguf -O 'q3_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q3_K.gguf'
+OUTPUT='q3_k-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         4)
             echo "You chose 'q3_k_l-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q3_K_L.gguf -O 'q3_k_l-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q3_K_L.gguf'
+OUTPUT='q3_k_l-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         5)
             echo "You chose 'q4_0-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_0.gguf -O 'q4_0-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_0.gguf'
+OUTPUT='q4_0-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         6)
             echo "You chose 'q4_1-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_1.gguf -O 'q4_1-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_1.gguf'
+OUTPUT='q4_1-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         7)
             echo "You chose 'q4_k-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_K.gguf -O 'q4_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_K.gguf'
+OUTPUT='q4_k-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
@@ -146,17 +290,41 @@ case $CHOICE in
         8)
             echo "You chose 'q4_k_s-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_K_S.gguf -O 'q4_k_s-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q4_K_S.gguf'
+OUTPUT='q4_k_s-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
@@ -164,17 +332,41 @@ case $CHOICE in
         9)
             echo "You chose 'q5_0-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_0.gguf -O 'q5_0-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_0.gguf'
+OUTPUT='q5_0-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
@@ -182,119 +374,287 @@ case $CHOICE in
         10)
             echo "You chose 'q5_1-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_1.gguf -O 'q5_1-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_1.gguf'
+OUTPUT='q5_1-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         11)
             echo "You chose 'q5_k-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_K.gguf -O 'q5_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_K.gguf'
+OUTPUT='q5_k-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         12)
             echo "You chose 'q5_k_s-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_K_S.gguf -O 'q5_k_s-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q5_K_S.gguf'
+OUTPUT='q5_k_s-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         13)
             echo "You chose 'q6_k-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q6_K.gguf -O 'q6_k-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q6_K.gguf'
+OUTPUT='q6_k-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         14)
             echo "You chose 'q8_0-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q8_0.gguf -O 'q8_0-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-Q8_0.gguf'
+OUTPUT='q8_0-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         15)
             echo "You chose 'bf16-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-BF16.gguf -O 'bf16-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-BF16.gguf'
+OUTPUT='bf16-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         16)
             echo "You chose 'f16-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-F16.gguf -O 'f16-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-F16.gguf'
+OUTPUT='f16-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
@@ -302,17 +662,41 @@ case $CHOICE in
         17)
             echo "You chose 'f32-rwkv7-goose-world3-2.9b.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-F32.gguf -O 'f32-rwkv7-goose-world3-2.9b.gguf' -q --show-progress
+
+URL='https://huggingface.co/latestissue/rwkv7-goose-world3-2.9b-gguf/resolve/main/%20rwkv7-goose-world3-2.9b-F32.gguf'
+OUTPUT='f32-rwkv7-goose-world3-2.9b.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;

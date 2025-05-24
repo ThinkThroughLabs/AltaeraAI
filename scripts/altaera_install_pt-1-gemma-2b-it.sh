@@ -54,7 +54,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q2_K.gguf \ 900 MB -O 'Q2_K.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q2_K.gguf \ 900 MB -O 'Q2_K.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -83,7 +83,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q3_K_L.gguf \ 1.26 GB -O 'Q3_K_L.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q3_K_L.gguf \ 1.26 GB -O 'Q3_K_L.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -112,7 +112,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q3_K_M.gguf \ 1.18 GB -O 'Q3_K_M.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q3_K_M.gguf \ 1.18 GB -O 'Q3_K_M.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -141,7 +141,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q3_K_S.gguf \ 1.08 GB -O 'Q3_K_S.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q3_K_S.gguf \ 1.08 GB -O 'Q3_K_S.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -170,7 +170,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q4_0.gguf \ 1.42 GB -O 'Q4_0.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q4_0.gguf \ 1.42 GB -O 'Q4_0.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -199,7 +199,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q4_1.gguf \ 1.57 GB -O 'Q4_1.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q4_1.gguf \ 1.57 GB -O 'Q4_1.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -228,7 +228,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q4_K_M.gguf \ 1.5 GB -O 'Q4_K_M.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q4_K_M.gguf \ 1.5 GB -O 'Q4_K_M.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -257,7 +257,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q4_K_S.gguf \ 1.42 GB -O 'Q4_K_S.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q4_K_S.gguf \ 1.42 GB -O 'Q4_K_S.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -286,7 +286,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q5_0.gguf \ 1.73 GB -O 'Q5_0.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q5_0.gguf \ 1.73 GB -O 'Q5_0.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -315,7 +315,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q5_1.gguf \ 1.89 GB -O 'Q5_1.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q5_1.gguf \ 1.89 GB -O 'Q5_1.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -344,7 +344,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q5_K_M.gguf \ 1.77 GB -O 'Q5_K_M.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q5_K_M.gguf \ 1.77 GB -O 'Q5_K_M.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -373,7 +373,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q5_K_S.gguf \ 1.73 GB -O 'Q5_K_S.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q5_K_S.gguf \ 1.73 GB -O 'Q5_K_S.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -402,7 +402,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q6_K.gguf \ 2.06 GB -O 'Q6_K.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q6_K.gguf \ 2.06 GB -O 'Q6_K.gemma-2b-it.gguf'
                     cd ../..
                     clear
         
@@ -431,7 +431,7 @@ case $response in
                     cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
                     rm -rf 'RWKV-model.bin'
                     rm -rf 'model.bin'
-                    wget https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q8_0.gguf \ 2.67 GB -O 'Q8_0.gemma-2b-it.gguf' -q --show-progress
+                    URL='https://huggingface.co/mlabonne/gemma-2b-it-GGUF/resolve/main/gemma-2b-it.Q8_0.gguf \ 2.67 GB -O 'Q8_0.gemma-2b-it.gguf'
                     cd ../..
                     clear
         

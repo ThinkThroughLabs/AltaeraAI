@@ -44,153 +44,369 @@ case $CHOICE in
         2)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.F16.gguf \ 2.2 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.F16.gguf -O 'F16.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.F16.gguf'
+OUTPUT='F16.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         3)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.IQ3_XXS.gguf \ 484 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.IQ3_XXS.gguf -O 'IQ3_XXS.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.IQ3_XXS.gguf'
+OUTPUT='IQ3_XXS.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         4)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q2_K.gguf \ 432 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q2_K.gguf -O 'Q2_K.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q2_K.gguf'
+OUTPUT='Q2_K.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         5)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q3_K_L.gguf \ 592 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q3_K_L.gguf -O 'Q3_K_L.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q3_K_L.gguf'
+OUTPUT='Q3_K_L.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         6)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q3_K_M.gguf \ 548 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q3_K_M.gguf -O 'Q3_K_M.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q3_K_M.gguf'
+OUTPUT='Q3_K_M.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         7)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q3_K_S.gguf \ 499 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q3_K_S.gguf -O 'Q3_K_S.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q3_K_S.gguf'
+OUTPUT='Q3_K_S.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         8)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q3_K_XS.gguf \ 473 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q3_K_XS.gguf -O 'Q3_K_XS.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q3_K_XS.gguf'
+OUTPUT='Q3_K_XS.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         9)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q4_0.gguf \ 637 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q4_0.gguf -O 'Q4_0.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q4_0.gguf'
+OUTPUT='Q4_0.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         10)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q4_1.gguf \ 701 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q4_1.gguf -O 'Q4_1.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q4_1.gguf'
+OUTPUT='Q4_1.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
@@ -198,17 +414,41 @@ case $CHOICE in
         11)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q4_K_M.gguf \ 668 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q4_K_M.gguf -O 'Q4_K_M.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q4_K_M.gguf'
+OUTPUT='Q4_K_M.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
@@ -216,17 +456,41 @@ case $CHOICE in
         12)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q4_K_S.gguf \ 640 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q4_K_S.gguf -O 'Q4_K_S.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q4_K_S.gguf'
+OUTPUT='Q4_K_S.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
@@ -234,51 +498,123 @@ case $CHOICE in
         13)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q5_0.gguf \ 766 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q5_0.gguf -O 'Q5_0.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q5_0.gguf'
+OUTPUT='Q5_0.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         14)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q5_1.gguf \ 831 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q5_1.gguf -O 'Q5_1.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q5_1.gguf'
+OUTPUT='Q5_1.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
         15)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q5_K_M.gguf \ 782 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q5_K_M.gguf -O 'Q5_K_M.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q5_K_M.gguf'
+OUTPUT='Q5_K_M.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
@@ -286,17 +622,41 @@ case $CHOICE in
         16)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q5_K_S.gguf \ 766 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q5_K_S.gguf -O 'Q5_K_S.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q5_K_S.gguf'
+OUTPUT='Q5_K_S.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
@@ -304,17 +664,41 @@ case $CHOICE in
         17)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q6_K.gguf \ 903 MB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q6_K.gguf -O 'Q6_K.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q6_K.gguf'
+OUTPUT='Q6_K.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;
@@ -322,17 +706,41 @@ case $CHOICE in
         18)
             echo "You chose 'tinydolphin-2.8.2-1.1b-laser.Q8_0.gguf \ 1.17 GB'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q8_0.gguf -O 'Q8_0.tinydolphin-2.8.2-1.1b-laser.gguf' -q --show-progress
+
+URL='https://huggingface.co/Crataco/TinyDolphin-2.8.2-1.1B-laser-GGUF/resolve/main/tinydolphin-2.8.2-1.1b-laser.Q8_0.gguf'
+OUTPUT='Q8_0.tinydolphin-2.8.2-1.1b-laser.gguf'
+wget -q --show-progress "$URL" -O "$OUTPUT" &
+WGET_PID=$!
+
+# Prompt user in foreground
+echo -e "\nPress 'c' to cancel the download at any time."
+
+# Read single character in a loop
+while kill -0 "$WGET_PID" 2>/dev/null; do
+    read -rsn1 key
+    if [[ "$key" == "c" ]]; then
+        kill -9 "$WGET_PID" 2>/dev/null
+
+        # If the file exists, delete it and show merged message
+        if [[ -f "$OUTPUT" ]]; then
+            rm -f "$OUTPUT"
+            echo -e "\nDownload cancelled and partial file deleted."
+        else
+            echo -e "\nDownload cancelled."
+        fi
+
+        break
+    fi
+done
+
+# Wait to suppress possible "terminated" messages
+wait "$WGET_PID" 2>/dev/null
+
             cd /root
             clear
             ;;

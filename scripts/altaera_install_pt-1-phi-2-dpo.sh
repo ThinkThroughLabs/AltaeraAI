@@ -35,108 +35,108 @@ case $CHOICE in
         1)
             echo "You chose 'phi-2-dpo.Q2_K'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q2_K.gguf -O 'Q2_K.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q2_K.gguf'
+OUTPUT='Q2_K.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;
         2)
             echo "You chose 'phi-2-dpo.Q3_K_L"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q3_K_L.gguf -O 'Q3_K_L.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q3_K_L.gguf'
+OUTPUT='Q3_K_L.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;
         3)
             echo "You chose 'phi-2-dpo.Q3_K_M'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q3_K_M.gguf -O 'Q3_K_M.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q3_K_M.gguf'
+OUTPUT='Q3_K_M.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;
         4)
             echo "You chose 'phi-2-dpo.Q3_K_S'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q3_K_S.gguf -O 'Q3_K_S.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q3_K_S.gguf'
+OUTPUT='Q3_K_S.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;
         5)
             echo "You chose 'phi-2-dpo.Q4_0'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q4_0.gguf -O 'Q4_0.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q4_0.gguf'
+OUTPUT='Q4_0.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;
         6)
             echo "You chose 'phi-2-dpo.Q4_K_M'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q4_K_M.gguf -O 'Q4_K_M.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q4_K_M.gguf'
+OUTPUT='Q4_K_M.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;
         7)
             echo "You chose 'phi-2-dpo.Q4_K_S'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q4_K_S.gguf -O 'Q4_K_S.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q4_K_S.gguf'
+OUTPUT='Q4_K_S.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;
         8)
             echo "You chose 'phi-2-dpo.Q5_0'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q5_0.gguf -O 'Q5_0.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q5_0.gguf'
+OUTPUT='Q5_0.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;
         9)
             echo "You chose 'phi-2-dpo.Q5_K_M'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q5_K_M.gguf -O 'Q5_K_M.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q5_K_M.gguf'
+OUTPUT='Q5_K_M.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;
         10)
             echo "You chose 'phi-2-dpo.Q5_K_S'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q5_K_S.gguf -O 'Q5_K_S.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q5_K_S.gguf'
+OUTPUT='Q5_K_S.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;
         11)
             echo "You chose 'phi-2-dpo.Q6_K'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q6_K.gguf -O 'Q6_K.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q6_K.gguf'
+OUTPUT='Q6_K.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;
         12)
             echo "You chose 'phi-2-dpo.Q8_0'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q8_0.gguf -O 'Q8_0.phi-2-dpo.gguf' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/phi-2-dpo-GGUF/resolve/main/phi-2-dpo.Q8_0.gguf'
+OUTPUT='Q8_0.phi-2-dpo.gguf'
             cd ../..
             clear
             ;;

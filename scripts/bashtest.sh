@@ -52,17 +52,14 @@ case $response in
                     clear
                     echo "You chose 'gemma-2b-it.Q2_K.gguf'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
-            
             "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
         
@@ -78,340 +75,280 @@ case $response in
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;
         2)
             echo "You chose 'Q3_K_L-llama-2-7b-chat'
                         
-            To abort download, press 'Ctrl+C'
-            [don't forget to delete the file afterwards]
             
-            "
             {
             mkdir '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf -O 'llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
+
+URL='https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q3_K_L.gguf'
+OUTPUT='llama-2-7b-chat.Q3_K_L.gguf \ 3.6 GB' -q --show-progress
             cd /root
             clear
             ;;

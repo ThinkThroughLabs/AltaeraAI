@@ -29,54 +29,54 @@ case $CHOICE in
         1)
             echo "You chose 'tiny-vicuna-1b.q2_k.gguf \ 482 MB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q2_k.gguf -O 'q2_k.tiny-vicuna-1b.gguf' -q --show-progress
+
+URL='https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q2_k.gguf'
+OUTPUT='q2_k.tiny-vicuna-1b.gguf'
             cd ../..
             clear
             ;;
         2)
             echo "You chose 'tiny-vicuna-1b.q3_k_m.gguf \ 550 MB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q3_k_m.gguf -O 'q3_k_m.tiny-vicuna-1b.gguf' -q --show-progress
+
+URL='https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q3_k_m.gguf'
+OUTPUT='q3_k_m.tiny-vicuna-1b.gguf'
             cd ../..
             clear
             ;;
         3)
             echo "You chose 'tiny-vicuna-1b.q4_k_m.gguf \ 668 MB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q4_k_m.gguf -O 'q4_k_m.tiny-vicuna-1b.gguf' -q --show-progress
+
+URL='https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q4_k_m.gguf'
+OUTPUT='q4_k_m.tiny-vicuna-1b.gguf'
             cd ../..
             clear
             ;;
         4)
             echo "You chose 'tiny-vicuna-1b.q5_k_m.gguf \ 782 MB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q5_k_m.gguf -O 'q5_k_m.tiny-vicuna-1b.gguf' -q --show-progress
+
+URL='https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q5_k_m.gguf'
+OUTPUT='q5_k_m.tiny-vicuna-1b.gguf'
             cd ../..
             clear
             ;;
         5)
             echo "You chose 'tiny-vicuna-1b.q6_k.gguf \ 903 MB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q6_k.gguf -O 'q6_k.tiny-vicuna-1b.gguf' -q --show-progress
+
+URL='https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q6_k.gguf'
+OUTPUT='q6_k.tiny-vicuna-1b.gguf'
             cd ../..
             clear
             ;;
         6)
             echo "You chose 'tiny-vicuna-1b.q8_0.gguf \ 1.17 GB'"
             cd '/data/data/com.termux/files/home/AltaeraAI-tmp/models'
-            rm -rf 'RWKV-model.bin'
-            rm -rf 'model.bin'
-            wget https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q8_0.gguf -O 'q8_0.tiny-vicuna-1b.gguf' -q --show-progress
+
+URL='https://huggingface.co/afrideva/Tiny-Vicuna-1B-GGUF/resolve/main/tiny-vicuna-1b.q8_0.gguf'
+OUTPUT='q8_0.tiny-vicuna-1b.gguf'
             cd ../..
             clear
             ;;
