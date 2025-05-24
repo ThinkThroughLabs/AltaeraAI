@@ -43,6 +43,7 @@ The tool also streamlines the installation of both AI backends and frontends for
 <details>
   <summary><b>Changelog</b></summary>
 
+    * v6.1.1 - added the ability to cancel model downloading by pressing "c". The cancelled file will now be deleted automatically
     * v6.1.0 - partially revamped UI, as part of a bigger code rebuild and refactoring; changed theme, added animations, improved functionalities, fixed bugs, added the ability to stop KoboldCpp inference by pressing "q"
     * added RWKV-G1 and Gemma-3 weights to the list of models
     * v6.0.6 - updated the pre-packaged KoboldCpp to v1.91
