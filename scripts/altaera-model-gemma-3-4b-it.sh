@@ -54,26 +54,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
@@ -96,26 +101,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
@@ -138,26 +148,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
@@ -180,26 +195,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
@@ -222,26 +242,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
@@ -264,26 +289,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
@@ -307,26 +337,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
@@ -350,26 +385,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
@@ -393,26 +433,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
@@ -435,26 +480,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
@@ -477,26 +527,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
@@ -519,26 +574,31 @@ WGET_PID=$!
 echo -e "\nPress 'c' to cancel the download at any time.
 "
 
+CANCELLED=false
+
 # Read single character in a loop
 while kill -0 "$WGET_PID" 2>/dev/null; do
-    read -rsn1 key
+    read -rsn1 -t 1 key  # Add -t 1 to allow loop to check WGET_PID regularly
     if [[ "$key" == "c" ]]; then
         kill -9 "$WGET_PID" 2>/dev/null
-
-        # If the file exists, delete it and show merged message
+        CANCELLED=true
         if [[ -f "$OUTPUT" ]]; then
             rm -f "$OUTPUT"
-            echo -e "\nDownload cancelled and partial file deleted."
+            echo -e "\n❌ Download cancelled — partial file deleted."
         else
-            echo -e "\nDownload cancelled."
+            echo -e "\n❌ Download cancelled."
         fi
-
         break
     fi
 done
 
 # Wait to suppress possible "terminated" messages
 wait "$WGET_PID" 2>/dev/null
+
+if [[ "$CANCELLED" == false ]]; then
+    echo -e "\n✅ Download complete!"
+    sleep 2  # Optional pause to show success message
+fi
 
             cd /root
             clear
