@@ -13,12 +13,12 @@ FOOTER_LINE=$((LINES - 1))
 # Create log file
 LOGFILE=$(mktemp)
 
-files=() #blank the variable so its empty for next use
+files=() # blank the variable so it's empty for next use
 # Loop folder, add files to array
 while IFS= read -r -d $'\0' file; do
     files+=("$file" "")
 done < <(find "/root/models" -maxdepth 1 -type f -iname \*.gguf -print0)
-# or for all files: done < <(find "/home" -maxdepth 1 -type f -print0)
+
 # Check it has at least 1 file to show (otherwise dialog errors)
 if [ ${#files[@]} -eq 0 ]; then
     clear
@@ -30,14 +30,12 @@ fi
 RESULT=$?
 if [ $RESULT -eq 0 ]; then
 
-if [[ $file == *.gguf ]]
-then
+if [[ $file == *.gguf ]]; then
 clear
 cd kcpp-ae
-termux-open-url 'http://localhost:1551/?streaming=1#'
 
 # Start Python script, redirect output
-python3 koboldcpp.py $file 1551 \
+python3 koboldcpp.py "$file" 1551 \
 --blasbatchsize 2048 \
 --contextsize 2048 > "$LOGFILE" 2>&1 &
 PYTHON_PID=$!
@@ -74,13 +72,22 @@ draw_footer
 ) &
 DISPLAY_PID=$!
 
+# Wait until KoboldCpp reports it's ready, then open browser
+(
+    while ! grep -q 'Please connect to custom endpoint at' "$LOGFILE"; do
+        sleep 0.5
+    done
+    termux-open-url 'http://localhost:1551/?streaming=1#'
+) &
+OPEN_PID=$!
+
 # Wait for 'q' keypress
 while IFS= read -rsn1 key; do
     [[ $key == "q" ]] && break
 done
 
 # Cleanup
-kill -15 "$PYTHON_PID" "$DISPLAY_PID" 2>/dev/null
+kill -15 "$PYTHON_PID" "$DISPLAY_PID" "$OPEN_PID" 2>/dev/null
 wait "$PYTHON_PID" 2>/dev/null
 rm "$LOGFILE"
 tput cnorm
