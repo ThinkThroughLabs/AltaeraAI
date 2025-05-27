@@ -25,9 +25,9 @@ case $response in
 ██                    ██
 ████████████████████████
 
-  \e[1;34mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.3
 
-     by \e[1;3;38;5;27mThinkThrough\e[0m
+     by \e[1;37mThinkThrough\e[0m
 
 
 "
@@ -164,9 +164,9 @@ echo "________________________________________________________________
 ██                    ██
 ████████████████████████
 
-  \e[1;34mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.3
 
-     by \e[1;3;38;5;27mThinkThrough\e[0m
+     by \e[1;37mThinkThrough\e[0m
 
 
 "
@@ -306,9 +306,9 @@ echo "________________________________________________________________
 ██                    ██
 ████████████████████████
 
-  \e[1;34mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.3
 
-     by \e[1;3;38;5;27mThinkThrough\e[0m
+     by \e[1;37mThinkThrough\e[0m
 
 
 "
