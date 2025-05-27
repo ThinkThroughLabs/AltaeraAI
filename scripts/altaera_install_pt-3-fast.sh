@@ -222,8 +222,8 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 chmod a+x 'dialog_theme-on.sh'
 wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/altaera-proot/dialog_theme-off.sh
 chmod a+x 'dialog_theme-off.sh'
-wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/kcpp-ae_v6.1.3/kcpp-ae_v6.1.3.tar.gz
-tar -xf 'kcpp-ae_v6.1.3.tar.gz'
+wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/kcpp-ae_v6.1.2/kcpp-ae_v6.1.2.tar.gz
+tar -xf 'kcpp-ae_v6.1.2.tar.gz'
 rm -rf 'kcpp-ae_v6.1.3'
       rm -rf 'koboldcpp-altaera'
       rm -rf 'kcpp-ae_cm'
