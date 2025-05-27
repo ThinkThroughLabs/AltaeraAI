@@ -96,7 +96,6 @@ FOOTER_KEEPALIVE_PID=$!
 # Wait until KoboldCpp reports it's ready, then open browser
 (
     while ! grep -q 'Please connect to custom endpoint at' "$LOGFILE"; do
-        sleep 0.5
     done
     termux-open-url 'http://localhost:1551/?streaming=1#'
 ) &
