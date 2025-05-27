@@ -27,5 +27,5 @@ clear
 
 
       cd '~'
-      rm -rf 'kcpp-ae_v6.1.2'
+      rm -rf 'kcpp-ae_v6.1.3'
 } &> /dev/null 2>&1;
