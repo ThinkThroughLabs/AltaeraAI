@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 clear
 
@@ -53,12 +53,20 @@ draw_footer() {
 }
 draw_footer
 
+# Keep footer alive in background (in case terminal refreshes)
+(
+    while kill -0 "$PYTHON_PID" 2>/dev/null; do
+        sleep 1
+        draw_footer
+    done
+) &
+FOOTER_KEEPALIVE_PID=$!
+
 # Show log output within the top portion of terminal
 (
     tput civis  # hide cursor
     LINE_COUNT=0
     tail -n +1 -F "$LOGFILE" | while IFS= read -r line; do
-        # If too many lines, start from top again
         if (( LINE_COUNT >= OUTPUT_HEIGHT )); then
             clear
             draw_footer
@@ -87,7 +95,7 @@ while IFS= read -rsn1 key; do
 done
 
 # Cleanup
-kill -15 "$PYTHON_PID" "$DISPLAY_PID" "$OPEN_PID" 2>/dev/null
+kill -15 "$PYTHON_PID" "$DISPLAY_PID" "$OPEN_PID" "$FOOTER_KEEPALIVE_PID" 2>/dev/null
 wait "$PYTHON_PID" 2>/dev/null
 rm "$LOGFILE"
 tput cnorm
