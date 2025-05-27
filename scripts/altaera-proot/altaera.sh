@@ -62,16 +62,18 @@ spinner_footer() {
         sleep 0.1
     done
 
-    # Final footer after ready
-    tput cup "$SEPARATOR_LINE" 0
-    tput el
-    printf '%*s\n' "$COLUMNS" '' | tr ' ' '-'
+    while :; do
+        tput cup "$SEPARATOR_LINE" 0
+        tput el
+        printf '%*s\n' "$COLUMNS" '' | tr ' ' '-'
 
-    tput cup "$FOOTER_LINE" 0
-    tput el
-    FOOTER_MSG="KoboldCpp session initialized. To stop it, press 'q'."
-    PADDING=$(( (COLUMNS - ${#FOOTER_MSG}) / 2 ))
-    printf "%*s\033[1m%s\033[0m" "$PADDING" '' "$FOOTER_MSG"
+        tput cup "$FOOTER_LINE" 0
+        tput el
+        FOOTER_MSG="KoboldCpp session initialized. To stop it, press 'q'."
+        PADDING=$(( (COLUMNS - ${#FOOTER_MSG}) / 2 ))
+        printf "%*s\033[1m%s\033[0m" "$PADDING" '' "$FOOTER_MSG"
+        sleep 2
+    done
 }
 spinner_footer &
 FOOTER_SPINNER_PID=$!
