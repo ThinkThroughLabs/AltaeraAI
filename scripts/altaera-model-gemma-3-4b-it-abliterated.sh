@@ -275,7 +275,7 @@ fi
             } &> /dev/null 2>&1;
             cd '/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/altaera/root/models'
 
-            wget hhttps://huggingface.co/mlabonne/gemma-3-4b-it-abliterated-GGUF/resolve/main/gemma-3-4b-it-abliterated.q8_0.gguf'
+            wget https://huggingface.co/mlabonne/gemma-3-4b-it-abliterated-GGUF/resolve/main/gemma-3-4b-it-abliterated.q8_0.gguf'
 OUTPUT='q8_0-gemma-3-4b-it-abliterated.gguf'
 wget -q --show-progress "$URL" -O "$OUTPUT" &
 WGET_PID=$!
