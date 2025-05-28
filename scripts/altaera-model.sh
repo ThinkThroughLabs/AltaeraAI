@@ -221,7 +221,7 @@ case $CHOICE in
     		;;
       
     	40)
-     		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-2-12b-it-abliterated.sh'
+     		bash '/data/data/com.termux/files/home/AltaeraAI/altaera-model-gemma-3-12b-it-abliterated.sh'
     		;;
 
     	41)
