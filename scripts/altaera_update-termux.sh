@@ -40,7 +40,7 @@ case $CHOICE in
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 
@@ -180,7 +180,7 @@ echo "________________________________________________________________
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 
@@ -322,7 +322,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 
@@ -465,7 +465,7 @@ sleep .5
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 
@@ -605,7 +605,7 @@ echo "________________________________________________________________
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 
@@ -747,7 +747,7 @@ value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 

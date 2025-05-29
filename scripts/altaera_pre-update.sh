@@ -12,7 +12,7 @@
                 } &> /dev/null 2>&1;
                 
          if [ $(bash 'AltaeraAI/kcpp-ae-version_package.sh'
-          ) = "v6.1.3.tar.gz" ]; then
+          ) = "v6.1.2.tar.gz" ]; then
           cd "AltaeraAI"
           rm -rf 'AltaeraAI/kcpp-ae-version_package.sh'
           rm -rf 'altaera-update_content.sh'
@@ -33,7 +33,7 @@
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 
@@ -181,7 +181,7 @@ echo "________________________________________________________________
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 

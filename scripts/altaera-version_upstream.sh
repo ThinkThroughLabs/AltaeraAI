@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "v6.1.3"
+echo "v6.1.4"
 
 exit

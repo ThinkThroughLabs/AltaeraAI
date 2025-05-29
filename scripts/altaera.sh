@@ -14,7 +14,7 @@ cp '/data/data/com.termux/files/home/AltaeraAI/termux/dialogrc/dialogrc' '/data/
 HEIGHT=25
 WIDTH=60
 CHOICE_HEIGHT=7
-BACKTITLE="AltaeraAI - v6.1.3 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2/1000)}') | Free Storage:$(df -Ph . | tail -1 | awk '{print $4}')"
+BACKTITLE="AltaeraAI - v6.1.4 | RAM:$(free -m | awk '/^Mem:/{printf("%.1fG\n",$2/1000)}') | Free Storage:$(df -Ph . | tail -1 | awk '{print $4}')"
 TITLE="Welcome!"
 MENU="What would you like to do?"
 
@@ -77,7 +77,7 @@ case $CHOICE in
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 
@@ -215,7 +215,7 @@ echo "Logging into PRoot Distro ...
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 
@@ -369,7 +369,7 @@ echo "Logging into PRoot Distro ...
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 

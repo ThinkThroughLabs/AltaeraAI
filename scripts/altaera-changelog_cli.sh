@@ -3,6 +3,7 @@
 dialog --backtitle "AltaeraAI" \
 --title "AltaeraAI - Changelog [CLI]" \
 --msgbox '
+    * v6.1.4 - categorized models into submenus by type (RWKV, Gemma, Phi, etc.) for better navigation
     * v6.1.3 - delayed browser launch (termux-open-url) until KoboldCpp back-end is ready. This ensures the front-end opens only after the model and server are fully loaded, while preserving live output display and UI layout
     * v6.1.2 - updated the pre-packaged KoboldCpp to v1.92.1
     * v6.1.1 - added the ability to cancel model downloading by pressing "c". The cancelled file will now be deleted automatically

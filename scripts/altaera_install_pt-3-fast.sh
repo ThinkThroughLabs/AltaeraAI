@@ -17,7 +17,7 @@
 ██                    ██
 ████████████████████████
 
-  \e[1;37mAltaeraAI\e[0m - v6.1.3
+  \e[1;37mAltaeraAI\e[0m - v6.1.4
 
      by \e[3;1;34mThinkThrough\e[0m
 
@@ -224,7 +224,7 @@ wget https://raw.githubusercontent.com/ThinkThroughLabs/AltaeraAI/main/scripts/a
 chmod a+x 'dialog_theme-off.sh'
 wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/kcpp-ae_v6.1.2/kcpp-ae_v6.1.2.tar.gz
 tar -xf 'kcpp-ae_v6.1.2.tar.gz'
-rm -rf 'kcpp-ae_v6.1.3'
+rm -rf 'kcpp-ae_v6.1.4'
       rm -rf 'koboldcpp-altaera'
       rm -rf 'kcpp-ae_cm'
       wget https://github.com/ThinkThroughLabs/AltaeraAI/releases/download/v3.1/altaera-v3.1.tar.gz

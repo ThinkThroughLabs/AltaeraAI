@@ -21,5 +21,5 @@ tar -xf 'kcpp-ae_v6.1.2.tar.gz'
 
 
       cd '~'
-      rm -rf 'kcpp-ae_v6.1.3'
+      rm -rf 'kcpp-ae_v6.1.4'
 } &> /dev/null 2>&1;
