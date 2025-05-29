@@ -16,5 +16,5 @@ Recent changes:
     * v6.0.6 - updated the pre-packaged KoboldCpp to v1.91
 ' 25 40
 
-#bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
 exit
+bash '/data/data/com.termux/files/home/AltaeraAI/altaera.sh'
